@@ -8,24 +8,26 @@ import logo from '@assets/images/krupomol_logo.png';
 import { cn } from '@utils';
 
 interface Props {
-    fixed?: boolean;
+    rounded?: boolean;
 }
 
-export const Header = ({ fixed = false }: Props) => {
+export const Header = ({ rounded = false }: Props) => {
     return (
-        <header className={cn(fixed && 'fixed left-0 top-0 z-50 w-full py-5')}>
-            <div className="container flex justify-between gap-5">
-                <Link className="relative h-20 w-[175px]" href={'/'}>
-                    <Image
-                        alt="Крупомол лого"
-                        className="object-contain"
-                        placeholder="empty"
-                        priority
-                        src={logo}
-                    />
-                </Link>
+        <header className="w-full">
+            <div className={cn('container bg-card py-5', rounded && 'rounded-b-[100px]')}>
+                <div className="flex justify-between gap-5">
+                    <Link className="relative h-20 w-[175px]" href={'/'}>
+                        <Image
+                            alt="Крупомол лого"
+                            className="object-contain"
+                            placeholder="empty"
+                            priority
+                            src={logo}
+                        />
+                    </Link>
 
-                <Navigation />
+                    <Navigation />
+                </div>
             </div>
         </header>
     );
