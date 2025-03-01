@@ -6,7 +6,9 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write .",
         "build:icons": "tsx ./build-icons.ts"
     },
     "dependencies": {
@@ -51,7 +53,7 @@
         "prettier-plugin-tailwindcss": "^0.6.11",
         "tailwindcss": "3",
         "tsx": "^4.19.2",
-        "typescript": "^5",
+        "typescript": "5.8.0",
         "typescript-eslint": "^8.23.0"
     }
 }

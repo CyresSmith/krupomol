@@ -19,8 +19,6 @@ import { ABOUT_ROUTE, PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-
 const slides = [
     {
         desc: 'Ми підтримуємо місцевих фермерів і обираємо найкраще зерно, щоб ви отримували якісний і смачний продукт.',

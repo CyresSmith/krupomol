@@ -1,5 +1,1 @@
-export type IconName =
-	| "dollar-sign"
-	| "house"
-	| "phone-call"
-	| "wheat"
+export type IconName = 'dollar-sign' | 'house' | 'phone-call' | 'wheat';
