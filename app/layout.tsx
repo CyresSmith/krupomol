@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${mainFont.variable} antialiased`}>{children}</body>
+            <body className={`${mainFont.variable} flex min-h-screen flex-col antialiased`}>
+                {children}
+            </body>
         </html>
     );
 }
