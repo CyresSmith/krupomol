@@ -12,34 +12,9 @@ import {
 
 import { Icon } from '@components/shared';
 
-import { MenuItemType } from '@types';
-
-import { CONTACTS_ROUTE, HOME_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE } from '@routes';
+import { navigation } from '@constants';
 
 import { cn } from '@utils';
-
-const navigation: MenuItemType[] = [
-    {
-        href: HOME_ROUTE,
-        icon: 'house',
-        title: 'Головна',
-    },
-    {
-        href: PRODUCTS_ROUTE,
-        icon: 'wheat',
-        title: 'Продукція',
-    },
-    {
-        href: CONTACTS_ROUTE,
-        icon: 'phone-call',
-        title: 'Контакти',
-    },
-    {
-        href: PRICES_ROUTE,
-        icon: 'dollar-sign',
-        title: 'Ціни',
-    },
-];
 
 export const Navigation = () => {
     const pathname = usePathname();

@@ -1,1 +1,11 @@
-export type IconName = 'dollar-sign' | 'house' | 'phone-call' | 'wheat';
+export type IconName =
+	| "dollar-sign"
+	| "facebook"
+	| "house"
+	| "instagram"
+	| "linkedin"
+	| "mailbox"
+	| "map-pinned"
+	| "phone-call"
+	| "tiktok"
+	| "wheat"

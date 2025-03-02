@@ -13,9 +13,9 @@ interface Props {
 
 export const Header = ({ rounded = false }: Props) => {
     return (
-        <header className="w-full">
-            <div className={cn('container bg-card py-6', rounded && 'rounded-b-[100px]')}>
-                <div className="flex justify-between gap-5">
+        <header className={cn('w-full bg-card', rounded && 'rounded-b-[theme(space.28)]')}>
+            <div className="container py-6">
+                <div className="flex justify-between gap-6">
                     <Link className="relative h-20 w-[175px]" href={'/'}>
                         <Image
                             alt="Крупомол лого"

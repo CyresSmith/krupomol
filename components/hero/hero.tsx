@@ -63,8 +63,8 @@ export const Hero = () => {
     const { onDotButtonClick, selectedIndex } = useDotButton(api);
 
     return (
-        <section>
-            <div className="container relative rounded-b-[100px] bg-card pb-12">
+        <section className="rounded-b-[theme(space.28)] bg-card">
+            <div className="container relative pb-12">
                 <Carousel
                     draggable={false}
                     opts={{
