@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { default as Image, StaticImageData } from 'next/image';
 
 import clsx from 'clsx';
+import Autoplay from 'embla-carousel-autoplay';
 
 import { Card } from '@ui/card';
 import {
@@ -33,16 +34,21 @@ export const SectionCarousel = ({ items = [] }: Props) => {
         <Carousel
             opts={{
                 align: 'start',
-                duration: 60,
+                duration: 30,
                 loop: true,
             }}
+            plugins={[
+                Autoplay({
+                    delay: 4000,
+                }),
+            ]}
             setApi={setApi}
         >
             <div className="mt-12 overflow-hidden rounded-3xl">
                 <CarouselContent>
                     {items.map((item, i) => (
                         <CarouselItem className="tablet:basis-1/2 desktop:basis-1/3 pb-3" key={i}>
-                            <Card className="relative flex h-[400px] flex-col overflow-hidden rounded-3xl border-none transition group-hover:border-ring group-focus:border-ring">
+                            <Card className="relative flex h-[400px] flex-col overflow-hidden rounded-3xl border-none shadow-lg transition group-hover:border-ring group-focus:border-ring">
                                 <div
                                     className={clsx(
                                         'h-full w-full items-center justify-center bg-secondary p-4 transition'

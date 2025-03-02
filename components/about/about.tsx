@@ -1,9 +1,13 @@
 import { Icon, Title } from '@components/shared';
 import CircularImageAnimation from '@components/shared/сircular-image-animation';
 
+import { titleFont } from '@fonts';
+
+import { cn } from '@utils';
+
 export const About = () => {
     return (
-        <section className="py-12">
+        <section className="py-24">
             <div className="container">
                 <div className="grid grid-cols-2 place-content-center items-start gap-6">
                     <CircularImageAnimation />
@@ -11,7 +15,7 @@ export const About = () => {
                     <div>
                         <div className="mb-6 grid grid-cols-[1fr,theme(space.16)] items-start gap-28">
                             <Title>Надійний постачальник для Вашого бізнесу</Title>
-                            <Icon className="size-16 fill-foreground" name="wheat" />
+                            <Icon className="size-16 fill-accent" name="wheat" />
                         </div>
 
                         <div className="flex flex-col gap-3 [&_p]:text-justify">
@@ -49,7 +53,12 @@ export const About = () => {
                     </div>
                 </div>
 
-                <p className="mt-12 rounded-3xl bg-card p-12 text-center text-4xl font-black text-accent">
+                <p
+                    className={cn(
+                        'mt-12 rounded-3xl bg-secondary/10 p-12 text-center text-5xl font-black text-accent shadow-lg',
+                        titleFont.className
+                    )}
+                >
                     Наша мета – допомагати Вашому бізнесу розвиватися та зростати!
                 </p>
             </div>

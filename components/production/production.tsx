@@ -12,20 +12,16 @@ const photos = [a, b, c, d, e, g, f];
 
 export const Production = () => {
     return (
-        <section className="py-12">
+        <section className="rounded-[theme(space.28)] bg-card py-24 shadow-lg">
             <div className="container">
                 <div className="grid grid-cols-2 place-content-center items-start gap-6">
-                    <div className="mb-6 grid grid-cols-[theme(space.12),1fr] items-center gap-6">
-                        <Icon className="size-12 fill-foreground" name="wheat" />
-                        <Title>Виробництво</Title>
+                    <div className="mb-6 grid grid-cols-[theme(space.12),1fr] items-start gap-6">
+                        <Icon className="size-12 fill-accent" name="wheat" />
+                        <Title>Цех виробництва круп</Title>
                     </div>
 
                     <div>
                         <div className="flex flex-col gap-3 [&_p]:text-justify">
-                            <Title as="h5" className="text-2xl">
-                                Цех виробництва круп
-                            </Title>
-
                             <ul className="list-disc">
                                 <li>
                                     лінія переробки зерна гречки на крупу потужністю 200 тон за
@@ -44,12 +40,21 @@ export const Production = () => {
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
 
+                <SectionCarousel items={photos} />
+            </div>
+
+            <div className="container mt-24">
+                <div className="grid grid-cols-2 place-content-center items-start gap-6">
+                    <div className="mb-6 grid grid-cols-[theme(space.12),1fr] items-start gap-6">
+                        <Icon className="size-12 fill-accent" name="wheat" />
+                        <Title>Цех виробництва пластівців та борошна</Title>
+                    </div>
+
+                    <div>
                         <div className="mt-6 flex flex-col gap-3 [&_p]:text-justify">
-                            <Title as="h5" className="text-2xl">
-                                Цех виробництва пластівців та борошна:
-                            </Title>
-
                             <ul className="list-disc">
                                 <li>
                                     лінія виробництва пластівців вівсяних, гречаних, кукурудзяних,
