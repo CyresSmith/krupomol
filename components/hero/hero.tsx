@@ -64,14 +64,14 @@ export const Hero = () => {
 
     return (
         <section>
-            <div className="container relative rounded-b-[100px] bg-card">
+            <div className="container relative rounded-b-[100px] bg-card pb-12">
                 <Carousel
                     draggable={false}
                     opts={{
                         duration: 30,
                         loop: true,
                         watchDrag: true,
-                        watchFocus: false,
+                        watchFocus: true,
                     }}
                     plugins={[
                         Autoplay({
@@ -80,16 +80,16 @@ export const Hero = () => {
                     ]}
                     setApi={setApi}
                 >
-                    <CarouselContent className="-ml-0">
+                    <CarouselContent>
                         {slides.map(slide => (
-                            <CarouselItem className="pl-0" key={slide.id}>
+                            <CarouselItem key={slide.id}>
                                 <Slide {...slide} />
                             </CarouselItem>
                         ))}
                     </CarouselContent>
                 </Carousel>
 
-                <div className="absolute bottom-5 left-1/2 z-20 mx-auto flex -translate-x-1/2 transform gap-1">
+                <div className="absolute bottom-6 left-1/2 z-20 mx-auto flex -translate-x-1/2 translate-y-1/2 transform gap-3">
                     {slides.map((_, index) => (
                         <DotButton
                             className={cn(

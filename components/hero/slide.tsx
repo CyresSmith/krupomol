@@ -33,7 +33,7 @@ const Slide = ({ desc, image, slug, title }: Props) => {
                     </Link>
                 </div>
 
-                <div className="relative h-[80%] w-full overflow-hidden rounded-3xl">
+                <div className="relative h-full w-full overflow-hidden rounded-3xl">
                     <Image
                         alt={title}
                         className="object-cover"
