@@ -21,7 +21,7 @@ export const Navigation = () => {
 
     return (
         <NavigationMenu>
-            <NavigationMenuList className="flex gap-16">
+            <NavigationMenuList className="flex gap-6">
                 {navigation.map(({ href, icon, title }) => (
                     <NavigationMenuItem key={title}>
                         <NavigationMenuLink

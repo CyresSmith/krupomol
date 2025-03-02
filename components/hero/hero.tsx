@@ -64,7 +64,7 @@ export const Hero = () => {
 
     return (
         <section className="rounded-b-[theme(space.28)] bg-card">
-            <div className="container relative pb-12">
+            <div className="container relative pb-24 pt-6">
                 <Carousel
                     draggable={false}
                     opts={{

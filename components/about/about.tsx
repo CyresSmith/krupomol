@@ -9,8 +9,8 @@ export const About = () => {
                     <CircularImageAnimation />
 
                     <div>
-                        <div className="mb-6 grid grid-cols-[1fr,theme(space.16)] items-center gap-28">
-                            <Title>Надійний постачальник для вашого бізнесу</Title>
+                        <div className="mb-6 grid grid-cols-[1fr,theme(space.16)] items-start gap-28">
+                            <Title>Надійний постачальник для Вашого бізнесу</Title>
                             <Icon className="size-16 fill-foreground" name="wheat" />
                         </div>
 
@@ -49,7 +49,7 @@ export const About = () => {
                     </div>
                 </div>
 
-                <p className="mt-12 text-center text-4xl font-black text-accent">
+                <p className="mt-12 rounded-3xl bg-card p-12 text-center text-4xl font-black text-accent">
                     Наша мета – допомагати Вашому бізнесу розвиватися та зростати!
                 </p>
             </div>

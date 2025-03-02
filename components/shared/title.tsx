@@ -8,5 +8,5 @@ interface Props extends PropsWithChildren {
 }
 
 export const Title = ({ as: As = 'h3', children, className }: Props) => {
-    return <As className={cn('text-4xl font-bold', className)}>{children}</As>;
+    return <As className={cn('text-5xl font-bold', className)}>{children}</As>;
 };

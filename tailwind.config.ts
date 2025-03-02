@@ -9,6 +9,19 @@ export default {
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
+        screens: {
+            mobile: {
+                min: '320px',
+                max: '767px',
+            },
+            tablet: {
+                min: '768px',
+                max: '1279px',
+            },
+            desktop: {
+                min: '1280px',
+            },
+        },
         transitionDuration: {
             DEFAULT: '300ms',
         },
