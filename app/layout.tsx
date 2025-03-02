@@ -4,6 +4,8 @@ import { sharedMetadata } from 'lib/shared-metadata';
 
 import './globals.css';
 
+import { ScrollToTop } from '@components/shared';
+
 import { mainFont } from '@fonts';
 
 // export const metadata: Metadata = {
@@ -37,15 +39,19 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="uk">
+        <html className="!scroll-smooth" lang="uk">
             <head>
                 <link href="/favicon.ico" rel="icon" sizes="48x48" />
                 <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
                 <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
                 <meta content="Krupomol" name="apple-mobile-web-app-title" />
             </head>
-            <body className={`${mainFont.variable} flex min-h-screen flex-col antialiased`}>
+            <body
+                className={`${mainFont.variable} relative flex min-h-screen flex-col antialiased`}
+            >
                 {children}
+
+                <ScrollToTop />
             </body>
         </html>
     );

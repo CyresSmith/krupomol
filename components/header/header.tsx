@@ -13,7 +13,7 @@ interface Props {
 
 export const Header = ({ rounded = false }: Props) => {
     return (
-        <header className={cn('w-full bg-card', rounded && 'rounded-b-[theme(space.28)]')}>
+        <header className={cn('w-full bg-card', rounded && 'rounded-b-[theme(space.28)]')} id="top">
             <div className="container py-6">
                 <div className="flex justify-between gap-6">
                     <Link className="relative h-20 w-[175px]" href={'/'}>
