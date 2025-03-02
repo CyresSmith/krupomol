@@ -47,7 +47,7 @@ export const SectionCarousel = ({ items = [] }: Props) => {
             <div className="mt-12 overflow-hidden rounded-3xl">
                 <CarouselContent>
                     {items.map((item, i) => (
-                        <CarouselItem className="tablet:basis-1/2 desktop:basis-1/3 pb-3" key={i}>
+                        <CarouselItem className="pb-3 tablet:basis-1/2 desktop:basis-1/3" key={i}>
                             <Card className="relative flex h-[400px] flex-col overflow-hidden rounded-3xl border-none shadow-lg transition group-hover:border-ring group-focus:border-ring">
                                 <div
                                     className={clsx(
