@@ -1,17 +1,17 @@
-import { Great_Vibes, Overpass } from 'next/font/google';
+import { Inter, Raleway } from 'next/font/google';
 
-export const mainFont = Overpass({
+export const mainFont = Inter({
     display: 'swap',
     fallback: ['Helvetica', 'Arial', 'sans-serif'],
     subsets: ['latin', 'cyrillic-ext', 'cyrillic'],
-    variable: '--font-overpass',
+    variable: '--font-inter',
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
-export const titleFont = Great_Vibes({
+export const titleFont = Raleway({
     display: 'swap',
-    fallback: ['sans-serif'],
+    fallback: ['Helvetica', 'Arial', 'sans-serif'],
     subsets: ['latin', 'cyrillic-ext', 'cyrillic'],
-    variable: '--font-vibes',
-    weight: ['400'],
+    variable: '--font-raleway',
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });

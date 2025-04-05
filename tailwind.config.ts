@@ -45,6 +45,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['var(--main-font)'],
+                title: ['var(--title-font)'],
             },
             colors: {
                 background: 'hsl(var(--background))',

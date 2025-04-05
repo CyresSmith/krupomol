@@ -6,8 +6,6 @@ import './globals.css';
 
 import { ScrollToTop } from '@components/shared';
 
-import { mainFont } from '@fonts';
-
 // export const metadata: Metadata = {
 //     description: 'Крупомол - магазин круп',
 //     title: 'Крупомол',
@@ -46,9 +44,8 @@ export default function RootLayout({
                 <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
                 <meta content="Krupomol" name="apple-mobile-web-app-title" />
             </head>
-            <body
-                className={`${mainFont.variable} relative flex min-h-screen flex-col antialiased`}
-            >
+
+            <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
                 {children}
 
                 <ScrollToTop />
