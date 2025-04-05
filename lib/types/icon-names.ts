@@ -1,12 +1,13 @@
 export type IconName =
-    | 'dollar-sign'
-    | 'facebook'
-    | 'factory'
-    | 'house'
-    | 'instagram'
-    | 'linkedin'
-    | 'mailbox'
-    | 'map-pinned'
-    | 'phone-call'
-    | 'wheat'
-    | 'x';
+	| "arrow_right"
+	| "dollar-sign"
+	| "facebook"
+	| "factory"
+	| "house"
+	| "instagram"
+	| "linkedin"
+	| "mailbox"
+	| "map-pinned"
+	| "phone-call"
+	| "tiktok"
+	| "wheat"

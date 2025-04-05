@@ -137,19 +137,11 @@ Carousel.displayName = 'Carousel';
 
 const CarouselContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
     ({ className, ...props }, ref) => {
-        const { carouselRef, orientation } = useCarousel();
+        const { carouselRef } = useCarousel();
 
         return (
             <div className="overflow-hidden" ref={carouselRef}>
-                <div
-                    className={cn(
-                        'flex',
-                        orientation === 'horizontal' ? '-ml-4' : '-mt-4 flex-col',
-                        className
-                    )}
-                    ref={ref}
-                    {...props}
-                />
+                <div className={cn('flex', className)} ref={ref} {...props} />
             </div>
         );
     }
@@ -158,14 +150,14 @@ CarouselContent.displayName = 'CarouselContent';
 
 const CarouselItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
     ({ className, ...props }, ref) => {
-        const { orientation } = useCarousel();
+        // const { orientation } = useCarousel();
 
         return (
             <div
                 aria-roledescription="slide"
                 className={cn(
                     'min-w-0 shrink-0 grow-0 basis-full',
-                    orientation === 'horizontal' ? 'pl-4' : 'pt-4',
+                    // orientation === 'horizontal' ? 'pl-4' : 'pt-4',
                     className
                 )}
                 ref={ref}
