@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { getImageProps } from 'next/image';
+import Image from 'next/image';
 
 import { Link } from '@i18n';
 
@@ -9,35 +9,34 @@ import { Icon } from '@components/shared';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
-import { cn, getBackgroundImage } from '@utils';
+import { cn } from '@utils';
 
 export const Hero = async () => {
     const t = await getTranslations('main.hero');
 
-    const {
-        props: { srcSet },
-    } = getImageProps({
-        alt: '',
-        height: 793,
-        src: '/images/hero-1.jpg',
-        width: 1920,
-    });
-
-    const gradient = 'linear-gradient(to bottom, rgba(0,0,0,0.4), transparent)';
-    const backgroundImage = `${gradient}, ${getBackgroundImage(srcSet)}`;
-
     return (
-        <section
-            className={cn('relative z-0 h-[793px] bg-cover bg-center bg-no-repeat')}
-            style={{ backgroundImage }}
-        >
-            <div className="container z-50">
-                <h1 className="mt-[245px] w-[753px] text-left text-6xl font-bold leading-normal text-background">
+        <section className="relative h-[793px]">
+            <Image
+                alt=""
+                className="object-cover"
+                fill
+                priority
+                sizes="100vw"
+                src="/images/hero-1.jpg"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
+
+            <div className="container relative z-10">
+                <h1 className="desktop:text:6xl mt-[245px] text-left text-5xl font-bold leading-normal text-background desktop:w-[753px]">
                     {t('title')}
                 </h1>
 
-                <Link className={cn('mt-11', buttonVariants({ size: 'lg' }))} href={PRODUCTS_ROUTE}>
-                    {t('btn')}{' '}
+                <Link
+                    className={cn('mt-11 mobile:w-full', buttonVariants({ size: 'lg' }))}
+                    href={PRODUCTS_ROUTE}
+                >
+                    {t('btn')}
                     <span className="ml-5 flex size-9 items-center justify-center rounded-full bg-primary">
                         <Icon className="fill-background" name="arrow-right-top" />
                     </span>

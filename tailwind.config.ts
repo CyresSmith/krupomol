@@ -11,7 +11,7 @@ export default {
     theme: {
         screens: {
             mobile: {
-                min: '320px',
+                min: '375px',
                 max: '767px',
             },
             tablet: {
@@ -36,7 +36,7 @@ export default {
             center: true,
             padding: {
                 DEFAULT: '1rem',
-                sm: '2rem',
+                sm: '1.25rem',
                 lg: '2rem',
                 xl: '3rem',
                 '2xl': '3rem',
