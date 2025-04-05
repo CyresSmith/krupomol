@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 
 import {
@@ -10,27 +11,25 @@ import {
     navigationMenuTriggerStyle,
 } from '@ui/navigation-menu';
 
-import { Icon } from '@components/shared';
-
 import { navigation } from '@constants';
 
 import { cn } from '@utils';
 
 export const Navigation = () => {
     const pathname = usePathname();
+    const t = useTranslations('header.navigation');
 
     return (
         <NavigationMenu>
-            <NavigationMenuList className="flex gap-6">
-                {navigation.map(({ href, icon, title }) => (
+            <NavigationMenuList className="flex gap-12">
+                {navigation.map(({ href, title }) => (
                     <NavigationMenuItem key={title}>
                         <NavigationMenuLink
                             active={pathname === href}
                             className={cn(navigationMenuTriggerStyle())}
                             href={href}
                         >
-                            {icon && <Icon name={icon} />}
-                            {title}
+                            {t(title)}
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 ))}

@@ -1,27 +1,33 @@
-import { NavItemType } from '@types';
+import { ContactType, NavItemType } from '@types';
 
-import { CONTACTS_ROUTE, HOME_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE } from '@routes';
+import {
+    CERTIFICATION_ROUTE,
+    CONTACTS_ROUTE,
+    HOME_ROUTE,
+    PRICES_ROUTE,
+    PRODUCTS_ROUTE,
+} from '@routes';
 
 export const navigation: NavItemType[] = [
     {
         href: HOME_ROUTE,
-        icon: 'house',
-        title: 'Головна',
+        title: 'main',
     },
     {
         href: PRODUCTS_ROUTE,
-        icon: 'wheat',
-        title: 'Продукція',
+        title: 'product',
     },
     {
         href: CONTACTS_ROUTE,
-        icon: 'phone-call',
-        title: 'Контакти',
+        title: 'contacts',
     },
     {
         href: PRICES_ROUTE,
-        icon: 'dollar-sign',
-        title: 'Ціни',
+        title: 'prices',
+    },
+    {
+        href: CERTIFICATION_ROUTE,
+        title: 'certification',
     },
 ];
 
@@ -44,20 +50,20 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     },
 ];
 
-export const contacts: NavItemType[] = [
-    {
+export const contacts: Record<string, ContactType> = {
+    address: {
+        href: 'https://maps.app.goo.gl/kqyXBMD7FPCsi5YE7',
+        icon: 'map-pinned',
+        text: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
+    },
+    mail: {
         href: 'mailto:info@krupomol.com',
         icon: 'mailbox',
-        title: 'info@krupomol.com',
+        text: 'info@krupomol.com',
     },
-    {
-        href: 'tel:+380674000000',
+    tel: {
+        href: 'tel:+380974757779',
         icon: 'phone-call',
-        title: '+380 67 400 0000',
+        text: '+380 (97) 475 77 79',
     },
-    {
-        href: 'https://maps.app.goo.gl/Jhj8iX7aF4wRPDUt8',
-        icon: 'map-pinned',
-        title: 'вулиця Лаврська, 27, Київ, 02000',
-    },
-];
+};

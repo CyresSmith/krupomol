@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react';
 
-import { Footer } from '@components/footer';
 import { Header } from '@components/header';
 
 const PagesLayout = ({ children }: PropsWithChildren) => {
@@ -8,7 +7,7 @@ const PagesLayout = ({ children }: PropsWithChildren) => {
         <>
             <Header />
             <main className="flex flex-1 flex-col">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
