@@ -8,5 +8,5 @@ export type IconName =
     | 'mailbox'
     | 'map-pinned'
     | 'phone-call'
-    | 'tiktok'
-    | 'wheat';
+    | 'wheat'
+    | 'x';

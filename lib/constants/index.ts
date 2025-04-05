@@ -1,6 +1,12 @@
 import { NavItemType } from '@types';
 
-import { CONTACTS_ROUTE, HOME_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE, CERTIFICATION_ROUTE } from '@routes';
+import {
+    CERTIFICATION_ROUTE,
+    CONTACTS_ROUTE,
+    HOME_ROUTE,
+    PRICES_ROUTE,
+    PRODUCTS_ROUTE,
+} from '@routes';
 
 export const navigation: NavItemType[] = [
     {
@@ -57,12 +63,12 @@ export const contacts: NavItemType[] = [
     // },
     {
         href: 'tel:+380674000000',
-        icon: 'phone-call',
+        // icon: 'phone-call',
         title: '+380(97) 475 77 79',
     },
     {
         href: 'https://maps.app.goo.gl/xyZvKWwhcYRM5KpD7',
-        icon: 'map-pinned',
+        // icon: 'map-pinned',
         title: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
     },
 ];
