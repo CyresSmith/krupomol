@@ -64,7 +64,7 @@ export default function Products() {
             <section className="w-full py-24">
                 <WeOffer />
             </section>
-            <section className="w-full bg-[url('../././assets/images/products_more_info_bg.jpg')] py-24">
+            <section className="w-full py-24">
                 <MoreInfo />
             </section>
         </div>
