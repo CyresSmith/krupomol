@@ -1,0 +1,16 @@
+{
+    "head": {
+        "title": "Крупомол",
+        "desc": "Крупомол додаток",
+        "keywords": { "main": "Krupomol, app, krupomol, krupomol app" }
+    },
+    "main": {
+        "hero": {
+            "title": "Крупомол",
+            "desc": "Додаток для обробки даних",
+            "btn": {
+                "text": "Завантажити"
+            }
+        }
+    }
+}

@@ -6,7 +6,11 @@
         "allowJs": true,
         "target": "es6",
         "module": "ESNext",
-        "lib": ["dom", "dom.iterable", "es2023"],
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es2023"
+        ],
         "sourceMap": true,
         "skipLibCheck": true,
         "noUnusedParameters": false,
@@ -32,16 +36,45 @@
         ],
         "baseUrl": "./",
         "paths": {
-            "@assets/*": ["./assets/*"],
-            "@ui/*": ["./components/ui/*"],
-            "@components/*": ["./components/*"],
-            "@constants": ["./lib/constants"],
-            "@fonts": ["lib/fonts.ts"],
-            "@lib": ["./lib"],
-            "@routes": ["./lib/routes"],
-            "@types": ["./lib/types"],
-            "@utils": ["./lib/utils"],
-            "@keys": ["./lib/keys"]
+            "@i18n": [
+                "./i18n"
+            ],
+            "@assets/*": [
+                "./assets/*"
+            ],
+            "@ui/*": [
+                "./components/ui/*"
+            ],
+            "@components/*": [
+                "./components/*"
+            ],
+            "@constants": [
+                "./lib/constants"
+            ],
+            "@fonts": [
+                "lib/fonts.ts"
+            ],
+            "@lib": [
+                "./lib"
+            ],
+            "@routes": [
+                "./lib/routes"
+            ],
+            "@types": [
+                "./lib/types"
+            ],
+            "@shared-metadata": [
+                "./lib/shared-metadata"
+            ],
+            "@utils": [
+                "./lib/utils"
+            ],
+            "@keys": [
+                "./lib/keys"
+            ],
+            "@locales/*": [
+                "./locales/*"
+            ],
         }
     },
     "include": [
@@ -55,6 +88,11 @@
         ".next/types/app/[locale]/layout.tsx",
         ".next/types/app/[locale]/(auth)/sign-in/page.tsx"
     ],
-    "exclude": ["node_modules"],
-    "types": ["@types/node", "@eslint/eslintrc"]
+    "exclude": [
+        "node_modules"
+    ],
+    "types": [
+        "@types/node",
+        "@eslint/eslintrc"
+    ]
 }
