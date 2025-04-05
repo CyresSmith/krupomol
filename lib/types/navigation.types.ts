@@ -1,7 +1,7 @@
 import { IconName } from './icon-names';
 
 export interface NavItemType {
-    href: string;
+    href?: string;
     icon?: IconName;
     title: string;
 }

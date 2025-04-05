@@ -1,13 +1,15 @@
 export type IconName =
-	| "arrow_right"
-	| "dollar-sign"
-	| "facebook"
-	| "factory"
-	| "house"
-	| "instagram"
-	| "linkedin"
-	| "mailbox"
-	| "map-pinned"
-	| "phone-call"
-	| "tiktok"
-	| "wheat"
+    | 'arrow_right'
+    | 'arrow-right-top'
+    | 'dollar-sign'
+    | 'facebook'
+    | 'factory'
+    | 'house'
+    | 'instagram'
+    | 'krupomol_logo'
+    | 'linkedin'
+    | 'mailbox'
+    | 'map-pinned'
+    | 'phone-call'
+    | 'tiktok'
+    | 'wheat';

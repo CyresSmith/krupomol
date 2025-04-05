@@ -1,4 +1,4 @@
-import { NavItemType } from '@types';
+import { ContactType, NavItemType } from '@types';
 
 import {
     CERTIFICATION_ROUTE,
@@ -11,28 +11,23 @@ import {
 export const navigation: NavItemType[] = [
     {
         href: HOME_ROUTE,
-        // icon: 'house',
-        title: 'Головна',
+        title: 'main',
     },
     {
         href: PRODUCTS_ROUTE,
-        // icon: 'wheat',
-        title: 'Продукція',
+        title: 'product',
     },
     {
         href: CONTACTS_ROUTE,
-        // icon: 'phone-call',
-        title: 'Контакти',
+        title: 'contacts',
     },
     {
         href: PRICES_ROUTE,
-        // icon: 'dollar-sign',
-        title: 'Закупочні ціни',
+        title: 'prices',
     },
     {
         href: CERTIFICATION_ROUTE,
-        // icon: 'dollar-sign',
-        title: 'Сертифікація',
+        title: 'certification',
     },
 ];
 
@@ -55,20 +50,20 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     },
 ];
 
-export const contacts: NavItemType[] = [
-    // {
-    //     href: 'mailto:info@krupomol.com',
-    //     icon: 'mailbox',
-    //     title: 'info@krupomol.com',
-    // },
-    {
-        href: 'tel:+380674000000',
-        // icon: 'phone-call',
-        title: '+380(97) 475 77 79',
+export const contacts: Record<string, ContactType> = {
+    address: {
+        href: 'https://maps.app.goo.gl/kqyXBMD7FPCsi5YE7',
+        icon: 'map-pinned',
+        text: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
     },
-    {
-        href: 'https://maps.app.goo.gl/xyZvKWwhcYRM5KpD7',
-        // icon: 'map-pinned',
-        title: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
+    mail: {
+        href: 'mailto:info@krupomol.com',
+        icon: 'mailbox',
+        text: 'info@krupomol.com',
     },
-];
+    tel: {
+        href: 'tel:+380974757779',
+        icon: 'phone-call',
+        text: '+380 (97) 475 77 79',
+    },
+};

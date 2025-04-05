@@ -4,13 +4,21 @@
         "desc": "Krupomol app",
         "keywords": { "main": "Krupomol, app, krupomol, krupomol app" }
     },
+    "header": {
+        "consultation": "Order a consultation",
+        "address": "Kyiv region, Brovarskyi district, Rusaniv village, Zhovtneva st., building 39 a",
+        "navigation": {
+            "main": "Main",
+            "contacts": "Contacts",
+            "prices": "Purchase prices",
+            "certification": "Certification",
+            "product": "Product"
+        }
+    },
     "main": {
         "hero": {
-            "title": "Krupomol",
-            "desc": "Data processing app",
-            "btn": {
-                "text": "Download"
-            }
+            "title": "Reliability and quality in every grain",
+            "btn": "View products"
         }
     }
 }

@@ -43,6 +43,9 @@ export default {
             },
         },
         extend: {
+            boxShadow: {
+                'nav-inner-shadow': 'inset 0 0 15px 0px hsla(0, 0%, 98%, 0.25)',
+            },
             fontFamily: {
                 sans: ['var(--main-font)'],
                 title: ['var(--title-font)'],
