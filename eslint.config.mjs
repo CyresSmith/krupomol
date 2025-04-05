@@ -3,7 +3,6 @@ import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import prettierConfig from 'eslint-config-prettier';
 import perfectionist from 'eslint-plugin-perfectionist';
-import prettierConfigRecommended from 'eslint-plugin-prettier/recommended';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import ts from 'typescript-eslint';
@@ -12,6 +11,7 @@ import parser from '@typescript-eslint/parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 const compat = new FlatCompat({
     baseDirectory: __dirname,
     recommendedConfig: js.configs.recommended,
@@ -28,7 +28,6 @@ const config = [
     ...ts.configs.recommendedTypeChecked,
     ...ts.configs.stylisticTypeChecked,
     prettierConfig,
-    prettierConfigRecommended,
     {
         languageOptions: {
             parser,
@@ -41,19 +40,22 @@ const config = [
             perfectionist,
         },
         rules: {
+            '@typescript-eslint/no-unsafe-argument': 'off',
+            '@typescript-eslint/no-unsafe-member-access': 'off',
+            'perfectionist/sort-modules': 'off',
+            'perfectionist/sort-named-imports': 'off',
+            'perfectionist/sort-named-exports': 'off',
+            'perfectionist/sort-exports': 'off',
+            'prettier/prettier': 'off',
             'perfectionist/sort-array-includes': ['error'],
             'perfectionist/sort-classes': ['error'],
             'perfectionist/sort-decorators': ['error'],
             'perfectionist/sort-enums': ['error'],
-            'perfectionist/sort-exports': ['error'],
             'perfectionist/sort-heritage-clauses': ['error'],
             'perfectionist/sort-interfaces': ['error'],
             'perfectionist/sort-intersection-types': ['error'],
             'perfectionist/sort-jsx-props': ['error'],
             'perfectionist/sort-maps': ['error'],
-            'perfectionist/sort-modules': ['error'],
-            'perfectionist/sort-named-exports': ['error'],
-            'perfectionist/sort-named-imports': ['error'],
             'perfectionist/sort-object-types': ['error'],
             'perfectionist/sort-objects': ['error'],
             'perfectionist/sort-sets': ['error'],

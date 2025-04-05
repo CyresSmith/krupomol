@@ -1,0 +1,16 @@
+{
+    "head": {
+        "title": "Krupomol",
+        "desc": "Krupomol app",
+        "keywords": { "main": "Krupomol, app, krupomol, krupomol app" }
+    },
+    "main": {
+        "hero": {
+            "title": "Krupomol",
+            "desc": "Data processing app",
+            "btn": {
+                "text": "Download"
+            }
+        }
+    }
+}

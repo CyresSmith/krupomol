@@ -1,6 +1,6 @@
 export const sharedMetadata = {
     applicationName: 'Krupomol',
-    authors: [{ name: 'Ivan Reshetnikov' }],
+    authors: [{ name: 'Ivan Reshetnikov' }, { name: 'Andrii Kulyk' }],
     creator: 'Ivan Reshetnikov',
     keywords: ['Food'],
     openGraph: {
