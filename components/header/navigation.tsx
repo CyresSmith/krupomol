@@ -11,6 +11,8 @@ import {
     navigationMenuTriggerStyle,
 } from '@ui/navigation-menu';
 
+import { NavigationTitle } from '@types';
+
 import { navigation } from '@constants';
 
 import { cn } from '@utils';
@@ -34,7 +36,7 @@ export const Navigation = ({ onItemClick }: Props) => {
                             href={href}
                             onSelect={onItemClick}
                         >
-                            {t(title)}
+                            {t(title as NavigationTitle)}
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 ))}

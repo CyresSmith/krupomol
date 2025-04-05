@@ -5,3 +5,5 @@ export interface NavItemType {
     icon?: IconName;
     title: string;
 }
+
+export type NavigationTitle = 'certification' | 'contacts' | 'main' | 'prices' | 'product';

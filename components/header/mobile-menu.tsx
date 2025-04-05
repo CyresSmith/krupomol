@@ -29,6 +29,8 @@ import { Icon } from '@components/shared';
 
 import { titleFont } from '@fonts';
 
+import { NavigationTitle } from '@types';
+
 import { navigation } from '@constants';
 
 import { cn } from '@utils';
@@ -81,7 +83,7 @@ export const MobileMenu = () => {
                                     href={href}
                                     onClick={() => setOpen(false)}
                                 >
-                                    {t(title)}
+                                    {t(title as NavigationTitle)}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         ))}
