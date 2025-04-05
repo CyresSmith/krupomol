@@ -29,6 +29,8 @@ const buttonVariants = cva(
                     'border border-background text-background hover:bg-background focus:bg-background hover:text-primary focus:text-primary shadow-sm',
                 'outline-primary':
                     'border border-primary text-primary hover:bg-background focus:bg-background shadow-sm',
+                primary:
+                    'bg-primary text-primary-foreground fill-primary-foreground shadow hover:opacity-90 focus:opacity-90',
                 secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
             },
         },

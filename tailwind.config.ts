@@ -51,8 +51,10 @@ export default {
                 title: ['var(--title-font)'],
             },
             colors: {
+                'text-color': 'hsl(var(--text-color))',
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
+                'gray-color': 'hsl(var(--gray-color))',
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
@@ -96,6 +98,8 @@ export default {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
                 sm: 'calc(var(--radius) - 4px)',
+                '20': '20px',
+                '40': '40px',
             },
         },
     },

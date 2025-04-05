@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { useTranslations } from 'next-intl';
 
-import { usePathname } from '@i18n';
+// import { usePathname } from '@i18n';
 
 import { Button } from '@ui/button';
 import {
@@ -34,7 +34,7 @@ import { navigation } from '@constants';
 import { cn } from '@utils';
 
 export const MobileMenu = () => {
-    const pathname = usePathname();
+    // const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
     const t = useTranslations('header.navigation');

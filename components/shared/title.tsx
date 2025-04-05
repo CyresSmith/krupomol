@@ -1,5 +1,7 @@
 import { PropsWithChildren } from 'react';
 
+import { titleFont } from '@fonts';
+
 import { cn } from '@utils';
 
 interface Props extends PropsWithChildren {
@@ -8,5 +10,5 @@ interface Props extends PropsWithChildren {
 }
 
 export const Title = ({ as: As = 'h3', children, className }: Props) => {
-    return <As className={cn('font-title text-5xl font-bold', className)}>{children}</As>;
+    return <As className={cn('text-5xl font-bold', titleFont.className, className)}>{children}</As>;
 };
