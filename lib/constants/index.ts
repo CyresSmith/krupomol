@@ -1,31 +1,44 @@
 import { NavItemType } from '@types';
 
-import { CONTACTS_ROUTE, HOME_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE } from '@routes';
+import { CONTACTS_ROUTE, HOME_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE, CERTIFICATION_ROUTE } from '@routes';
 
 export const navigation: NavItemType[] = [
     {
         href: HOME_ROUTE,
-        icon: 'house',
+        // icon: 'house',
         title: 'Головна',
     },
     {
         href: PRODUCTS_ROUTE,
-        icon: 'wheat',
+        // icon: 'wheat',
         title: 'Продукція',
     },
     {
         href: CONTACTS_ROUTE,
-        icon: 'phone-call',
+        // icon: 'phone-call',
         title: 'Контакти',
     },
     {
         href: PRICES_ROUTE,
-        icon: 'dollar-sign',
-        title: 'Ціни',
+        // icon: 'dollar-sign',
+        title: 'Закупочні ціни',
+    },
+    {
+        href: CERTIFICATION_ROUTE,
+        // icon: 'dollar-sign',
+        title: 'Сертифікація',
     },
 ];
 
 export const socials: Omit<NavItemType, 'title'>[] = [
+    {
+        href: 'https://www.instagram.com/',
+        icon: 'instagram',
+    },
+    {
+        href: 'https://www.x.com/',
+        // icon: 'x',
+    },
     {
         href: 'https://www.facebook.com/',
         icon: 'facebook',
@@ -34,30 +47,22 @@ export const socials: Omit<NavItemType, 'title'>[] = [
         href: 'https://www.linkedin.com/',
         icon: 'linkedin',
     },
-    {
-        href: 'https://www.instagram.com/',
-        icon: 'instagram',
-    },
-    {
-        href: 'https://www.tiktok.com/',
-        icon: 'tiktok',
-    },
 ];
 
 export const contacts: NavItemType[] = [
-    {
-        href: 'mailto:info@krupomol.com',
-        icon: 'mailbox',
-        title: 'info@krupomol.com',
-    },
+    // {
+    //     href: 'mailto:info@krupomol.com',
+    //     icon: 'mailbox',
+    //     title: 'info@krupomol.com',
+    // },
     {
         href: 'tel:+380674000000',
         icon: 'phone-call',
-        title: '+380 67 400 0000',
+        title: '+380(97) 475 77 79',
     },
     {
-        href: 'https://maps.app.goo.gl/Jhj8iX7aF4wRPDUt8',
+        href: 'https://maps.app.goo.gl/xyZvKWwhcYRM5KpD7',
         icon: 'map-pinned',
-        title: 'вулиця Лаврська, 27, Київ, 02000',
+        title: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
     },
 ];
