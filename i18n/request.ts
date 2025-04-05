@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { getRequestConfig } from 'next-intl/server';
 
 import { routing } from './routing';
@@ -15,7 +13,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     }
 
     return {
-        locale,
+        locale: locale as LocaleType,
         messages: (await import(`../locales/${locale}.json`)).default,
     };
 });
