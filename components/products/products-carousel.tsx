@@ -51,10 +51,10 @@ import { ProductItemType } from '@types';
 
 export const ProductsCarousel = async () => {
     const t = await getTranslations('products');
-    const productsList = t.raw('products-list') as ProductItemType[];
+    const productsList = t.raw('productsList') as ProductItemType[];
 
     return (
-        <section className="bg-secondary py-24">
+        <section className="bg-secondary pb-8 pt-20 desktop:pb-16 desktop:pt-24">
             <div className="container">
                 <SectionCarousel items={productsList} />
             </div>

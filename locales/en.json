@@ -66,9 +66,9 @@
     "products": {
         "hero": {
             "title": "Natural cereals of the highest quality",
-            "btn": "To the catalog"
+            "link": "To the catalog"
         },
-        "products-list": [
+        "productsList": [
             {
                 "text": "Pearl barley is a natural product made from whole barley grains by cleaning and grinding. Thanks to minimal processing, it retains all its beneficial substances, including B vitamins, magnesium, phosphorus, and fiber. This cereal is versatile in cooking: it is used to make porridge, soups, pilaf and other dishes. Pearl barley is very filling, promotes normal digestion and maintains energy for the whole day. Choose pearl barley for a balanced diet and natural taste in your favorite dishes!",
                 "image": "barley",
@@ -100,16 +100,16 @@
                 "title": "Buckwheat groats"
             }
         ],
-        "we-offer": {
+        "weOffer": {
             "title": "What do we offer to our clients?",
             "text": "LLC \"Ukrainian Agroindustrial Transport Group\" is a manufacturing enterprise specializing in the production of high-quality cereals. We offer products that meet international standards, ensuring stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment in both cash and non-cash forms, make our products accessible to different categories of customers."
         },
-        "more-info": {
+        "moreInfo": {
             "title": "More information",
-            "info-list": [
-                { "title": "Download the catalog", "icon": "" },
-                { "title": "Download price list", "icon": "" },
-                { "title": "Video review of products", "icon": "" }
+            "infoList": [
+                { "title": "Download the catalog", "icon": "dollar-sign" },
+                { "title": "Download price list", "icon": "dollar-sign" },
+                { "title": "Video review of products", "icon": "dollar-sign" }
             ]
         }
     }

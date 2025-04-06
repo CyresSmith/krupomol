@@ -47,6 +47,7 @@ export const SectionCarousel = ({ items = [] }: Props) => {
             <CarouselContent>
                 {items.map((item, i) => (
                     <CarouselItem
+                        // className="mobile:basis-[100%] tablet:basis-[50%] desktop:basis-[33%]"
                         className="mobile:basis-1/1 tablet:basis-1/2 desktop:basis-1/3"
                         key={i}
                     >

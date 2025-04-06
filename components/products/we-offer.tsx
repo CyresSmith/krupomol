@@ -1,18 +1,19 @@
 import { getTranslations } from 'next-intl/server';
 
 export const WeOffer = async () => {
-    const t = await getTranslations('products.we-offer');
+    const t = await getTranslations('products.weOffer');
 
     return (
-        <section className="py-24">
+        <section className="relative py-12 desktop:py-24">
             <div className="container">
-                <div className="rounded-3xl bg-accent px-16 py-20">
-                    <h3 className="font-primary mb-5 text-center font-title text-5xl font-bold">
+                <div className="rounded-3xl bg-accent px-6 py-10 desktop:px-16 desktop:py-20">
+                    <h3 className="font-primary mb-5 text-center font-title text-[36px] font-bold leading-[140%] desktop:text-5xl">
                         {t('title')}
                     </h3>
-                    <p className="text-base text-black">{t('text')}</p>
+                    <p className="text-base leading-5 text-black">{t('title')}</p>
                 </div>
             </div>
+            <span className="absolute inset-x-0 bottom-0 -z-10 h-[60%] bg-gray-color" />
         </section>
     );
 };
