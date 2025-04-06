@@ -33,10 +33,6 @@ export const navigation: NavItemType[] = [
 
 export const socials: Omit<NavItemType, 'title'>[] = [
     {
-        href: 'https://www.instagram.com/',
-        icon: 'instagram',
-    },
-    {
         href: 'https://www.x.com/',
         // icon: 'x',
     },
@@ -56,10 +52,6 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     //     href: 'https://www.tiktok.com/',
     //     icon: 'tiktok',
     // },
-    {
-        href: 'https://www.x.com/',
-        icon: 'x',
-    },
 ];
 
 export const contacts: Record<string, ContactType> = {
