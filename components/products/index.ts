@@ -1,3 +1,3 @@
 export * from './more-info';
 export * from './we-offer';
-export * from './products-list';
+export * from './list';

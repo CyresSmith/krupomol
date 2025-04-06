@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-export const WeOffer = async () => {
+export const Offer = async () => {
     const t = await getTranslations('products.offer');
 
     return (

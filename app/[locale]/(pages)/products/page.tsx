@@ -1,13 +1,13 @@
-import { MoreInfo } from '@components/products/more-info/more-info';
-import { ProductsList } from '@components/products/products-list/products-list';
-import { WeOffer } from '@components/products/we-offer/we-offer';
+import { ProductsList } from '@components/products/list/products-list';
+import { Info } from '@components/products/more-info/info';
+import { Offer } from '@components/products/we-offer/offer';
 
 export default function Products() {
     return (
         <>
             <ProductsList />
-            <WeOffer />
-            <MoreInfo />
+            <Offer />
+            <Info />
         </>
     );
 }

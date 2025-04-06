@@ -1,1 +1,1 @@
-export * from './more-info';
+export * from './info';
