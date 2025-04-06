@@ -44,9 +44,13 @@ export const socials: Omit<NavItemType, 'title'>[] = [
         href: 'https://www.instagram.com/',
         icon: 'instagram',
     },
+    // {
+    //     href: 'https://www.tiktok.com/',
+    //     icon: 'tiktok',
+    // },
     {
-        href: 'https://www.tiktok.com/',
-        icon: 'tiktok',
+        href: 'https://www.x.com/',
+        icon: 'x',
     },
 ];
 
@@ -54,7 +58,6 @@ export const contacts: Record<string, ContactType> = {
     address: {
         href: 'https://maps.app.goo.gl/kqyXBMD7FPCsi5YE7',
         icon: 'map-pinned',
-        text: 'Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а',
     },
     mail: {
         href: 'mailto:info@krupomol.com',

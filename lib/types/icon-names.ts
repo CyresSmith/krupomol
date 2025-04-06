@@ -16,3 +16,4 @@ export type IconName =
 	| "uk"
 	| "wheat"
 	| "x-mark"
+	| "x"
