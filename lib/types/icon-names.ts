@@ -15,4 +15,5 @@ export type IconName =
     | 'tiktok'
     | 'uk'
     | 'wheat'
-    | 'x-mark';
+    | 'x-mark'
+    | 'x';

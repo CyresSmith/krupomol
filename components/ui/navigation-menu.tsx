@@ -4,6 +4,8 @@ import * as React from 'react';
 
 import { cva } from 'class-variance-authority';
 
+import { titleFont } from '@fonts';
+
 import { cn } from '@utils';
 
 const NavigationMenu = React.forwardRef<
@@ -26,10 +28,7 @@ const NavigationMenuList = React.forwardRef<
     React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
 >(({ className, ...props }, ref) => (
     <NavigationMenuPrimitive.List
-        className={cn(
-            'group flex flex-1 list-none items-center justify-center space-x-1',
-            className
-        )}
+        className={cn('group flex flex-1 list-none items-center justify-center', className)}
         ref={ref}
         {...props}
     />
@@ -39,7 +38,10 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle = cva(
-    'group inline-flex gap-3 w-max items-center fill-foreground leading-normal justify-center outline-none p-2 text-primary-foreground transition hover:text-secondary hover:fill-secondary focus:text-secondary focus:fill-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50  data-[active]:text-accent data-[active]:fill-accent data-[state=open]:text-accent data-[state=open]:fill-accent [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0'
+    cn(
+        'group font-medium inline-flex gap-3 w-max items-center fill-foreground leading-normal justify-center outline-none p-2 text-primary-foreground transition hover:text-secondary hover:fill-secondary focus:text-secondary focus:fill-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50  data-[active]:text-accent data-[active]:fill-accent data-[state=open]:text-accent data-[state=open]:fill-accent [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0',
+        titleFont.className
+    )
 );
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -51,7 +53,7 @@ const NavigationMenuTrigger = React.forwardRef<
         ref={ref}
         {...props}
     >
-        {children}{' '}
+        {children}
         <ChevronDown
             aria-hidden="true"
             className="duration-300 relative top-[1px] ml-1 h-3 w-3 transition group-data-[state=open]:rotate-180"
