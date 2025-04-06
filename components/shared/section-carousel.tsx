@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-
+// import { useState } from 'react';
 import clsx from 'clsx';
 import Autoplay from 'embla-carousel-autoplay';
 
 import {
     Carousel,
-    CarouselApi,
+    // CarouselApi,
     CarouselContent,
     CarouselItem,
     CarouselNext,
@@ -26,7 +25,7 @@ interface Props {
 }
 
 export const SectionCarousel = ({ items = [] }: Props) => {
-    const [api, setApi] = useState<CarouselApi>();
+    // const [api, setApi] = useState<CarouselApi>();
 
     // const { onDotButtonClick, selectedIndex } = useDotButton(api);
 
@@ -42,7 +41,7 @@ export const SectionCarousel = ({ items = [] }: Props) => {
                     delay: 4000,
                 }),
             ]}
-            setApi={setApi}
+            // setApi={setApi}
         >
             <CarouselContent>
                 {items.map((item, i) => (
