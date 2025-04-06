@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
 export const WeOffer = async () => {
-    const t = await getTranslations('products.weOffer');
+    const t = await getTranslations('products.offer');
 
     return (
         <section className="relative py-12 desktop:py-24">

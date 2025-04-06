@@ -15,7 +15,7 @@ import {
 
 // import { DotButton, useDotButton } from '@components/main';
 // import { DotButton, useDotButton } from '@components/hero/dot-button';
-import { ProductCard } from '@components/products/product-card';
+import { ProductCard } from '@components/products/products-list/product-card';
 
 import { ProductItemType } from '@types';
 

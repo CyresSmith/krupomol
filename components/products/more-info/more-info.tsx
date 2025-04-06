@@ -6,7 +6,7 @@ import { Icon } from '@components/shared';
 import { IconName } from '@types';
 
 export const MoreInfo = async () => {
-    const t = await getTranslations('products.moreInfo');
+    const t = await getTranslations('products.info');
     const infoList = t.raw('infoList') as { icon: IconName; title: string }[];
 
     return (

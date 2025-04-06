@@ -49,9 +49,9 @@ import { ProductItemType } from '@types';
 //     },
 // ];
 
-export const ProductsCarousel = async () => {
+export const ProductsList = async () => {
     const t = await getTranslations('products');
-    const productsList = t.raw('productsList') as ProductItemType[];
+    const productsList = t.raw('list') as ProductItemType[];
 
     return (
         <section className="bg-secondary pb-8 pt-20 desktop:pb-16 desktop:pt-24">

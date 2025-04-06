@@ -68,7 +68,7 @@
             "title": "Natural cereals of the highest quality",
             "link": "To the catalog"
         },
-        "productsList": [
+        "list": [
             {
                 "text": "Pearl barley is a natural product made from whole barley grains by cleaning and grinding. Thanks to minimal processing, it retains all its beneficial substances, including B vitamins, magnesium, phosphorus, and fiber. This cereal is versatile in cooking: it is used to make porridge, soups, pilaf and other dishes. Pearl barley is very filling, promotes normal digestion and maintains energy for the whole day. Choose pearl barley for a balanced diet and natural taste in your favorite dishes!",
                 "image": "barley",
@@ -100,11 +100,11 @@
                 "title": "Buckwheat groats"
             }
         ],
-        "weOffer": {
+        "offer": {
             "title": "What do we offer to our clients?",
             "text": "LLC \"Ukrainian Agroindustrial Transport Group\" is a manufacturing enterprise specializing in the production of high-quality cereals. We offer products that meet international standards, ensuring stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment in both cash and non-cash forms, make our products accessible to different categories of customers."
         },
-        "moreInfo": {
+        "info": {
             "title": "More information",
             "infoList": [
                 { "title": "Download the catalog", "icon": "dollar-sign" },
