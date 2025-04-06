@@ -10,7 +10,7 @@ export const Offer = async () => {
                     <h3 className="font-primary mb-5 text-center font-title text-[36px] font-bold leading-[140%] desktop:text-5xl">
                         {t('title')}
                     </h3>
-                    <p className="text-base leading-5 text-black">{t('title')}</p>
+                    <p className="text-base leading-5 text-black">{t('text')}</p>
                 </div>
             </div>
             <span className="absolute inset-x-0 bottom-0 -z-10 h-[60%] bg-gray-color" />
