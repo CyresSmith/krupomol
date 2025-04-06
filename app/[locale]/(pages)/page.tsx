@@ -1,13 +1,11 @@
-import { About } from '@components/about';
-import { Hero } from '@components/hero';
+import { About, Certification, Hero } from '@components/main';
 
 export default function Home() {
     return (
         <>
             <Hero />
             <About />
-            {/* <Production />
-            <About /> */}
+            <Certification />
         </>
     );
 }

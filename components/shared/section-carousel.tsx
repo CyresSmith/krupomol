@@ -17,7 +17,7 @@ import {
     CarouselPrevious,
 } from '@ui/carousel';
 
-import { DotButton, useDotButton } from '@components/hero/dot-button';
+import { DotButton, useDotButton } from '@components/main';
 
 import { cn } from '@utils';
 

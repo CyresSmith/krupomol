@@ -43,6 +43,7 @@ export default {
             },
         },
         extend: {
+            borderWidth: { '7': '7px' },
             boxShadow: {
                 'nav-inner-shadow': 'inset 0 0 15px 0px hsla(0, 0%, 98%, 0.25)',
             },
