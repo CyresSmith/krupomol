@@ -24,17 +24,14 @@ export const Footer = async () => {
 
     return (
         <footer className="w-full bg-card">
-            <div className="container border-b border-primary pb-5 pt-24">
-                <div className="flex items-start gap-36">
+            <div className="container border-b border-primary pb-5 pt-12 desktop:pt-24">
+                <div className="flex flex-col items-center gap-12 desktop:flex-row desktop:items-start desktop:gap-36">
                     <Link className="ml-5" href={'/'}>
-                        <Icon
-                            className="h-[88px] w-[189px] mobile:h-11 mobile:w-[97px]"
-                            name="krupomol_logo"
-                        />
+                        <Icon className="h-[88px] w-[189px]" name="krupomol_logo" />
                     </Link>
 
                     <NavigationMenu>
-                        <NavigationMenuList className="flex flex-col items-start gap-4">
+                        <NavigationMenuList className="flex flex-col items-start gap-4 mobile:items-center">
                             {navigation.map(({ href, title }) => (
                                 <NavigationMenuItem key={title}>
                                     <NavigationMenuLink
@@ -51,7 +48,7 @@ export const Footer = async () => {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <div className="flex min-h-[189px] w-[324px] flex-col justify-between">
+                    <div className="flex min-h-[189px] flex-col justify-between desktop:w-[324px]">
                         <address className="mb-4 not-italic text-primary">
                             <ul className="flex flex-col gap-4 fill-foreground text-sm">
                                 {Object.values(contacts).map(({ href, icon, text }) => (
@@ -69,7 +66,7 @@ export const Footer = async () => {
                             </ul>
                         </address>
 
-                        <Button className="mt-auto mobile:hidden" variant={'outline-primary'}>
+                        <Button className="mt-auto" variant={'outline-primary'}>
                             {t('consultation')}
                         </Button>
                     </div>

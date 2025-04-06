@@ -32,7 +32,7 @@ export const ScrollToTop = () => {
         <button
             aria-label="Scroll to top"
             className={cn(
-                buttonVariants({ size: 'icon' }),
+                buttonVariants({ size: 'icon', variant: 'primary' }),
                 'fixed -bottom-full right-4',
                 isVisible && 'bottom-4'
             )}
