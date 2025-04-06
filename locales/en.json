@@ -21,9 +21,9 @@
             "link": "View products"
         },
         "certification": {
-            "title": "Сертифікація",
-            "text": "Наша продукція відповідає міжнародним стандартам якості та безпеки харчових продуктів, що підтверджено сертифікатами ISO 22000 та ISO 9001. Контроль на всіх етапах виробництва гарантує стабільну якість та відповідність вимогам світового ринку.",
-            "link": "Докладніше про сертифікацію"
+            "title": "Certification",
+            "text": "Our products comply with international standards of quality and food safety, which is confirmed by ISO 22000 and ISO 9001 certificates. Control at all stages of production guarantees stable quality and compliance with the requirements of the global market.",
+            "link": "Learn more about certification"
         },
         "about": {
             "title": "Who are we?",
