@@ -1,17 +1,18 @@
-export const WeOffer = () => {
+import { getTranslations } from 'next-intl/server';
+
+export const WeOffer = async () => {
+    const t = await getTranslations('products.we-offer');
+
     return (
-        <div className="mx-auto w-[1200px] rounded-3xl bg-accent px-16 py-20">
-            <h3 className="font-primary mb-5 text-center font-title text-5xl font-bold">
-                Що ми пропонуєм своїм клієнтам?
-            </h3>
-            <p className="text-base text-black">
-                {`ТОВ "Українська агропромислова транспортна група" — виробниче підприємство, що
-                    спеціалізується на виготовленні високоякісних круп. Ми пропонуємо продукцію, яка
-                    відповідає міжнародним стандартам, забезпечуючи стабільні поставки для оптових
-                    покупців та експорту. Гнучкі умови співпраці, а також можливість оплати як у
-                    готівковій, так і в безготівковій формі роблять нашу продукцію доступною для
-                    різних категорій клієнтів.`}
-            </p>
-        </div>
+        <section className="py-24">
+            <div className="container">
+                <div className="rounded-3xl bg-accent px-16 py-20">
+                    <h3 className="font-primary mb-5 text-center font-title text-5xl font-bold">
+                        {t('title')}
+                    </h3>
+                    <p className="text-base text-black">{t('text')}</p>
+                </div>
+            </div>
+        </section>
     );
 };

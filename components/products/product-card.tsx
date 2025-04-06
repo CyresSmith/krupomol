@@ -7,16 +7,18 @@ interface Props {
 }
 
 export const ProductCard = ({ item }: Props) => {
-    const { description, image, title } = item;
+    const { image, text, title } = item;
     return (
-        <div className="flex w-[390px] flex-col gap-6">
+        <div className="flex flex-col gap-6">
             <Image
                 alt={title}
-                className="block h-[462px] w-auto rounded-3xl object-cover"
-                src={image}
+                className="rounded-3xl object-cover"
+                fill
+                priority
+                src={`/images/${image}.jpg`}
             />
             <h3 className="font-title text-xl font-bold">{title}</h3>
-            <p className="text-black">{description}</p>
+            <p className="text-black">{text}</p>
         </div>
     );
 };
