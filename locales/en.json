@@ -19,6 +19,18 @@
         "hero": {
             "title": "Reliability and quality in every grain",
             "btn": "View products"
+        },
+        "about": {
+            "title": "Who are we?",
+            "text": "LLC \"Ukrainian Agroindustrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market.",
+            "link": "View all",
+            "our-products": "Our products",
+            "products": [
+                { "title": "Barley products", "image": "barley" },
+                { "title": "Pea groats", "image": "pea" },
+                { "title": "Buckwheat products", "image": "buckwheat" },
+                { "title": "Millet", "image": "millet" }
+            ]
         }
     }
 }

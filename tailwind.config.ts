@@ -11,7 +11,7 @@ export default {
     theme: {
         screens: {
             mobile: {
-                min: '320px',
+                min: '375px',
                 max: '767px',
             },
             tablet: {
@@ -36,7 +36,7 @@ export default {
             center: true,
             padding: {
                 DEFAULT: '1rem',
-                sm: '2rem',
+                sm: '1.25rem',
                 lg: '2rem',
                 xl: '3rem',
                 '2xl': '3rem',
@@ -51,8 +51,10 @@ export default {
                 title: ['var(--title-font)'],
             },
             colors: {
+                'text-color': 'hsl(var(--text-color))',
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
+                'gray-color': 'hsl(var(--gray-color))',
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
@@ -96,6 +98,8 @@ export default {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
                 sm: 'calc(var(--radius) - 4px)',
+                '20': '20px',
+                '40': '40px',
             },
         },
     },

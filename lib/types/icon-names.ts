@@ -10,6 +10,8 @@ export type IconName =
     | 'linkedin'
     | 'mailbox'
     | 'map-pinned'
+    | 'menu_icon'
     | 'phone-call'
     | 'tiktok'
-    | 'wheat';
+    | 'wheat'
+    | 'x-mark';
