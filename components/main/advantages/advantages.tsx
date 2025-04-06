@@ -14,7 +14,7 @@ export const Advantages = async () => {
     return (
         <section className="bg-secondary py-24">
             <div className="container">
-                <Title className="mb-9 text-center">{t('title')}</Title>
+                <Title className="mb-9 text-center mobile:text-4xl">{t('title')}</Title>
 
                 <ul className="grid grid-cols-2 gap-4 mobile:grid-cols-1">
                     {advantages.map(advantage => (
