@@ -13,6 +13,7 @@ import {
     CarouselPrevious,
 } from '@ui/carousel';
 
+// import { DotButton, useDotButton } from '@components/main';
 // import { DotButton, useDotButton } from '@components/hero/dot-button';
 import { ProductCard } from '@components/products/product-card';
 
