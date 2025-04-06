@@ -1,3 +1,4 @@
+export * from './advantages.types';
 export * from './contacts.types';
 export * from './icon-names';
 export * from './messages.types';

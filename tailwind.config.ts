@@ -11,7 +11,7 @@ export default {
     theme: {
         screens: {
             mobile: {
-                min: '375px',
+                min: '320px',
                 max: '767px',
             },
             tablet: {

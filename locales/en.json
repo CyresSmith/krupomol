@@ -25,6 +25,31 @@
             "text": "Our products comply with international standards of quality and food safety, which is confirmed by ISO 22000 and ISO 9001 certificates. Control at all stages of production guarantees stable quality and compliance with the requirements of the global market.",
             "link": "Learn more about certification"
         },
+        "advantages": {
+            "title": "Advantages of working with us",
+            "advantages": [
+                {
+                    "title": "Raw material quality",
+                    "text": "100% natural products",
+                    "icon": "quality"
+                },
+                {
+                    "title": "Own production",
+                    "text": "control at all stages",
+                    "icon": "production"
+                },
+                {
+                    "title": "Certified products",
+                    "text": "compliance with world standards",
+                    "icon": "certification"
+                },
+                {
+                    "title": "Flexible terms of cooperation",
+                    "text": "favorable conditions at every stage",
+                    "icon": "cooperation"
+                }
+            ]
+        },
         "about": {
             "title": "Who are we?",
             "text": "LLC \"Ukrainian Agroindustrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market.",

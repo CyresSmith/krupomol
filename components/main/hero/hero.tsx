@@ -36,8 +36,8 @@ export const Hero = async () => {
                     className={cn('mt-11 mobile:w-full', buttonVariants({ size: 'lg' }))}
                     href={PRODUCTS_ROUTE}
                 >
-                    {t('link')}
-                    <span className="ml-5 flex size-9 items-center justify-center rounded-full bg-primary">
+                    <span className="truncate">{t('link')}</span>
+                    <span className="ml-5 flex size-9 min-w-9 items-center justify-center rounded-full bg-primary">
                         <Icon className="fill-background" name="arrow-right-top" />
                     </span>
                 </Link>

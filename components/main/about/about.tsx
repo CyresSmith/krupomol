@@ -23,7 +23,7 @@ export const About = async () => {
     return (
         <section className="relative z-0">
             <div className="container py-24">
-                <Card className="relative mb-20 min-h-[343px] p-16 mobile:px-4 mobile:pb-16 mobile:pt-64">
+                <Card className="relative mb-24 min-h-[343px] p-16 mobile:px-4 mobile:pb-16 mobile:pt-64">
                     <div className="absolute right-0 top-1/2 h-[377px] w-[662px] -translate-y-1/2 overflow-hidden mobile:inset-x-0 mobile:top-10 mobile:h-[194px] mobile:w-full mobile:translate-y-0 tablet:w-[280px]">
                         <Image
                             alt=""
@@ -47,7 +47,7 @@ export const About = async () => {
                     </CardHeader>
 
                     <CardContent className="p-0">
-                        <p className="text-text-color w-[410px] mobile:w-full">{t('text')}</p>
+                        <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
                     </CardContent>
                 </Card>
 
@@ -82,7 +82,7 @@ export const About = async () => {
                 </div>
             </div>
 
-            <span className="bg-gray-color absolute inset-x-0 bottom-0 -z-10 h-[398px]" />
+            <span className="absolute inset-x-0 bottom-0 -z-10 h-[398px] bg-gray-color" />
         </section>
     );
 };

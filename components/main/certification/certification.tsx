@@ -9,7 +9,7 @@ export const Certification = async () => {
     const t = await getTranslations('main.certification');
 
     return (
-        <section className="relative z-0 py-16 mobile:py-10">
+        <section className="relative z-0 py-24 mobile:py-10">
             <Image
                 alt=""
                 className="-z-10 object-cover"
@@ -30,7 +30,10 @@ export const Certification = async () => {
 
                         <p className="mb-10 text-background mobile:text-sm">{t('text')}</p>
                     </div>
-                    <Button variant={'outline'}>{t('link')}</Button>
+
+                    <Button className="max-w-full" variant={'outline'}>
+                        <span className="truncate">{t('link')}</span>
+                    </Button>
                 </div>
             </div>
         </section>
