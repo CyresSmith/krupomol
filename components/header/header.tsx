@@ -6,11 +6,13 @@ import { Navigation } from './navigation';
 
 import { Link } from '@i18n';
 
-import { Button } from '@ui/button';
+import { buttonVariants } from '@ui/button';
 
 import { Icon } from '@components/shared';
 
-import { contacts } from '@constants';
+import { ANCHORS, contacts } from '@constants';
+
+import { cn } from '@utils';
 
 export const Header = async () => {
     const t = await getTranslations('header');
@@ -50,9 +52,12 @@ export const Header = async () => {
 
                     <Navigation />
 
-                    <Button className="w-56 mobile:hidden" variant={'outline'}>
+                    <a
+                        className={cn('w-56 mobile:hidden', buttonVariants({ variant: 'outline' }))}
+                        href={`#${ANCHORS.consultation}`}
+                    >
                         {t('consultation')}
-                    </Button>
+                    </a>
 
                     <MobileMenu />
                 </div>

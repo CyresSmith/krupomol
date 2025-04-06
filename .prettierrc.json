@@ -17,6 +17,7 @@
         "@routes",
         "@keys",
         "@constants",
+        "@schemas",
         "@utils"
     ],
     "importOrderSeparation": true,
