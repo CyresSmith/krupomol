@@ -18,7 +18,37 @@
     "main": {
         "hero": {
             "title": "Reliability and quality in every grain",
-            "btn": "View products"
+            "link": "View products"
+        },
+        "certification": {
+            "title": "Certification",
+            "text": "Our products comply with international standards of quality and food safety, which is confirmed by ISO 22000 and ISO 9001 certificates. Control at all stages of production guarantees stable quality and compliance with the requirements of the global market.",
+            "link": "Learn more about certification"
+        },
+        "advantages": {
+            "title": "Advantages of working with us",
+            "advantages": [
+                {
+                    "title": "Raw material quality",
+                    "text": "100% natural products",
+                    "icon": "quality"
+                },
+                {
+                    "title": "Own production",
+                    "text": "control at all stages",
+                    "icon": "production"
+                },
+                {
+                    "title": "Certified products",
+                    "text": "compliance with world standards",
+                    "icon": "certification"
+                },
+                {
+                    "title": "Flexible terms of cooperation",
+                    "text": "favorable conditions at every stage",
+                    "icon": "cooperation"
+                }
+            ]
         },
         "about": {
             "title": "Who are we?",

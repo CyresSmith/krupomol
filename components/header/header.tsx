@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
+import LocaleSelect from './locale-select';
 import { MobileMenu } from './mobile-menu';
 import { Navigation } from './navigation';
 
@@ -25,17 +26,21 @@ export const Header = async () => {
                         {t('address')}
                     </Link>
 
-                    <Link
-                        className="transition hover:text-accent"
-                        href={contacts['tel']?.href ?? '/'}
-                    >
-                        {contacts['tel']?.text}
-                    </Link>
+                    <div className="flex items-center gap-4">
+                        <Link
+                            className="transition hover:text-accent"
+                            href={contacts['tel']?.href ?? '/'}
+                        >
+                            {contacts['tel']?.text}
+                        </Link>
+
+                        <LocaleSelect />
+                    </div>
                 </div>
             </div>
 
             <div className="container">
-                <div className="shadow-nav-inner-shadow flex items-center justify-between gap-6 rounded-full bg-background/15 p-4 backdrop-blur-[25px]">
+                <div className="flex items-center justify-between gap-6 rounded-full bg-background/15 p-4 shadow-nav-inner-shadow backdrop-blur-[25px]">
                     <Link className="ml-5" href={'/'}>
                         <Icon
                             className="h-14 w-[123px] mobile:h-11 mobile:w-[97px]"

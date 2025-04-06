@@ -1,7 +1,7 @@
 export type IconName =
-    | 'arrow_right'
     | 'arrow-right-top'
     | 'dollar-sign'
+    | 'en'
     | 'facebook'
     | 'factory'
     | 'house'
@@ -13,5 +13,6 @@ export type IconName =
     | 'menu_icon'
     | 'phone-call'
     | 'tiktok'
+    | 'uk'
     | 'wheat'
     | 'x-mark';
