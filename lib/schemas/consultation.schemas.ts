@@ -1,11 +1,11 @@
 import { z } from 'zod';
 
-import { EmailSchema, MessageSchema, NameSchema, PhoneSchema } from './shared.schemas';
+import { EmailSchema, MessageSchema, NameSchema, PhoneOptionalSchema } from './shared.schemas';
 
 export const ConsultationFormSchema = z.object({
     email: EmailSchema,
-    message: MessageSchema,
+    message: MessageSchema.or(z.literal('')),
     name: NameSchema,
-    phone: PhoneSchema,
+    phone: PhoneOptionalSchema,
     theme: NameSchema,
 });
