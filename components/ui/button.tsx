@@ -15,6 +15,7 @@ const buttonVariants = cva(
         variants: {
             size: {
                 default: 'h-[52px] px-6 py-3',
+                fit: 'w-fit p-3',
                 icon: 'h-9 w-9',
                 lg: 'h-[60px] px-6 py-3',
                 sm: 'h-8 px-3 text-xs',
@@ -24,6 +25,7 @@ const buttonVariants = cva(
                 destructive:
                     'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
                 ghost: 'hover:bg-accent hover:text-accent-foreground hover:fill-accent-foreground',
+                icon: 'bg-transparent',
                 link: 'text-primary underline-offset-4 hover:underline',
                 outline:
                     'border border-background text-background hover:bg-background focus:bg-background hover:text-primary focus:text-primary shadow-sm',

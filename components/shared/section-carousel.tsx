@@ -92,8 +92,16 @@ export const SectionCarousel = ({ items = [] }: Props) => {
 
                 {items.length > 3 && (
                     <div className="flex w-full justify-between">
-                        <CarouselPrevious className="relative left-0 top-0 size-9 translate-x-0 translate-y-0" />
-                        <CarouselNext className="relative left-0 top-0 size-9 translate-x-0 translate-y-0" />
+                        <CarouselPrevious
+                            // className="relative top-0 translate-x-0 translate-y-0"
+                            size={'fit'}
+                            variant={'icon'}
+                        />
+                        <CarouselNext
+                            // className="relative top-0 translate-x-0 translate-y-0"
+                            size={'fit'}
+                            variant={'icon'}
+                        />
                     </div>
                 )}
             </div>

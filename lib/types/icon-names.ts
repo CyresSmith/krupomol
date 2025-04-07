@@ -1,4 +1,5 @@
 export type IconName =
+    | 'arrow_right'
     | 'arrow-right-top'
     | 'dollar-sign'
     | 'en'
