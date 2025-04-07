@@ -79,10 +79,59 @@
             ]
         }
     },
+    "products": {
+        "hero": {
+            "title": "Natural cereals of the highest quality",
+            "link": "To the catalog"
+        },
+        "list": [
+            {
+                "text": "Pearl barley is a natural product made from whole barley grains by cleaning and grinding. Thanks to minimal processing, it retains all its beneficial substances, including B vitamins, magnesium, phosphorus, and fiber. This cereal is versatile in cooking: it is used to make porridge, soups, pilaf and other dishes. Pearl barley is very filling, promotes normal digestion and maintains energy for the whole day. Choose pearl barley for a balanced diet and natural taste in your favorite dishes!",
+                "image": "barley",
+                "title": "Pearl barley groats"
+            },
+            {
+                "text": "Unpretentiousness and high nutritional value are why barley groats are valued in cooking. The production of this groats is a process that preserves the natural benefits of barley, preserving fiber, vitamins, and trace elements. Barley groats are a versatile product that is suitable for making cereals, soups, and side dishes. They easily adapt to different culinary traditions, preserving their benefits in any cooking method. Choose high-quality barley groats for your daily diet - this is natural taste and benefits in every spoonful!",
+                "image": "barley",
+                "title": "Barley products"
+            },
+            {
+                "text": "Unpretentiousness and high nutritional value are why barley groats are valued in cooking. The production of this groats is a process that preserves the natural benefits of barley, preserving fiber, vitamins, and trace elements. Barley groats are a versatile product that is suitable for making cereals, soups, and side dishes. They easily adapt to different culinary traditions, preserving their benefits in any cooking method. Choose high-quality barley groats for your daily diet - this is natural taste and benefits in every spoonful!",
+                "image": "barley",
+                "title": "Barley products"
+            },
+            {
+                "text": "This is a natural product made from durum wheat, which retains all the beneficial properties of the grain. It is rich in proteins, fiber, B vitamins and trace elements necessary for energy and health. Due to its versatility, wheat groats are ideal for cereals, side dishes, soups and casseroles. It is well digested, providing a long-lasting feeling of satiety. Choose wheat groats for a balanced diet and delicious meals every day!",
+                "image": "barley",
+                "title": "Wheat groats"
+            },
+            {
+                "text": "Pea groats are a high-quality product obtained by peeling and grinding peas. They have high nutritional value due to the high content of vegetable protein (up to 23%), fiber, vitamins and minerals. We offer large-scale supply of pea groats for the food industry, feed production and export. The products meet quality standards, are packed in bags or big bags for convenient transportation. We guarantee stable deliveries and individual terms of cooperation for wholesale customers.",
+                "image": "barley",
+                "title": "Pea groats"
+            },
+            {
+                "text": "Buckwheat is one of the most valuable products in the world of healthy eating, combining natural purity and a wealth of nutrients. It is rich in protein, fiber, B vitamins, magnesium, iron and other minerals. We offer wholesale supplies of high-quality buckwheat, packed in bags or big bags. The products meet all international standards and are ready for export to any country.",
+                "image": "barley",
+                "title": "Buckwheat groats"
+            }
+        ],
+        "offer": {
+            "title": "What do we offer to our clients?",
+            "text": "LLC \"Ukrainian Agroindustrial Transport Group\" is a manufacturing enterprise specializing in the production of high-quality cereals. We offer products that meet international standards, ensuring stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment in both cash and non-cash forms, make our products accessible to different categories of customers."
+        },
+        "info": {
+            "title": "More information",
+            "infoList": [
+                { "title": "Download the catalog", "icon": "catalog" },
+                { "title": "Download price list", "icon": "price-list" },
+                { "title": "Video review of products", "icon": "video-review" }
+            ]
+        }
+    },
     "contacts": {
         "form": {
             "title": "Do you have any additional questions?",
             "text": "Leave your questions in the form below and we will call you back and provide all the answers."
         }
-    }
 }

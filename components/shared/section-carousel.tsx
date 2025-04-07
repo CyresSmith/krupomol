@@ -1,34 +1,34 @@
 'use client';
 
-import { useState } from 'react';
-
-import { default as Image, StaticImageData } from 'next/image';
-
+// import { useState } from 'react';
 import clsx from 'clsx';
 import Autoplay from 'embla-carousel-autoplay';
 
-import { Card } from '@ui/card';
 import {
     Carousel,
-    CarouselApi,
+    // CarouselApi,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
 } from '@ui/carousel';
 
-import { DotButton, useDotButton } from '@components/main';
+// import { DotButton, useDotButton } from '@components/main';
+// import { DotButton, useDotButton } from '@components/hero/dot-button';
+import { ProductCard } from '@components/products/list/product-card';
 
-import { cn } from '@utils';
+import { ProductItemType } from '@types';
+
+// import { cn } from '@utils';
 
 interface Props {
-    items: StaticImageData[];
+    items: ProductItemType[];
 }
 
 export const SectionCarousel = ({ items = [] }: Props) => {
-    const [api, setApi] = useState<CarouselApi>();
+    // const [api, setApi] = useState<CarouselApi>();
 
-    const { onDotButtonClick, selectedIndex } = useDotButton(api);
+    // const { onDotButtonClick, selectedIndex } = useDotButton(api);
 
     return (
         <Carousel
@@ -42,37 +42,42 @@ export const SectionCarousel = ({ items = [] }: Props) => {
                     delay: 4000,
                 }),
             ]}
-            setApi={setApi}
+            // setApi={setApi}
         >
-            <div className="mt-12 overflow-hidden rounded-3xl">
-                <CarouselContent>
-                    {items.map((item, i) => (
-                        <CarouselItem className="pb-3 tablet:basis-1/2 desktop:basis-1/3" key={i}>
-                            <Card className="relative flex h-[400px] flex-col overflow-hidden rounded-3xl border-none shadow-lg transition group-hover:border-ring group-focus:border-ring">
-                                <div
+            <CarouselContent>
+                {items.map((item, i) => (
+                    <CarouselItem
+                        // className="mobile:basis-[100%] tablet:basis-[50%] desktop:basis-[33%]"
+                        className="mobile:basis-1/1 tablet:basis-1/2 desktop:basis-1/3"
+                        key={i}
+                    >
+                        {/* <div className="flex max-w-[390px] flex-col gap-6">
+                            <div
                                     className={clsx(
-                                        'h-full w-full items-center justify-center bg-secondary p-4 transition'
+                                        'h-auto max-w-[390px] items-center justify-center overflow-hidden rounded-3xl bg-secondary p-4 transition'
                                     )}
                                 >
-                                    <Image
-                                        alt={'title'}
-                                        fill
-                                        placeholder="blur"
-                                        quality={100}
-                                        src={item}
-                                        style={{
-                                            objectFit: 'cover',
-                                        }}
-                                    />
-                                </div>
-                            </Card>
-                        </CarouselItem>
-                    ))}
-                </CarouselContent>
-            </div>
+                            <Image
+                                alt={'Product image'}
+                                className="block h-[462px] w-auto rounded-3xl object-cover"
+                                fill
+                                quality={100}
+                                src={item.image}
+                                // style={{
+                                //     objectFit: 'cover',
+                                // }}
+                            />
+                            </div>
+                            <h3 className="font-title text-xl font-bold">{item.title}</h3>
+                            <p className="text-black">{item.description}</p>
+                            </div> */}
+                        <ProductCard item={item} />
+                    </CarouselItem>
+                ))}
+            </CarouselContent>
 
             <div className={clsx('mt-6 flex items-center justify-between')}>
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
                     {items.map((_, index) => (
                         <DotButton
                             className={cn(
@@ -83,12 +88,20 @@ export const SectionCarousel = ({ items = [] }: Props) => {
                             onClick={() => onDotButtonClick(index)}
                         />
                     ))}
-                </div>
+                </div> */}
 
                 {items.length > 3 && (
-                    <div className="flex gap-3">
-                        <CarouselPrevious className="relative left-0 top-0 size-9 translate-x-0 translate-y-0" />
-                        <CarouselNext className="relative left-0 top-0 size-9 translate-x-0 translate-y-0" />
+                    <div className="flex w-full justify-between">
+                        <CarouselPrevious
+                            // className="relative top-0 translate-x-0 translate-y-0"
+                            size={'fit'}
+                            variant={'icon'}
+                        />
+                        <CarouselNext
+                            // className="relative top-0 translate-x-0 translate-y-0"
+                            size={'fit'}
+                            variant={'icon'}
+                        />
                     </div>
                 )}
             </div>

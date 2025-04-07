@@ -4,3 +4,4 @@ export * from './loader';
 export * from './scroll-to-top';
 export * from './section-carousel';
 export * from './title';
+export * from './hero-section';
