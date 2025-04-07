@@ -15,6 +15,19 @@
             "product": "Product"
         }
     },
+    "shared": {
+        "consultation-form": {
+            "form": {
+                "name": { "placeholder": "Your name", "label": "Name" },
+                "phone": { "placeholder": "+380 00 000 00 00", "label": "Phone" },
+                "email": { "placeholder": "yourmail@mail.com", "label": "Email" },
+                "message": { "placeholder": "Your message", "label": "Message" },
+                "theme": { "placeholder": "Theme", "label": "Theme" }
+            },
+            "submit": "Leave a request",
+            "required": "Required fields"
+        }
+    },
     "main": {
         "hero": {
             "title": "Reliability and quality in every grain",
@@ -49,6 +62,9 @@
                     "icon": "cooperation"
                 }
             ]
+        },
+        "consultation": {
+            "title": "Order a consultation"
         },
         "about": {
             "title": "Who are we?",

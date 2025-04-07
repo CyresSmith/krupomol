@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 
-import { Button } from '@ui/button';
+import { buttonVariants } from '@ui/button';
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -14,7 +14,7 @@ import { Icon } from '@components/shared';
 
 import { NavigationTitle } from '@types';
 
-import { contacts, navigation, socials } from '@constants';
+import { ANCHORS, contacts, navigation, socials } from '@constants';
 
 import { cn } from '@utils';
 
@@ -66,9 +66,15 @@ export const Footer = async () => {
                             </ul>
                         </address>
 
-                        <Button className="mt-auto" variant={'outline-primary'}>
+                        <a
+                            className={cn(
+                                'mt-auto',
+                                buttonVariants({ variant: 'outline-primary' })
+                            )}
+                            href={`#${ANCHORS.consultation}`}
+                        >
                             {t('consultation')}
-                        </Button>
+                        </a>
                     </div>
 
                     <div>
@@ -91,7 +97,7 @@ export const Footer = async () => {
                     </div>
                 </div>
 
-                <p className="mt-12 w-full border-primary text-center text-foreground/50 before:mb-3 before:block before:border-b before:border-primary before:content-['']">
+                <p className="mt-12 w-full border-primary text-center text-xs text-foreground/50 before:mb-3 before:block before:border-b before:border-primary before:content-['']">
                     &copy; 2025 Крупомол | Усі права захищені.
                 </p>
             </div>

@@ -70,3 +70,21 @@ export const contacts: Record<string, ContactType> = {
         text: '+380 (97) 475 77 79',
     },
 };
+
+export const SCHEMAS_MESSAGES = {
+    cyrillic: 'Має бути кирилицею',
+    email: 'Невірний формат email',
+    latin: 'Має бути латиницею',
+    max: 'Максимальне значення',
+    maxLength: 'Максимальна довжина',
+    min: 'Мінімальне значення',
+    minLength: 'Мінімальна довжина',
+    pattern: 'Невірний формат',
+    phone: 'Невірний формат телефону',
+    required: 'Обов’язкове поле',
+    sameAs: 'Повинно бути однаковим з',
+};
+
+export const ANCHORS = {
+    consultation: 'consultation',
+};

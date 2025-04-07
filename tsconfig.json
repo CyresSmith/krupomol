@@ -63,6 +63,9 @@
             "@types": [
                 "./lib/types"
             ],
+            "@schemas": [
+                "./lib/schemas"
+            ],
             "@shared-metadata": [
                 "./lib/shared-metadata"
             ],

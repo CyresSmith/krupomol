@@ -5,7 +5,7 @@ import { Link } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
 
-import { Icon } from '@components/shared';
+import { Icon, Title } from '@components/shared';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -28,9 +28,12 @@ export const Hero = async () => {
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
 
             <div className="container relative z-10">
-                <h1 className="desktop:text:6xl mt-[245px] text-left text-5xl font-bold leading-normal text-background desktop:w-[753px]">
+                <Title
+                    as="h1"
+                    className="mt-[245px] text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
+                >
                     {t('title')}
-                </h1>
+                </Title>
 
                 <Link
                     className={cn('mt-11 mobile:w-full', buttonVariants({ size: 'lg' }))}

@@ -1,3 +1,4 @@
+export * from './consultation-form';
 export * from './icon';
 export * from './loader';
 export * from './scroll-to-top';

@@ -15,6 +15,19 @@
             "product": "Продукція"
         }
     },
+    "shared": {
+        "consultation-form": {
+            "form": {
+                "name": { "placeholder": "Ваше ім'я", "label": "Ім'я" },
+                "phone": { "placeholder": "+380 00 000 00 00", "label": "Телефон" },
+                "email": { "placeholder": "yourmail@mail.com", "label": "Електронна пошта" },
+                "message": { "placeholder": "Ваше повідомлення", "label": "Повідомлення" },
+                "theme": { "placeholder": "Тема", "label": "Тема" }
+            },
+            "submit": "Залишити заявку",
+            "required": "Обов’язкові поля"
+        }
+    },
     "main": {
         "hero": {
             "title": "Надійність і якість у кожному зерні",
@@ -49,6 +62,9 @@
                     "icon": "cooperation"
                 }
             ]
+        },
+        "consultation": {
+            "title": "Замовити консультацію"
         },
         "about": {
             "title": "Хто ми?",
