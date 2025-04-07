@@ -23,7 +23,7 @@ export const Header = async () => {
                 <div className="container flex items-center justify-between gap-6 mobile:justify-center">
                     <Link
                         className="transition hover:text-accent mobile:hidden"
-                        href={contacts['address']?.href ?? '/'}
+                        href={contacts.address?.href ?? '/'}
                         rel="noopener noreferrer nofollow"
                         target="_blank"
                     >
@@ -33,9 +33,9 @@ export const Header = async () => {
                     <div className="flex items-center gap-4">
                         <Link
                             className="transition hover:text-accent"
-                            href={contacts['tel']?.href ?? '/'}
+                            href={contacts.tel?.href ?? '/'}
                         >
-                            {contacts['tel']?.text}
+                            {contacts.tel?.text}
                         </Link>
 
                         <LocaleSelect />

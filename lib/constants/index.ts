@@ -34,7 +34,7 @@ export const navigation: NavItemType[] = [
 export const socials: Omit<NavItemType, 'title'>[] = [
     {
         href: 'https://www.x.com/',
-        // icon: 'x',
+        icon: 'x',
     },
     {
         href: 'https://www.facebook.com/',
