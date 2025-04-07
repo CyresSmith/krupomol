@@ -1,7 +1,7 @@
 import { Hero } from '@components/products/hero';
+import { Infos } from '@components/products/info/infos';
 import { ProductsList } from '@components/products/list/products-list';
-import { Info } from '@components/products/more-info/info';
-import { Offer } from '@components/products/we-offer/offer';
+import { Offer } from '@components/products/offer/offer';
 import { HeroSection } from '@components/shared';
 
 export default function Products() {
@@ -12,7 +12,7 @@ export default function Products() {
             </HeroSection>
             <ProductsList />
             <Offer />
-            <Info />
+            <Infos />
         </>
     );
 }

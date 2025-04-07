@@ -6,3 +6,4 @@ export * from './messages.types';
 export * from './navigation.types';
 export * from './products.types';
 export * from './shared.types';
+export * from './infos.types';

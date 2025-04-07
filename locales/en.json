@@ -123,9 +123,9 @@
         "info": {
             "title": "More information",
             "infoList": [
-                { "title": "Download the catalog", "icon": "dollar-sign" },
-                { "title": "Download price list", "icon": "dollar-sign" },
-                { "title": "Video review of products", "icon": "dollar-sign" }
+                { "title": "Download the catalog", "icon": "catalog" },
+                { "title": "Download price list", "icon": "price-list" },
+                { "title": "Video review of products", "icon": "video-review" }
             ]
         }
     }

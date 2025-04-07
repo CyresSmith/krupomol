@@ -1,13 +1,13 @@
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
-import { Icon } from '@components/shared';
+import { Info } from './info';
 
 import { IconName } from '@types';
 
-export const Info = async () => {
-    const t = await getTranslations('products.info');
-    const infoList = t.raw('infoList') as { icon: IconName; title: string }[];
+export const Infos = async () => {
+    const t = await getTranslations('products');
+    const infoList = t.raw('info.infoList') as { icon: IconName; title: string }[];
 
     return (
         <section className="relative h-[674px] py-24 desktop:h-[564px]">
@@ -21,20 +21,14 @@ export const Info = async () => {
             />
 
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
-            <div className="container relative z-10">
+            <div className="z-1 container relative">
                 <div className="w-full rounded-3xl border-[7px] border-solid border-accent px-5 py-16 tablet:w-1/2 desktop:w-1/2 desktop:py-14 desktop:pl-14">
                     <h3 className="mb-7 font-title text-4xl font-bold leading-[140%] text-white desktop:text-5xl">
-                        {t('title')}
+                        {t('info.title')}
                     </h3>
                     <ul className="flex flex-col gap-5 font-title text-base font-bold text-white">
                         {infoList.map((item, i) => (
-                            <li
-                                className="flex items-center gap-5 fill-accent desktop:gap-7"
-                                key={i}
-                            >
-                                <Icon height={40} name={item.icon} width={40} />
-                                <p>{item.title}</p>
-                            </li>
+                            <Info item={item} key={i} />
                         ))}
                     </ul>
                 </div>

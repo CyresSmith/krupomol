@@ -123,9 +123,9 @@
         "info": {
             "title": "Більше інформації",
             "infoList": [
-                { "title": "Завантажити каталог", "icon": "dollar-sign" },
-                { "title": "Завантажити прайс", "icon": "dollar-sign" },
-                { "title": "Відеоогляд продукції", "icon": "dollar-sign" }
+                { "title": "Завантажити каталог", "icon": "catalog" },
+                { "title": "Завантажити прайс", "icon": "price-list" },
+                { "title": "Відеоогляд продукції", "icon": "video-review" }
             ]
         }
     }
