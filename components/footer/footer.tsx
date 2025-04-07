@@ -51,18 +51,28 @@ export const Footer = async () => {
                     <div className="flex min-h-[189px] flex-col justify-between desktop:w-[324px]">
                         <address className="mb-4 not-italic text-primary">
                             <ul className="flex flex-col gap-4 fill-foreground text-sm">
-                                {Object.values(contacts).map(({ href, icon, text }) => (
-                                    <li key={href}>
-                                        <Link
-                                            className="grid grid-cols-[theme(space.5),1fr] gap-3 self-start px-0"
-                                            href={href ?? ''}
-                                        >
-                                            {icon && <Icon className="size-5" name={icon} />}
+                                {Object.values(contacts).map(({ href, icon, text }) => {
+                                    const isAddress = href === contacts.address.href;
 
-                                            {text ?? t('address')}
-                                        </Link>
-                                    </li>
-                                ))}
+                                    return (
+                                        <li key={href}>
+                                            <Link
+                                                className="grid grid-cols-[theme(space.5),1fr] gap-3 self-start px-0"
+                                                href={href ?? ''}
+                                                rel={
+                                                    isAddress
+                                                        ? 'noopener noreferrer nofollow'
+                                                        : undefined
+                                                }
+                                                target={isAddress ? '_blank' : undefined}
+                                            >
+                                                {icon && <Icon className="size-5" name={icon} />}
+
+                                                {text ?? t('address')}
+                                            </Link>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </address>
 
@@ -84,6 +94,8 @@ export const Footer = async () => {
                                     <Link
                                         className="flex size-8 items-center justify-center overflow-hidden rounded-[8px] bg-primary fill-primary-foreground transition hover:opacity-80"
                                         href={href ?? '/'}
+                                        rel="noopener noreferrer nofollow"
+                                        target="_blank"
                                     >
                                         {icon && <Icon className="size-6" name={icon} />}
                                     </Link>

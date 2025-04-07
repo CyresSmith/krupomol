@@ -54,7 +54,7 @@ export const ConsultationForm = () => {
     return (
         <Form {...form}>
             <form
-                className="mx-auto w-full desktop:w-[592px]"
+                className="mx-auto w-full max-w-[624px] px-4"
                 onSubmit={form.handleSubmit(onSubmit)}
             >
                 <div className="mb-9">

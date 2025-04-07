@@ -13,9 +13,8 @@ export const Consultation = async () => {
                 <Title className="mb-12 text-center text-text-color mobile:text-3xl">
                     {t('title')}
                 </Title>
-                <div>
-                    <ConsultationForm />
-                </div>
+
+                <ConsultationForm />
             </div>
         </section>
     );

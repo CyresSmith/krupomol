@@ -78,5 +78,11 @@
                 { "title": "Millet", "image": "millet" }
             ]
         }
+    },
+    "contacts": {
+        "form": {
+            "title": "Do you have any additional questions?",
+            "text": "Leave your questions in the form below and we will call you back and provide all the answers."
+        }
     }
 }

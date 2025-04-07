@@ -2,4 +2,4 @@ export * from './about';
 export * from './advantages';
 export * from './certification';
 export * from './consultation';
-export * from './hero';
+export * from './main-hero';

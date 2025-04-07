@@ -11,7 +11,7 @@ import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const Hero = async () => {
+export const MainHero = async () => {
     const t = await getTranslations('main.hero');
 
     return (

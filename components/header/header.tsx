@@ -24,6 +24,8 @@ export const Header = async () => {
                     <Link
                         className="transition hover:text-accent mobile:hidden"
                         href={contacts['address']?.href ?? '/'}
+                        rel="noopener noreferrer nofollow"
+                        target="_blank"
                     >
                         {t('address')}
                     </Link>

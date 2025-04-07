@@ -1,2 +1,2 @@
 export * from './dot-button';
-export * from './hero';
+export * from './main-hero';

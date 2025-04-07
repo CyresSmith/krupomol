@@ -1,9 +1,9 @@
-import { About, Advantages, Certification, Consultation, Hero } from '@components/main';
+import { About, Advantages, Certification, Consultation, MainHero } from '@components/main';
 
 export default function Home() {
     return (
         <>
-            <Hero />
+            <MainHero />
             <About />
             <Certification />
             <Advantages />

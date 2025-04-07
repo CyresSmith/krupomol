@@ -54,7 +54,7 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     },
 ];
 
-export const contacts: Record<string, ContactType> = {
+export const contacts: Record<'address' | 'mail' | 'tel', ContactType> = {
     address: {
         href: 'https://maps.app.goo.gl/kqyXBMD7FPCsi5YE7',
         icon: 'map-pinned',
