@@ -1,11 +1,11 @@
-import { FormSection } from '@components/contacts';
-import { MainHero } from '@components/main';
+import { ContactsHero, FormSection, MapSection } from '@components/contacts';
 
 export default function Contacts() {
     return (
         <>
-            <MainHero />
+            <ContactsHero />
             <FormSection />
+            <MapSection />
         </>
     );
 }

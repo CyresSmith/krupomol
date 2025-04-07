@@ -7,7 +7,7 @@ interface Props {
 
 export const HeroSection = ({ bgName, children }: Props) => {
     return (
-        <section className="relative flex h-[760px] items-center">
+        <section className="relative h-[760px] pb-40 pt-64">
             <Image
                 alt=""
                 className="object-cover"
@@ -19,7 +19,7 @@ export const HeroSection = ({ bgName, children }: Props) => {
 
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
 
-            {children}
+            <div className="container relative z-10">{children}</div>
         </section>
     );
 };

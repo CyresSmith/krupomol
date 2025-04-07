@@ -1,3 +1,4 @@
 export * from './info';
-export * from './offer';
 export * from './list';
+export * from './offer';
+export * from './products-hero';

@@ -1,11 +1,10 @@
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 
 import { Link } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
 
-import { Icon, Title } from '@components/shared';
+import { HeroSection, Icon, Title } from '@components/shared';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -15,36 +14,23 @@ export const MainHero = async () => {
     const t = await getTranslations('main.hero');
 
     return (
-        <section className="relative h-[793px]">
-            <Image
-                alt=""
-                className="object-cover"
-                fill
-                priority
-                sizes="100vw"
-                src="/images/hero-1.jpg"
-            />
+        <HeroSection bgName="main-hero">
+            <Title
+                as="h1"
+                className="mb-11 text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
+            >
+                {t('title')}
+            </Title>
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
-
-            <div className="container relative z-10">
-                <Title
-                    as="h1"
-                    className="mt-[245px] text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
-                >
-                    {t('title')}
-                </Title>
-
-                <Link
-                    className={cn('mt-11 mobile:w-full', buttonVariants({ size: 'lg' }))}
-                    href={PRODUCTS_ROUTE}
-                >
-                    <span className="truncate">{t('link')}</span>
-                    <span className="ml-5 flex size-9 min-w-9 items-center justify-center rounded-full bg-primary">
-                        <Icon className="fill-background" name="arrow-right-top" />
-                    </span>
-                </Link>
-            </div>
-        </section>
+            <Link
+                className={cn('mobile:w-full', buttonVariants({ size: 'lg' }))}
+                href={PRODUCTS_ROUTE}
+            >
+                <span className="truncate">{t('link')}</span>
+                <span className="ml-5 flex size-9 min-w-9 items-center justify-center rounded-full bg-primary">
+                    <Icon className="fill-background" name="arrow-right-top" />
+                </span>
+            </Link>
+        </HeroSection>
     );
 };

@@ -80,9 +80,13 @@
         }
     },
     "contacts": {
+        "hero": { "title": "Our contacts" },
         "form": {
             "title": "Do you have any additional questions?",
             "text": "Leave your questions in the form below and we will call you back and provide all the answers."
+        },
+        "map": {
+            "title": "We on the map"
         }
     },
     "products": {

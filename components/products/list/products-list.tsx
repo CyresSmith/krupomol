@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-import { SectionCarousel } from '@components/shared';
+import { Section, SectionCarousel } from '@components/shared';
 
 import { ProductItemType } from '@types';
 
@@ -54,10 +54,10 @@ export const ProductsList = async () => {
     const productsList = t.raw('list') as ProductItemType[];
 
     return (
-        <section className="bg-secondary pb-8 pt-20 desktop:pb-16 desktop:pt-24">
+        <Section variant="secondary">
             <div className="container">
                 <SectionCarousel items={productsList} />
             </div>
-        </section>
+        </Section>
     );
 };

@@ -1,15 +1,9 @@
-import { Hero } from '@components/products/hero';
-import { Infos } from '@components/products/info/infos';
-import { ProductsList } from '@components/products/list/products-list';
-import { Offer } from '@components/products/offer/offer';
-import { HeroSection } from '@components/shared';
+import { Infos, Offer, ProductsHero, ProductsList } from '@components/products';
 
 export default function Products() {
     return (
         <>
-            <HeroSection bgName="products-hero">
-                <Hero />
-            </HeroSection>
+            <ProductsHero />
             <ProductsList />
             <Offer />
             <Infos />

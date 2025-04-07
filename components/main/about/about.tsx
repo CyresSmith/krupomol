@@ -8,7 +8,7 @@ import { Link } from '@i18n';
 import { buttonVariants } from '@ui/button';
 import { Card, CardContent, CardHeader } from '@ui/card';
 
-import { Icon, Title } from '@components/shared';
+import { Icon, Section, Title } from '@components/shared';
 
 import { titleFont } from '@fonts';
 
@@ -21,8 +21,8 @@ export const About = async () => {
     const products = t.raw('products') as { image: string; title: string }[];
 
     return (
-        <section className="relative z-0">
-            <div className="container py-24">
+        <Section className="relative z-0">
+            <div className="container">
                 <Card className="relative mb-24 min-h-[343px] p-16 mobile:px-4 mobile:pb-16 mobile:pt-64">
                     <div className="absolute right-0 top-1/2 h-[377px] w-[662px] -translate-y-1/2 overflow-hidden mobile:inset-x-0 mobile:top-10 mobile:h-[194px] mobile:w-full mobile:translate-y-0 tablet:w-[280px]">
                         <Image
@@ -83,6 +83,6 @@ export const About = async () => {
             </div>
 
             <span className="absolute inset-x-0 bottom-0 -z-10 h-[398px] bg-gray-color" />
-        </section>
+        </Section>
     );
 };

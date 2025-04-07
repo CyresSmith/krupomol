@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 
 import Advantage from './advantage';
 
-import { Title } from '@components/shared';
+import { Section, Title } from '@components/shared';
 
 import { AdvantageType } from '@types';
 
@@ -12,7 +12,7 @@ export const Advantages = async () => {
     const advantages = t.raw('advantages') as AdvantageType[];
 
     return (
-        <section className="bg-secondary py-24">
+        <Section variant="secondary">
             <div className="container">
                 <Title className="mb-9 text-center mobile:text-4xl">{t('title')}</Title>
 
@@ -22,6 +22,6 @@ export const Advantages = async () => {
                     ))}
                 </ul>
             </div>
-        </section>
+        </Section>
     );
 };
