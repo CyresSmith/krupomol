@@ -17,7 +17,7 @@ export const Hero = async () => {
         <div className="container relative z-10 my-auto flex flex-col items-center justify-center">
             <Title
                 as="h1"
-                className="text-left text-5xl font-bold leading-normal text-background desktop:text-left desktop:text-6xl desktop:leading-normal"
+                className="text-left text-5xl font-bold leading-normal text-background tablet:text-center desktop:text-6xl desktop:leading-normal"
             >
                 {t('title')}
             </Title>
