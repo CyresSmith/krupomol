@@ -17,7 +17,7 @@ export const Info = async () => {
                 fill
                 priority
                 sizes="100vw"
-                src="/images/products_more_info_bg.jpg"
+                src="/images/products-more-info.jpg"
             />
 
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
