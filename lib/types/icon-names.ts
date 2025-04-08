@@ -1,6 +1,7 @@
 export type IconName =
 	| "arrow_right"
 	| "arrow-right-top"
+	| "checked"
 	| "dollar-sign"
 	| "en"
 	| "facebook"

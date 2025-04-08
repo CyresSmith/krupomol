@@ -138,5 +138,55 @@
                 { "title": "Video review of products", "icon": "video-review" }
             ]
         }
+    },
+    "prices": {
+        "hero": {
+            "title": "Purchase prices"
+        },
+        "cooperation": {
+            "title": "We offer favorable terms of cooperation for suppliers of grains and cereals.",
+            "list": [
+                {
+                    "title": "Minimum volume:",
+                    "desc": "from 22,000 kg",
+                    "icon": "checked"
+                },
+                {
+                    "title": "Certification:",
+                    "desc": "ISO 22000, ISO 9001",
+                    "icon": "checked"
+                },
+                {
+                    "title": "Export destinations:",
+                    "desc": "EU countries, Asian countries",
+                    "icon": "checked"
+                }
+            ],
+            "info": "To clarify the current purchase prices and terms of cooperation, please contact us at the specified contacts or leave a request via the feedback form."
+        },
+        "payment": {
+            "title": "Delivery and payment",
+            "conditions": [
+                {
+                    "icon": "payment",
+                    "list": ["Cash payment", "Cashless payment"]
+                },
+                {
+                    "icon": "delivery",
+                    "list": [
+                        "Self pickup",
+                        "Delivery by hired transport",
+                        "Delivery by our transport"
+                    ]
+                },
+                {
+                    "icon": "calculation",
+                    "list": [
+                        "Calculation of delivery costs: 0.1 UAH for each kilogram of product for every 100 km of route"
+                    ]
+                }
+            ],
+            "info": "To clarify payment and delivery details, please contact us at the specified contacts."
+        }
     }
 }

@@ -1,7 +1,12 @@
+import { Cooperation, EmptyBg, Payment, PricesHero } from '@components/prices';
+
 export default function Prices() {
     return (
-        <div>
-            <div className="container">Prices</div>
-        </div>
+        <>
+            <PricesHero />
+            <Cooperation />
+            <EmptyBg />
+            <Payment />
+        </>
     );
 }
