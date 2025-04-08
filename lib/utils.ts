@@ -7,7 +7,7 @@ import { routing } from '@i18n';
 
 import { LocaleType } from '@types';
 
-import { APP_HOST } from '@constants';
+import { APP_HOST, APP_NAME } from '@constants';
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
@@ -42,7 +42,6 @@ export function getMetadata({
     title,
 }: MetadataOptions): Metadata {
     const fullUrl = `${APP_HOST}${path}`;
-    const appName = 'Krupomol';
 
     const languages = routing.locales.reduce(
         (acc, locale) => {
@@ -57,7 +56,7 @@ export function getMetadata({
             canonical: fullUrl,
             languages,
         },
-        applicationName: appName,
+        applicationName: APP_NAME,
         authors: [{ name: 'Ivan Reshetnikov' }, { name: 'Andrii Kulyk' }],
         category: 'food',
         description,
@@ -83,7 +82,7 @@ export function getMetadata({
                 },
             ],
             locale,
-            siteName: appName,
+            siteName: APP_NAME,
             title,
             type: 'website',
             url: fullUrl,
@@ -105,7 +104,7 @@ export function getMetadata({
         },
         title,
         // title: {
-        //     default: appName,
+        //     default: APP_NAME,
         //     template: `%s | ${title}`,
         // },
         twitter: {
