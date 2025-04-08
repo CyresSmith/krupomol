@@ -1,9 +1,4 @@
 {
-    "head": {
-        "title": "Krupomol",
-        "desc": "Krupomol app",
-        "keywords": { "main": "Krupomol, app, krupomol, krupomol app" }
-    },
     "header": {
         "consultation": "Order a consultation",
         "address": "Kyiv region, Brovarskyi district, Rusaniv village, Zhovtneva st., building 39 a",
@@ -29,6 +24,10 @@
         }
     },
     "main": {
+        "metadata": {
+            "title": "Krupomol",
+            "desc": "LLC \"Ukrainian Agroindustrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market."
+        },
         "hero": {
             "title": "Reliability and quality in every grain",
             "link": "View products"
@@ -80,6 +79,25 @@
         }
     },
     "contacts": {
+        "metadata": {
+            "title": "Contacts | Krupomol",
+            "desc": "Contacts of LLC \"Ukrainian Agroindustrial Transport Group\" for communication and establishment of productive, mutually beneficial relations",
+            "keywords": [
+                "Phone",
+                "Mail",
+                "favorable terms of cooperation",
+                "cooperation",
+                "wholesale",
+                "Pea groats",
+                "Buckwheat groats",
+                "contacts",
+                "pea groats",
+                "Barley products",
+                "Wheat groats",
+                "contact",
+                "barley groats"
+            ]
+        },
         "hero": { "title": "Our contacts" },
         "form": {
             "title": "Do you have any additional questions?",
@@ -90,6 +108,18 @@
         }
     },
     "products": {
+        "metadata": {
+            "title": "Products | Krupomol",
+            "desc": "Wholesale supplies of natural cereals of the highest quality from a certified manufacturer",
+            "keywords": [
+                "barley groats",
+                "pea groats",
+                "Barley products",
+                "Wheat groats",
+                "Pea groats",
+                "Buckwheat groats"
+            ]
+        },
         "hero": {
             "title": "Natural cereals of the highest quality",
             "link": "To the catalog"
@@ -140,6 +170,25 @@
         }
     },
     "prices": {
+        "metadata": {
+            "title": "Purchase prices | Krupomol",
+            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC offers favorable terms of cooperation for suppliers of grain and cereals. To clarify the current purchase prices and terms of cooperation, contact us.",
+            "keywords": [
+                "Cash payment",
+                "Non-cash payment",
+                "favorable terms of cooperation",
+                "cooperation",
+                "wholesale",
+                "Pea groats",
+                "Buckwheat groats",
+                "contacts",
+                "pea groats",
+                "Barley products",
+                "Wheat groats",
+                "contact",
+                "barley groats"
+            ]
+        },
         "hero": {
             "title": "Purchase prices"
         },
@@ -193,5 +242,27 @@
     "footer": {
         "rights": "Krupomol | All rights reserved",
         "policy": "Privacy Policy"
+    },
+    "certification": {
+        "metadata": {
+            "title": "Certification | Krupomol",
+            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC adheres to the highest standards of quality and product safety. All our products undergo thorough control at every stage of production - from the selection of raw materials to packaging and storage.",
+            "keywords": [
+                "ISO",
+                "Quality",
+                "Safety",
+                "Food products",
+                "Certification",
+                "Export",
+                "HACCP",
+                "contacts",
+                "pearl groats",
+                "Barley products",
+                "Wheat groats",
+                "contact",
+                "barley groats"
+            ]
+        },
+        "hero": { "title": "Product certification" }
     }
 }

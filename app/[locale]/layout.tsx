@@ -7,33 +7,21 @@ import { notFound } from 'next/navigation';
 
 import '../globals.css';
 
-import { sharedMetadata } from '@shared-metadata';
-
 import { routing } from '@i18n';
 
 import { ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
+import { getMetadata } from '@utils';
+
 export async function generateMetadata(): Promise<Metadata> {
     const locale = await getLocale();
-    const t = await getTranslations('head');
-
-    return {
-        ...sharedMetadata,
-        description: t('desc'),
-        openGraph: {
-            ...sharedMetadata.openGraph,
-            description: t('desc'),
-            locale: locale === 'en' ? 'en_US' : 'uk_Ua',
-            title: t('title'),
-        } as Metadata['openGraph'],
-        title: t('title'),
-    } as Metadata;
+    const t = await getTranslations('main.metadata');
+    return getMetadata({ description: t('desc'), locale, path: '', title: t('title') });
 }
 
 export function generateStaticParams() {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-assignment
     return routing.locales.map(locale => ({ locale }));
 }
 
