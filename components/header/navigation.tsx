@@ -1,12 +1,13 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { usePathname } from 'next/navigation';
+import { useSelectedLayoutSegment } from 'next/navigation';
+
+import { Link } from '@i18n';
 
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     navigationMenuTriggerStyle,
 } from '@ui/navigation-menu';
@@ -22,24 +23,32 @@ interface Props {
 }
 
 export const Navigation = ({ onItemClick }: Props) => {
-    const pathname = usePathname();
     const t = useTranslations('header.navigation');
+    const selectedLayoutSegment = useSelectedLayoutSegment();
+    const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
 
     return (
         <NavigationMenu className="hidden desktop:block" orientation="horizontal">
             <NavigationMenuList className="flex gap-12">
-                {navigation.map(({ href, title }) => (
-                    <NavigationMenuItem key={title}>
-                        <NavigationMenuLink
-                            active={pathname === href}
-                            className={cn(navigationMenuTriggerStyle())}
-                            href={href}
-                            onSelect={onItemClick}
-                        >
-                            {t(title as NavigationTitle)}
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                ))}
+                {navigation.map(({ href, title }) => {
+                    const isActive = pathname === href;
+                    return (
+                        <NavigationMenuItem className="relative" key={title}>
+                            <Link
+                                {...(isActive ? { 'data-active': true } : {})}
+                                className={cn(
+                                    navigationMenuTriggerStyle(),
+                                    isActive &&
+                                        'after:absolute after:bottom-0 after:left-0 after:block after:w-full after:border-b-2 after:border-accent after:content-[""]'
+                                )}
+                                href={href ?? '/'}
+                                onClick={onItemClick}
+                            >
+                                {t(title as NavigationTitle)}
+                            </Link>
+                        </NavigationMenuItem>
+                    );
+                })}
             </NavigationMenuList>
         </NavigationMenu>
     );

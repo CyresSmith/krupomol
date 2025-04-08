@@ -1,9 +1,15 @@
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
-import { Button } from '@ui/button';
+import { Link } from '@i18n';
+
+import { buttonVariants } from '@ui/button';
 
 import { Section, Title } from '@components/shared';
+
+import { CERTIFICATION_ROUTE } from '@routes';
+
+import { cn } from '@utils';
 
 export const Certification = async () => {
     const t = await getTranslations('main.certification');
@@ -31,9 +37,12 @@ export const Certification = async () => {
                         <p className="mb-10 text-background mobile:text-sm">{t('text')}</p>
                     </div>
 
-                    <Button className="max-w-full" variant={'outline'}>
+                    <Link
+                        className={cn(buttonVariants({ variant: 'outline' }), 'max-w-full')}
+                        href={CERTIFICATION_ROUTE}
+                    >
                         <span className="truncate">{t('link')}</span>
-                    </Button>
+                    </Link>
                 </div>
             </div>
         </Section>

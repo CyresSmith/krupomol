@@ -9,7 +9,7 @@ interface Props {
 export const Loader = ({ className }: Props) => (
     <div
         className={clsx(
-            'bg-loader-backdrop z-50 flex h-full w-full items-center justify-center fill-primary backdrop-blur-sm',
+            'z-50 flex h-screen w-screen items-center justify-center bg-background fill-primary backdrop-blur-sm',
             className
         )}
     >

@@ -4,11 +4,13 @@ import { Card, CardHeader } from '@ui/card';
 
 import { ConsultationForm, Section, Title } from '@components/shared';
 
+import { ANCHORS } from '@constants';
+
 export const FormSection = async () => {
     const t = await getTranslations('contacts.form');
 
     return (
-        <Section variant="secondary">
+        <Section id={ANCHORS.consultation} variant="secondary">
             <div className="container">
                 <Card className="py-14 mobile:py-9">
                     <CardHeader className="mb-10 py-0 text-center">

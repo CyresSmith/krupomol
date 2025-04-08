@@ -186,7 +186,12 @@
                     ]
                 }
             ],
-            "info": "To clarify payment and delivery details, please contact us at the specified contacts."
+            "info": "To clarify payment and delivery details, please contact us at the specified contacts.",
+            "contacts": "Contacts"
         }
+    },
+    "footer": {
+        "rights": "Krupomol | All rights reserved",
+        "policy": "Privacy Policy"
     }
 }

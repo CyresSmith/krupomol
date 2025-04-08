@@ -10,6 +10,8 @@ import { buttonVariants } from '@ui/button';
 
 import { Icon } from '@components/shared';
 
+import { CONTACTS_ROUTE } from '@routes';
+
 import { ANCHORS, contacts } from '@constants';
 
 import { cn } from '@utils';
@@ -54,12 +56,12 @@ export const Header = async () => {
 
                     <Navigation />
 
-                    <a
+                    <Link
                         className={cn('w-56 mobile:hidden', buttonVariants({ variant: 'outline' }))}
-                        href={`#${ANCHORS.consultation}`}
+                        href={{ hash: ANCHORS.consultation, pathname: CONTACTS_ROUTE }}
                     >
                         {t('consultation')}
-                    </a>
+                    </Link>
 
                     <MobileMenu />
                 </div>

@@ -4,7 +4,15 @@ import { ConditionType } from 'lib/types/conditions.types';
 
 import { PaymentItem } from './payment-item';
 
-import { Section, Title } from '@components/shared';
+import { Link } from '@i18n';
+
+import { buttonVariants } from '@ui/button';
+
+import { Icon, Section, Title } from '@components/shared';
+
+import { CONTACTS_ROUTE } from '@routes';
+
+import { cn } from '@utils';
 
 export const Payment = async () => {
     const t = await getTranslations('prices.payment');
@@ -19,9 +27,21 @@ export const Payment = async () => {
                         <PaymentItem item={item} key={i} />
                     ))}
                 </ul>
-                <p className="text-sm text-black desktop:max-w-[589px] desktop:text-base">
-                    {t('info')}
-                </p>
+
+                <div className="flex flex-col items-center gap-8">
+                    <p className="text-center text-sm text-black desktop:max-w-[589px] desktop:text-base">
+                        {t('info')}
+                    </p>
+
+                    <Link
+                        className={cn(buttonVariants({ variant: 'outline-primary' }))}
+                        href={{ pathname: CONTACTS_ROUTE }}
+                    >
+                        {t('contacts')}
+
+                        <Icon className="ml-8 fill-primary" name="arrow-right-top" />
+                    </Link>
+                </div>
             </div>
         </Section>
     );

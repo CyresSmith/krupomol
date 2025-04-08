@@ -7,7 +7,7 @@ interface Props {
 
 export const HeroSection = ({ bgName, children }: Props) => {
     return (
-        <section className="relative h-[760px] pb-40 pt-64">
+        <section className="relative pb-36 pt-64 desktop:min-h-[684px]">
             <Image
                 alt=""
                 className="object-cover"
