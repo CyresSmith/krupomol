@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
+import { Certificates, CertificatesHero } from '@components/certification';
+
 import { CERTIFICATION_ROUTE } from '@routes';
 
 import { getMetadata } from '@utils';
@@ -20,8 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Certification() {
     return (
-        <div>
-            <div className="container">Certification</div>
-        </div>
+        <>
+            <CertificatesHero />
+            <Certificates />
+        </>
     );
 }

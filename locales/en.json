@@ -26,7 +26,7 @@
     "main": {
         "metadata": {
             "title": "Krupomol",
-            "desc": "LLC \"Ukrainian Agroindustrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market."
+            "desc": "LLC \"Ukrainian Agro-industrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market."
         },
         "hero": {
             "title": "Reliability and quality in every grain",
@@ -67,7 +67,7 @@
         },
         "about": {
             "title": "Who are we?",
-            "text": "LLC \"Ukrainian Agroindustrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market.",
+            "text": "LLC \"Ukrainian Agro-industrial Transport Group\" has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Its own production, control at all stages, and compliance with world standards allow us to ensure stable product quality that meets the requirements of the modern market.",
             "link": "View all",
             "our-products": "Our products",
             "products": [
@@ -81,7 +81,7 @@
     "contacts": {
         "metadata": {
             "title": "Contacts | Krupomol",
-            "desc": "Contacts of LLC \"Ukrainian Agroindustrial Transport Group\" for communication and establishment of productive, mutually beneficial relations",
+            "desc": "Contacts of LLC \"Ukrainian Agro-industrial Transport Group\" for communication and establishment of productive, mutually beneficial relations",
             "keywords": [
                 "Phone",
                 "Mail",
@@ -158,7 +158,7 @@
         ],
         "offer": {
             "title": "What do we offer to our clients?",
-            "text": "LLC \"Ukrainian Agroindustrial Transport Group\" is a manufacturing enterprise specializing in the production of high-quality cereals. We offer products that meet international standards, ensuring stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment in both cash and non-cash forms, make our products accessible to different categories of customers."
+            "text": "LLC \"Ukrainian Agro-industrial Transport Group\" is a manufacturing enterprise specializing in the production of high-quality cereals. We offer products that meet international standards, ensuring stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment in both cash and non-cash forms, make our products accessible to different categories of customers."
         },
         "info": {
             "title": "More information",
@@ -172,7 +172,7 @@
     "prices": {
         "metadata": {
             "title": "Purchase prices | Krupomol",
-            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC offers favorable terms of cooperation for suppliers of grain and cereals. To clarify the current purchase prices and terms of cooperation, contact us.",
+            "desc": "\"Ukrainian Agro-industrial Transport Group\" LLC offers favorable terms of cooperation for suppliers of grain and cereals. To clarify the current purchase prices and terms of cooperation, contact us.",
             "keywords": [
                 "Cash payment",
                 "Non-cash payment",
@@ -246,7 +246,7 @@
     "certification": {
         "metadata": {
             "title": "Certification | Krupomol",
-            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC adheres to the highest standards of quality and product safety. All our products undergo thorough control at every stage of production - from the selection of raw materials to packaging and storage.",
+            "desc": "\"Ukrainian Agro-industrial Transport Group\" LLC adheres to the highest standards of quality and product safety. All our products undergo thorough control at every stage of production - from the selection of raw materials to packaging and storage.",
             "keywords": [
                 "ISO",
                 "Quality",
@@ -263,6 +263,43 @@
                 "barley groats"
             ]
         },
-        "hero": { "title": "Product certification" }
+        "hero": {
+            "title": "Product certification",
+            "desc": "LLC \"Ukrainian Agro-industrial Transport Group\" adheres to the highest standards of product quality and safety. All our products undergo thorough control at every stage of production - from raw material selection to packaging and storage."
+        },
+        "certificates": {
+            "title": "Our certificates:",
+            "list": [
+                {
+                    "icon": "iso22000",
+                    "title": "ISO 22000 – Food Safety Management System"
+                },
+                { "icon": "iso9001", "title": "ISO 9001 – Quality management system" },
+                { "icon": "iso9001-2", "title": "ISO 9001 – Quality management system" }
+            ]
+        },
+        "guarantees": {
+            "title": "What does certification guarantee??",
+            "image": "certificates",
+            "list": [
+                {
+                    "title": "High level of product quality",
+                    "desc": "The certification confirms that our products are manufactured in compliance with strict requirements for raw materials, technological process and final product. We carry out multi-level quality control, which includes laboratory tests and verification of compliance with all established standards."
+                },
+                {
+                    "title": "Compliance with international standards",
+                    "desc": "ISO and HACCP certificates confirm that our products and production processes meet international food safety requirements. This allows us to supply products to markets in Europe, Asia and other regions where high quality standards apply."
+                },
+                {
+                    "title": "Safety for consumers",
+                    "desc": "We guarantee that our products do not contain harmful impurities, meet environmental standards and retain all useful properties. Thanks to the implementation of the HACCP system, we identify and minimize risks at each stage of production."
+                },
+                {
+                    "title": "Possibility of export to EU countries and other regions",
+                    "desc": "Certified products meet the legal requirements of international markets, which opens up wide opportunities for export. This allows us to work with European, Asian and other foreign partners, providing them with high-quality products."
+                }
+            ]
+        },
+        "info": "Thanks to these guarantees, our customers can be confident in the quality, safety, and reliability of the products they receive."
     }
 }

@@ -21,7 +21,9 @@ export const Payment = async () => {
     return (
         <Section variant="secondary">
             <div className="container">
-                <Title className="mb-16 text-center text-3xl desktop:text-5xl">{t('title')}</Title>
+                <Title as="h6" className="mb-16 text-center text-3xl desktop:text-5xl">
+                    {t('title')}
+                </Title>
                 <ul className="mb-16 flex flex-col gap-5 desktop:flex-row">
                     {conditions.map((item, i) => (
                         <PaymentItem item={item} key={i} />
@@ -34,7 +36,10 @@ export const Payment = async () => {
                     </p>
 
                     <Link
-                        className={cn(buttonVariants({ variant: 'outline-primary' }))}
+                        className={cn(
+                            'w-full tablet:w-fit desktop:w-fit',
+                            buttonVariants({ variant: 'outline-primary' })
+                        )}
                         href={{ pathname: CONTACTS_ROUTE }}
                     >
                         {t('contacts')}
