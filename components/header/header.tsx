@@ -57,7 +57,7 @@ export const Header = async () => {
                     <Navigation />
 
                     <Link
-                        className={cn('w-56 mobile:hidden', buttonVariants({ variant: 'outline' }))}
+                        className={cn('w-60 mobile:hidden', buttonVariants({ variant: 'outline' }))}
                         href={{ hash: ANCHORS.consultation, pathname: CONTACTS_ROUTE }}
                     >
                         {t('consultation')}
