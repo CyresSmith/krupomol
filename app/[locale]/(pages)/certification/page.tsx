@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-import { Certificates, CertificatesHero } from '@components/certification';
+import { Certificates, CertificatesHero, Guarantees, Info } from '@components/certification';
 
 import { CERTIFICATION_ROUTE } from '@routes';
 
@@ -25,6 +25,8 @@ export default function Certification() {
         <>
             <CertificatesHero />
             <Certificates />
+            <Guarantees />
+            <Info />
         </>
     );
 }

@@ -19,7 +19,7 @@ export const Certificates = async () => {
                 </Title>
                 <ul className="flex flex-col gap-6">
                     {list.map((item, i) => (
-                        <Certificate item={item} key={i} />
+                        <Certificate index={i} item={item} key={i} />
                     ))}
                 </ul>
             </div>
