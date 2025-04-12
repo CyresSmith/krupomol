@@ -1,13 +1,17 @@
 'use client';
 
 import { ArrowUp } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+
+import { LenisContext } from './smooth-scroll';
 
 import { buttonVariants } from '@ui/button';
 
 import { cn } from '@utils';
 
 export const ScrollToTop = () => {
+    const lenis = useContext(LenisContext);
+
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -19,14 +23,7 @@ export const ScrollToTop = () => {
         return () => window.removeEventListener('scroll', toggleVisibility);
     }, []);
 
-    const scrollToTop = () => {
-        window.scrollTo({ behavior: 'smooth', top: 0 });
-
-        // document.documentElement.scrollTo({
-        //     behavior: 'smooth',
-        //     top: 0,
-        // });
-    };
+    const scrollToTop = () => lenis?.scrollTo('top');
 
     return (
         <button
@@ -42,19 +39,4 @@ export const ScrollToTop = () => {
             <ArrowUp aria-hidden="true" />
         </button>
     );
-
-    // return (
-    //     <a
-    //         aria-label="Scroll to top"
-    //         className={cn(
-    //             buttonVariants({ size: 'icon' }),
-    //             'fixed -bottom-full right-4',
-    //             isVisible && 'bottom-4'
-    //         )}
-    //         href={'#top'}
-    //         title="Scroll to top"
-    //     >
-    //         <ArrowUp aria-hidden="true" />
-    //     </a>
-    // );
 };

@@ -9,7 +9,7 @@ import '../globals.css';
 
 import { routing } from '@i18n';
 
-import { ScrollToTop, SmoothScroll } from '@components/shared';
+import { LenisProvider, ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
@@ -45,13 +45,13 @@ export default async function RootLayout({
             </head>
 
             <NextIntlClientProvider>
-                <SmoothScroll>
+                <LenisProvider>
                     <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
                         {children}
 
                         <ScrollToTop />
                     </body>
-                </SmoothScroll>
+                </LenisProvider>
             </NextIntlClientProvider>
         </html>
     );
