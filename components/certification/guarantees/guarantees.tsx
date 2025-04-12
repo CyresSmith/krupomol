@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-import { GuaranteeType } from 'lib/types/garantie.types';
+import { GuaranteeType } from 'lib/types/guarantee.types';
 
 import { CertificatesImages } from './certificates-images';
 import { Guarantee } from './guarantee';
