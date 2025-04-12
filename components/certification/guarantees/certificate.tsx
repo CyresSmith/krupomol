@@ -31,11 +31,13 @@ export const Certificate = ({ image }: Props) => {
 
     return (
         <Dialog onOpenChange={setOpen} open={open}>
-            <DialogTrigger>
+            <DialogTrigger className="relative h-full w-full">
                 <Image
                     alt="Certificate"
                     className="object-contain transition"
                     fill
+                    priority
+                    sizes="100%"
                     src={`/images/${image}.jpg`}
                 />
             </DialogTrigger>

@@ -32,7 +32,7 @@ export const About = () => {
                             className="object-cover tablet:object-contain"
                             fill
                             priority
-                            sizes="100vw"
+                            sizes="100%"
                             src="/images/main-about-as.png"
                         />
                     </div>

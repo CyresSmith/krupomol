@@ -3,11 +3,11 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Props {
     children: React.ReactNode;
-    image: string;
+    image: StaticImageData;
 }
 
 export const HeroSection = ({ children, image }: Props) => {
@@ -43,9 +43,10 @@ export const HeroSection = ({ children, image }: Props) => {
                     alt="image"
                     className="object-cover"
                     fill
+                    placeholder="blur"
                     priority
                     sizes="100vw"
-                    src={`/images/${image}.jpg`}
+                    src={image}
                 />
             </motion.div>
 

@@ -36,7 +36,7 @@ export default async function RootLayout({
     setRequestLocale(p.locale);
 
     return (
-        <html className="!scroll-smooth" lang={p.locale}>
+        <html className="relative !scroll-smooth" lang={p.locale}>
             <head>
                 <link href="/favicon.ico" rel="icon" sizes="48x48" />
                 <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />

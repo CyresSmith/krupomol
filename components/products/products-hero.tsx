@@ -6,6 +6,8 @@ import { buttonVariants } from '@ui/index';
 
 import { HeroSection, Icon, Title } from '@components/shared';
 
+import image from '@assets/images/products-hero.jpg';
+
 import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
@@ -14,7 +16,7 @@ export const ProductsHero = async () => {
     const t = await getTranslations('products');
 
     return (
-        <HeroSection image="products-hero">
+        <HeroSection image={image}>
             <Title
                 as="h1"
                 className="mx-auto mb-11 max-w-[753px] text-center text-5xl font-bold leading-normal text-background mobile:text-left desktop:text-6xl desktop:leading-normal"

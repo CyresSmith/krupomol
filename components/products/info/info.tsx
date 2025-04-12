@@ -16,7 +16,7 @@ export const Info = ({ item }: Props) => {
                     alt={title}
                     className="object-contain transition"
                     fill
-                    // sizes="100vw"
+                    sizes="100%"
                     src={`/images/${icon}.png`}
                 />
             </div>

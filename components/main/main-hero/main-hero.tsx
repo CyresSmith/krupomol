@@ -8,6 +8,8 @@ import { buttonVariants } from '@ui/button';
 
 import { HeroSection, Icon, Title } from '@components/shared';
 
+import image from '@assets/images/main-hero.jpg';
+
 import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
@@ -16,7 +18,7 @@ export const MainHero = () => {
     const t = useTranslations('main.hero');
 
     return (
-        <HeroSection image="main-hero">
+        <HeroSection image={image}>
             <Title
                 as="h1"
                 className="mb-11 text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
