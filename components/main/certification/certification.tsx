@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import { Link } from '@i18n';
@@ -11,8 +13,8 @@ import { CERTIFICATION_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const Certification = async () => {
-    const t = await getTranslations('main.certification');
+export const Certification = () => {
+    const t = useTranslations('main.certification');
 
     return (
         <Section className="relative z-0">

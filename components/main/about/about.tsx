@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import ProductCard from './product-card';
@@ -16,8 +18,8 @@ import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const About = async () => {
-    const t = await getTranslations('main.about');
+export const About = () => {
+    const t = useTranslations('main.about');
     const products = t.raw('products') as { image: string; title: string }[];
 
     return (

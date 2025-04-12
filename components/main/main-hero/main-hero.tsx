@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 
 import { Link } from '@i18n';
 
@@ -10,8 +12,8 @@ import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const MainHero = async () => {
-    const t = await getTranslations('main.hero');
+export const MainHero = () => {
+    const t = useTranslations('main.hero');
 
     return (
         <HeroSection bgName="main-hero">
