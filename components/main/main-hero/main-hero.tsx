@@ -16,7 +16,7 @@ export const MainHero = () => {
     const t = useTranslations('main.hero');
 
     return (
-        <HeroSection bgName="main-hero">
+        <HeroSection image="main-hero">
             <Title
                 as="h1"
                 className="mb-11 text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"

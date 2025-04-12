@@ -6,7 +6,7 @@ export const CertificatesHero = async () => {
     const t = await getTranslations('certification.hero');
 
     return (
-        <HeroSection bgName="certification-hero">
+        <HeroSection image="certification-hero">
             <Title
                 as="h1"
                 className="mb-[20px] text-left text-[44px] font-bold leading-normal text-background desktop:text-6xl desktop:leading-normal"

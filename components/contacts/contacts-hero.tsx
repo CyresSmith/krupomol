@@ -13,7 +13,7 @@ export const ContactsHero = async () => {
     const c = await getTranslations('header');
 
     return (
-        <HeroSection bgName="contacts-hero">
+        <HeroSection image="contacts-hero">
             <Card className="bg-secondary p-14 mobile:p-9">
                 <CardHeader className="p-0">
                     <Title

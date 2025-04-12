@@ -14,7 +14,7 @@ export const ProductsHero = async () => {
     const t = await getTranslations('products');
 
     return (
-        <HeroSection bgName="products-hero">
+        <HeroSection image="products-hero">
             <Title
                 as="h1"
                 className="mx-auto mb-11 max-w-[753px] text-center text-5xl font-bold leading-normal text-background mobile:text-left desktop:text-6xl desktop:leading-normal"
