@@ -16,7 +16,7 @@ export const AnimatedBox = ({ children }: Props) => {
         target: container,
     });
 
-    const translateY = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], ['50%', '0%', '0%', '-50%']);
+    const translateY = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], ['30%', '0%', '0%', '-30%']);
     const scale = useTransform(
         scrollYProgress,
         [0, 0.18, 0.3, 0.7, 0.82, 1],
