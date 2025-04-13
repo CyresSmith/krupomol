@@ -39,7 +39,11 @@ export const About = () => {
                         />
                     </div>
                     {/* <CardHeader className="mb-4 p-0 mobile:mb-6"> */}
-                    <AnimatedTextBox className="mb-4 p-0 mobile:mb-6" from="bottom">
+                    <AnimatedTextBox
+                        className="mb-4 p-0 mobile:mb-6"
+                        from="bottom"
+                        triggerOnce={true}
+                    >
                         <Title
                             as="h2"
                             className={cn(
@@ -53,7 +57,7 @@ export const About = () => {
                     {/* </CardHeader> */}
 
                     {/* <CardContent className="p-0"> */}
-                    <AnimatedTextBox className="p-0" from="top" viewAmount={0.5}>
+                    <AnimatedTextBox className="p-0" from="top" triggerOnce={true} viewAmount={0.5}>
                         <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
                     </AnimatedTextBox>
                     {/* </CardContent> */}
