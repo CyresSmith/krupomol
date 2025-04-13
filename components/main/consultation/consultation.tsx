@@ -1,14 +1,14 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 
 import { ConsultationForm, Section, Title } from '@components/shared';
 
-import { ANCHORS } from '@constants';
-
-export const Consultation = async () => {
-    const t = await getTranslations('main.consultation');
+export const Consultation = () => {
+    const t = useTranslations('main.consultation');
 
     return (
-        <Section id={ANCHORS.consultation}>
+        <Section>
             <div className="container">
                 <Title className="mb-12 text-center text-text-color mobile:text-3xl">
                     {t('title')}

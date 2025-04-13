@@ -9,7 +9,7 @@ import '../globals.css';
 
 import { routing } from '@i18n';
 
-import { ScrollToTop } from '@components/shared';
+import { LenisProvider, ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
@@ -36,7 +36,7 @@ export default async function RootLayout({
     setRequestLocale(p.locale);
 
     return (
-        <html className="!scroll-smooth" lang={p.locale}>
+        <html className="relative !scroll-smooth" lang={p.locale}>
             <head>
                 <link href="/favicon.ico" rel="icon" sizes="48x48" />
                 <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
@@ -45,11 +45,13 @@ export default async function RootLayout({
             </head>
 
             <NextIntlClientProvider>
-                <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
-                    {children}
+                <LenisProvider>
+                    <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
+                        {children}
 
-                    <ScrollToTop />
-                </body>
+                        <ScrollToTop />
+                    </body>
+                </LenisProvider>
             </NextIntlClientProvider>
         </html>
     );

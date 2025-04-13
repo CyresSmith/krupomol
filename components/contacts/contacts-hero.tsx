@@ -6,6 +6,8 @@ import { Card, CardHeader } from '@ui/card';
 
 import { HeroSection, Icon, Title } from '@components/shared';
 
+import image from '@assets/images/contacts-hero.jpg';
+
 import { contacts } from '@constants';
 
 export const ContactsHero = async () => {
@@ -13,7 +15,7 @@ export const ContactsHero = async () => {
     const c = await getTranslations('header');
 
     return (
-        <HeroSection bgName="contacts-hero">
+        <HeroSection image={image}>
             <Card className="bg-secondary p-14 mobile:p-9">
                 <CardHeader className="p-0">
                     <Title

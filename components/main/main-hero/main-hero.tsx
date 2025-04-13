@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 
 import { Link } from '@i18n';
 
@@ -6,15 +8,17 @@ import { buttonVariants } from '@ui/button';
 
 import { HeroSection, Icon, Title } from '@components/shared';
 
+import image from '@assets/images/main-hero.jpg';
+
 import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const MainHero = async () => {
-    const t = await getTranslations('main.hero');
+export const MainHero = () => {
+    const t = useTranslations('main.hero');
 
     return (
-        <HeroSection bgName="main-hero">
+        <HeroSection image={image}>
             <Title
                 as="h1"
                 className="mb-11 text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"

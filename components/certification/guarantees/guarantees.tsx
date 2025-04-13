@@ -21,6 +21,7 @@ export const Guarantees = async () => {
                     >
                         {t('title')}
                     </Title>
+
                     <ul className="grid grid-cols-1 gap-5 bg-primary desktop:grid-cols-2 desktop:gap-8">
                         {list.map((item, i) => (
                             <Guarantee item={item} key={i} />

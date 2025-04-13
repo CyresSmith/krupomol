@@ -25,7 +25,7 @@ export const Certificate = ({ index, item }: Props) => {
                     alt={icon}
                     className="object-contain transition"
                     fill
-                    // sizes="100vw"
+                    sizes="100%"
                     src={`/images/${icon}.png`}
                 />
             </div>

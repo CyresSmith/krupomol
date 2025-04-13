@@ -11,12 +11,12 @@ interface Props {
 
 const ProductCard = ({ image, title }: Props) => {
     return (
-        <li className="rounded-20 group relative w-full overflow-hidden" key={title}>
+        <li className="group relative w-full overflow-hidden rounded-20" key={title}>
             <Image
                 alt={title}
                 className="object-cover transition group-hover:scale-110"
                 fill
-                sizes="100vw"
+                sizes="100%"
                 src={`/images/${image}.jpg`}
             />
             <h5
