@@ -271,11 +271,11 @@
             "title": "Our certificates:",
             "list": [
                 {
-                    "icon": "iso22000",
+                    "id": "iso22000",
                     "title": "ISO 22000 – Food Safety Management System"
                 },
-                { "icon": "iso9001", "title": "ISO 9001 – Quality management system" },
-                { "icon": "iso9001-2", "title": "ISO 9001 – Quality management system" }
+                { "id": "iso9001", "title": "ISO 9001 – Quality management system" },
+                { "id": "iso9001-2", "title": "ISO 9001 – Quality management system" }
             ]
         },
         "guarantees": {

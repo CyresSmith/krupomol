@@ -1,4 +1,4 @@
 export interface CertificateType {
-    icon: string;
+    id: string;
     title: string;
 }

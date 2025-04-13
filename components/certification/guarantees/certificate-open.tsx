@@ -1,6 +1,6 @@
 'use client';
 
-import { useContext, useEffect, useState } from 'react';
+import { PropsWithChildren, useContext, useEffect, useState } from 'react';
 
 import Image from 'next/image';
 
@@ -8,11 +8,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 
 import { LenisContext } from '@components/shared';
 
-interface Props {
+interface Props extends PropsWithChildren {
     image: string;
 }
 
-export const Certificate = ({ image }: Props) => {
+export const CertificateOpen = ({ children, image }: Props) => {
     const lenis = useContext(LenisContext);
 
     const [open, setOpen] = useState(false);
@@ -31,15 +31,8 @@ export const Certificate = ({ image }: Props) => {
 
     return (
         <Dialog onOpenChange={setOpen} open={open}>
-            <DialogTrigger className="relative h-full w-full">
-                <Image
-                    alt="Certificate"
-                    className="object-contain transition"
-                    fill
-                    priority
-                    sizes="100%"
-                    src={`/images/${image}.jpg`}
-                />
+            <DialogTrigger className="relative h-full w-full transition hover:scale-[1.05]">
+                {children}
             </DialogTrigger>
 
             <DialogContent className="border-none bg-transparent">
