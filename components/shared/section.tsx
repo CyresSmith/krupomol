@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, Ref } from 'react';
 
 import { cn } from '@utils';
 
@@ -6,6 +6,7 @@ interface SectionProps {
     className?: string;
     id?: string;
     noPadding?: boolean;
+    ref?: Ref<HTMLElement>;
     variant?: 'default' | 'secondary';
 }
 
@@ -14,6 +15,7 @@ export const Section = ({
     className,
     id,
     noPadding = false,
+    ref,
     variant = 'default',
 }: PropsWithChildren & SectionProps) => {
     return (
@@ -26,6 +28,7 @@ export const Section = ({
                 className
             )}
             id={id}
+            ref={ref}
         >
             {children}
         </section>

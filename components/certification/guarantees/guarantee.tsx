@@ -1,4 +1,4 @@
-import { GuaranteeType } from 'lib/types/garantie.types';
+import { GuaranteeType } from 'lib/types/guarantee.types';
 
 import { Title } from '@components/shared';
 
