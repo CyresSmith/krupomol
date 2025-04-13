@@ -8,9 +8,10 @@ import ProductCard from './product-card';
 import { Link } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
-import { Card, CardContent, CardHeader } from '@ui/card';
+import { Card } from '@ui/card';
 
 import { Icon, Section, Title } from '@components/shared';
+import { AnimatedTextBox } from '@components/shared/animated-text-box';
 
 import { titleFont } from '@fonts';
 
@@ -25,7 +26,7 @@ export const About = () => {
     return (
         <Section className="relative z-0">
             <div className="container">
-                <Card className="relative mb-24 min-h-[343px] p-16 mobile:px-4 mobile:pb-16 mobile:pt-64">
+                <Card className="relative mb-24 min-h-[343px] p-16 shadow-lg mobile:px-4 mobile:pb-16 mobile:pt-64">
                     <div className="absolute right-0 top-1/2 h-[377px] w-[662px] -translate-y-1/2 overflow-hidden mobile:inset-x-0 mobile:top-10 mobile:h-[194px] mobile:w-full mobile:translate-y-0 tablet:w-[280px]">
                         <Image
                             alt=""
@@ -36,7 +37,8 @@ export const About = () => {
                             src="/images/main-about-as.png"
                         />
                     </div>
-                    <CardHeader className="mb-4 p-0 mobile:mb-6">
+                    {/* <CardHeader className="mb-4 p-0 mobile:mb-6"> */}
+                    <AnimatedTextBox className="mb-4 p-0 mobile:mb-6" from="bottom">
                         <Title
                             as="h2"
                             className={cn(
@@ -46,11 +48,14 @@ export const About = () => {
                         >
                             {t('title')}
                         </Title>
-                    </CardHeader>
+                    </AnimatedTextBox>
+                    {/* </CardHeader> */}
 
-                    <CardContent className="p-0">
+                    {/* <CardContent className="p-0"> */}
+                    <AnimatedTextBox className="p-0" from="top" viewAmount={0.5}>
                         <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
-                    </CardContent>
+                    </AnimatedTextBox>
+                    {/* </CardContent> */}
                 </Card>
 
                 <Title
