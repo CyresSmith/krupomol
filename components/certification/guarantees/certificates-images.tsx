@@ -14,7 +14,7 @@ export const CertificatesImages = async () => {
     return (
         <div className="absolute right-0 top-[-25px] z-10 tablet:right-[-75px] tablet:top-[-60px] desktop:top-[-75px]">
             <ul className="relative flex h-[230px] w-[300px] rotate-[30deg] mobile:scale-[75%] tablet:scale-[75%]">
-                {list.map(({ id }, i) => (
+                {list.map(({ desc, id, title }, i) => (
                     <li
                         className={cn('absolute h-[230px] w-[150px]', {
                             'right-[33%]': i === 1,
@@ -23,9 +23,9 @@ export const CertificatesImages = async () => {
                         })}
                         key={id}
                     >
-                        <CertificateOpen image="certificate-1">
+                        <CertificateOpen desc={desc} image={id} title={title}>
                             <Image
-                                alt={`Certificate ${id}`}
+                                alt={title}
                                 className="object-contain transition"
                                 fill
                                 priority
