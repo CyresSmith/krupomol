@@ -25,10 +25,10 @@ export const AnimatedTextBox = ({
             <motion.div
                 animate={
                     isInView
-                        ? { transition: { duration: 0.7 }, y: 0 }
+                        ? { transition: { duration: 0.5 }, y: 0 }
                         : from === 'top'
-                          ? { y: '-200%' }
-                          : { y: '200%' }
+                          ? { y: '-150%' }
+                          : { y: '150%' }
                 }
             >
                 {children}
