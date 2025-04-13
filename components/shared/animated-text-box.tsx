@@ -1,0 +1,30 @@
+import { motion, useInView } from 'motion/react';
+import { PropsWithChildren, useRef } from 'react';
+
+import { cn } from '@utils';
+
+interface Props {
+    className?: string;
+    from: 'bottom' | 'top';
+}
+
+export const AnimatedTextBox = ({ children, className, from }: Props & PropsWithChildren) => {
+    const ref = useRef<HTMLDivElement | null>(null);
+    const isInView = useInView(ref, { amount: 0.5, once: false });
+
+    return (
+        <motion.div className={cn(className, 'overflow-hidden')} ref={ref}>
+            <motion.div
+                animate={
+                    isInView
+                        ? { transition: { duration: 0.5 }, y: 0 }
+                        : from === 'top'
+                          ? { y: '-200%' }
+                          : { y: '200%' }
+                }
+            >
+                {children}
+            </motion.div>
+        </motion.div>
+    );
+};
