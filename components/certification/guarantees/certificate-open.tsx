@@ -46,7 +46,7 @@ export const CertificateOpen = ({ children, desc, image, title }: Props) => {
 
             <DialogContent className="border-none bg-transparent">
                 <DialogHeader className="sr-only">
-                    <DialogTitle>{desc}</DialogTitle>
+                    <DialogTitle>{title}</DialogTitle>
                     <DialogDescription>{desc}</DialogDescription>
                 </DialogHeader>
 
