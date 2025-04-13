@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Cooperation, EmptyBg, Payment, PricesHero } from '@components/prices';
+import { PricesAccordion } from '@components/prices/prices-accordion/prices-accordion';
 
 import { PRICES_ROUTE } from '@routes';
 
@@ -24,6 +25,7 @@ export default function Prices() {
     return (
         <>
             <PricesHero />
+            <PricesAccordion />
             <Cooperation />
             <EmptyBg />
             <Payment />
