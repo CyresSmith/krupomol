@@ -11,9 +11,9 @@ export const Cooperation = async () => {
     const list = t.raw('list') as CooperationType[];
 
     return (
-        <Section variant="secondary">
+        <Section className="!pt-0" variant="secondary">
             <div className="container">
-                <div className="rounded-20 bg-accent px-4 py-9 desktop:rounded-40 desktop:px-24 desktop:py-12">
+                <div className="rounded-20 bg-accent px-4 py-9 shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-12">
                     <Title
                         as="h6"
                         className="mb-11 text-center text-3xl text-primary desktop:text-left desktop:text-5xl"
