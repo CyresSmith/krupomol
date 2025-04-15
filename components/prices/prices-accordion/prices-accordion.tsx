@@ -16,10 +16,10 @@ export const PricesAccordion = () => {
     return (
         <Section className="bg-secondary">
             <div className="container">
-                <div className="rounded-20 bg-accent px-4 py-4 text-primary shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
+                <div className="rounded-20 bg-primary px-4 py-4 text-background shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
                     <Accordion type="multiple">
                         <AccordionItem value="Закупівельні ціни">
-                            <AccordionTrigger className="font-title font-bold border-b-2 border-primary">
+                            <AccordionTrigger className="font-title font-bold border-b-2 border-background">
                                 <Title className='mobile:text-3xl tablet:text-3xl'>Закупівельні ціни</Title>
                             </AccordionTrigger>
                             <AccordionContent>
@@ -30,10 +30,10 @@ export const PricesAccordion = () => {
                                         type="multiple"
                                     >
                                         <AccordionItem value={product.productName}>
-                                            <AccordionTrigger className="px-4 font-title mobile:text-lg text-xl font-bold justify-between border-b-[1px] border-primary">
+                                            <AccordionTrigger className="px-4 font-title mobile:text-lg text-xl font-bold justify-between border-b-[1px] border-background">
                                                 <div className='w-full flex mobile:flex-col mobile:gap-2 justify-between mr-6'><span>{product.productName}</span><span>{getNumberWithSpace(product.price.toFixed(2))} грн/т</span></div>
                                             </AccordionTrigger>
-                                            <AccordionContent className='rounded-b-20 border border-t-0 border-primary bg-secondary mobile:p-3 p-5 text-base'>
+                                            <AccordionContent className='rounded-b-20 border border-t-0 border-background bg-background mobile:p-3 p-5 text-base'>
                                                 <PriceItem item={product} />
                                             </AccordionContent>
                                         </AccordionItem>

@@ -8,7 +8,7 @@ export const PriceItem = ({ item }: Props) => {
     const { addInfo, services, standards } = item;
 
     return (
-        <div className="flex flex-col gap-5 mobile:gap-3 mobile:text-sm">
+        <div className="flex flex-col gap-5 text-primary mobile:gap-3 mobile:text-sm">
             <p className="font-bold">Послуги:</p>
             <div>
                 <p>Вартість сушки - {services.drying.toFixed(1)} грн/т * %</p>
