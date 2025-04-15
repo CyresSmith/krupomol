@@ -78,6 +78,9 @@
             "@locales/*": [
                 "./locales/*"
             ],
+            "@products/*": [
+                "./products/*"
+            ],
         }
     },
     "include": [

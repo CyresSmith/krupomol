@@ -1,6 +1,8 @@
+'use client';
+
 import { Section } from '@components/shared';
 
-export const ProductsInfo = () => {
+export const ProductInfo = () => {
     return (
         <Section>
             <div className="container">blank</div>

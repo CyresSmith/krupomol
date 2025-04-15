@@ -108,6 +108,30 @@
         }
     },
     "products": {
+        "groats": {
+            "buckwheat": "Buckwheat",
+            "corn": "Corn",
+            "pea": "Pea",
+            "millet": "Millet",
+            "wheat": "Wheat",
+            "barley": "Barley"
+        },
+        "products-type": ["Groats", "Sugar"],
+        "products-info": {
+            "nutritional": "Nutrition Facts (Food value) per 100 g of product:",
+            "fats": "Fat, g",
+            "acids": "Saturated Fat, g",
+            "carbohydrates": "Carbohydrate, g",
+            "sugar": "Sugars, g",
+            "protein": "Protein, g",
+            "salt": "Salt, g",
+            "energy": "Energy value per 100 g of product",
+            "mass": "Net weight",
+            "package": "Type of packaging",
+            "gp-count": "Quantity of pieces in multiple-unit package",
+            "gp-weight": "Weight of multiple-unit package",
+            "expiration": "Expiration date"
+        },
         "metadata": {
             "title": "Products | Krupomol",
             "desc": "Wholesale supplies of natural cereals of the highest quality from a certified manufacturer",

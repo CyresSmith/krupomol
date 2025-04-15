@@ -1,0 +1,38 @@
+{
+    "sugar": [
+        {
+            "title": { "en": "Sugar", "ua": "Цукор" },
+            "image": "sugar",
+            "fats": "0",
+            "acids": "0",
+            "carbohydrates": "100",
+            "sugar": "99.5",
+            "protein": "0",
+            "salt": "0",
+            "kj": "1680",
+            "kcal": "401",
+            "mass": "1000",
+            "package": "polypropylene-bag",
+            "gp-count": "6",
+            "gp-weight": "6",
+            "expiration": "20"
+        },
+        {
+            "title": { "en": "Sugar premium", "ua": "Цукор premium" },
+            "image": "sugar-premium",
+            "fats": "0",
+            "acids": "0",
+            "carbohydrates": "100",
+            "sugar": "99.5",
+            "protein": "0",
+            "salt": "0",
+            "kj": "1680",
+            "kcal": "401",
+            "mass": "1000",
+            "package": "paper-bag",
+            "gp-count": "6",
+            "gp-weight": "6",
+            "expiration": "20"
+        }
+    ]
+}
