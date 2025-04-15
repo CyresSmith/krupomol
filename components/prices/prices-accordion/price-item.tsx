@@ -11,11 +11,11 @@ export const PriceItem = ({ item }: Props) => {
         <div className="flex flex-col gap-5 mobile:gap-3 mobile:text-sm">
             <p className="font-bold">Послуги:</p>
             <div>
-                <p>Вартість сушки - {services.drying} грн/т * %</p>
-                <p>Вартість очистки - {services.cleaning} грн/т * %</p>
+                <p>Вартість сушки - {services.drying.toFixed(1)} грн/т * %</p>
+                <p>Вартість очистки - {services.cleaning.toFixed(1)} грн/т * %</p>
             </div>
             <p className="font-bold">{standards.title}</p>
-            <table className="max-w-[70%]">
+            <table className="tablet:w-[70%] desktop:w-[70%]">
                 <tbody>
                     {standards.list.map((s, i) => (
                         <tr className="border-primary [&:not(:last-child)]:border-b-[1px]" key={i}>
