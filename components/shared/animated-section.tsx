@@ -22,11 +22,7 @@ export const AnimatedSection = ({ children, className, gradientBg }: Props & Pro
     });
 
     const translateY = useTransform(scrollYProgress, [0, 0.5, 0.5, 1], ['40%', '0%', '0%', '-40%']);
-    const scale = useTransform(
-        scrollYProgress,
-        [0, 0.18, 0.3, 0.7, 1],
-        ['0.9', '1.02', '1', '1', '0.9']
-    );
+    const scale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], ['0.9', '1', '1', '0.9']);
 
     return (
         <Section className={cn('relative', className)} ref={container}>
