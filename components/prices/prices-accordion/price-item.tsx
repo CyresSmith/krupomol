@@ -1,4 +1,4 @@
-import { PurchasePriceType } from 'lib/types/pusrchase-prices.types';
+import { PurchasePriceType } from 'lib/types/purchase-prices.types';
 
 interface Props {
     item: PurchasePriceType;

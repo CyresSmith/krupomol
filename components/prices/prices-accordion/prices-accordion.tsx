@@ -2,12 +2,12 @@ import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from '@u
 
 import { Section, Title } from '@components/shared';
 
-import prices from "./../purchase-prices.json" assert {type: "json"};
-import { PurchasePricesDatesType } from 'lib/types/pusrchase-prices.types';
+import prices from "data/purchase-prices.json" assert {type: "json"};
+import { PurchasePricesDatesType } from 'lib/types/purchase-prices.types';
 import { PriceItem } from './price-item';
 
 export const PricesAccordion = () => {
-    const { purchasePrices } = prices as PurchasePricesDatesType;
+    const { dates, purchasePrices } = prices as PurchasePricesDatesType;
 
     const getNumberWithSpace = (x: string) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -42,6 +42,12 @@ export const PricesAccordion = () => {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
+                    <div>
+                        <p className='font-bold mt-6 mb-4'>{dates.title}:</p>
+                        <p className='mb-4'>з <span>{dates.from} 00:00 </span>по <span>{dates.to} 00:00</span>.</p>
+                        <p className='mb-4'>*Вимоги щодо якості культур див. у контекстному меню при натисненні на назву культури.</p>
+                        <p className='font-bold'>Всі ціни вказано з ПДВ на умовах DAP.</p>
+                    </div>
                 </div>
             </div>
         </Section>

@@ -12,15 +12,13 @@ export interface PurchasePriceType {
     };
 }
 
-export interface CurrentDatesType {
-    addInfo: string;
-    desc: string;
-    from: Date | string;
+export interface PricesValidityType {
+    from: string;
     title: string;
-    to: Date | string;
+    to: string;
 }
 
 export interface PurchasePricesDatesType {
-    dates: CurrentDatesType;
+    dates: PricesValidityType;
     purchasePrices: PurchasePriceType[];
 }
