@@ -22,21 +22,21 @@ interface Props extends PropsWithChildren {
 }
 
 export const CertificateOpen = ({ children, desc, image, title }: Props) => {
-    const lenis = useContext(LenisContext);
+    // const lenis = useContext(LenisContext);
 
     const [open, setOpen] = useState(false);
 
-    useEffect(() => {
-        if (open) {
-            lenis?.stop();
-        } else {
-            lenis?.start();
-        }
+    // useEffect(() => {
+    //     if (open) {
+    //         lenis?.stop();
+    //     } else {
+    //         lenis?.start();
+    //     }
 
-        return () => {
-            lenis?.start();
-        };
-    }, [lenis, open]);
+    //     return () => {
+    //         lenis?.start();
+    //     };
+    // }, [lenis, open]);
 
     return (
         <Dialog onOpenChange={setOpen} open={open}>

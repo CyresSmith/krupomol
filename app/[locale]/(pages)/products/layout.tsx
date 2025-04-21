@@ -1,9 +1,10 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, ReactNode } from 'react';
 
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Infos, ProductsHero } from '@components/products';
+import { Section } from '@components/shared';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -22,10 +23,26 @@ export async function generateMetadata(): Promise<Metadata> {
     });
 }
 
-const ProductsLayout = ({ children }: PropsWithChildren) => {
+interface LayoutProps {
+    categories: ReactNode;
+    productData: ReactNode;
+    products: ReactNode;
+}
+
+const ProductsLayout = ({
+    categories,
+    children,
+    productData,
+    products,
+}: PropsWithChildren<LayoutProps>) => {
     return (
         <>
             <ProductsHero />
+            <Section noPadding>
+                {categories}
+                {products}
+                {productData}
+            </Section>
             {children}
             <Infos />
         </>

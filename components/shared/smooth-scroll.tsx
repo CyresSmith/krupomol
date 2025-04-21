@@ -12,8 +12,9 @@ export const LenisProvider = ({ children }: PropsWithChildren) => {
     useEffect(() => {
         const lenis = new Lenis({
             anchors: true,
-            duration: 2.5,
+            duration: 1.5,
             easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            prevent: node => node.id === 'modal',
         });
 
         setLenis(lenis);

@@ -4,13 +4,15 @@ import { Link, usePathname } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
 
+import { CardLinkItem } from '@types';
+
 import { cn } from '@utils';
 
 interface Props {
-    items: { href: string; title: string }[];
+    items: Omit<CardLinkItem, 'image'>[];
 }
 
-export const ProductTypeList = ({ items = [] }: Props) => {
+export const ProductCategoryList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
@@ -21,7 +23,9 @@ export const ProductTypeList = ({ items = [] }: Props) => {
                         <Link
                             className={cn(
                                 buttonVariants({
-                                    variant: pathname === href ? 'primary' : 'outline-primary',
+                                    variant: pathname.includes(href)
+                                        ? 'primary'
+                                        : 'outline-primary',
                                 }),
                                 'w-full'
                             )}

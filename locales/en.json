@@ -108,16 +108,7 @@
         }
     },
     "products": {
-        "groats": {
-            "buckwheat": "Buckwheat",
-            "corn": "Corn",
-            "pea": "Pea",
-            "millet": "Millet",
-            "wheat": "Wheat",
-            "barley": "Barley"
-        },
-        "products-type": ["Groats", "Sugar"],
-        "products-info": {
+        "data": {
             "nutritional": "Nutrition Facts (Food value) per 100 g of product:",
             "fats": "Fat, g",
             "acids": "Saturated Fat, g",
@@ -125,12 +116,16 @@
             "sugar": "Sugars, g",
             "protein": "Protein, g",
             "salt": "Salt, g",
-            "energy": "Energy value per 100 g of product",
-            "mass": "Net weight",
-            "package": "Type of packaging",
-            "gp-count": "Quantity of pieces in multiple-unit package",
-            "gp-weight": "Weight of multiple-unit package",
-            "expiration": "Expiration date"
+            "energy": "Energy value per 100 g of product:",
+            "mass": "Net weight, g",
+            "packageType": "Type of packaging",
+            "gpCount": "Quantity in multiple-unit package, pcs",
+            "gpWeight": "Weight of multiple-unit package, kg",
+            "expiration": "Expiration date, months",
+            "polypropylene": "Polipropylene bag",
+            "paper": "Paper bag",
+            "kcal": "kcal",
+            "kj": "kj"
         },
         "metadata": {
             "title": "Products | Krupomol",

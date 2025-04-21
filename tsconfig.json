@@ -78,8 +78,8 @@
             "@locales/*": [
                 "./locales/*"
             ],
-            "@products/*": [
-                "./products/*"
+            "@products": [
+                "./products"
             ],
         }
     },

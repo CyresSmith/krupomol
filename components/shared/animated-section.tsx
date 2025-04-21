@@ -29,7 +29,7 @@ export const AnimatedSection = ({ children, className, gradientBg }: Props & Pro
     );
 
     return (
-        <Section className={cn('relative', className)} ref={container}>
+        <Section className={cn('relative overflow-hidden', className)} ref={container}>
             <motion.div style={{ scale: scale, translateY: translateY }}>{children}</motion.div>
             {gradientBg && (
                 <span className="absolute inset-x-0 bottom-0 -z-10 h-[60%] bg-gray-color" />

@@ -11,7 +11,7 @@ import {
     CarouselPrevious,
 } from '@ui/carousel';
 
-import { ProductCard } from '@components/products/list/product-card';
+import { ProductCard } from '@components/products';
 
 import { ProductItemType } from '@types';
 
