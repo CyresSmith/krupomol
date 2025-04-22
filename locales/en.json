@@ -291,12 +291,12 @@
             "title": "Our certificates:",
             "list": [
                 {
-                    "id": "ISO22000",
+                    "id": "iso22000",
                     "title": "ISO 22000 – Food Safety Management System",
                     "desc": "The certificate certifies compliance with the ISO 22000 standard - Food Safety Management System"
                 },
                 {
-                    "id": "ISO9001",
+                    "id": "iso9001",
                     "title": "ISO 9001 – Quality management system",
                     "desc": "The certificate certifies compliance with the ISO 9001 standard - Quality Management System"
                 },
