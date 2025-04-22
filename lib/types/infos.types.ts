@@ -1,4 +1,6 @@
-export interface InfoType {
+export interface ProductsItemInfoType {
+    download?: boolean;
     icon: string;
     title: string;
+    url: string;
 }

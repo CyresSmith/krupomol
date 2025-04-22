@@ -1,13 +1,21 @@
 import Image from 'next/image';
 
-import { InfoType } from '@types';
+import { Link } from '@i18n';
+
+import { ProductsItemInfoType } from '@types';
 
 interface Props {
-    item: InfoType;
+    item: ProductsItemInfoType;
 }
 
 export const Info = ({ item }: Props) => {
-    const { icon, title } = item;
+    const { download = false, icon, title, url } = item;
+
+    const generateDownLoadLink = (fileId: string) => {
+        return `https://drive.google.com/uc?export=download&id=${fileId}`;
+    };
+
+    console.log(generateDownLoadLink(url));
 
     return (
         <li className="flex items-center gap-5 fill-accent desktop:gap-7">
@@ -20,7 +28,12 @@ export const Info = ({ item }: Props) => {
                     src={`/images/${icon}.png`}
                 />
             </div>
-            <p>{item.title}</p>
+            <Link
+                href={download ? generateDownLoadLink(url) : url}
+                target={download ? '' : 'blank'}
+            >
+                {title}
+            </Link>
         </li>
     );
 };

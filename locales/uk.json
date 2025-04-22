@@ -163,9 +163,24 @@
         "info": {
             "title": "Більше інформації",
             "infoList": [
-                { "title": "Завантажити каталог", "icon": "catalog" },
-                { "title": "Завантажити прайс", "icon": "price-list" },
-                { "title": "Відеоогляд продукції", "icon": "video-review" }
+                {
+                    "title": "Завантажити каталог",
+                    "icon": "catalog",
+                    "url": "1_1pH4F9PNdMSGKHH78RtEteLWVB2AZwF4OKTAGm-t0M",
+                    "download": true
+                },
+                {
+                    "title": "Завантажити прайс",
+                    "icon": "price-list",
+                    "url": "1FTq0_2njG4E-HYmk_EqYYaCfaEaMrK11zLY051o_Mq4",
+                    "download": true
+                },
+                {
+                    "title": "Відеоогляд продукції",
+                    "icon": "video-review",
+                    "url": "http://youtube.com/",
+                    "download": false
+                }
             ]
         }
     },

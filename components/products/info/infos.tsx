@@ -4,11 +4,11 @@ import { Info } from './info';
 
 import { BorderCard, ImageSection, Title } from '@components/shared';
 
-import { IconName } from '@types';
+import { ProductsItemInfoType } from '@types';
 
 export const Infos = async () => {
     const t = await getTranslations('products');
-    const infoList = t.raw('info.infoList') as { icon: IconName; title: string }[];
+    const infoList = t.raw('info.infoList') as ProductsItemInfoType[];
 
     return (
         <ImageSection image="products-more-info">

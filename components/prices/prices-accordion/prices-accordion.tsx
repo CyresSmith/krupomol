@@ -21,7 +21,7 @@ export const PricesAccordion = () => {
 
     useEffect(() => {
         async function getSheets() {
-            const response = await fetch('/api/google-sheets'); // не забудь слеш на початку!
+            const response = await fetch('/api/google-sheets');
             if (!response.ok) {
                 throw new Error('Failed to fetch Google Sheets data');
             }
