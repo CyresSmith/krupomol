@@ -1,5 +1,7 @@
 import { Locale } from 'next-intl';
 
+import products from '@products';
+
 export interface ProductItemType {
     image: string;
     text: string;
@@ -34,3 +36,7 @@ export interface ProductType {
 }
 
 export type ProductTypeKeys = keyof Omit<ProductType, 'title'>;
+
+export type ProductCategoryType = keyof typeof products;
+
+export type ProductItems = Record<string, Record<string, ProductType>>;
