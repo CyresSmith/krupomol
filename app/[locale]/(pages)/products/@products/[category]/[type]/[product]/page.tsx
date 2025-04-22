@@ -4,7 +4,7 @@ import products from '@products';
 
 import { ProductList } from '@components/products';
 
-import { CardLinkItem, ProductType, WithParams } from '@types';
+import { CardLinkItem, ProductCategoryType, ProductType, WithParams } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -16,7 +16,9 @@ const TypeProductsList = async ({ params }: WithParams<{ category: string; type:
     const locale = await getLocale();
 
     const items = Object.entries(
-        products[category as keyof typeof products].items[type as keyof products.items]
+        (products[category as ProductCategoryType].items as unknown as Record<string, ProductType>)[
+            type
+        ] ?? {}
     ).reduce((acc: CardLinkItem[], [slug, value]) => {
         const { image, title } = value as ProductType;
 
