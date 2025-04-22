@@ -2,14 +2,16 @@ import products from '@products';
 
 import { ProductInfo } from '@components/products/product-info';
 
-import { ProductType, WithParams } from '@types';
+import { ProductCategoryType, ProductType, WithParams } from '@types';
 
 const TypePageProductData = async ({ params }: WithParams<{ category: string; type: string }>) => {
     const { category, type } = await params;
 
-    const item = Object.entries((products[category as keyof typeof products]?.items)[type]).find(
-        ([key]) => key !== 'title'
-    )[1];
+    const categoryItems = products[category as ProductCategoryType]?.items;
+    const typeItems = categoryItems ? categoryItems[type as keyof typeof categoryItems] : undefined;
+    const item = typeItems
+        ? Object.entries(typeItems).find(([key]) => key !== 'title')?.[1]
+        : undefined;
 
     return item ? (
         <div className="bg-gray-color py-16 tablet:py-20 desktop:py-24">
