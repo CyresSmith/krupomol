@@ -125,7 +125,8 @@
             "polypropylene": "Polipropylene bag",
             "paper": "Paper bag",
             "kcal": "kcal",
-            "kj": "kj"
+            "kj": "kj",
+            "buy": "Buy"
         },
         "metadata": {
             "title": "Products | Krupomol",
@@ -290,17 +291,17 @@
             "title": "Our certificates:",
             "list": [
                 {
-                    "id": "iso22000",
+                    "id": "ISO22000",
                     "title": "ISO 22000 – Food Safety Management System",
                     "desc": "The certificate certifies compliance with the ISO 22000 standard - Food Safety Management System"
                 },
                 {
-                    "id": "iso9001",
+                    "id": "ISO9001",
                     "title": "ISO 9001 – Quality management system",
                     "desc": "The certificate certifies compliance with the ISO 9001 standard - Quality Management System"
                 },
                 {
-                    "id": "iso9001-2",
+                    "id": "ukrsepro",
                     "title": "ISO 9001 – Quality management system",
                     "desc": "The certificate certifies compliance with the ISO 9001 standard - Quality Management System"
                 }

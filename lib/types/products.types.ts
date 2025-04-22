@@ -32,3 +32,5 @@ export interface ProductType {
     sugar: string;
     title: TitleType;
 }
+
+export type ProductTypeKeys = keyof Omit<ProductType, 'title'>;

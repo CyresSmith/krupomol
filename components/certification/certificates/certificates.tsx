@@ -13,6 +13,8 @@ import { Section, Title } from '@components/shared';
 
 import { CertificateType } from '@types';
 
+import { cn } from '@utils';
+
 export const Certificates = () => {
     const t = useTranslations('certification.certificates');
     const list = t.raw('list') as CertificateType[];
@@ -44,8 +46,16 @@ export const Certificates = () => {
                             key={i}
                             style={{ opacity, x: i === 0 ? x1 : i === 1 ? x2 : x3 }}
                         >
-                            <CertificateOpen {...item} image={item.id}>
-                                <Certificate index={i} item={item} />
+                            <CertificateOpen
+                                {...item}
+                                className={cn(
+                                    'rounded-20 bg-accent px-4 py-6 desktop:w-[70%] desktop:rounded-40 desktop:px-8 desktop:py-3',
+                                    i === 0 && 'desktop:ml-[250px]',
+                                    i === 1 && 'desktop:ml-[125px]'
+                                )}
+                                image={item.id}
+                            >
+                                <Certificate item={item} />
                             </CertificateOpen>
                         </motion.li>
                     ))}
