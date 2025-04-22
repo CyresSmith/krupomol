@@ -13,7 +13,7 @@ const ProductTitle = ({ title }: Props) => {
 
     useEffect(() => {
         lenis?.scrollTo('#product', { offset: -100 });
-    }, []);
+    }, [lenis]);
 
     return (
         <Title as="h2" className="text-4xl font-bold uppercase" id="product">
