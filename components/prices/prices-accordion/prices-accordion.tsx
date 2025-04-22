@@ -2,7 +2,7 @@
 
 import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from '@ui/accordion';
 
-import { Section, Title } from '@components/shared';
+import { Loader, Section, Title } from '@components/shared';
 
 import prices from "data/purchase-prices.json" assert {type: "json"};
 import { PricesValidityType, PurchasePricesDatesType, PurchasePriceType } from 'lib/types/purchase-prices.types';
@@ -15,6 +15,7 @@ interface DataType {
 }
 
 export const PricesAccordion = () => {
+    const [loading, setLoading] = useState(false);
     const [data, setData] = useState<DataType | null>(null);
     const { dates, purchasePrices } = prices as PurchasePricesDatesType;
 
@@ -29,7 +30,8 @@ export const PricesAccordion = () => {
             return data;
         }
 
-        getSheets().then(response => setData(response)).catch(e => console.error('Error:', e));
+        setLoading(true);
+        getSheets().then(response => setData(response)).catch(e => console.error('Error:', e)).finally(() => setLoading(false));
     }, [])
 
     const getNumberWithSpace = (x: string) => {
@@ -47,7 +49,7 @@ export const PricesAccordion = () => {
             };
     }).filter((p): p is PurchasePriceType => p !== null);
 
-    return productsToRender.length > 0 && (<Section className='!pb-0' variant='secondary'>
+    return loading ? <Loader className='fixed top-0 right-0 left-0 bottom-0' /> : productsToRender.length > 0 && (<Section className='!pb-0' variant='secondary'>
             <div className="container">
                 <div className="rounded-20 bg-primary px-4 py-4 text-background shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
                     <Accordion type="multiple">
@@ -85,5 +87,5 @@ export const PricesAccordion = () => {
                     )}
                 </div>
             </div>
-        </Section>);
+        </Section>)
 };
