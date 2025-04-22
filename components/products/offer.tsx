@@ -14,7 +14,7 @@ export const Offer = () => {
     return (
         <AnimatedSection gradientBg={true}>
             <div className="container rounded-3xl bg-accent px-6 py-10 shadow-lg desktop:px-16 desktop:py-20">
-                <AnimatedTextBox className="mb-5" from="bottom">
+                <AnimatedTextBox className="mb-5" from="bottom" triggerOnce={true}>
                     <Title
                         as="h3"
                         className={cn(
@@ -24,7 +24,7 @@ export const Offer = () => {
                         {t('offer.title')}
                     </Title>
                 </AnimatedTextBox>
-                <AnimatedTextBox from="top">
+                <AnimatedTextBox from="top" triggerOnce={true}>
                     <p className="text-base leading-5 text-black">{t('offer.text')}</p>
                 </AnimatedTextBox>
             </div>
