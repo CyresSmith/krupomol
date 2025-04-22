@@ -47,7 +47,7 @@ export const PricesAccordion = () => {
             };
     }).filter((p): p is PurchasePriceType => p !== null);
 
-    return productsToRender.length > 0 && (<Section className="bg-secondary">
+    return productsToRender.length > 0 && (<Section className='!pb-0' variant='secondary'>
             <div className="container">
                 <div className="rounded-20 bg-primary px-4 py-4 text-background shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
                     <Accordion type="multiple">
