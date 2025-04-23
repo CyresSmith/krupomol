@@ -21,7 +21,7 @@ export async function generateMetadata({
 
     const items = products[category as ProductCategoryType].items as Record<
         string,
-        { title: { [locale]: string } }
+        { title: Record<string, string> }
     >;
     const name = items[type]?.title[locale] ?? '';
 
