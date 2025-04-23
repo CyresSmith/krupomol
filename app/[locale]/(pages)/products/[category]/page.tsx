@@ -41,7 +41,9 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-    return Object.keys(products);
+    return Object.keys(products).map(category => ({
+        category,
+    }));
 }
 
 const Page = () => null;

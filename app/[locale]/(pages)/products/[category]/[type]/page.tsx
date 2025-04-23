@@ -28,9 +28,13 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-    return Object.values(products).reduce((acc: string[], { items }) => {
-        return [...acc, ...Object.keys(items)];
-    }, []);
+    return Object.entries(products).reduce(
+        (acc: { category: string; type: string }[], [category, values]) => {
+            Object.keys(values.items).forEach(type => acc.push({ category, type }));
+            return acc;
+        },
+        []
+    );
 }
 
 const TypePageProductData = async ({ params }: WithParams<{ category: string; type: string }>) => {
