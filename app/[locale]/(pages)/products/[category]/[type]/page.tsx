@@ -14,7 +14,7 @@ import { getMetadata } from '@utils';
 export async function generateMetadata({
     params,
 }: WithParams<{ category: string; type: string }>): Promise<Metadata> {
-    const { category, type } = await params;
+    const { category } = await params;
     const locale = await getLocale();
     const t = await getTranslations('products');
 
