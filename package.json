@@ -25,6 +25,7 @@
         "embla-carousel-autoplay": "^8.5.2",
         "embla-carousel-fade": "^8.5.2",
         "embla-carousel-react": "^8.5.2",
+        "googleapis": "^148.0.0",
         "lenis": "^1.2.3",
         "libphonenumber-js": "^1.12.6",
         "lucide-react": "^0.477.0",
