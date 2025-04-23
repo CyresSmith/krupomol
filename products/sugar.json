@@ -1,4 +1,28 @@
 {
+    "metadata": {
+        "uk": {
+            "title": "Цукор | Крупомол",
+            "desc": "Оптові поставки цукру найвищої якості від сертифікованого виробника",
+            "keywords": [
+                "Цукор",
+                "Цукор пісок",
+                "Оптові поставки цукру",
+                "Цукор оптом",
+                "Цукор найвищої якості"
+            ]
+        },
+        "en": {
+            "title": "Sugar | Krupomol",
+            "desc": "Wholesale supplies of the highest quality sugar from a certified manufacturer",
+            "keywords": [
+                "Sugar",
+                "Sand sugar",
+                "Wholesale supplies of sugar",
+                "Sugar wholesale",
+                "Sugar of the highest quality"
+            ]
+        }
+    },
     "title": { "en": "Sugar", "uk": "Цукор" },
     "items": {
         "granulated": {

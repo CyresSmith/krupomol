@@ -1,4 +1,44 @@
 {
+    "metadata": {
+        "uk": {
+            "title": "Крупи | Крупомол",
+            "desc": "Оптові поставки натуральних круп найвищої якості від сертифікованого виробника",
+            "keywords": [
+                "Гречана крупа",
+                "Кукурудзяна крупа",
+                "Горохова крупа",
+                "Пшоно",
+                "Гречка",
+                "Пшенична крупа",
+                "Перлова крупа",
+                "Ячна крупа",
+                "Продукція з ячменю",
+                "Оптові поставки круп",
+                "Крупи оптом",
+                "Крупи",
+                "Крупи найвищої якості"
+            ]
+        },
+        "en": {
+            "title": "Groats | Krupomol",
+            "desc": "Wholesale supplies of natural grains of the highest quality from a certified grower",
+            "keywords": [
+                "Buckwheat groats",
+                "Corn groats",
+                "Pea groats",
+                "Millet",
+                "Buckwheat",
+                "Wheat groats",
+                "Pearl groats",
+                "Barley groats",
+                "Barley products",
+                "Wholesale groats",
+                "Groats wholesale",
+                "Groats",
+                "Groats of the highest quality"
+            ]
+        }
+    },
     "title": { "en": "Groats", "uk": "Крупа" },
     "items": {
         "buckwheat": {

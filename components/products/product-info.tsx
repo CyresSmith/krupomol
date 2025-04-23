@@ -117,7 +117,7 @@ export const ProductInfo = async (product: ProductType) => {
                             />
                         </div>
 
-                        <div className="flex flex-col justify-between overflow-hidden rounded-3xl bg-primary p-5 text-background">
+                        <div className="flex flex-col justify-between overflow-hidden rounded-3xl bg-primary p-5 text-background shadow-lg">
                             <div>
                                 {infoKeys.map((key, i) => (
                                     <div
