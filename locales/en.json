@@ -108,6 +108,31 @@
         }
     },
     "products": {
+        "categoryMetadata": {
+            "title": "{category} | Krupomol",
+            "desc": "{category} highest quality wholesale from a certified manufacturer",
+            "keywords": [
+                "Wholesale supplies",
+                "Highest quality groats",
+                "Groats",
+                "Groats",
+                "Sugar",
+                "Highest quality groats wholesale",
+                "Highest quality sugar wholesale"
+            ]
+        },
+        "productMetadata": {
+            "title": "{name} groats | Krupomol",
+            "desc": "{name} cereals of the highest quality wholesale from a certified manufacturer",
+            "keywords": [
+                "{name} groats",
+                "{name} groats wholesale",
+                "Wholesale supplies of cereals",
+                "Cereals wholesale",
+                "Cereals",
+                "Cereals of the highest quality"
+            ]
+        },
         "data": {
             "nutritional": "Nutrition Facts (Food value) per 100 g of product:",
             "fats": "Fat, g",

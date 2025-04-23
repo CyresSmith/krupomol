@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
@@ -14,16 +15,22 @@ import { getMetadata } from '@utils';
 export async function generateMetadata({
     params,
 }: WithParams<{ category: string; type: string }>): Promise<Metadata> {
-    const { category } = await params;
+    const { category, type } = await params;
     const locale = await getLocale();
     const t = await getTranslations('products');
 
+    const items = products[category as ProductCategoryType].items as Record<
+        string,
+        { title: { [locale]: string } }
+    >;
+    const name = items[type]?.title[locale] ?? '';
+
     return getMetadata({
-        description: t(`${category}.metadata.desc`) ?? t(`${category}.metadata.desc`),
-        keywords: t.raw(`${category}.metadata.keywords`) as string[],
+        description: t('productMetadata.desc', { name }),
+        keywords: t.raw('productMetadata.keywords'),
         locale,
-        path: `${PRODUCTS_ROUTE}/${category}`,
-        title: t(`${category}.metadata.title`),
+        path: `${PRODUCTS_ROUTE}/${category}/${type}`,
+        title: t('productMetadata.title', { name }),
     });
 }
 

@@ -4,7 +4,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 
 import products from '@products';
 
-import { ProductCategoryType, WithParams } from '@types';
+import { WithParams } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -17,27 +17,15 @@ export async function generateMetadata({
     const locale = await getLocale();
     const t = await getTranslations('products');
 
-    const product = products[category as ProductCategoryType];
+    const name = products[category as keyof typeof products]?.title[locale] ?? '';
 
-    if ('metadata' in product) {
-        const metadata = product.metadata[locale];
-
-        return getMetadata({
-            description: metadata.desc ?? '',
-            keywords: metadata.keywords ?? '',
-            locale,
-            path: `${PRODUCTS_ROUTE}/${category}`,
-            title: metadata.title ?? '',
-        });
-    } else {
-        return getMetadata({
-            description: t('metadata.desc'),
-            keywords: t.raw('metadata.keywords'),
-            locale,
-            path: `${PRODUCTS_ROUTE}/${category}`,
-            title: t('metadata.title'),
-        });
-    }
+    return getMetadata({
+        description: t('categoryMetadata.desc', { category: name }),
+        keywords: t.raw('categoryMetadata.keywords'),
+        locale,
+        path: `${PRODUCTS_ROUTE}/${category}`,
+        title: t('categoryMetadata.title', { category: name }),
+    });
 }
 
 export function generateStaticParams() {

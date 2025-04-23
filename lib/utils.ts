@@ -45,7 +45,7 @@ export function getMetadata({
 
     const languages = routing.locales.reduce(
         (acc, locale) => {
-            acc[locale] = `${APP_HOST}${locale === 'uk' ? '' : '/' + locale}${path}`;
+            acc[`${locale.toLowerCase()}-${locale}`] = `${APP_HOST}${'/' + locale}${path}`;
             return acc;
         },
         {} as Record<string, string>
