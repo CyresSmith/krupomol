@@ -45,13 +45,13 @@ export default async function RootLayout({
             </head>
 
             <NextIntlClientProvider>
-                <LenisProvider>
-                    <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
+                <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
+                    <LenisProvider>
                         {children}
 
                         <ScrollToTop />
-                    </body>
-                </LenisProvider>
+                    </LenisProvider>
+                </body>
             </NextIntlClientProvider>
         </html>
     );

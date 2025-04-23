@@ -116,3 +116,5 @@ export function getMetadata({
         },
     };
 }
+
+export const getProductImage = (image: string) => `/images/products/${image}.png`;
