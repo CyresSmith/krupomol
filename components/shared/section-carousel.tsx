@@ -1,8 +1,11 @@
+'use client';
+
 import type { ReactNode } from 'react';
 
 import Link from 'next/link';
 
 import clsx from 'clsx';
+import Autoplay from 'embla-carousel-autoplay';
 
 import { Icon } from './icon';
 
@@ -31,6 +34,11 @@ export const SectionCarousel = ({ href, items = [], linkLabel }: Props) => {
                 duration: 60,
                 loop: true,
             }}
+            plugins={[
+                Autoplay({
+                    delay: 3500,
+                }),
+            ]}
         >
             <div className="overflow-hidden rounded-3xl">
                 <CarouselContent>
@@ -49,7 +57,7 @@ export const SectionCarousel = ({ href, items = [], linkLabel }: Props) => {
                 )}
             >
                 {items.length > 3 && (
-                    <div className="flex gap-3 tablet:gap-4 desktop:gap-5">
+                    <div className="flex gap-3 mobile:hidden tablet:gap-4 desktop:gap-5">
                         <CarouselPrevious
                             className="relative left-0 top-0 size-9 translate-x-0 translate-y-0"
                             size={'icon'}
