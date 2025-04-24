@@ -16,7 +16,7 @@ export const ProductCategoryList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
-        <ul className="flex flex-wrap items-center justify-center gap-5">
+        <ul className="flex flex-wrap items-center justify-start gap-5 desktop:justify-center">
             {items.map(({ href, title }) => {
                 return (
                     <li key={href}>

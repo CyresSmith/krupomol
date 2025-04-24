@@ -21,23 +21,24 @@ export const ProductList = ({ items = [] }: Props) => {
                 return (
                     <li
                         className={cn(
-                            'w-[calc((100%-(theme(space.5)*5))/6)] transition hover:scale-[1.05]',
-                            isActive && 'hover:scale-1.2 scale-[1.2]'
+                            'w-[calc((100%-(theme(space.5)*1))/2)] transition hover:scale-[1.05] tablet:w-[calc((100%-(theme(space.5)*3))/4)] desktop:w-[calc((100%-(theme(space.5)*5))/6)]',
+                            isActive && 'hover:scale-1.2 scale-[1.2] font-bold'
                         )}
                         key={href}
                     >
                         <Link href={href}>
-                            <div className={'relative h-[200px] w-full'}>
+                            <div className={'relative aspect-square h-full w-full'}>
                                 <Image
                                     alt={title}
                                     fill
+                                    priority
                                     sizes="100%"
                                     src={image}
                                     style={{ objectFit: 'contain' }}
                                 />
                             </div>
 
-                            <p className="mt-3 flex h-12 items-start justify-center text-center">
+                            <p className="mt-3 flex h-12 items-start justify-center text-center mobile:sr-only">
                                 {title}
                             </p>
                         </Link>

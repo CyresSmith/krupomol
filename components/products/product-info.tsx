@@ -1,13 +1,12 @@
 import { getLocale, getTranslations } from 'next-intl/server';
-import Image from 'next/image';
 
-import ProductTitle from './product-title';
+import ProductImage from './product-image';
 
 import { Link } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
 
-import { Icon } from '@components/shared';
+import { Icon, Title } from '@components/shared';
 
 import { CertificateType, IconName, ProductType, ProductTypeKeys } from '@types';
 
@@ -15,7 +14,7 @@ import { CONTACTS_ROUTE } from '@routes';
 
 import { ANCHORS } from '@constants';
 
-import { cn, getProductImage } from '@utils';
+import { cn } from '@utils';
 
 const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'];
 const energyKeys = ['kcal', 'kj'];
@@ -82,21 +81,19 @@ export const ProductInfo = async (product: ProductType) => {
 
     return (
         <>
-            <div className="container grid grid-cols-[400px_1fr] items-start gap-12">
-                <div className="relative h-full overflow-hidden rounded-lg">
-                    <Image
-                        alt={productTitle}
-                        fill
-                        sizes="100%"
-                        src={getProductImage(image)}
-                        style={{ objectFit: 'contain' }}
-                    />
-                </div>
+            <div className="container flex flex-col gap-12 desktop:grid desktop:grid-cols-[400px_1fr]">
+                <ProductImage image={image} title={productTitle} />
 
                 <div>
-                    <ProductTitle title={productTitle} />
+                    <Title
+                        as="h2"
+                        className="max-w-full text-left text-2xl font-bold uppercase mobile:text-center tablet:text-3xl desktop:text-4xl"
+                        id="product"
+                    >
+                        {productTitle}
+                    </Title>
 
-                    <div className="mt-5 grid grid-cols-2 gap-5">
+                    <div className="mt-5 flex flex-col gap-5 desktop:grid desktop:grid-cols-2">
                         <div className="flex flex-col gap-5">
                             <ProductDataCard
                                 icon="restaurant"
@@ -117,19 +114,19 @@ export const ProductInfo = async (product: ProductType) => {
                             />
                         </div>
 
-                        <div className="flex flex-col justify-between overflow-hidden rounded-3xl bg-primary p-5 text-background shadow-lg">
+                        <div className="flex flex-col justify-between gap-6 overflow-hidden rounded-3xl bg-primary p-5 text-background shadow-lg">
                             <div>
                                 {infoKeys.map((key, i) => (
                                     <div
-                                        className="mt-2 flex items-center gap-3 first:mt-0"
+                                        className="mt-2 flex items-start gap-3 first:mt-0"
                                         key={key + i}
                                     >
                                         <Icon
-                                            className="h-[30px] w-[30px] fill-background"
+                                            className="h-[24px] w-[24px] fill-background desktop:h-[30px] desktop:w-[30px]"
                                             name={getIconName(key) as IconName}
                                         />
 
-                                        <p className="flex flex-1 justify-between">
+                                        <p className="flex flex-1 items-end justify-between">
                                             <span className="mr-2">{t(`data.${key}`)}:</span>
                                             {key === 'packageType'
                                                 ? t(`data.${product[key as ProductTypeKeys]}`)
@@ -139,10 +136,10 @@ export const ProductInfo = async (product: ProductType) => {
                                 ))}
                             </div>
 
-                            <div className="flex justify-between gap-5 fill-background">
+                            <div className="flex justify-between gap-5 fill-background tablet:justify-center">
                                 {certificates.map(({ id }) => (
                                     <Icon
-                                        className="h-[100px] w-[100px]"
+                                        className="h-[100px] w-[100px] mobile:h-[75px] mobile:w-[75px]"
                                         key={id}
                                         name={id as IconName}
                                     />

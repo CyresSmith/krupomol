@@ -9,14 +9,12 @@ interface Props {
 }
 
 const ProductTitle = ({ title }: Props) => {
-    const lenis = useContext(LenisContext);
-
-    useEffect(() => {
-        lenis?.scrollTo('#product', { offset: -100 });
-    }, [lenis]);
-
     return (
-        <Title as="h2" className="text-4xl font-bold uppercase" id="product">
+        <Title
+            as="h2"
+            className="max-w-full text-left text-2xl font-bold uppercase mobile:text-center tablet:text-3xl desktop:text-4xl"
+            id="product"
+        >
             {title}
         </Title>
     );
