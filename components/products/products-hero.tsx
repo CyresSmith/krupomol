@@ -1,16 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 
-import { Link } from '@i18n';
-
-import { buttonVariants } from '@ui/index';
-
-import { HeroSection, Icon, Title } from '@components/shared';
+import { HeroSection, Title } from '@components/shared';
 
 import image from '@assets/images/products-hero.jpg';
-
-import { PRODUCTS_ROUTE } from '@routes';
-
-import { cn } from '@utils';
 
 export const ProductsHero = async () => {
     const t = await getTranslations('products');
@@ -24,7 +16,7 @@ export const ProductsHero = async () => {
                 {t('hero.title')}
             </Title>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
                 <Link
                     className={cn('mobile:w-full', buttonVariants({ size: 'lg' }))}
                     href={PRODUCTS_ROUTE}
@@ -34,7 +26,7 @@ export const ProductsHero = async () => {
                         <Icon className="fill-background" name="arrow-right-top" />
                     </span>
                 </Link>
-            </div>
+            </div> */}
         </HeroSection>
     );
 };
