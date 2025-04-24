@@ -15,6 +15,8 @@ export async function GET() {
     const client_email = process.env['PRICE_SHEETS_EMAIL'];
     const private_key = process.env['PRICE_SHEETS_KEY'];
 
+    console.log(private_key);
+
     if (!sheetId || !client_email || !private_key) {
         return new Response(
             JSON.stringify({ error: true, message: 'Check googlesheets api credentials!' }),
@@ -25,6 +27,8 @@ export async function GET() {
     }
 
     try {
+        console.log(private_key);
+
         const client = new google.auth.JWT(client_email, undefined, private_key, [
             'https://www.googleapis.com/auth/spreadsheets.readonly',
         ]);
