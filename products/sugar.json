@@ -1,0 +1,42 @@
+{
+    "title": { "en": "Sugar", "uk": "Цукор" },
+    "items": {
+        "granulated": {
+            "title": { "en": "Granulated sugar", "uk": "Цукор пісок" },
+            "sugar": {
+                "title": { "en": "Sugar", "uk": "Цукор" },
+                "image": "sugar",
+                "fats": "0",
+                "acids": "0",
+                "carbohydrates": "100",
+                "sugar": "99.5",
+                "protein": "0",
+                "salt": "0",
+                "kj": "1680",
+                "kcal": "401",
+                "mass": "1000",
+                "packageType": "polypropylene",
+                "gpCount": "6",
+                "gpWeight": "6",
+                "expiration": "20"
+            },
+            "sugar-premium": {
+                "title": { "en": "Granulated Sugar premium", "uk": "Цукор пісок premium" },
+                "image": "sugar-premium",
+                "fats": "0",
+                "acids": "0",
+                "carbohydrates": "100",
+                "sugar": "99.5",
+                "protein": "0",
+                "salt": "0",
+                "kj": "1680",
+                "kcal": "401",
+                "mass": "1000",
+                "packageType": "paper",
+                "gpCount": "6",
+                "gpWeight": "6",
+                "expiration": "20"
+            }
+        }
+    }
+}

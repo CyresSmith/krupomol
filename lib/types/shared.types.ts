@@ -29,3 +29,9 @@ export interface InputProps {
     required?: boolean;
     type: InputType;
 }
+
+export interface CardLinkItem {
+    href: string;
+    image: string;
+    title: string;
+}

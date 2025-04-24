@@ -15,13 +15,16 @@ import {
 
 import { LenisContext } from '@components/shared';
 
+import { cn } from '@utils';
+
 interface Props extends PropsWithChildren {
+    className?: string;
     desc: string;
     image: string;
     title: string;
 }
 
-export const CertificateOpen = ({ children, desc, image, title }: Props) => {
+export const CertificateOpen = ({ children, className, desc, image, title }: Props) => {
     const lenis = useContext(LenisContext);
 
     const [open, setOpen] = useState(false);
@@ -40,11 +43,13 @@ export const CertificateOpen = ({ children, desc, image, title }: Props) => {
 
     return (
         <Dialog onOpenChange={setOpen} open={open}>
-            <DialogTrigger className="relative h-full w-full transition hover:scale-[1.05]">
+            <DialogTrigger
+                className={cn('relative h-full w-full transition hover:scale-[1.05]', className)}
+            >
                 {children}
             </DialogTrigger>
 
-            <DialogContent className="border-none bg-transparent">
+            <DialogContent className="border-none bg-transparent" id="modal">
                 <DialogHeader className="sr-only">
                     <DialogTitle>{title}</DialogTitle>
                     <DialogDescription>{desc}</DialogDescription>
