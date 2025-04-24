@@ -15,6 +15,8 @@ export async function GET() {
     const client_email = process.env['PRICE_SHEETS_EMAIL'];
     const private_key = process.env['PRICE_SHEETS_KEY']?.replace(/\\n/g, '\n');
 
+    console.log('All ENV keys:', Object.keys(process.env));
+
     console.log('Key:', private_key);
     console.log('Key clean:', process.env['PRICE_SHEETS_KEY']);
     console.log('Key clean length:', process.env['PRICE_SHEETS_KEY']?.length);
