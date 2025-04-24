@@ -1,8 +1,12 @@
-'use client';
+import type { ReactNode } from 'react';
+
+import Link from 'next/link';
 
 import clsx from 'clsx';
-import Autoplay from 'embla-carousel-autoplay';
 
+import { Icon } from './icon';
+
+import { buttonVariants } from '@ui/button';
 import {
     Carousel,
     CarouselContent,
@@ -11,45 +15,66 @@ import {
     CarouselPrevious,
 } from '@ui/carousel';
 
-import { ProductCard } from '@components/products';
-
-import { ProductItemType } from '@types';
+import { cn } from '@utils';
 
 interface Props {
-    items: ProductItemType[];
+    href?: string;
+    items?: ReactNode[];
+    linkLabel?: string;
 }
 
-export const SectionCarousel = ({ items = [] }: Props) => {
+export const SectionCarousel = ({ href, items = [], linkLabel }: Props) => {
     return (
         <Carousel
             opts={{
                 align: 'start',
-                duration: 30,
+                duration: 60,
                 loop: true,
             }}
-            plugins={[
-                Autoplay({
-                    delay: 4000,
-                }),
-            ]}
         >
-            <CarouselContent>
-                {items.map((item, i) => (
-                    <CarouselItem
-                        className="mobile:basis-1/1 tablet:basis-1/2 desktop:basis-1/3"
-                        key={i}
-                    >
-                        <ProductCard item={item} />
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
+            <div className="overflow-hidden rounded-3xl">
+                <CarouselContent>
+                    {items.map((item, i) => (
+                        <CarouselItem className="tablet:basis-1/3 desktop:basis-1/4" key={i}>
+                            {item}
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+            </div>
 
-            <div className={clsx('mt-6 flex items-center justify-between')}>
+            <div
+                className={clsx(
+                    'mt-9 flex items-center',
+                    href && linkLabel ? 'justify-between' : 'justify-end'
+                )}
+            >
                 {items.length > 3 && (
-                    <div className="flex w-full justify-between">
-                        <CarouselPrevious size={'fit'} variant={'icon'} />
-                        <CarouselNext size={'fit'} variant={'icon'} />
+                    <div className="flex gap-3 tablet:gap-4 desktop:gap-5">
+                        <CarouselPrevious
+                            className="relative left-0 top-0 size-9 translate-x-0 translate-y-0"
+                            size={'icon'}
+                            variant={'ghost'}
+                        />
+                        <CarouselNext
+                            className="relative left-0 top-0 size-9 translate-x-0 translate-y-0"
+                            size={'icon'}
+                            variant={'ghost'}
+                        />
                     </div>
+                )}
+
+                {href && linkLabel && (
+                    <Link
+                        className={cn(
+                            'z-50 mobile:w-full',
+                            buttonVariants({ size: 'lg', variant: 'primary' })
+                        )}
+                        href={href}
+                    >
+                        {linkLabel}
+
+                        <Icon className="ml-8" name="arrow-right-top" />
+                    </Link>
                 )}
             </div>
         </Carousel>

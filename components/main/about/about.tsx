@@ -1,28 +1,42 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
+
+import products from '@products';
 
 import ProductCard from './product-card';
 
-import { Link } from '@i18n';
-
-import { buttonVariants } from '@ui/button';
 import { Card } from '@ui/card';
 
-import { Icon, Section, Title } from '@components/shared';
+import { Section, SectionCarousel, Title } from '@components/shared';
 import { AnimatedSection } from '@components/shared/animated-section';
 import { AnimatedTextBox } from '@components/shared/animated-text-box';
 
 import { titleFont } from '@fonts';
 
+import { TitleType } from '@types';
+
 import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
-export const About = () => {
-    const t = useTranslations('main.about');
-    const products = t.raw('products') as { image: string; title: string }[];
+export const About = async () => {
+    const t = await getTranslations('main.about');
+    const locale = await getLocale();
+
+    const links = Object.entries(products).reduce(
+        (acc: { href: string; image: string; title: string }[], [category, value]) => {
+            Object.entries(value.items).forEach(([slug, { title }]) => {
+                acc.push({
+                    href: `${PRODUCTS_ROUTE}/${category}/${slug}`,
+                    image: slug,
+                    title: (title as TitleType)[locale],
+                });
+            });
+
+            return acc;
+        },
+        []
+    );
 
     return (
         <>
@@ -38,7 +52,6 @@ export const About = () => {
                             src="/images/main-about-as.png"
                         />
                     </div>
-                    {/* <CardHeader className="mb-4 p-0 mobile:mb-6"> */}
                     <AnimatedTextBox
                         className="mb-4 p-0 mobile:mb-6"
                         from="bottom"
@@ -54,15 +67,13 @@ export const About = () => {
                             {t('title')}
                         </Title>
                     </AnimatedTextBox>
-                    {/* </CardHeader> */}
 
-                    {/* <CardContent className="p-0"> */}
                     <AnimatedTextBox className="p-0" from="top" triggerOnce={true} viewAmount={0.5}>
                         <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
                     </AnimatedTextBox>
-                    {/* </CardContent> */}
                 </Card>
             </AnimatedSection>
+
             <Section className="relative z-0">
                 <div className="container">
                     <Title
@@ -75,25 +86,15 @@ export const About = () => {
                         {t('our-products')}
                     </Title>
 
-                    <ul className="mb-7 grid grid-cols-1 grid-rows-[repeat(4,428px)] gap-4 tablet:grid-cols-2 tablet:grid-rows-[repeat(2,428px)] desktop:grid-cols-4 desktop:grid-rows-[360px]">
-                        {products.map(item => (
-                            <ProductCard key={item.title} {...item} />
-                        ))}
-                    </ul>
-
-                    <div className="flex items-center justify-end">
-                        <Link
-                            className={cn(
-                                'z-50 mobile:w-full',
-                                buttonVariants({ size: 'lg', variant: 'primary' })
-                            )}
+                    <ul className="mb-7">
+                        <SectionCarousel
                             href={PRODUCTS_ROUTE}
-                        >
-                            {t('link')}
-
-                            <Icon className="ml-8" name="arrow-right-top" />
-                        </Link>
-                    </div>
+                            items={links.map(item => (
+                                <ProductCard key={item.title} {...item} />
+                            ))}
+                            linkLabel={t('link')}
+                        />
+                    </ul>
                 </div>
 
                 <span className="absolute inset-x-0 bottom-0 -z-10 h-[398px] bg-gray-color" />
