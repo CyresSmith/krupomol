@@ -15,8 +15,6 @@ export const Info = ({ item }: Props) => {
         return `https://drive.google.com/uc?export=download&id=${fileId}`;
     };
 
-    console.log(generateDownLoadLink(url));
-
     return (
         <li className="flex items-center gap-5 fill-accent desktop:gap-7">
             <div className="relative flex size-[40px] min-w-[40px] items-center justify-center desktop:size-[50px]">
@@ -28,10 +26,7 @@ export const Info = ({ item }: Props) => {
                     src={`/images/${icon}.png`}
                 />
             </div>
-            <Link
-                href={download ? generateDownLoadLink(url) : url}
-                target={download ? '' : 'blank'}
-            >
+            <Link href={download ? generateDownLoadLink(url) : url} target="blank">
                 {title}
             </Link>
         </li>

@@ -15,7 +15,9 @@ export async function GET() {
     const client_email = process.env['PRICE_SHEETS_EMAIL'];
     const private_key = process.env['PRICE_SHEETS_KEY']?.replace(/\\n/g, '\n');
 
-    console.log(private_key);
+    console.log('Key:', private_key);
+    console.log('Key clean:', process.env['PRICE_SHEETS_KEY']);
+    console.log('Key clean length:', process.env['PRICE_SHEETS_KEY']?.length);
 
     if (!sheetId || !client_email || !private_key) {
         return new Response(
@@ -27,7 +29,9 @@ export async function GET() {
     }
 
     try {
-        console.log(private_key);
+        console.log('Key:', private_key);
+        console.log('Key clean:', process.env['PRICE_SHEETS_KEY']);
+        console.log('Key clean length:', process.env['PRICE_SHEETS_KEY']?.length);
 
         const client = new google.auth.JWT(client_email, undefined, private_key, [
             'https://www.googleapis.com/auth/spreadsheets.readonly',
