@@ -13,7 +13,7 @@ interface Dates {
 export async function GET() {
     const sheetId = process.env['PRICE_SHEETS_ID'];
     const client_email = process.env['PRICE_SHEETS_EMAIL'];
-    const private_key = process.env['PRICE_SHEETS_KEY'];
+    const private_key = process.env['PRICE_SHEETS_KEY']?.replace(/\\n/g, '\n');
 
     console.log(private_key);
 
