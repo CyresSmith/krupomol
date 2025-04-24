@@ -208,9 +208,24 @@
         "info": {
             "title": "More information",
             "infoList": [
-                { "title": "Download the catalog", "icon": "catalog" },
-                { "title": "Download price list", "icon": "price-list" },
-                { "title": "Video review of products", "icon": "video-review" }
+                {
+                    "title": "Download the catalog",
+                    "icon": "catalog",
+                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
+                    "download": true
+                },
+                {
+                    "title": "Download price list",
+                    "icon": "price-list",
+                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
+                    "download": true
+                },
+                {
+                    "title": "Video review of products",
+                    "icon": "video-review",
+                    "url": "http://youtube.com/",
+                    "download": false
+                }
             ]
         }
     },
