@@ -1,3 +1,7 @@
+interface Props {
+    title: string;
+}
+
 const ProductTitle = ({ title }: Props) => {
     return (
         <Title
