@@ -1,13 +1,3 @@
-'use client';
-
-import { useContext, useEffect } from 'react';
-
-import { LenisContext, Title } from '@components/shared';
-
-interface Props {
-    title: string;
-}
-
 const ProductTitle = ({ title }: Props) => {
     return (
         <Title
