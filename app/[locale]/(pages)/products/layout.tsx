@@ -32,6 +32,7 @@ const ProductsLayout = ({ categories, children, products }: PropsWithChildren<La
     return (
         <>
             <ProductsHero />
+
             <Section noPadding>
                 {categories}
                 {products}
