@@ -13,13 +13,7 @@ interface Dates {
 export async function GET() {
     const sheetId = process.env['PRICE_SHEETS_ID'];
     const client_email = process.env['PRICE_SHEETS_EMAIL'];
-    const private_key = process.env['PRICE_SHEETS_KEY']?.replace(/\\n/g, '\n');
-
-    console.log('All ENV keys:', Object.keys(process.env));
-
-    console.log('Key:', private_key);
-    console.log('Key clean:', process.env['PRICE_SHEETS_KEY']);
-    console.log('Key clean length:', process.env['PRICE_SHEETS_KEY']?.length);
+    const private_key = process.env['PRICE_SHEETS_KEY'];
 
     if (!sheetId || !client_email || !private_key) {
         return new Response(
@@ -31,10 +25,6 @@ export async function GET() {
     }
 
     try {
-        console.log('Key:', private_key);
-        console.log('Key clean:', process.env['PRICE_SHEETS_KEY']);
-        console.log('Key clean length:', process.env['PRICE_SHEETS_KEY']?.length);
-
         const client = new google.auth.JWT(client_email, undefined, private_key, [
             'https://www.googleapis.com/auth/spreadsheets.readonly',
         ]);
