@@ -13,7 +13,7 @@ import { AnimatedTextBox } from '@components/shared/animated-text-box';
 
 import { titleFont } from '@fonts';
 
-import { TitleType } from '@types';
+import { ProductTitleType } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
@@ -29,7 +29,7 @@ export const About = async () => {
                 acc.push({
                     href: `${PRODUCTS_ROUTE}/${category}/${slug}`,
                     image: slug,
-                    title: (title as TitleType)[locale],
+                    title: (title as ProductTitleType)[locale],
                 });
             });
 

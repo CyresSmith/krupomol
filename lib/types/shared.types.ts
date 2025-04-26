@@ -30,8 +30,12 @@ export interface InputProps {
     type: InputType;
 }
 
-export interface CardLinkItem {
+export interface LinkItem {
     href: string;
-    image: string;
+    title: string;
+}
+
+export interface CardLinkItem extends LinkItem {
+    href: string;
     title: string;
 }

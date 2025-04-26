@@ -24,16 +24,23 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 interface LayoutProps {
+    breadcrumb: ReactNode;
     categories: ReactNode;
     products: ReactNode;
 }
 
-const ProductsLayout = ({ categories, children, products }: PropsWithChildren<LayoutProps>) => {
+const ProductsLayout = ({
+    breadcrumb,
+    categories,
+    children,
+    products,
+}: PropsWithChildren<LayoutProps>) => {
     return (
         <>
             <ProductsHero />
 
-            <Section noPadding>
+            <Section className="relative" noPadding>
+                {breadcrumb}
                 {categories}
                 {products}
                 {children}
