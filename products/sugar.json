@@ -15,7 +15,7 @@
                 "kj": "1680",
                 "kcal": "401",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "20"
@@ -32,7 +32,7 @@
                 "kj": "1680",
                 "kcal": "401",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "20"

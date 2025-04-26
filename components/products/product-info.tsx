@@ -16,9 +16,9 @@ import { ANCHORS } from '@constants';
 
 import { cn } from '@utils';
 
-const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'];
-const energyKeys = ['kcal', 'kj'];
-const infoKeys = ['mass', 'packageType', 'gpCount', 'gpWeight', 'expiration'];
+const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'] as const;
+const energyKeys = ['kcal', 'kj'] as const;
+const infoKeys = ['mass', 'package', 'gpCount', 'gpWeight', 'expiration'] as const;
 
 const ProductDataCard = ({
     icon = 'restaurant',
@@ -71,7 +71,7 @@ export const ProductInfo = async (product: ProductType) => {
             case 'mass':
                 return 'scales';
 
-            case 'packageType':
+            case 'package':
                 return 'archive';
 
             default:
@@ -128,8 +128,10 @@ export const ProductInfo = async (product: ProductType) => {
 
                                         <p className="flex flex-1 items-end justify-between">
                                             <span className="mr-2">{t(`data.${key}`)}:</span>
-                                            {key === 'packageType'
-                                                ? t(`data.${product[key as ProductTypeKeys]}`)
+                                            {key === 'package'
+                                                ? t(
+                                                      `data.${product[key] as 'paper' | 'polypropylene'}`
+                                                  )
                                                 : product[key as ProductTypeKeys]}
                                         </p>
                                     </div>

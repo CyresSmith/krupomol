@@ -15,7 +15,7 @@
                 "kj": "1528",
                 "kcal": "365",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "20"
@@ -32,7 +32,7 @@
                 "kj": "1528",
                 "kcal": "365",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "20"
@@ -52,7 +52,7 @@
                 "kj": "1480",
                 "kcal": "354",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "18"
@@ -72,7 +72,7 @@
                 "kj": "407",
                 "kcal": "97.2",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -89,7 +89,7 @@
                 "kj": "407",
                 "kcal": "97.2",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -109,7 +109,7 @@
                 "kj": "1464",
                 "kcal": "350",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -129,7 +129,7 @@
                 "kj": "1366",
                 "kcal": "326",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -149,7 +149,7 @@
                 "kj": "1366",
                 "kcal": "326",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -166,7 +166,7 @@
                 "kj": "1366",
                 "kcal": "326",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "9"
@@ -186,7 +186,7 @@
                 "kj": "1446",
                 "kcal": "345",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "12"
@@ -203,7 +203,7 @@
                 "kj": "1446",
                 "kcal": "345",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "12"
@@ -220,7 +220,7 @@
                 "kj": "1446",
                 "kcal": "345",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "12"
@@ -237,7 +237,7 @@
                 "kj": "1468",
                 "kcal": "351",
                 "mass": "1000",
-                "packageType": "polypropylene",
+                "package": "polypropylene",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "18"
@@ -254,7 +254,7 @@
                 "kj": "1468",
                 "kcal": "351",
                 "mass": "1000",
-                "packageType": "paper",
+                "package": "paper",
                 "gpCount": "6",
                 "gpWeight": "6",
                 "expiration": "18"
