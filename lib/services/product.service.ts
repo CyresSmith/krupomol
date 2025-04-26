@@ -43,6 +43,23 @@ export const ProductsService = {
         );
     },
 
+    getAllTypes(locale: Locale) {
+        return Object.entries(productsData.items).reduce(
+            (acc: { href: string; image: string; title: string }[], [category, value]) => {
+                Object.entries(value.items).forEach(([slug, { title }]) => {
+                    acc.push({
+                        href: `${PRODUCTS_ROUTE}/${category}/${slug}`,
+                        image: slug,
+                        title: title[locale],
+                    });
+                });
+
+                return acc;
+            },
+            []
+        );
+    },
+
     getBreadcrumb({
         category,
         locale,
@@ -96,6 +113,7 @@ export const ProductsService = {
     getCategories(locale: Locale) {
         return Object.entries(productsData.items).map(([slug, { title }]) => ({
             href: `${PRODUCTS_ROUTE}/${slug}`,
+            image: slug,
             title: title[locale],
         }));
     },

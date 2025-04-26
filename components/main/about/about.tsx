@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
-import products from '@products';
+import { ProductsService } from 'lib/services';
 
 import ProductCard from './product-card';
 
@@ -13,8 +13,6 @@ import { AnimatedTextBox } from '@components/shared/animated-text-box';
 
 import { titleFont } from '@fonts';
 
-import { ProductTitleType } from '@types';
-
 import { PRODUCTS_ROUTE } from '@routes';
 
 import { cn } from '@utils';
@@ -23,20 +21,7 @@ export const About = async () => {
     const t = await getTranslations('main.about');
     const locale = await getLocale();
 
-    const links = Object.entries(products).reduce(
-        (acc: { href: string; image: string; title: string }[], [category, value]) => {
-            Object.entries(value.items).forEach(([slug, { title }]) => {
-                acc.push({
-                    href: `${PRODUCTS_ROUTE}/${category}/${slug}`,
-                    image: slug,
-                    title: (title as ProductTitleType)[locale],
-                });
-            });
-
-            return acc;
-        },
-        []
-    );
+    const links = ProductsService.getAllTypes(locale);
 
     return (
         <>
