@@ -7,7 +7,9 @@ import { routing } from '@i18n';
 
 import { LocaleType } from '@types';
 
-import { APP_HOST, APP_NAME } from '@constants';
+import { APP_NAME } from '@constants';
+
+const APP_HOST = process.env['NEXT_PUBLIC_APP_HOST'] ?? 'http://localhost:3000';
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
@@ -103,10 +105,6 @@ export function getMetadata({
             nocache: false,
         },
         title,
-        // title: {
-        //     default: APP_NAME,
-        //     template: `%s | ${title}`,
-        // },
         twitter: {
             card: 'summary_large_image',
             description,

@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next';
 
+const APP_HOST = process.env['NEXT_PUBLIC_APP_HOST'] ?? 'http://localhost:3000';
+
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        background_color: '#fbf8ea',
+        background_color: '#FAFAFA',
         categories: ['business', 'food'],
         description: 'Крупомол - магазин круп',
         display: 'standalone',
@@ -24,8 +26,8 @@ export default function manifest(): MetadataRoute.Manifest {
         screenshots: [
             {
                 form_factor: 'wide',
-                sizes: '1280x720',
-                src: 'screens/screen1.png',
+                sizes: '1920x1080',
+                src: 'screens/screen-wide.png',
                 type: 'image/png',
             },
             {
@@ -36,7 +38,7 @@ export default function manifest(): MetadataRoute.Manifest {
             },
         ],
         short_name: 'Krpml',
-        start_url: '/',
-        theme_color: '#224077',
+        start_url: APP_HOST,
+        theme_color: '#266EF2',
     };
 }

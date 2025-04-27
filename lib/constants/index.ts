@@ -54,7 +54,6 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     // },
 ];
 
-export const APP_HOST = 'https://krupomol.vercel.app';
 export const APP_NAME = 'Krupomol';
 
 export const contacts: Record<'address' | 'mail' | 'tel', ContactType> = {
