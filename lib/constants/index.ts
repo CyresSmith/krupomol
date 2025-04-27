@@ -3,6 +3,7 @@ import { ContactType, NavItemType } from '@types';
 import {
     CERTIFICATION_ROUTE,
     CONTACTS_ROUTE,
+    EXPORT_ROUTE,
     HOME_ROUTE,
     PRICES_ROUTE,
     PRODUCTS_ROUTE,
@@ -28,6 +29,10 @@ export const navigation: NavItemType[] = [
     {
         href: CERTIFICATION_ROUTE,
         title: 'certification',
+    },
+    {
+        href: EXPORT_ROUTE,
+        title: 'export',
     },
 ];
 

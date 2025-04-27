@@ -14,7 +14,7 @@ export const ProductList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
-        <ul className="grid grid-cols-6 gap-5">
+        <ul className="grid grid-cols-2 gap-5 tablet:grid-cols-3 desktop:grid-cols-6">
             {items.map(({ href, image, title }) => {
                 const isActive = href === pathname;
 

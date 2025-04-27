@@ -6,4 +6,10 @@ export interface NavItemType {
     title: string;
 }
 
-export type NavigationTitle = 'certification' | 'contacts' | 'main' | 'prices' | 'product';
+export type NavigationTitle =
+    | 'certification'
+    | 'contacts'
+    | 'export'
+    | 'main'
+    | 'prices'
+    | 'product';
