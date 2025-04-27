@@ -38,7 +38,7 @@ export const ProductList = ({ items = [] }: Props) => {
                                 />
                             </div>
 
-                            <p className="mt-3 flex h-12 items-start justify-center text-center mobile:sr-only">
+                            <p className="mt-3 flex h-12 items-start justify-center text-center">
                                 {title}
                             </p>
                         </Link>
