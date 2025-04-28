@@ -39,10 +39,11 @@ export function generateStaticParams() {
 
 const TypePageProductData = async ({ params }: WithParams<{ category: string; type: string }>) => {
     const { category, type } = await params;
+    const locale = await getLocale();
 
     const products = ProductsService.getProductsList({
         categorySlug: category,
-        locale: 'uk',
+        locale,
         typeSlug: type,
     });
 
