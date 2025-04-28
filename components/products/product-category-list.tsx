@@ -16,10 +16,13 @@ export const ProductCategoryList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
-        <ul className="grid grid-cols-2 gap-5 tablet:grid-cols-3 desktop:grid-cols-4">
+        <ul className="flex flex-wrap items-center justify-center gap-5">
             {items.map(({ href, title }) => {
                 return (
-                    <li key={href}>
+                    <li
+                        className="w-full tablet:w-[calc((100%-(theme(space.5)*2))/3)] desktop:w-[calc((100%-(theme(space.5)*3))/4)]"
+                        key={href}
+                    >
                         <Link
                             className={cn(
                                 buttonVariants({
