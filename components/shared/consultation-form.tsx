@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { useTranslations } from 'next-intl';
@@ -8,8 +9,17 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 
 import { Icon } from './icon';
+import { Loader } from './loader';
 
 import { Button } from '@ui/button';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+} from '@ui/dialog';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@ui/form';
 import { Input } from '@ui/input';
 import { Textarea } from '@ui/textarea';
@@ -31,6 +41,9 @@ const inputs: InputProps[] = [
 ];
 
 export const ConsultationForm = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
     const t = useTranslations('shared.consultation-form');
 
     const form = useForm<z.infer<typeof ConsultationFormSchema>>({
@@ -48,6 +61,8 @@ export const ConsultationForm = () => {
     const { errors, isValid } = form.formState;
 
     const onSubmit = async (values: z.infer<typeof ConsultationFormSchema>) => {
+        setIsLoading(true);
+
         try {
             const res = await fetch('/api/send-email', {
                 body: JSON.stringify(values),
@@ -57,100 +72,138 @@ export const ConsultationForm = () => {
                 method: 'POST',
             });
 
-            // if (!res.ok) {
-            //     const errorData = await res.json();
-            //     console.error('Error:', errorData);
-            // } else {
-            //     const data = await res.json();
-            //     console.log('Success:', data);
-            // }
-            console.log(res);
+            if (res.ok) {
+                form.reset();
+                setIsModalOpen(true);
+            }
         } catch (error) {
             console.error('Request failed', error);
+        } finally {
+            setIsLoading(false);
         }
     };
 
     return (
-        <Form {...form}>
-            <form
-                className="mx-auto w-full max-w-[624px] px-4"
-                onSubmit={form.handleSubmit(onSubmit)}
-            >
-                <div className="mb-9">
-                    <div className="mb-2 grid grid-cols-2 gap-5 mobile:flex mobile:flex-col mobile:gap-4">
-                        {inputs.map(({ name, required, type }) => {
-                            const placeholder = t(`form.${name as ConsultationTitle}.placeholder`);
+        <>
+            <Form {...form}>
+                <form
+                    className="mx-auto w-full max-w-[624px] px-4"
+                    onSubmit={form.handleSubmit(onSubmit)}
+                >
+                    <div className="mb-9">
+                        <div className="mb-2 grid grid-cols-2 gap-5 mobile:flex mobile:flex-col mobile:gap-4">
+                            {inputs.map(({ name, required, type }) => {
+                                const placeholder = t(
+                                    `form.${name as ConsultationTitle}.placeholder`
+                                );
 
-                            return (
-                                <FormField
-                                    control={form.control}
-                                    key={name}
-                                    name={name as keyof z.infer<typeof ConsultationFormSchema>}
-                                    render={({ field }) => (
-                                        <FormItem
-                                            className={cn(
-                                                {
-                                                    'col-span-2': name === 'message',
-                                                    'col-start-1 col-end-2':
-                                                        name === 'name' || name === 'theme',
-                                                    'col-start-2 col-end-3':
-                                                        name === 'email' || name === 'phone',
-                                                },
-                                                {
-                                                    'row-start-1 row-end-2':
-                                                        name === 'name' || name === 'email',
-                                                    'row-start-2 row-end-3':
-                                                        name === 'theme' || name === 'phone',
-                                                    'row-start-3': name === 'message',
-                                                }
-                                            )}
-                                        >
-                                            <FormLabel>
-                                                {t(`form.${name as ConsultationTitle}.label`)}
-                                                {required && (
-                                                    <span className="text-destructive">*</span>
+                                return (
+                                    <FormField
+                                        control={form.control}
+                                        key={name}
+                                        name={name as keyof z.infer<typeof ConsultationFormSchema>}
+                                        render={({ field }) => (
+                                            <FormItem
+                                                className={cn(
+                                                    {
+                                                        'col-span-2': name === 'message',
+                                                        'col-start-1 col-end-2':
+                                                            name === 'name' || name === 'theme',
+                                                        'col-start-2 col-end-3':
+                                                            name === 'email' || name === 'phone',
+                                                    },
+                                                    {
+                                                        'row-start-1 row-end-2':
+                                                            name === 'name' || name === 'email',
+                                                        'row-start-2 row-end-3':
+                                                            name === 'theme' || name === 'phone',
+                                                        'row-start-3': name === 'message',
+                                                    }
                                                 )}
-                                            </FormLabel>
+                                            >
+                                                <FormLabel>
+                                                    {t(`form.${name as ConsultationTitle}.label`)}
+                                                    {required && (
+                                                        <span className="text-destructive">*</span>
+                                                    )}
+                                                </FormLabel>
 
-                                            <FormControl>
-                                                {type === 'textarea' ? (
-                                                    <Textarea
-                                                        className="max-h-[270px] min-h-[135px] resize-none"
-                                                        error={!!errors[name as ConsultationTitle]}
-                                                        placeholder={placeholder}
-                                                        {...field}
-                                                    />
-                                                ) : (
-                                                    <Input
-                                                        error={!!errors[name as ConsultationTitle]}
-                                                        placeholder={placeholder}
-                                                        type={type}
-                                                        {...field}
-                                                    />
-                                                )}
-                                            </FormControl>
+                                                <FormControl>
+                                                    {type === 'textarea' ? (
+                                                        <Textarea
+                                                            className="max-h-[270px] min-h-[135px] resize-none"
+                                                            error={
+                                                                !!errors[name as ConsultationTitle]
+                                                            }
+                                                            placeholder={placeholder}
+                                                            {...field}
+                                                        />
+                                                    ) : (
+                                                        <Input
+                                                            error={
+                                                                !!errors[name as ConsultationTitle]
+                                                            }
+                                                            placeholder={placeholder}
+                                                            type={type}
+                                                            {...field}
+                                                        />
+                                                    )}
+                                                </FormControl>
 
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                            );
-                        })}
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                );
+                            })}
+                        </div>
+
+                        <p className="text-text-color">
+                            <span className="text-destructive">*</span> {t('required')}
+                        </p>
                     </div>
 
-                    <p className="text-text-color">
-                        <span className="text-destructive">*</span> {t('required')}
-                    </p>
-                </div>
+                    <div className="flex justify-center">
+                        {isLoading ? (
+                            <Loader className="h-fit w-fit" transparent={true} />
+                        ) : (
+                            <Button
+                                disabled={!isValid}
+                                size={'lg'}
+                                type="submit"
+                                variant={'primary'}
+                            >
+                                {t('submit')}
 
-                <div className="flex justify-center">
-                    <Button disabled={!isValid} size={'lg'} type="submit" variant={'primary'}>
-                        {t('submit')}
-
-                        <Icon className="ml-8" name="arrow-right-top" />
-                    </Button>
-                </div>
-            </form>
-        </Form>
+                                <Icon className="ml-8" name="arrow-right-top" />
+                            </Button>
+                        )}
+                    </div>
+                </form>
+            </Form>
+            <Dialog onOpenChange={setIsModalOpen} open={isModalOpen}>
+                <DialogContent className="sm:max-w-[425px] rounded-20 mobile:max-w-[90%]">
+                    <DialogHeader>
+                        <DialogTitle hidden={true}>Email successfully sent</DialogTitle>
+                        <DialogDescription hidden={true}>
+                            Your email to get a consultation successfully sent
+                        </DialogDescription>
+                    </DialogHeader>
+                    <div className="py-8">
+                        <p className="text-center text-xl">{t('email-sent')}</p>
+                    </div>
+                    <DialogFooter className="mx-auto w-1/3">
+                        <Button
+                            onClick={() => setIsModalOpen(false)}
+                            size="sm"
+                            type="button"
+                            variant="primary"
+                        >
+                            Закрити
+                        </Button>
+                    </DialogFooter>
+                </DialogContent>
+            </Dialog>
+        </>
     );
 };
