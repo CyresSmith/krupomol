@@ -79,7 +79,7 @@ export const About = async () => {
                             ))}
                             linkLabel={t('link')}
                         />
-                    </в>
+                    </div>
                 </div>
 
                 <span className="absolute inset-x-0 bottom-0 -z-10 h-[398px] bg-gray-color" />
