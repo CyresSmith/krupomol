@@ -47,8 +47,27 @@ export const ConsultationForm = () => {
 
     const { errors, isValid } = form.formState;
 
-    const onSubmit = (values: z.infer<typeof ConsultationFormSchema>) => {
-        console.log(values);
+    const onSubmit = async (values: z.infer<typeof ConsultationFormSchema>) => {
+        try {
+            const res = await fetch('/api/send-email', {
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+            });
+
+            // if (!res.ok) {
+            //     const errorData = await res.json();
+            //     console.error('Error:', errorData);
+            // } else {
+            //     const data = await res.json();
+            //     console.log('Success:', data);
+            // }
+            console.log(res);
+        } catch (error) {
+            console.error('Request failed', error);
+        }
     };
 
     return (

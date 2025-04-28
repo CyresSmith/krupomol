@@ -63,10 +63,10 @@ export function getMetadata({
         keywords: [
             'krupomol',
             'крупомол',
-            'оптова та роздрібна продаж круп',
+            'оптовий та роздрібний продаж круп',
             'магазин круп',
-            'пшено',
-            'ячмень',
+            'пшоно',
+            'ячмінь',
             ...keywords,
         ],
         metadataBase: new URL(APP_HOST),
