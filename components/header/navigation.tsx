@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
 import { Link } from '@i18n';
@@ -14,6 +14,8 @@ import {
 
 import { NavigationTitle } from '@types';
 
+import { PRICES_ROUTE } from '@routes';
+
 import { navigation } from '@constants';
 
 import { cn } from '@utils';
@@ -24,13 +26,17 @@ interface Props {
 
 export const Navigation = ({ onItemClick }: Props) => {
     const t = useTranslations('header.navigation');
+    const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
 
     return (
         <NavigationMenu className="hidden desktop:block" orientation="horizontal">
             <NavigationMenuList className="flex gap-6">
-                {navigation.map(({ href, title }) => {
+                {(locale === 'uk'
+                    ? navigation
+                    : navigation.filter(({ href }) => !href?.includes(PRICES_ROUTE))
+                ).map(({ href, title }) => {
                     const isActive = pathname === href;
                     return (
                         <NavigationMenuItem className="relative" key={title}>

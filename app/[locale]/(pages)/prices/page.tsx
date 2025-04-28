@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
+import { redirect } from '@i18n';
+
 import { Cooperation, EmptyBg, Payment, PricesHero } from '@components/prices';
 import { PricesAccordion } from '@components/prices/prices-accordion/prices-accordion';
 
@@ -21,7 +23,11 @@ export async function generateMetadata(): Promise<Metadata> {
     });
 }
 
-export default function Prices() {
+export default async function Prices() {
+    const locale = await getLocale();
+
+    if (locale !== 'uk') return redirect({ href: '/', locale });
+
     return (
         <>
             <PricesHero />

@@ -19,20 +19,20 @@ export const navigation: NavItemType[] = [
         title: 'product',
     },
     {
-        href: CONTACTS_ROUTE,
-        title: 'contacts',
-    },
-    {
-        href: PRICES_ROUTE,
-        title: 'prices',
-    },
-    {
         href: CERTIFICATION_ROUTE,
         title: 'certification',
     },
     {
         href: EXPORT_ROUTE,
         title: 'export',
+    },
+    {
+        href: CONTACTS_ROUTE,
+        title: 'contacts',
+    },
+    {
+        href: PRICES_ROUTE,
+        title: 'prices',
     },
 ];
 
