@@ -22,7 +22,8 @@
             },
             "submit": "Submit a request",
             "required": "Required fields",
-            "email-sent": "Thank you for your request. Our manager will contact you shortly."
+            "modal-text": "Thank you for your request. Our manager will contact you shortly.",
+            "close-modal": "Close"
         }
     },
     "main": {

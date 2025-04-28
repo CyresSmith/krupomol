@@ -213,7 +213,7 @@ export const ConsultationForm = () => {
                         </DialogDescription>
                     </DialogHeader>
                     <div className="py-8">
-                        <p className="text-center text-xl">{t('email-sent')}</p>
+                        <p className="text-center text-xl">{t('modal-text')}</p>
                     </div>
                     <DialogFooter className="mx-auto w-1/3">
                         <Button
@@ -222,7 +222,7 @@ export const ConsultationForm = () => {
                             type="button"
                             variant="primary"
                         >
-                            Закрити
+                            {t('close-modal')}
                         </Button>
                     </DialogFooter>
                 </DialogContent>

@@ -22,7 +22,8 @@
             },
             "submit": "Bir istek bırakın",
             "required": "Gerekli alanlar",
-            "email-sent": "Talebiniz için teşekkür ederiz. Yöneticimiz kısa süre içinde sizinle iletişime geçecektir."
+            "modal-text": "Talebiniz için teşekkür ederiz. Yöneticimiz kısa süre içinde sizinle iletişime geçecektir.",
+            "close-modal": "Kapat"
         }
     },
     "main": {
