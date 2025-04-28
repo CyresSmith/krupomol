@@ -22,7 +22,8 @@
             },
             "submit": "Submit a request",
             "required": "Erforderliche felder",
-            "email-sent": "Vielen Dank für Ihre Anfrage. Unser Manager wird Sie in Kürze kontaktieren."
+            "modal-text": "Vielen Dank für Ihre Anfrage. Unser Manager wird Sie in Kürze kontaktieren.",
+            "close-modal": "Schließen Sie"
         }
     },
     "main": {
