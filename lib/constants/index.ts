@@ -3,6 +3,7 @@ import { ContactType, NavItemType } from '@types';
 import {
     CERTIFICATION_ROUTE,
     CONTACTS_ROUTE,
+    EXPORT_ROUTE,
     HOME_ROUTE,
     PRICES_ROUTE,
     PRODUCTS_ROUTE,
@@ -29,6 +30,10 @@ export const navigation: NavItemType[] = [
         href: CERTIFICATION_ROUTE,
         title: 'certification',
     },
+    {
+        href: EXPORT_ROUTE,
+        title: 'export',
+    },
 ];
 
 export const socials: Omit<NavItemType, 'title'>[] = [
@@ -54,7 +59,6 @@ export const socials: Omit<NavItemType, 'title'>[] = [
     // },
 ];
 
-export const APP_HOST = 'https://krupomol.vercel.app';
 export const APP_NAME = 'Krupomol';
 
 export const contacts: Record<'address' | 'mail' | 'tel', ContactType> = {

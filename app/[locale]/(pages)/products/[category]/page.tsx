@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-import products from '@products';
+import { ProductsService } from 'lib/services';
 
 import { WithParams } from '@types';
 
@@ -17,11 +16,14 @@ export async function generateMetadata({
     const locale = await getLocale();
     const t = await getTranslations('products');
 
-    const name = products[category as keyof typeof products]?.title[locale] ?? '';
+    const name = ProductsService.getCategoryName({
+        categorySlug: category,
+        locale,
+    });
 
     return getMetadata({
         description: t('categoryMetadata.desc', { category: name }),
-        keywords: t.raw('categoryMetadata.keywords'),
+        keywords: t.raw('categoryMetadata.keywords') as string[],
         locale,
         path: `${PRODUCTS_ROUTE}/${category}`,
         title: t('categoryMetadata.title', { category: name }),
@@ -29,9 +31,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-    return Object.keys(products).map(category => ({
-        category,
-    }));
+    return ProductsService.generateParams('category');
 }
 
 const Page = () => null;

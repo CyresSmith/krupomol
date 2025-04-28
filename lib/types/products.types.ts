@@ -1,6 +1,6 @@
 import { Locale } from 'next-intl';
 
-import products from '@products';
+import { LinkItem } from './shared.types';
 
 export interface ProductItemType {
     image: string;
@@ -10,14 +10,9 @@ export interface ProductItemType {
 
 export type GROATS_NAME = 'barley' | 'buckwheat' | 'corn' | 'millet' | 'pea' | 'wheat';
 
-export type TitleType = Record<Locale, string>;
+export type ProductTitleType = Record<Locale, string>;
 
-export interface ProductsData {
-    items: Record<string, { string: ProductType }>;
-    title: TitleType;
-}
-
-export interface ProductType {
+export interface Product {
     acids: string;
     carbohydrates: string;
     expiration: string;
@@ -32,11 +27,22 @@ export interface ProductType {
     protein: string;
     salt: string;
     sugar: string;
-    title: TitleType;
+    title: ProductTitleType;
 }
 
-export type ProductTypeKeys = keyof Omit<ProductType, 'title'>;
+export type ProductListType = LinkItem & Omit<Product, 'title'>;
 
-export type ProductCategoryType = keyof typeof products;
+export interface ProductType {
+    items: Record<string, Product>;
+    title: ProductTitleType;
+}
 
-export type ProductItems = Record<string, Record<string, ProductType>>;
+export interface ProductCategory {
+    items: Record<string, ProductType>;
+    title: ProductTitleType;
+}
+
+export interface ProductsData {
+    items: Record<string, ProductCategory>;
+    title: ProductTitleType;
+}

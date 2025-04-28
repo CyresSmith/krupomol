@@ -7,7 +7,8 @@
             "contacts": "Contacts",
             "prices": "Purchase prices",
             "certification": "Certification",
-            "product": "Products"
+            "product": "Product",
+            "export": "Export"
         }
     },
     "shared": {
@@ -332,6 +333,59 @@
                 }
             ]
         },
-        "info": "Thanks to these guarantees, our customers can be confident in the quality, safety and reliability of the products they receive."
+        "info": "Thanks to these guarantees, our customers can be confident in the quality, safety, and reliability of the products they receive."
+    },
+    "export": {
+        "metadata": {
+            "title": "Export | Krupomol",
+            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC offers reliable export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from raw material selection to packaging and logistics. We provide an individual approach to each partner, quick preparation of documents and timely delivery. By cooperating with us, you receive certified products that meet international quality and safety standards.",
+            "keywords": [
+                "ISO",
+                "Quality",
+                "Safety",
+                "Food products",
+                "Certification",
+                "Export",
+                "HACCP",
+                "contacts",
+                "Buckwheat groats",
+                "Corn groats",
+                "Pea groats",
+                "Millet",
+                "Pearl groats",
+                "Barley products",
+                "Wheat groats",
+                "Barley groats",
+                "contact",
+                "Barley groats"
+            ]
+        },
+        "hero": {
+            "title": "Export of agricultural products",
+            "desc": "LLC \"Ukrainian Agroindustrial Transport Group\" offers the export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from the selection of raw materials to packaging and logistics. We provide an individual approach to each partner, rapid preparation of documents and timely delivery."
+        },
+        "title": "Benefits of working with us",
+        "advantages": [
+            {
+                "title": "Transport and storage",
+                "text": "Wholesale - Container - Purchasing",
+                "icon": "cooperation"
+            },
+            {
+                "title": "Production and packaging",
+                "text": "Warehouses - Production - Packaging",
+                "icon": "production"
+            },
+            {
+                "title": "Product preparation",
+                "text": "Drying - Cleaning - Mixing - Separation",
+                "icon": "quality"
+            },
+            {
+                "title": "Sorting and certification",
+                "text": "Calibration - Granulation - Certification",
+                "icon": "certification"
+            }
+        ]
     }
 }

@@ -1,4 +1,4 @@
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 import ProductImage from './product-image';
 
@@ -8,7 +8,7 @@ import { buttonVariants } from '@ui/button';
 
 import { Icon, Title } from '@components/shared';
 
-import { CertificateType, IconName, ProductType, ProductTypeKeys } from '@types';
+import { CertificateType, IconName, ProductListType } from '@types';
 
 import { CONTACTS_ROUTE } from '@routes';
 
@@ -16,9 +16,9 @@ import { ANCHORS } from '@constants';
 
 import { cn } from '@utils';
 
-const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'];
-const energyKeys = ['kcal', 'kj'];
-const infoKeys = ['mass', 'packageType', 'gpCount', 'gpWeight', 'expiration'];
+const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'] as const;
+const energyKeys = ['kcal', 'kj'] as const;
+const infoKeys = ['mass', 'package', 'gpCount', 'gpWeight', 'expiration'] as const;
 
 const ProductDataCard = ({
     icon = 'restaurant',
@@ -46,16 +46,13 @@ const ProductDataCard = ({
     </div>
 );
 
-export const ProductInfo = async (product: ProductType) => {
-    const locale = await getLocale();
+export const ProductInfo = async (product: Omit<ProductListType, 'href'>) => {
     const t = await getTranslations('products');
 
     const c = await getTranslations('certification.certificates');
     const certificates = c.raw('list') as CertificateType[];
 
     const { image, title } = product;
-
-    const productTitle = title[locale];
 
     const getIconName = (id: string) => {
         switch (id) {
@@ -71,7 +68,7 @@ export const ProductInfo = async (product: ProductType) => {
             case 'mass':
                 return 'scales';
 
-            case 'packageType':
+            case 'package':
                 return 'archive';
 
             default:
@@ -82,7 +79,7 @@ export const ProductInfo = async (product: ProductType) => {
     return (
         <>
             <div className="container flex flex-col gap-12 desktop:grid desktop:grid-cols-[400px_1fr]">
-                <ProductImage image={image} title={productTitle} />
+                <ProductImage image={image} title={title} />
 
                 <div>
                     <Title
@@ -90,7 +87,7 @@ export const ProductInfo = async (product: ProductType) => {
                         className="max-w-full text-left text-2xl font-bold uppercase mobile:text-center tablet:text-3xl desktop:text-4xl"
                         id="product"
                     >
-                        {productTitle}
+                        {title}
                     </Title>
 
                     <div className="mt-5 flex flex-col gap-5 desktop:grid desktop:grid-cols-2">
@@ -98,7 +95,7 @@ export const ProductInfo = async (product: ProductType) => {
                             <ProductDataCard
                                 icon="restaurant"
                                 items={nutritionalKeys.map(key => ({
-                                    text: product[key as ProductTypeKeys],
+                                    text: product[key],
                                     title: t(`data.${key}`),
                                 }))}
                                 title={t('data.nutritional')}
@@ -107,7 +104,7 @@ export const ProductInfo = async (product: ProductType) => {
                             <ProductDataCard
                                 icon="flashlight"
                                 items={energyKeys.map(key => ({
-                                    text: product[key as ProductTypeKeys],
+                                    text: product[key],
                                     title: t(`data.${key}`),
                                 }))}
                                 title={t('data.energy')}
@@ -128,9 +125,11 @@ export const ProductInfo = async (product: ProductType) => {
 
                                         <p className="flex flex-1 items-end justify-between">
                                             <span className="mr-2">{t(`data.${key}`)}:</span>
-                                            {key === 'packageType'
-                                                ? t(`data.${product[key as ProductTypeKeys]}`)
-                                                : product[key as ProductTypeKeys]}
+                                            {key === 'package'
+                                                ? t(
+                                                      `data.${product[key] as 'paper' | 'polypropylene'}`
+                                                  )
+                                                : product[key]}
                                         </p>
                                     </div>
                                 ))}

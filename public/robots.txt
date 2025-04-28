@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://krupomol.vercel.app
+
+# Sitemaps
+Sitemap: https://krupomol.vercel.app/sitemap.xml

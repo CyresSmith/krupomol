@@ -6,8 +6,6 @@ import Image from 'next/image';
 
 import { LenisContext } from '@components/shared';
 
-import { getProductImage } from '@utils';
-
 interface Props {
     image: string;
     title: string;
@@ -30,7 +28,7 @@ const ProductImage = ({ image, title }: Props) => {
                 fill
                 priority
                 sizes="100%"
-                src={getProductImage(image)}
+                src={image}
                 style={{ objectFit: 'contain' }}
             />
         </div>

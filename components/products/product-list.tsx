@@ -14,20 +14,20 @@ export const ProductList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
-        <ul className="flex flex-wrap items-center justify-center gap-5">
+        <ul className="grid grid-cols-2 gap-5 tablet:grid-cols-3 desktop:grid-cols-6">
             {items.map(({ href, image, title }) => {
                 const isActive = href === pathname;
 
                 return (
                     <li
                         className={cn(
-                            'w-[calc((100%-(theme(space.5)*1))/2)] transition hover:scale-[1.05] tablet:w-[calc((100%-(theme(space.5)*3))/4)] desktop:w-[calc((100%-(theme(space.5)*5))/6)]',
-                            isActive && 'hover:scale-1.2 scale-[1.2] font-bold'
+                            'w-full text-text-color transition hover:scale-[1.05]',
+                            isActive && 'hover:scale-1.2 scale-[1.2] font-bold text-primary'
                         )}
                         key={href}
                     >
                         <Link href={href}>
-                            <div className={'relative aspect-square h-full w-full'}>
+                            <div className={'relative aspect-square w-full'}>
                                 <Image
                                     alt={title}
                                     fill
@@ -38,7 +38,7 @@ export const ProductList = ({ items = [] }: Props) => {
                                 />
                             </div>
 
-                            <p className="mt-3 flex h-12 items-start justify-center text-center mobile:sr-only">
+                            <p className="mt-3 flex h-12 items-start justify-center text-center">
                                 {title}
                             </p>
                         </Link>

@@ -1,3 +1,4 @@
+export * from './advantages';
 export * from './border-card';
 export * from './consultation-form';
 export * from './hero-section';

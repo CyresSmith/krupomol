@@ -4,3 +4,5 @@ export const GROATS_ROUTE = '/groats';
 export const CONTACTS_ROUTE = '/contacts';
 export const PRICES_ROUTE = '/prices';
 export const CERTIFICATION_ROUTE = '/certification';
+export const ADMIN_ROUTE = '/admin';
+export const EXPORT_ROUTE = '/export';

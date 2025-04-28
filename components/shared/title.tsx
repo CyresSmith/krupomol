@@ -12,7 +12,10 @@ interface Props extends PropsWithChildren {
 
 export const Title = ({ as: As = 'h3', children, className, id }: Props) => {
     return (
-        <As className={cn('text-5xl font-bold', titleFont.className, className)} id={id}>
+        <As
+            className={cn('text-5xl font-bold drop-shadow-lg', titleFont.className, className)}
+            id={id}
+        >
             {children}
         </As>
     );

@@ -1,6 +1,3 @@
-import groats from './groats.json';
-import sugar from './sugar.json';
-
-const products = { groats, sugar };
+import products from './products.json';
 
 export default products;

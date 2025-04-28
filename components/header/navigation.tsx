@@ -29,7 +29,7 @@ export const Navigation = ({ onItemClick }: Props) => {
 
     return (
         <NavigationMenu className="hidden desktop:block" orientation="horizontal">
-            <NavigationMenuList className="flex gap-12">
+            <NavigationMenuList className="flex gap-6">
                 {navigation.map(({ href, title }) => {
                     const isActive = pathname === href;
                     return (
