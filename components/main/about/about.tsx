@@ -71,7 +71,7 @@ export const About = async () => {
                         {t('our-products')}
                     </Title>
 
-                    <ul className="mb-7">
+                    <div className="mb-7">
                         <SectionCarousel
                             href={PRODUCTS_ROUTE}
                             items={links.map(item => (
@@ -79,7 +79,7 @@ export const About = async () => {
                             ))}
                             linkLabel={t('link')}
                         />
-                    </ul>
+                    </в>
                 </div>
 
                 <span className="absolute inset-x-0 bottom-0 -z-10 h-[398px] bg-gray-color" />

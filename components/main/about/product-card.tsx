@@ -30,7 +30,7 @@ const Slot = ({
 
 const ProductCard = ({ href, image, title }: Props) => {
     return (
-        <li className="group relative h-[360px] w-full overflow-hidden rounded-20" key={title}>
+        <div className="group relative h-[360px] w-full overflow-hidden rounded-20" key={title}>
             <Slot className="relative block h-full w-full overflow-hidden" href={href}>
                 <Image
                     alt={title}
@@ -49,7 +49,7 @@ const ProductCard = ({ href, image, title }: Props) => {
             >
                 {title}
             </h5>
-        </li>
+        </div>
     );
 };
 

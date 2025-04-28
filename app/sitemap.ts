@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             lastModified: new Date(),
             priority: 1,
-            url: APP_HOST,
+            url: APP_HOST + '/uk',
         },
         {
             alternates: {
