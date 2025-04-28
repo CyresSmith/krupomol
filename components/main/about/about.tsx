@@ -32,7 +32,6 @@ export const About = async () => {
                             alt=""
                             className="object-cover tablet:object-contain"
                             fill
-                            priority
                             sizes="100%"
                             src="/images/main-about-as.png"
                         />
