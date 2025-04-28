@@ -44,7 +44,6 @@ export const HeroSection = ({ children, image }: Props) => {
                     className="object-cover"
                     fill
                     placeholder="blur"
-                    priority
                     sizes="100vw"
                     src={image}
                 />
