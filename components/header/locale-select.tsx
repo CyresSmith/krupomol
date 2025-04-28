@@ -2,20 +2,34 @@
 
 import { useLocale } from 'next-intl';
 
-import { Link, usePathname } from '@i18n';
+import { Link, usePathname, routing } from '@i18n';
 
 import { Icon } from '@components/shared';
+
+import { cn } from '@utils';
 
 const LocaleSelect = () => {
     const locale = useLocale();
     const pathname = usePathname();
 
-    const nextLocale = locale === 'en' ? 'uk' : 'en';
+    const locales = routing.locales;
 
     return (
-        <Link href={pathname} locale={nextLocale}>
-            <Icon name={nextLocale} />
-        </Link>
+        <ul className="flex">
+            {locales.map((l, i) => (
+                <li
+                    className={cn(
+                        'border-[1px] border-transparent px-1 transition',
+                        locale === l && 'rounded-[4px] border-background'
+                    )}
+                    key={i}
+                >
+                    <Link href={pathname} locale={l}>
+                        <Icon name={l} />
+                    </Link>
+                </li>
+            ))}
+        </ul>
     );
 };
 

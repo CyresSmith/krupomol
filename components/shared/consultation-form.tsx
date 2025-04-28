@@ -42,7 +42,7 @@ const inputs: InputProps[] = [
 
 export const ConsultationForm = () => {
     const [isLoading, setIsLoading] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const t = useTranslations('shared.consultation-form');
 

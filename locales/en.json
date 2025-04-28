@@ -21,7 +21,8 @@
                 "theme": { "placeholder": "Subject", "label": "Subject" }
             },
             "submit": "Submit a request",
-            "required": "Required fields"
+            "required": "Required fields",
+            "email-sent": "Thank you for your request. Our manager will contact you shortly."
         }
     },
     "main": {
