@@ -1,8 +1,8 @@
 import { type SVGProps } from 'react';
 
-import clsx from 'clsx';
-
 import { IconName } from '@types';
+
+import { cn } from '@utils';
 
 type Props = {
     height?: number;
@@ -16,7 +16,11 @@ export const Icon = ({ className, height = 24, name, width = 24, ...props }: Pro
     return (
         <svg
             {...props}
-            className={clsx(className, className?.includes('fill') ? '' : 'fill-inherit')}
+            className={cn(
+                className,
+                className?.includes('fill') ? '' : 'fill-inherit',
+                name === 'loader' && 'animate-spin'
+            )}
             height={height}
             width={width}
         >
