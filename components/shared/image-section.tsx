@@ -48,7 +48,6 @@ export const ImageSection = ({ children, image, noPadding = false }: Props) => {
                         alt="image"
                         className="object-cover"
                         fill
-                        priority
                         sizes="100vw"
                         src={`/images/${image}.jpg`}
                     />
