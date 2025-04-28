@@ -1,14 +1,24 @@
 {
-    "title": { "en": "Products", "uk": "Продукція" },
+    "title": { "en": "Products", "uk": "Продукція", "de": "Produkte", "tr": "Ürünler" },
     "items": {
         "groats": {
-            "title": { "en": "Groats", "uk": "Крупа" },
+            "title": { "en": "Groats", "uk": "Крупа", "tr": "Tahıl", "de": "Müsli" },
             "items": {
                 "buckwheat": {
-                    "title": { "en": "Buckwheat", "uk": "Гречана" },
+                    "title": {
+                        "en": "Buckwheat",
+                        "uk": "Гречана",
+                        "de": "Buchweizen",
+                        "tr": "Karabuğday"
+                    },
                     "items": {
                         "buckwheat-groats": {
-                            "title": { "en": "Buckwheat groats", "uk": "Крупа гречана" },
+                            "title": {
+                                "en": "Buckwheat groats",
+                                "uk": "Крупа гречана",
+                                "tr": "Karabuğday kabuğu",
+                                "de": "Buchweizengrütze"
+                            },
                             "image": "buckwheat",
                             "fats": "3,2",
                             "acids": "0,68",
@@ -27,7 +37,9 @@
                         "buckwheat-groats-premium": {
                             "title": {
                                 "en": "Buckwheat groats premium",
-                                "uk": "Крупа гречана premium"
+                                "uk": "Крупа гречана premium",
+                                "de": "Hochwertige Buchweizengrütze",
+                                "tr": "Premium karabuğday kabuğu çıkarılmış tane"
                             },
                             "image": "buckwheat-premium",
                             "fats": "3,2",
@@ -47,10 +59,15 @@
                     }
                 },
                 "corn": {
-                    "title": { "en": "Corn", "uk": "Кукурудзяна" },
+                    "title": { "en": "Corn", "uk": "Кукурудзяна", "tr": "Mısır", "de": "Mais" },
                     "items": {
                         "corn-groats": {
-                            "title": { "en": "Corn groats", "uk": "Крупа кукурудзяна" },
+                            "title": {
+                                "en": "Corn groats",
+                                "uk": "Крупа кукурудзяна",
+                                "de": "Maisgrieß",
+                                "tr": "Mısır ezmesi"
+                            },
                             "image": "corn",
                             "fats": "0,7",
                             "acids": "0,11",
@@ -69,10 +86,15 @@
                     }
                 },
                 "pea": {
-                    "title": { "en": "Pea", "uk": "Горохова" },
+                    "title": { "en": "Pea", "uk": "Горохова", "tr": "Bezelye", "de": "Erbsen" },
                     "items": {
                         "pea-groats": {
-                            "title": { "en": "Pea groats", "uk": "Крупа горохова" },
+                            "title": {
+                                "en": "Pea groats",
+                                "uk": "Крупа горохова",
+                                "de": "Erbsengrütze",
+                                "tr": "Bezelye kabuğu"
+                            },
                             "image": "pea",
                             "fats": "0,59",
                             "acids": "0,07",
@@ -89,7 +111,12 @@
                             "expiration": "9"
                         },
                         "pea-groats-premium": {
-                            "title": { "en": "Pea groats premium", "uk": "Крупа горохова premium" },
+                            "title": {
+                                "en": "Pea groats premium",
+                                "uk": "Крупа горохова premium",
+                                "tr": "Bezelye kabuğu çıkarılmış tane",
+                                "de": "Erbsengrütze Premium"
+                            },
                             "image": "pea-premium",
                             "fats": "0,59",
                             "acids": "0,07",
@@ -108,10 +135,15 @@
                     }
                 },
                 "millet": {
-                    "title": { "en": "Millet", "uk": "Пшоно" },
+                    "title": { "en": "Millet", "uk": "Пшоно", "de": "Hirse", "tr": "Millet" },
                     "items": {
                         "millet-groats": {
-                            "title": { "en": "Millet groats", "uk": "Крупа пшоно" },
+                            "title": {
+                                "en": "Millet groats",
+                                "uk": "Пшоняна крупа",
+                                "tr": "Darı kabuğu çıkarılmış tane",
+                                "de": "Hirsegrütze"
+                            },
                             "image": "millet",
                             "fats": "1,5",
                             "acids": "0,17",
@@ -130,10 +162,15 @@
                     }
                 },
                 "wheat": {
-                    "title": { "en": "Wheat", "uk": "Пшенична" },
+                    "title": { "en": "Wheat", "uk": "Пшенична", "de": "Weizen", "tr": "Buğday" },
                     "items": {
                         "wheat-groats": {
-                            "title": { "en": "Wheat groats", "uk": "Крупа пшенична" },
+                            "title": {
+                                "en": "Wheat groats",
+                                "uk": "Крупа пшенична",
+                                "tr": "Buğday kabuğu",
+                                "de": "Weizengrütze"
+                            },
                             "image": "wheat",
                             "fats": "1,3",
                             "acids": "0,37",
@@ -152,7 +189,9 @@
                         "wheat-groats-poltavska": {
                             "title": {
                                 "en": "Wheat groats \"Poltavska\"",
-                                "uk": "Крупа пшенична \"Полтавська\""
+                                "uk": "Крупа пшенична \"Полтавська\"",
+                                "de": "\"Poltavska\" Weizengrütze",
+                                "tr": "\"Poltavska\" buğday kabuğu"
                             },
                             "image": "wheat-poltavska",
                             "fats": "1,3",
@@ -172,7 +211,9 @@
                         "wheat-groats-premium": {
                             "title": {
                                 "en": "Wheat groats premium",
-                                "uk": "Крупа пшенична premium"
+                                "uk": "Крупа пшенична premium",
+                                "tr": "Premium buğday kabuğu çıkarılmış tane",
+                                "de": "Hochwertige Weizengrütze"
                             },
                             "image": "wheat-premium",
                             "fats": "1,3",
@@ -192,10 +233,15 @@
                     }
                 },
                 "barley": {
-                    "title": { "en": "Barley", "uk": "Ячна" },
+                    "title": { "en": "Barley", "uk": "Ячна", "de": "Gerste", "tr": "Arpa" },
                     "items": {
                         "barley-groats": {
-                            "title": { "en": "Barley groats", "uk": "Крупа ячна" },
+                            "title": {
+                                "en": "Barley groats",
+                                "uk": "Крупа ячна",
+                                "tr": "Arpa kabuğu",
+                                "de": "Gerstengrütze"
+                            },
                             "image": "barley",
                             "fats": "1,9",
                             "acids": "0,46",
@@ -214,7 +260,9 @@
                         "barley-grain-premium": {
                             "title": {
                                 "en": "Barley grain premium",
-                                "uk": "Крупа ячмінна premium"
+                                "uk": "Крупа ячмінна premium",
+                                "de": "Hochwertige Gerstengrütze",
+                                "tr": "Premium arpa kabuğu çıkarılmış tane"
                             },
                             "image": "barley-grain-premium",
                             "fats": "1,9",
@@ -232,7 +280,12 @@
                             "expiration": "12"
                         },
                         "barley-goats-premium": {
-                            "title": { "en": "Barley groats premium", "uk": "Крупа ячна premium" },
+                            "title": {
+                                "en": "Barley groats premium",
+                                "uk": "Крупа ячна premium",
+                                "tr": "Premium arpa kabuğu çıkarılmış tane",
+                                "de": "Hochwertige Gerstengrütze"
+                            },
                             "image": "barley-premium",
                             "fats": "1,9",
                             "acids": "0,46",
@@ -249,7 +302,12 @@
                             "expiration": "12"
                         },
                         "pearl-barley": {
-                            "title": { "en": "Pearl barley", "uk": "Крупа перлова" },
+                            "title": {
+                                "en": "Pearl barley",
+                                "uk": "Крупа перлова",
+                                "de": "Perlgraupen",
+                                "tr": "İnci arpa"
+                            },
                             "image": "pearl-barley",
                             "fats": "1,7",
                             "acids": "0,37",
@@ -268,7 +326,9 @@
                         "pearl-barley-premium": {
                             "title": {
                                 "en": "Pearl barley premium",
-                                "uk": "Крупа перлова premium"
+                                "uk": "Крупа перлова premium",
+                                "tr": "İnci arpa primi",
+                                "de": "Perlgraupenprämie"
                             },
                             "image": "pearl-barley-premium",
                             "fats": "1,7",
@@ -290,13 +350,23 @@
             }
         },
         "sugar": {
-            "title": { "en": "Sugar", "uk": "Цукор" },
+            "title": { "en": "Sugar", "uk": "Цукор", "de": "Zucker", "tr": "Şeker" },
             "items": {
                 "granulated": {
-                    "title": { "en": "Granulated", "uk": "Пісок" },
+                    "title": {
+                        "en": "Granulated",
+                        "uk": "Пісок",
+                        "tr": "Toz",
+                        "de": "Granulierter"
+                    },
                     "items": {
                         "sugar": {
-                            "title": { "en": "Granulated Sugar", "uk": "Цукор пісок" },
+                            "title": {
+                                "en": "Granulated Sugar",
+                                "uk": "Цукор пісок",
+                                "de": "Granulierter Zucker",
+                                "tr": "Toz şeker"
+                            },
                             "image": "sugar",
                             "fats": "0",
                             "acids": "0",
@@ -315,7 +385,9 @@
                         "sugar-premium": {
                             "title": {
                                 "en": "Granulated Sugar premium",
-                                "uk": "Цукор пісок premium"
+                                "uk": "Цукор пісок premium",
+                                "de": "Granulierter Zucker der Spitzenklasse",
+                                "tr": "Premium toz şeker"
                             },
                             "image": "sugar-premium",
                             "fats": "0",

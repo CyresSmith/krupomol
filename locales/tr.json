@@ -1,197 +1,197 @@
 {
     "header": {
-        "consultation": "Замовити консультацію",
-        "address": "Київська область, Броварський район, с. Русанів, вул. Жовтнева, буд. 39 а",
+        "consultation": "Konsültasyon siparişi verin",
+        "address": "Rusaniv köyü, 39a Zhovtneva caddesi, Brovary bölgesi, Kiev bölgesi",
         "navigation": {
-            "main": "Головна",
-            "contacts": "Контакти",
-            "prices": "Закупівельні ціни",
-            "certification": "Сертифікація",
-            "product": "Продукція",
-            "export": "Експорт"
+            "main": "Ana Sayfa",
+            "contacts": "İletişim",
+            "prices": "Satın alma fiyatları",
+            "certification": "Sertifikasyon",
+            "product": "Ürünler",
+            "export": "İhracat"
         }
     },
     "shared": {
         "consultation-form": {
             "form": {
-                "name": { "placeholder": "Ваше ім'я", "label": "Ім'я" },
-                "phone": { "placeholder": "+380 00 000 00 00", "label": "Телефон" },
-                "email": { "placeholder": "yourmail@mail.com", "label": "Електронна пошта" },
-                "message": { "placeholder": "Ваше повідомлення", "label": "Повідомлення" },
-                "theme": { "placeholder": "Тема", "label": "Тема" }
+                "name": { "placeholder": "Sizin adınız", "label": "İsim" },
+                "phone": { "placeholder": "+380 00 000 00 00", "label": "Telefon" },
+                "email": { "placeholder": "yourmail@mail.com", "label": "Email" },
+                "message": { "placeholder": "Mesajınız", "label": "Mesajınız" },
+                "theme": { "placeholder": "Konusu", "label": "Konusu" }
             },
-            "submit": "Залишити заявку",
-            "required": "Обов’язкові поля",
-            "email-sent": "Дякуємо за Ваше звернення. Незабаром наш менеджер зв'яжеться з Вами."
+            "submit": "Bir istek bırakın",
+            "required": "Gerekli alanlar",
+            "email-sent": "Talebiniz için teşekkür ederiz. Yöneticimiz kısa süre içinde sizinle iletişime geçecektir."
         }
     },
     "main": {
         "metadata": {
-            "title": "Крупомол",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" понад 10 років спеціалізується на виробництві високоякісних круп для українського та міжнародного ринку. Власне виробництво, контроль на всіх етапах та відповідність світовим стандартам дозволяють забезпечувати стабільну якість продукції, що відповідає вимогам сучасного ринку."
+            "title": "Krupomol",
+            "desc": "Ukrainian Agricultural Transport Group LLC, 10 yılı aşkın süredir Ukrayna ve uluslararası pazarlar için yüksek kaliteli tahıl üretiminde uzmanlaşmıştır. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararası standartlara uygunluk, modern pazarın gereksinimlerini karşılayan istikrarlı ürün kalitesi sağlamamıza olanak tanır."
         },
         "hero": {
-            "title": "Надійність і якість у кожному зерні",
-            "link": "Переглянути продукцію"
+            "title": "Her tanede güvenilirlik ve kalite",
+            "link": "Ürünleri görüntüle"
         },
         "certification": {
-            "title": "Сертифікація",
-            "text": "Наша продукція відповідає міжнародним стандартам якості та безпеки харчових продуктів, що підтверджено сертифікатами ISO 22000 та ISO 9001. Контроль на всіх етапах виробництва гарантує стабільну якість та відповідність вимогам світового ринку.",
-            "link": "Докладніше про сертифікацію"
+            "title": "Sertifikasyon",
+            "text": "Ürünlerimiz, ISO 22000 ve ISO 9001 sertifikaları ile onaylanan uluslararası gıda kalitesi ve güvenliği standartlarına uygundur. Üretimin tüm aşamalarındaki kontrol, tutarlı kaliteyi ve küresel pazar gerekliliklerine uygunluğu garanti eder.",
+            "link": "Sertifikasyon hakkında daha fazla bilgi edinin"
         },
         "advantages": {
-            "title": "Переваги роботи з нами",
+            "title": "Bizimle çalışmanın avantajları",
             "advantages": [
                 {
-                    "title": "Якість сировини",
-                    "text": "100% натуральна продукція",
+                    "title": "Hammadde kalitesi",
+                    "text": "100 doğal ürünler",
                     "icon": "quality"
                 },
                 {
-                    "title": "Власне виробництво",
-                    "text": "контроль на всіх етапах",
+                    "title": "Şirket içi üretim",
+                    "text": "tüm aşamalarda kontrol",
                     "icon": "production"
                 },
                 {
-                    "title": "Сертифікована продукція",
-                    "text": "відповідність світовим стандартам",
+                    "title": "Sertifikalı ürünler",
+                    "text": "uluslararası standartlara uygunluk",
                     "icon": "certification"
                 },
                 {
-                    "title": "Гнучкі умови співпраці",
-                    "text": "вигідні умови на кожному етапі",
+                    "title": "Esnek işbirliği koşulları",
+                    "text": "her aşamada elverişli koşullar",
                     "icon": "cooperation"
                 }
             ]
         },
         "consultation": {
-            "title": "Замовити консультацію"
+            "title": "Konsültasyon siparişi verin"
         },
         "about": {
-            "title": "Хто ми?",
-            "text": "ТОВ \"Українська агропромислова транспортна група\" понад 10 років спеціалізується на виробництві високоякісних круп для українського та міжнародного ринку. Власне виробництво, контроль на всіх етапах та відповідність світовим стандартам дозволяють забезпечувати стабільну якість продукції, що відповідає вимогам сучасного ринку.",
-            "link": "Переглянути все",
-            "our-products": "Наша продукція",
+            "title": "Biz Kimiz?",
+            "text": "Ukrainian Agricultural Transport Group LLC, 10 yılı aşkın süredir Ukrayna ve uluslararası pazarlar için yüksek kaliteli tahıl üretiminde uzmanlaşmıştır. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararası standartlara uygunluk, modern pazarın gereksinimlerini karşılayan istikrarlı ürün kalitesi sağlamamıza olanak tanır.",
+            "link": "Tümünü görüntüle",
+            "our-products": "Ürünlerimiz",
             "products": [
-                { "title": "Продукція з ячменю", "image": "barley" },
-                { "title": "Горохова крупа", "image": "pea" },
-                { "title": "Гречана продукція", "image": "buckwheat" },
-                { "title": "Пшоно", "image": "millet" }
+                { "title": "Arpa ürünleri", "image": "barley" },
+                { "title": "Bezelye kabuğu", "image": "pea" },
+                { "title": "Karabuğday ürünleri", "image": "buckwheat" },
+                { "title": "Millet", "image": "millet" }
             ]
         }
     },
     "contacts": {
         "metadata": {
-            "title": "Контакти | Крупомол",
-            "desc": "Контакти ТОВ \"Українська агропромислова транспортна група\" для зв'язку та налагоджування продуктивних, взаємовигідних відносин",
+            "title": "İletişim | Krupomol",
+            "desc": "İletişim kurmak ve verimli, karşılıklı yarar sağlayan ilişkiler kurmak için Ukrainian Agricultural Transport Group LLC ile iletişime geçin",
             "keywords": [
-                "Телефон",
-                "Пошта",
-                "вигідні умови співпраці",
-                "співпраця",
-                "опт",
-                "Горохова крупа",
-                "Гречана крупа",
-                "контакты",
-                "перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "связаться",
-                "ячмінна крупа"
+                "Telefon",
+                "Email",
+                "elverişli işbirliği koşulları",
+                "İŞBİRLİĞİ",
+                "Toptan satış",
+                "Bezelye kabuğu",
+                "Karabuğday kabuğu",
+                "İletişim",
+                "inci arpa",
+                "Arpa ürünleri",
+                "Buğday kabuğu",
+                "İletişim",
+                "arpa kabuğu"
             ]
         },
-        "hero": { "title": "Наші контакти" },
+        "hero": { "title": "Bağlantılarımız" },
         "form": {
-            "title": "Маєте додаткові питання?",
-            "text": "Залиште свої питання у формі нижче, і ми передзвонимо та надамо усі відповіді."
+            "title": "Ek sorularınız var mı?",
+            "text": "Sorularınızı aşağıdaki forma bırakın, tüm cevaplarla birlikte sizi geri arayalım."
         },
         "map": {
-            "title": "Ми на мапі"
+            "title": "Haritadayız"
         }
     },
     "products": {
         "categoryMetadata": {
-            "title": "{category} | Крупомол",
-            "desc": "{category} найвищої якості оптом від сертифікованого виробника",
+            "title": "{category} | Krupomol",
+            "desc": "{category} sertifikalı bir üreticiden dökme olarak en yüksek kalitede",
             "keywords": [
-                "Оптові поставки",
-                "Крупи найвищої якості",
-                "Крупи",
-                "Крупа",
-                "Цукор",
-                "Крупи оптом найвищої якості",
-                "Цукор оптом найвищої якості"
+                "Toptan teslimatlar",
+                "En yüksek kalitede tahıllar",
+                "Tahıllar",
+                "Tahıl",
+                "Şeker",
+                "En yüksek kalitede toptan tahıllar",
+                "En yüksek kalitede toptan tahıllar"
             ]
         },
         "productMetadata": {
-            "title": "{name} крупа | Крупомол",
-            "desc": "{name} крупа найвищої якості оптом від сертифікованого виробника",
+            "title": "{name} Tahıl | Krupomol",
+            "desc": "{name} sertifikalı bir üreticiden dökme olarak en yüksek kalitede tahıllar",
             "keywords": [
-                "{name} крупа",
-                "{name} крупа оптом",
-                "Оптові поставки круп",
-                "Крупи оптом",
-                "Крупи",
-                "Крупи найвищої якості"
+                "{name} tahıl",
+                "{name} tahıl toplu olarak",
+                "Toptan hububat tedariği",
+                "Tahıl toplu olarak",
+                "Tahıllar",
+                "Tahıllar en yüksek kalitede"
             ]
         },
         "data": {
-            "nutritional": "Поживна (харчова) цінність 100 г продукту:",
-            "fats": "Жири, г",
-            "acids": "Насичені жирні кислоти, г",
-            "carbohydrates": "Вуглеводи, г",
-            "sugar": "Цукор, г",
-            "protein": "Білок, г",
-            "salt": "Сіль, г",
-            "energy": "Енергетична цінність 100 г продукту:",
-            "mass": "Маса нетто, г",
-            "package": "Пакування",
-            "gpCount": "Кількість в груповій упаковці, шт",
-            "gpWeight": "Вага групової упаковки, кг",
-            "expiration": "Строк придатності, міс",
-            "polypropylene": "поліпропілен",
-            "paper": "Папір",
-            "kcal": "ккал",
-            "kj": "кДж",
-            "buy": "Купити"
+            "nutritional": "Ürünün 100 g'ının besin (gıda) değeri:",
+            "fats": "Yağlar, g",
+            "acids": "Doymuş yağ asitleri, g",
+            "carbohydrates": "Karbonhidratlar, g",
+            "sugar": "Şeker, g",
+            "protein": "Protein, g",
+            "salt": "Tuz, g",
+            "energy": "100 g ürünün enerji değeri:",
+            "mass": "Net ağırlık, g",
+            "package": "Paketleme",
+            "gpCount": "Grup ambalajındaki miktar, adet.",
+            "gpWeight": "Grup ambalaj ağırlığı, kg",
+            "expiration": "Raf ömrü, ay",
+            "polypropylene": "Poli̇propi̇len",
+            "paper": "Kağıt",
+            "kcal": "kcal",
+            "kj": "kJ",
+            "buy": "Satın Al"
         },
         "metadata": {
-            "title": "Продукція | Крупомол",
-            "desc": "Оптові поставки натуральних круп найвищої якості від сертифікованого виробника",
+            "title": "Ürünler | Krupomol",
+            "desc": "Sertifikalı bir üreticiden en yüksek kalitede doğal tahılların toptan tedariği",
             "keywords": [
-                "ячмінна крупа",
-                "перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "Горохова крупа",
-                "Гречана крупа"
+                "arpa kabuğu",
+                "inci arpa",
+                "Arpa ürünleri",
+                "Buğday kabuğu",
+                "Bezelye kabuğu",
+                "Karabuğday kabuğu"
             ]
         },
         "hero": {
-            "title": "Натуральні крупи найвищої якості",
-            "link": "До каталогу"
+            "title": "En yüksek kalitede doğal tahıllar",
+            "link": "Kataloğa"
         },
         "offer": {
-            "title": "Що ми пропонуєм своїм клієнтам?",
-            "text": "ТОВ \"Українська агропромислова транспортна група\" — виробниче підприємство, що спеціалізується на виготовленні високоякісних круп. Ми пропонуємо продукцію, яка відповідає міжнародним стандартам, забезпечуючи стабільні поставки для оптових покупців та експорту. Гнучкі умови співпраці, а також можливість оплати як у готівковій, так і в безготівковій формі роблять нашу продукцію доступною для різних категорій клієнтів."
+            "title": "Müşterilerimize ne sunuyoruz?",
+            "text": "Ukrainian Agricultural Transport Group LLC, yüksek kaliteli tahıl üretiminde uzmanlaşmış bir imalat şirketidir. Uluslararası standartlara uygun ürünler sunarak toptan alıcılar ve ihracatçılar için istikrarlı tedarik sağlıyoruz. Esnek işbirliği koşullarının yanı sıra hem nakit hem de nakit olmayan ödeme imkanı, ürünlerimizi çeşitli müşteri kategorileri için kullanılabilir hale getirmektedir."
         },
         "info": {
-            "title": "Більше інформації",
+            "title": "Daha fazla bilgi",
             "infoList": [
                 {
-                    "title": "Завантажити каталог",
+                    "title": "Kataloğu indirin",
                     "icon": "catalog",
                     "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
                     "download": true
                 },
                 {
-                    "title": "Завантажити прайс",
+                    "title": "Fiyat listesini indirin",
                     "icon": "price-list",
                     "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
                     "download": true
                 },
                 {
-                    "title": "Відеоогляд продукції",
+                    "title": "Ürünlerin video incelemesi",
                     "icon": "video-review",
                     "url": "http://youtube.com/",
                     "download": false
@@ -201,7 +201,7 @@
     },
     "prices": {
         "metadata": {
-            "title": "Зікупівельні ціни | Крупомол",
+            "title": "Satın alma fiyatları | Krupomol",
             "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує вигідні умови співпраці для постачальників зернових та круп. Для уточнення актуальних закупівельних цін та умов співпраці зв’яжіться з нами.",
             "keywords": [
                 "Готівковий розрахунок",
@@ -220,7 +220,7 @@
             ]
         },
         "hero": {
-            "title": "Зікупівельні ціни"
+            "title": "Satın alma fiyatları"
         },
         "cooperation": {
             "title": "Ми пропонуємо вигідні умови співпраці для постачальників зернових та круп.",
@@ -270,126 +270,134 @@
         }
     },
     "footer": {
-        "rights": "Крупомол | Усі права захищені",
-        "policy": "Політика конфіденційності"
+        "rights": "Krupomol | Tüm hakları saklıdır",
+        "policy": "Gizlilik Politikası"
     },
     "certification": {
         "metadata": {
-            "title": "Сертифікація | Крупомол",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" дотримується найвищих стандартів якості та безпеки продукції. Вся наша продукція проходить ретельний контроль на кожному етапі виробництва – від відбору сировини до фасування та зберігання.",
+            "title": "Sertifikasyon | Krupomol",
+            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarına bağlıdır. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasında dikkatle kontrol edilmektedir..",
             "keywords": [
                 "ISO",
-                "Якість",
-                "Безпека",
-                "Харчові продукти",
-                "Сертифікація",
-                "Експорт",
+                "Kalite",
+                "Güvenlik",
+                "Gıda ürünleri",
+                "Sertifikasyon",
+                "İhracat",
                 "НАССР",
-                "контакты",
-                "перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "связаться",
-                "ячмінна крупа"
+                "kişiler",
+                "inci arpa",
+                "Arpa ürünleri",
+                "Buğday kabuğu",
+                "İletişim",
+                "arpa kabuğu"
             ]
         },
         "hero": {
-            "title": "Сертифікація продукції",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" дотримується найвищих стандартів якості та безпеки продукції. Вся наша продукція проходить ретельний контроль на кожному етапі виробництва – від відбору сировини до фасування та зберігання."
+            "title": "Ürün sertifikasyonu",
+            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarına bağlıdır. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasında dikkatle kontrol edilmektedir.."
         },
         "certificates": {
-            "title": "Наші сертифікати:",
+            "title": "Sertifikalarımız:",
             "list": [
                 {
                     "id": "iso22000",
-                    "title": "ISO 22000 – Система управління безпечністю харчових продуктів",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 22000 – Система управління безпечністю харчових продуктів"
+                    "title": "ISO 22000 – gıda güvenliği yönetim sistemi",
+                    "desc": "Sertifika, standarda uygunluğu belgelendirir ISO 22000 – gıda güvenliği yönetim sistemi"
                 },
                 {
                     "id": "iso9001",
-                    "title": "ISO 9001 – Система управління якістю",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 9001 – Система управління якістю"
+                    "title": "ISO 9001 – Kalite yönetim sistemi",
+                    "desc": "Sertifika, standarda uygunluğu belgelendirir ISO 9001 – Kalite yönetim sistemi"
                 },
                 {
                     "id": "ukrsepro",
-                    "title": "ISO 9001 – Система управління якістю",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 9001 – Система управління якістю"
+                    "title": "ISO 9001 – Kalite yönetim sistemi",
+                    "desc": "Sertifika, standarda uygunluğu belgelendirir ISO 9001 – Kalite yönetim sistemi"
                 }
             ]
         },
         "guarantees": {
-            "title": "Що гарантує сертифікація?",
+            "title": "Sertifikasyon neleri garanti eder?",
             "image": "certificates",
             "list": [
                 {
-                    "title": "Високий рівень якості продукції",
-                    "desc": "Сертифікація підтверджує, що наша продукція виготовляється з дотриманням суворих вимог до сировини, технологічного процесу та кінцевого продукту. Ми здійснюємо багаторівневий контроль якості, що включає лабораторні дослідження та перевірку відповідності всім встановленим нормам."
+                    "title": "Yüksek düzeyde ürün kalitesi",
+                    "desc": "Bu sertifika, ürünlerimizin hammadde, teknolojik süreç ve nihai ürüne ilişkin katı gerekliliklere uygun olarak üretildiğini teyit etmektedir. Laboratuvar testleri ve belirlenen tüm standartlara uygunluğun doğrulanması dahil olmak üzere çok seviyeli kalite kontrolü gerçekleştiriyoruz."
                 },
                 {
-                    "title": "Відповідність міжнародним стандартам",
-                    "desc": "Наявність сертифікатів ISO та HACCP підтверджує, що наша продукція та виробничі процеси відповідають міжнародним вимогам харчової безпеки. Це дозволяє нам постачати продукцію на ринки Європи, Азії та інших регіонів, де діють високі стандарти якості."
+                    "title": "Uluslararası standartlara uygunluk",
+                    "desc": "ISO ve HACCP sertifikalarımız, ürünlerimizin ve üretim süreçlerimizin uluslararası gıda güvenliği gerekliliklerini karşıladığını teyit etmektedir. Bu sayede Avrupa, Asya ve diğer bölgelerdeki pazarlara yüksek kalite standartlarında ürün tedarik edebiliyoruz."
                 },
                 {
-                    "title": "Безпека для споживачів",
-                    "desc": "Ми гарантуємо, що наша продукція не містить шкідливих домішок, відповідає нормам екологічної чистоти та зберігає всі корисні властивості. Завдяки впровадженню системи HACCP, ми виявляємо та мінімізуємо ризики на кожному етапі виробництва."
+                    "title": "Tüketiciler için güvenlik",
+                    "desc": "Ürünlerimizin zararlı yabancı maddeler içermediğini, çevre standartlarına uygun olduğunu ve tüm faydalı özelliklerini koruduğunu garanti ediyoruz. HACCP sisteminin uygulanması sayesinde, üretimin her aşamasında riskleri tespit ediyor ve en aza indiriyoruz."
                 },
                 {
-                    "title": "Можливість експорту в країни ЄС та інші регіони",
-                    "desc": "Сертифіковані продукти відповідають законодавчим вимогам міжнародних ринків, що відкриває широкі можливості для експорту. Це дозволяє нам працювати з європейськими, азіатськими та іншими зарубіжними партнерами, забезпечуючи їх високоякісною продукцією."
+                    "title": "AB ülkelerine ve diğer bölgelere ihracat imkanı",
+                    "desc": "Sertifikalı ürünler uluslararası pazarların yasal gerekliliklerine uygundur ve bu da ihracat için geniş fırsatlar yaratır. Bu sayede Avrupalı, Asyalı ve diğer yabancı ortaklarımızla çalışabiliyor ve onlara yüksek kaliteli ürünler sunabiliyoruz."
                 }
             ]
         },
-        "info": "Завдяки цим гарантіям, наші клієнти можуть бути впевнені у якості, безпеці та надійності продукції, яку вони отримують."
+        "info": "Bu garantiler sayesinde müşterilerimiz aldıkları ürünlerin kalitesinden, güvenliğinden ve güvenilirliğinden emin olabilirler."
     },
     "export": {
         "metadata": {
-            "title": "Експорт | Крупомол",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує надійний експорт високоякісної агропродукції на міжнародні ринки. Наша продукція проходить строгий контроль якості на всіх етапах – від добору сировини до фасування та логістики. Ми забезпечуємо індивідуальний підхід до кожного партнера, швидку підготовку документів та своєчасну доставку. Співпрацюючи з нами, ви отримуєте сертифіковані товари, що відповідають міжнародним стандартам якості та безпеки.",
+            "title": "İhracat | Krupomol",
+            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararası pazarlara yüksek kaliteli tarım ürünleri ihracatı sunmaktadır. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda sıkı kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşım, belgelerin hızlı hazırlanması ve zamanında teslimat sağlıyoruz.",
             "keywords": [
                 "ISO",
-                "Якість",
-                "Безпека",
-                "Харчові продукти",
-                "Сертифікація",
-                "Експорт",
+                "Kalite",
+                "Güvenlik",
+                "Gıda ürünleri",
+                "Sertifikasyon",
+                "İhracat",
                 "НАССР",
-                "контакты",
-                "Гречана крупа",
-                "Кукурудзяна крупа",
-                "Горохова крупа",
-                "Пшоно",
-                "Перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "Ячна крупа",
-                "связаться",
-                "Ячмінна крупа"
+                "kişiler",
+                "inci arpa",
+                "Arpa ürünleri",
+                "Buğday kabuğu",
+                "İletişim",
+                "arpa kabuğu",
+                "Telefon",
+                "Email",
+                "elverişli işbirliği koşulları",
+                "İŞBİRLİĞİ",
+                "Toptan satış",
+                "Bezelye kabuğu",
+                "Karabuğday kabuğu",
+                "İletişim",
+                "inci arpa",
+                "Arpa ürünleri",
+                "Buğday kabuğu",
+                "İletişim",
+                "arpa kabuğu"
             ]
         },
         "hero": {
-            "title": "Експорт агропродукції",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує експорт високоякісної агропродукції на міжнародні ринки. Наша продукція проходить строгий контроль якості на всіх етапах – від добору сировини до фасування та логістики. Ми забезпечуємо індивідуальний підхід до кожного партнера, швидку підготовку документів та своєчасну доставку."
+            "title": "Tarım ürünleri ihracatı",
+            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararası pazarlara yüksek kaliteli tarım ürünleri ihracatı sunmaktadır. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda sıkı kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşım, belgelerin hızlı hazırlanması ve zamanında teslimat sağlıyoruz."
         },
-        "title": "Переваги роботи з нами",
+        "title": "Bizimle çalışmanın avantajları",
         "advantages": [
             {
-                "title": "Транспорт та зберігання",
-                "text": "Опт - Контейнер - Закупівля",
+                "title": "Taşıma ve depolama",
+                "text": "Toptan Satış - Konteyner - Tedarik",
                 "icon": "cooperation"
             },
             {
-                "title": "Виробництво та упаковка",
-                "text": "Склади - Виробництво - Упаковка",
+                "title": "Üretim ve paketleme",
+                "text": "Depolar - Üretim - Paketleme",
                 "icon": "production"
             },
             {
-                "title": "Підготовка продукції",
-                "text": "Сушіння - Чищення - Змішування - Поділ",
+                "title": "Ürün hazırlama",
+                "text": "Kurutma - Temizleme - Karıştırma - Ayırma",
                 "icon": "quality"
             },
             {
-                "title": "Сортування і сертифікація",
-                "text": "Калібр - Грануляція - Сертифікація",
+                "title": "Tasnif ve belgelendirme",
+                "text": "Kalibre - Granülasyon - Sertifikasyon",
                 "icon": "certification"
             }
         ]

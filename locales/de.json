@@ -7,7 +7,8 @@
             "contacts": "Kontakte",
             "prices": "Einkaufspreise",
             "certification": "Zertifizierung",
-            "product": "Produkte"
+            "product": "Produkte",
+            "export": "Exporte"
         }
     },
     "shared": {
@@ -135,62 +136,62 @@
             ]
         },
         "data": {
-            "nutritional": "Поживна (харчова) цінність 100 г продукту:",
-            "fats": "Жири, г",
-            "acids": "Насичені жирні кислоти, г",
-            "carbohydrates": "Вуглеводи, г",
-            "sugar": "Цукор, г",
-            "protein": "Білок, г",
-            "salt": "Сіль, г",
-            "energy": "Енергетична цінність 100 г продукту:",
-            "mass": "Маса нетто, г",
-            "package": "Пакування",
-            "gpCount": "Кількість в груповій упаковці, шт",
-            "gpWeight": "Вага групової упаковки, кг",
-            "expiration": "Строк придатності, міс",
-            "polypropylene": "поліпропілен",
-            "paper": "Папір",
-            "kcal": "ккал",
-            "kj": "кДж",
-            "buy": "Купити"
+            "nutritional": "Nährwert (Lebensmittel) von 100 g des Produkts:",
+            "fats": "Fette, g",
+            "acids": "Gesättigte Fettsäuren, g",
+            "carbohydrates": "Kohlenhydrate, g",
+            "sugar": "Zucker, g",
+            "protein": "Eiweiß, g",
+            "salt": "Salz, g",
+            "energy": "Energiewert von 100 g des Produkts:",
+            "mass": "Nettogewicht, g",
+            "package": "Verpackung",
+            "gpCount": "Menge in Gruppenverpackung, Stk.",
+            "gpWeight": "Gewicht der Gruppenverpackung, kg",
+            "expiration": "Haltbarkeitsdauer, Monate",
+            "polypropylene": "olypropylen",
+            "paper": "Papier",
+            "kcal": "kcal",
+            "kj": "kJ",
+            "buy": "Kaufen"
         },
         "metadata": {
-            "title": "Продукція | Крупомол",
-            "desc": "Оптові поставки натуральних круп найвищої якості від сертифікованого виробника",
+            "title": "Produkte | Krupomol",
+            "desc": "Großhandel mit Naturgetreide von höchster Qualität von einem zertifizierten Hersteller",
             "keywords": [
-                "ячмінна крупа",
-                "перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "Горохова крупа",
-                "Гречана крупа"
+                "Gerstengrütze",
+                "Perlgraupen",
+                "Gerstenerzeugnisse",
+                "Weizengrütze",
+                "Erbsengrütze",
+                "Buchweizengrütze"
             ]
         },
         "hero": {
-            "title": "Натуральні крупи найвищої якості",
-            "link": "До каталогу"
+            "title": "Natürliches Getreide von höchster Qualität",
+            "link": "Zum Katalog"
         },
         "offer": {
-            "title": "Що ми пропонуєм своїм клієнтам?",
-            "text": "ТОВ \"Українська агропромислова транспортна група\" — виробниче підприємство, що спеціалізується на виготовленні високоякісних круп. Ми пропонуємо продукцію, яка відповідає міжнародним стандартам, забезпечуючи стабільні поставки для оптових покупців та експорту. Гнучкі умови співпраці, а також можливість оплати як у готівковій, так і в безготівковій формі роблять нашу продукцію доступною для різних категорій клієнтів."
+            "title": "Was wir unseren Kunden bieten?",
+            "text": "Ukrainian Agricultural Transport Group LLC ist ein Produktionsunternehmen, das sich auf die Herstellung von hochwertigem Getreide spezialisiert hat. Wir bieten Produkte an, die den internationalen Standards entsprechen und eine stabile Versorgung für Großabnehmer und Exporteure gewährleisten. Die flexiblen Bedingungen der Zusammenarbeit sowie die Möglichkeit der bargeldlosen und bargeldlosen Zahlung machen unsere Produkte für verschiedene Kategorien von Kunden verfügbar."
         },
         "info": {
-            "title": "Більше інформації",
+            "title": "Weitere Informationen",
             "infoList": [
                 {
-                    "title": "Завантажити каталог",
+                    "title": "Den Katalog herunterladen",
                     "icon": "catalog",
                     "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
                     "download": true
                 },
                 {
-                    "title": "Завантажити прайс",
+                    "title": "Download der Preisliste",
                     "icon": "price-list",
                     "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
                     "download": true
                 },
                 {
-                    "title": "Відеоогляд продукції",
+                    "title": "Videobewertung der Produkte",
                     "icon": "video-review",
                     "url": "http://youtube.com/",
                     "download": false
@@ -200,7 +201,7 @@
     },
     "prices": {
         "metadata": {
-            "title": "Зікупівельні ціни | Крупомол",
+            "title": "Kaufpreise | Krupomol",
             "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує вигідні умови співпраці для постачальників зернових та круп. Для уточнення актуальних закупівельних цін та умов співпраці зв’яжіться з нами.",
             "keywords": [
                 "Готівковий розрахунок",
@@ -219,7 +220,7 @@
             ]
         },
         "hero": {
-            "title": "Зікупівельні ціни"
+            "title": "Kaufpreise"
         },
         "cooperation": {
             "title": "Ми пропонуємо вигідні умови співпраці для постачальників зернових та круп.",
@@ -269,126 +270,134 @@
         }
     },
     "footer": {
-        "rights": "Крупомол | Усі права захищені",
-        "policy": "Політика конфіденційності"
+        "rights": "Krupomol | Alle Rechte vorbehalten",
+        "policy": "Datenschutzbestimmungen"
     },
     "certification": {
         "metadata": {
-            "title": "Сертифікація | Крупомол",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" дотримується найвищих стандартів якості та безпеки продукції. Вся наша продукція проходить ретельний контроль на кожному етапі виробництва – від відбору сировини до фасування та зберігання.",
+            "title": "Zertifizierung | Krupomol",
+            "desc": "ТUkrainian Agricultural Transport Group LLC hält sich an die höchsten Standards für Produktqualität und -sicherheit. Alle unsere Produkte werden in jeder Phase der Produktion sorgfältig kontrolliert - von der Auswahl der Rohstoffe bis zur Verpackung und Lagerung.",
             "keywords": [
                 "ISO",
-                "Якість",
-                "Безпека",
-                "Харчові продукти",
-                "Сертифікація",
-                "Експорт",
+                "Qualität",
+                "Sicherheit",
+                "Lebensmittel",
+                "Zertifizierung",
+                "Exporte",
                 "НАССР",
-                "контакты",
-                "перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "связаться",
-                "ячмінна крупа"
+                "Kontakte",
+                "Perlgraupen",
+                "Gerstenerzeugnisse",
+                "Weizengrütze",
+                "Kontakt",
+                "Gerstengrütze"
             ]
         },
         "hero": {
-            "title": "Сертифікація продукції",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" дотримується найвищих стандартів якості та безпеки продукції. Вся наша продукція проходить ретельний контроль на кожному етапі виробництва – від відбору сировини до фасування та зберігання."
+            "title": "Produktzertifizierung",
+            "desc": "Ukrainian Agricultural Transport Group LLC hält sich an die höchsten Standards für Produktqualität und -sicherheit. Alle unsere Produkte werden in jeder Phase der Produktion sorgfältig kontrolliert - von der Auswahl der Rohstoffe bis zur Verpackung und Lagerung."
         },
         "certificates": {
-            "title": "Наші сертифікати:",
+            "title": "Unsere Zertifikate:",
             "list": [
                 {
                     "id": "iso22000",
-                    "title": "ISO 22000 – Система управління безпечністю харчових продуктів",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 22000 – Система управління безпечністю харчових продуктів"
+                    "title": "ISO 22000 – Managementsystem für Lebensmittelsicherheit",
+                    "desc": "Das Zertifikat bescheinigt die Einhaltung der Norm ISO 22000 – Managementsystem für Lebensmittelsicherheit"
                 },
                 {
                     "id": "iso9001",
-                    "title": "ISO 9001 – Система управління якістю",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 9001 – Система управління якістю"
+                    "title": "ISO 9001 – Qualitätsmanagementsystem",
+                    "desc": "Das Zertifikat bescheinigt die Einhaltung der Norm ISO 9001 – Qualitätsmanagementsystem"
                 },
                 {
                     "id": "ukrsepro",
-                    "title": "ISO 9001 – Система управління якістю",
-                    "desc": "Сертифікат засвідчує відповідність стандарту ISO 9001 – Система управління якістю"
+                    "title": "ISO 9001 – Qualitätsmanagementsystem",
+                    "desc": "Das Zertifikat bescheinigt die Einhaltung der Norm ISO 9001 – Qualitätsmanagementsystem"
                 }
             ]
         },
         "guarantees": {
-            "title": "Що гарантує сертифікація?",
+            "title": "ЩWas die Zertifizierung garantiert?",
             "image": "certificates",
             "list": [
                 {
-                    "title": "Високий рівень якості продукції",
-                    "desc": "Сертифікація підтверджує, що наша продукція виготовляється з дотриманням суворих вимог до сировини, технологічного процесу та кінцевого продукту. Ми здійснюємо багаторівневий контроль якості, що включає лабораторні дослідження та перевірку відповідності всім встановленим нормам."
+                    "title": "Hohes Niveau der Produktqualität",
+                    "desc": "Die Zertifizierung bestätigt, dass unsere Produkte unter Einhaltung der strengen Anforderungen an die Rohstoffe, den technologischen Prozess und das Endprodukt hergestellt werden. Wir führen eine mehrstufige Qualitätskontrolle durch, einschließlich Labortests und Überprüfung der Einhaltung aller festgelegten Normen."
                 },
                 {
-                    "title": "Відповідність міжнародним стандартам",
-                    "desc": "Наявність сертифікатів ISO та HACCP підтверджує, що наша продукція та виробничі процеси відповідають міжнародним вимогам харчової безпеки. Це дозволяє нам постачати продукцію на ринки Європи, Азії та інших регіонів, де діють високі стандарти якості."
+                    "title": "Einhaltung der internationalen Normen",
+                    "desc": "Unsere ISO- und HACCP-Zertifikate bestätigen, dass unsere Produkte und Produktionsverfahren den internationalen Anforderungen an die Lebensmittelsicherheit entsprechen. Dies ermöglicht es uns, Produkte mit hohen Qualitätsstandards auf die Märkte in Europa, Asien und anderen Regionen zu liefern."
                 },
                 {
-                    "title": "Безпека для споживачів",
-                    "desc": "Ми гарантуємо, що наша продукція не містить шкідливих домішок, відповідає нормам екологічної чистоти та зберігає всі корисні властивості. Завдяки впровадженню системи HACCP, ми виявляємо та мінімізуємо ризики на кожному етапі виробництва."
+                    "title": "Sicherheit für die Verbraucher",
+                    "desc": "Wir garantieren, dass unsere Produkte frei von schädlichen Verunreinigungen sind, den Umweltstandards entsprechen und alle ihre positiven Eigenschaften behalten. Dank der Anwendung des HACCP-Systems identifizieren und minimieren wir die Risiken in jeder Phase der Produktion."
                 },
                 {
-                    "title": "Можливість експорту в країни ЄС та інші регіони",
-                    "desc": "Сертифіковані продукти відповідають законодавчим вимогам міжнародних ринків, що відкриває широкі можливості для експорту. Це дозволяє нам працювати з європейськими, азіатськими та іншими зарубіжними партнерами, забезпечуючи їх високоякісною продукцією."
+                    "title": "Möglichkeit des Exports in EU-Länder und andere Regionen",
+                    "desc": "Die zertifizierten Produkte entsprechen den gesetzlichen Anforderungen der internationalen Märkte, was uns umfangreiche Exportmöglichkeiten eröffnet. Dies ermöglicht es uns, mit europäischen, asiatischen und anderen ausländischen Partnern zusammenzuarbeiten und sie mit hochwertigen Produkten zu versorgen."
                 }
             ]
         },
-        "info": "Завдяки цим гарантіям, наші клієнти можуть бути впевнені у якості, безпеці та надійності продукції, яку вони отримують."
+        "info": "Dank dieser Garantien können unsere Kunden auf die Qualität, Sicherheit und Zuverlässigkeit der Produkte vertrauen, die sie erhalten."
     },
     "export": {
         "metadata": {
-            "title": "Експорт | Крупомол",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує надійний експорт високоякісної агропродукції на міжнародні ринки. Наша продукція проходить строгий контроль якості на всіх етапах – від добору сировини до фасування та логістики. Ми забезпечуємо індивідуальний підхід до кожного партнера, швидку підготовку документів та своєчасну доставку. Співпрацюючи з нами, ви отримуєте сертифіковані товари, що відповідають міжнародним стандартам якості та безпеки.",
+            "title": "Exporte | Krupomol",
+            "desc": "Die Ukrainian Agricultural Transport Group LLC bietet den Export hochwertiger landwirtschaftlicher Produkte auf internationale Märkte an. Unsere Produkte unterliegen in allen Phasen einer strengen Qualitätskontrolle - von der Auswahl der Rohstoffe bis zur Verpackung und Logistik. Wir bieten einen individuellen Ansatz für jeden Partner, schnelle Vorbereitung der Dokumente und rechtzeitige Lieferung.",
             "keywords": [
                 "ISO",
-                "Якість",
-                "Безпека",
-                "Харчові продукти",
-                "Сертифікація",
-                "Експорт",
+                "Qualität",
+                "Sicherheit",
+                "Lebensmittel",
+                "Zertifizierung",
+                "Exporte",
                 "НАССР",
-                "контакты",
-                "Гречана крупа",
-                "Кукурудзяна крупа",
-                "Горохова крупа",
-                "Пшоно",
-                "Перлова крупа",
-                "Продукція з ячменю",
-                "Пшенична крупа",
-                "Ячна крупа",
-                "связаться",
-                "Ячмінна крупа"
+                "Kontakte",
+                "Perlgraupen",
+                "Gerstenerzeugnisse",
+                "Weizengrütze",
+                "Kontakt",
+                "Gerstengrütze",
+                "Telefon",
+                "Mail",
+                "günstige Kooperationsbedingungen",
+                "Kooperation",
+                "Großhandel",
+                "Erbsengrütze",
+                "Buchweizengrütze",
+                "Kontakte",
+                "Perlgraupen",
+                "Gerstenprodukte",
+                "Weizengrütze",
+                "Kontakt",
+                "Gerstengrütze"
             ]
         },
         "hero": {
-            "title": "Експорт агропродукції",
-            "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує експорт високоякісної агропродукції на міжнародні ринки. Наша продукція проходить строгий контроль якості на всіх етапах – від добору сировини до фасування та логістики. Ми забезпечуємо індивідуальний підхід до кожного партнера, швидку підготовку документів та своєчасну доставку."
+            "title": "Ausfuhr von landwirtschaftlichen Erzeugnissen",
+            "desc": "Die Ukrainian Agricultural Transport Group LLC bietet den Export hochwertiger landwirtschaftlicher Produkte auf internationale Märkte an. Unsere Produkte unterliegen in allen Phasen einer strengen Qualitätskontrolle - von der Auswahl der Rohstoffe bis zur Verpackung und Logistik. Wir bieten einen individuellen Ansatz für jeden Partner, schnelle Vorbereitung der Dokumente und rechtzeitige Lieferung."
         },
-        "title": "Переваги роботи з нами",
+        "title": "Vorteile einer Zusammenarbeit mit uns",
         "advantages": [
             {
-                "title": "Транспорт та зберігання",
-                "text": "Опт - Контейнер - Закупівля",
+                "title": "Transport und Lagerung",
+                "text": "Großhandel - Container - Beschaffung",
                 "icon": "cooperation"
             },
             {
-                "title": "Виробництво та упаковка",
-                "text": "Склади - Виробництво - Упаковка",
+                "title": "Produktion und Verpackung",
+                "text": "Lagerhaltung - Produktion - Verpackung",
                 "icon": "production"
             },
             {
-                "title": "Підготовка продукції",
-                "text": "Сушіння - Чищення - Змішування - Поділ",
+                "title": "Vorbereitung des Produkts",
+                "text": "Trocknen - Reinigen - Mischen - Trennen",
                 "icon": "quality"
             },
             {
-                "title": "Сортування і сертифікація",
-                "text": "Калібр - Грануляція - Сертифікація",
+                "title": "Sortierung und Zertifizierung",
+                "text": "Kaliber - Körnung - Zertifizierung",
                 "icon": "certification"
             }
         ]
