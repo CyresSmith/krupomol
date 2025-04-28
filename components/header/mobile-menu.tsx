@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { useTranslations } from 'next-intl';
 
-// import { usePathname } from '@i18n';
+import { Link } from '@i18n';
 
 import { Button } from '@ui/button';
 import {
@@ -20,7 +20,6 @@ import {
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     navigationMenuTriggerStyle,
 } from '@ui/navigation-menu';
@@ -36,7 +35,6 @@ import { navigation } from '@constants';
 import { cn } from '@utils';
 
 export const MobileMenu = () => {
-    // const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
     const t = useTranslations('header.navigation');
@@ -73,18 +71,17 @@ export const MobileMenu = () => {
                                 className="m-0 flex h-full w-full items-center justify-center desktop:w-auto"
                                 key={title}
                             >
-                                <NavigationMenuLink
-                                    // active={pathname === href}
+                                <Link
                                     className={cn(
                                         navigationMenuTriggerStyle(),
                                         'text-center text-primary',
                                         titleFont.className
                                     )}
-                                    href={href}
+                                    href={href ?? ''}
                                     onClick={() => setOpen(false)}
                                 >
                                     {t(title as NavigationTitle)}
-                                </NavigationMenuLink>
+                                </Link>
                             </NavigationMenuItem>
                         ))}
                     </NavigationMenuList>

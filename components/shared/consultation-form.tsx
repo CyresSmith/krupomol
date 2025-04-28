@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { useTranslations } from 'next-intl';
@@ -9,7 +9,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 
 import { Icon } from './icon';
-import { Loader } from './loader';
+import { LenisContext } from './smooth-scroll';
 
 import { Button } from '@ui/button';
 import {
@@ -43,6 +43,7 @@ const inputs: InputProps[] = [
 export const ConsultationForm = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const lenis = useContext(LenisContext);
 
     const t = useTranslations('shared.consultation-form');
 
@@ -82,6 +83,28 @@ export const ConsultationForm = () => {
             setIsLoading(false);
         }
     };
+
+    useEffect(() => {
+        if (!isModalOpen) return;
+
+        const closeTimeout = setTimeout(() => setIsModalOpen(false), 4000);
+
+        return () => {
+            if (closeTimeout) clearTimeout(closeTimeout);
+        };
+    }, [isModalOpen]);
+
+    useEffect(() => {
+        if (isModalOpen) {
+            lenis?.stop();
+        } else {
+            lenis?.start();
+        }
+
+        return () => {
+            lenis?.start();
+        };
+    }, [lenis, isModalOpen]);
 
     return (
         <>
@@ -164,23 +187,23 @@ export const ConsultationForm = () => {
                     </div>
 
                     <div className="flex justify-center">
-                        {isLoading ? (
-                            <Loader className="h-fit w-fit" transparent={true} />
-                        ) : (
-                            <Button
-                                disabled={!isValid}
-                                size={'lg'}
-                                type="submit"
-                                variant={'primary'}
-                            >
-                                {t('submit')}
+                        <Button
+                            disabled={!isValid || isLoading}
+                            size={'lg'}
+                            type="submit"
+                            variant={'primary'}
+                        >
+                            {t('submit')}
 
-                                <Icon className="ml-8" name="arrow-right-top" />
-                            </Button>
-                        )}
+                            <Icon
+                                className="ml-8"
+                                name={isLoading ? 'loader' : 'arrow-right-top'}
+                            />
+                        </Button>
                     </div>
                 </form>
             </Form>
+
             <Dialog onOpenChange={setIsModalOpen} open={isModalOpen}>
                 <DialogContent className="sm:max-w-[425px] rounded-20 mobile:max-w-[90%]">
                     <DialogHeader>
