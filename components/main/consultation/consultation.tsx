@@ -8,7 +8,7 @@ export const Consultation = () => {
     const t = useTranslations('main.consultation');
 
     return (
-        <Section>
+        <Section id="consultation">
             <div className="container">
                 <Title className="mb-12 text-center text-text-color mobile:text-3xl">
                     {t('title')}

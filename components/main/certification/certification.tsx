@@ -16,7 +16,7 @@ export const Certification = () => {
     const t = useTranslations('main.certification');
 
     return (
-        <ImageSection image="main-certification">
+        <ImageSection id="certification" image="main-certification">
             <BorderCard>
                 <div className="w-full desktop:w-[635px]">
                     <Title as="h3" className="mb-3 text-5xl text-background mobile:text-3xl">

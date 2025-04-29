@@ -13,3 +13,5 @@ export type NavigationTitle =
     | 'main'
     | 'prices'
     | 'product';
+
+export type NavigationAnchorsType = Record<NavigationTitle, string[]>;

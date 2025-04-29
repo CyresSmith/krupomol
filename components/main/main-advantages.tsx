@@ -11,5 +11,5 @@ export const MainAdvantages = () => {
 
     const advantages = t.raw('advantages') as AdvantageType[];
 
-    return <Advantages advantages={advantages} title={t('title')} />;
+    return <Advantages advantages={advantages} id="advantages" title={t('title')} />;
 };
