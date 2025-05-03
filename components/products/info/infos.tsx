@@ -11,7 +11,7 @@ export const Infos = async () => {
     const infoList = t.raw('info.infoList') as ProductsItemInfoType[];
 
     return (
-        <ImageSection image="products-more-info">
+        <ImageSection id="info" image="products-more-info">
             <div className="z-1 container relative">
                 <BorderCard className="tablet:w-1/2 desktop:w-1/2">
                     <Title

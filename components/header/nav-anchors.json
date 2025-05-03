@@ -1,6 +1,6 @@
 {
     "main": ["#about", "#production", "#certification", "#advantages", "#consultation"],
-    "product": [],
+    "product": ["#offer", "#info"],
     "prices": [],
     "export": [],
     "contacts": [],
