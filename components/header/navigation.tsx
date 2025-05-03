@@ -1,66 +1,43 @@
 'use client';
 
-import navAnchors from './nav-anchors.json' assert {type: 'json'};
-
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
-// import { Link } from '@i18n';
+import { NavMenuItem } from './nav-menu-item';
 
-// import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuTrigger } from '@ui/dropdown-menu';
-import {
-    NavigationMenu,
-    // NavigationMenuItem,
-    NavigationMenuList,
-    // navigationMenuTriggerStyle,
-} from '@ui/navigation-menu';
+import { NavigationMenu, NavigationMenuList } from '@ui/navigation-menu';
 
-import { NavigationAnchorsType, NavigationTitle } from '@types';
+import { NavigationTitle } from '@types';
 
 import { PRICES_ROUTE } from '@routes';
 
 import { navigation } from '@constants';
-
-// import { cn } from '@utils';
-import { NavMenuItem } from './nav-menu-item';
 
 interface Props {
     onItemClick?: () => void;
 }
 
 export const Navigation = ({ onItemClick }: Props) => {
-    const t = useTranslations('header.navigation');
     const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
-    const anchors: NavigationAnchorsType = navAnchors;
 
     return (
-        <NavigationMenu className="hidden desktop:block h-full" orientation="horizontal">
-            <NavigationMenuList className="flex gap-6 h-[88px]">
+        <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
+            <NavigationMenuList className="relative flex h-[88px] gap-6">
                 {(locale === 'uk'
                     ? navigation
                     : navigation.filter(({ href }) => !href?.includes(PRICES_ROUTE))
                 ).map(({ href, title }) => {
                     const isActive = pathname === href;
                     return (
-                        <NavMenuItem anchors={anchors[title as NavigationTitle]} href={href} isActive={isActive} key={title} onItemClick={onItemClick} title={t(title as NavigationTitle)} />
-                        // <NavigationMenuItem className="relative" key={title}>
-                        //     <Link href={href ?? '/'} onClick={onItemClick}>
-                        //         <DropdownMenu>
-                        //         <DropdownMenuTrigger className={cn(navigationMenuTriggerStyle())}>
-                        //             {t(title as NavigationTitle)}
-                        //         </DropdownMenuTrigger>
-                        //         <DropdownMenuContent>
-                        //             <DropdownMenuGroup>
-                        //                 {anchors[title as NavigationTitle].map((anchor, i) => <DropdownMenuItem key={i}>
-                        //                     {anchor}
-                        //                 </DropdownMenuItem>)}
-                        //             </DropdownMenuGroup>
-                        //         </DropdownMenuContent>
-                        //     </DropdownMenu>
-                        //     </Link>
-                        // </NavigationMenuItem>
+                        <NavMenuItem
+                            href={href}
+                            isActive={isActive}
+                            key={title}
+                            onItemClick={onItemClick}
+                            title={title as NavigationTitle}
+                        />
                     );
                 })}
             </NavigationMenuList>
@@ -68,8 +45,8 @@ export const Navigation = ({ onItemClick }: Props) => {
     );
 };
 
-
-{/* <Link
+{
+    /* <Link
     {...(isActive ? { 'data-active': true } : {})}
     className={cn(
         navigationMenuTriggerStyle(),
@@ -80,4 +57,5 @@ export const Navigation = ({ onItemClick }: Props) => {
     onClick={onItemClick}
 >
     {t(title as NavigationTitle)}
-</Link> */}
+</Link> */
+}

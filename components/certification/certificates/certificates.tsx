@@ -32,7 +32,7 @@ export const Certificates = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.1, 0.2, 0.8, 0.9, 1], [1, 1, 1, 1, 0, 0]);
 
     return (
-        <Section className="overflow-hidden" variant="secondary">
+        <Section className="overflow-hidden" id="certificates" variant="secondary">
             <div className="container" ref={container}>
                 <Title as="h5" className="mb-10 text-center text-4xl text-primary desktop:text-5xl">
                     {t('title')}

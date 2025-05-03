@@ -94,4 +94,11 @@ export const SCHEMAS_MESSAGES = {
 
 export const ANCHORS = {
     consultation: 'consultation',
+    main: {
+        about: 'about',
+        advantages: 'advantages',
+        certification: 'certification',
+        consultation: '',
+        products: '',
+    },
 };

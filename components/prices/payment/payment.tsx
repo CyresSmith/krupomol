@@ -19,7 +19,7 @@ export const Payment = async () => {
     const conditions = t.raw('conditions') as ConditionType[];
 
     return (
-        <Section variant="secondary">
+        <Section id="payment" variant="secondary">
             <div className="container">
                 <Title as="h6" className="mb-16 text-center text-3xl desktop:text-5xl">
                     {t('title')}

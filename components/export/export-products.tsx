@@ -10,7 +10,7 @@ export const ExportProducts = async () => {
     const products = ProductsService.getProductsList({ locale });
 
     return (
-        <Section>
+        <Section id="products">
             <div className="container">
                 <ProductList items={products} />
             </div>

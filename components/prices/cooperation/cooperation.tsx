@@ -11,7 +11,7 @@ export const Cooperation = async () => {
     const list = t.raw('list') as CooperationType[];
 
     return (
-        <Section variant="secondary">
+        <Section id="cooperation" variant="secondary">
             <div className="container">
                 <div className="rounded-20 bg-accent px-4 py-9 shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-12">
                     <Title

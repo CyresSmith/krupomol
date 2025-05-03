@@ -12,7 +12,7 @@ export const Guarantees = async () => {
     const list = t.raw('list') as GuaranteeType[];
 
     return (
-        <Section className="mt-[-64px] desktop:mt-[-96px]" variant="secondary">
+        <Section className="mt-[-64px] desktop:mt-[-96px]" id="guarantees" variant="secondary">
             <div className="container relative">
                 <div className="rounded-20 bg-primary px-3 py-12 mobile:pt-[200px] tablet:pt-[100px] desktop:rounded-40 desktop:px-10 desktop:py-10">
                     <Title

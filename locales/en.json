@@ -8,7 +8,39 @@
             "prices": "Purchase prices",
             "certification": "Certification",
             "product": "Product",
-            "export": "Export"
+            "export": "Export",
+            "anchors": {
+                "main": {
+                    "about": "Про нас",
+                    "products": "Наша продукція",
+                    "certification": "Сертифікація",
+                    "advantages": "Наші переваги",
+                    "consultation": "Замовити консультацію"
+                },
+                "product": {
+                    "products": "Наша продукція",
+                    "offer": "Ми пропонуємо",
+                    "info": "Більше інформації"
+                },
+                "prices": {
+                    "prices": "Актуальні ціни",
+                    "cooperation": "Умови співпраці",
+                    "payment": "Оплата і доставка"
+                },
+                "export": {
+                    "products": "Наша продукція",
+                    "certification": "Сертифікація",
+                    "advantages": "Наші переваги"
+                },
+                "contacts": {
+                    "consultation": "Замовити консультацію",
+                    "map": "Ми на мапі"
+                },
+                "certification": {
+                    "certificates": "Наші сертифікати",
+                    "guarantees": "Гарантії"
+                }
+            }
         }
     },
     "shared": {
