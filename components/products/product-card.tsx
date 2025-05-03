@@ -15,7 +15,6 @@ export const ProductCard = ({ item }: Props) => {
                     alt={title}
                     className="object-cover"
                     fill
-                    priority
                     sizes="100%"
                     src={`/images/${image}.jpg`}
                 />
