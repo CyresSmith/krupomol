@@ -1,3 +1,4 @@
+import { Home } from 'lucide-react';
 import { Fragment } from 'react';
 
 import { getLocale } from 'next-intl/server';
@@ -34,6 +35,14 @@ export const ProductBreadcrumb = async ({ category, product, type }: Props) => {
         <div className="container flex items-center justify-center pb-8 pt-4 desktop:pb-12">
             <Breadcrumb>
                 <BreadcrumbList>
+                    <BreadcrumbItem>
+                        <BreadcrumbPage>
+                            <Link href={'/'} locale={locale}>
+                                <Home />
+                            </Link>
+                        </BreadcrumbPage>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
                     {breadcrumb.map(({ href, title }, i) => {
                         return (
                             <Fragment key={title + href}>

@@ -8,8 +8,6 @@ export interface ProductItemType {
     title: string;
 }
 
-export type GROATS_NAME = 'barley' | 'buckwheat' | 'corn' | 'millet' | 'pea' | 'wheat';
-
 export type ProductTitleType = Record<Locale, string>;
 
 export interface Product {

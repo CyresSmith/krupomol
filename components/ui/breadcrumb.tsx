@@ -16,7 +16,7 @@ const BreadcrumbList = React.forwardRef<HTMLOListElement, React.ComponentPropsWi
     ({ className, ...props }, ref) => (
         <ol
             className={cn(
-                'sm:gap-2.5 flex flex-wrap items-center gap-1.5 break-words text-gray-500',
+                'sm:gap-2.5 flex flex-wrap items-center gap-1.5 break-words fill-gray-500 text-gray-500',
                 className
             )}
             ref={ref}
@@ -41,7 +41,13 @@ const BreadcrumbLink = React.forwardRef<
 >(({ asChild, className, ...props }, ref) => {
     const Comp = asChild ? Slot : 'a';
 
-    return <Comp className={cn('transition hover:text-primary', className)} ref={ref} {...props} />;
+    return (
+        <Comp
+            className={cn('transition hover:fill-primary hover:text-primary', className)}
+            ref={ref}
+            {...props}
+        />
+    );
 });
 BreadcrumbLink.displayName = 'BreadcrumbLink';
 
