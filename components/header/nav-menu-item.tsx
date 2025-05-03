@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+
+import { ProductsService } from 'lib/services';
 
 import { Link } from '@i18n';
 
@@ -21,13 +23,18 @@ interface Props {
 }
 
 export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
-    const [open, setOpen] = useState(true);
+    const locale = useLocale();
+    const [open, setOpen] = useState(false);
+    const [catOpen, setCatOpen] = useState(false);
+    const [prodOpen, setProdOpen] = useState(false);
     const t = useTranslations('header.navigation');
-    const anchors = useTranslations(`header.navigation.anchors`);
+    const anchors = useTranslations(`header.anchors`);
 
     const anchorEntries: [string, string][] = Object.entries(
         anchors.raw(title as keyof typeof anchors.raw) ?? {}
     );
+
+    const productsCategories = ProductsService.getCategories(locale);
 
     return (
         <NavigationMenuItem
@@ -54,21 +61,59 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
 
                 {anchorEntries.length > 0 && (
                     <PopoverContent
-                        align="start"
+                        align="center"
                         className="flex w-fit flex-col gap-1 p-2"
                         side="bottom"
+                        sideOffset={-2}
                     >
                         <ul>
-                            {anchorEntries.map((anchor, i) => (
-                                <li key={i}>
-                                    <Link
-                                        className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
-                                        href={`${href}#${anchor[0]}`}
+                            {anchorEntries.map((anchor, i) =>
+                                anchor[0] === 'products' && href === '/products' ? (
+                                    <li
+                                        key={i}
+                                        onMouseEnter={() => setCatOpen(true)}
+                                        onMouseLeave={() => setCatOpen(false)}
                                     >
-                                        {anchor[1]}
-                                    </Link>
-                                </li>
-                            ))}
+                                        <Popover
+                                            key={anchor[0]}
+                                            onOpenChange={setCatOpen}
+                                            open={catOpen}
+                                        >
+                                            <PopoverTrigger>
+                                                <Link
+                                                    className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                    href={anchor[0]}
+                                                >
+                                                    {anchor[1]}
+                                                </Link>
+                                            </PopoverTrigger>
+                                            <PopoverContent side="right">
+                                                <ul>
+                                                    {productsCategories.map(c => (
+                                                        <li key={c.title}>
+                                                            <Link
+                                                                className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                                href={c.href}
+                                                            >
+                                                                {c.title}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </PopoverContent>
+                                        </Popover>
+                                    </li>
+                                ) : (
+                                    <li key={i}>
+                                        <Link
+                                            className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                            href={`${href}#${anchor[0]}`}
+                                        >
+                                            {anchor[1]}
+                                        </Link>
+                                    </li>
+                                )
+                            )}
                         </ul>
                     </PopoverContent>
                 )}

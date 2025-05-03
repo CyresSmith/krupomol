@@ -13,6 +13,8 @@ import { Section, Title } from '@components/shared';
 
 import { CertificateType } from '@types';
 
+import { ANCHORS } from '@constants';
+
 import { cn } from '@utils';
 
 export const Certificates = () => {
@@ -32,7 +34,11 @@ export const Certificates = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.1, 0.2, 0.8, 0.9, 1], [1, 1, 1, 1, 0, 0]);
 
     return (
-        <Section className="overflow-hidden" id="certificates" variant="secondary">
+        <Section
+            className="overflow-hidden"
+            id={ANCHORS.certification.certificates}
+            variant="secondary"
+        >
             <div className="container" ref={container}>
                 <Title as="h5" className="mb-10 text-center text-4xl text-primary desktop:text-5xl">
                     {t('title')}

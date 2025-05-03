@@ -2,11 +2,13 @@ import { getTranslations } from 'next-intl/server';
 
 import { Section, Title } from '@components/shared';
 
+import { ANCHORS } from '@constants';
+
 export const MapSection = async () => {
     const t = await getTranslations('contacts.map');
 
     return (
-        <Section noPadding variant="secondary">
+        <Section id={ANCHORS.contacts.map} noPadding variant="secondary">
             <div className="container mb-14">
                 <Title
                     as="h2"

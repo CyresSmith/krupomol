@@ -12,6 +12,8 @@ import { Icon, Section, Title } from '@components/shared';
 
 import { CONTACTS_ROUTE } from '@routes';
 
+import { ANCHORS } from '@constants';
+
 import { cn } from '@utils';
 
 export const Payment = async () => {
@@ -19,7 +21,7 @@ export const Payment = async () => {
     const conditions = t.raw('conditions') as ConditionType[];
 
     return (
-        <Section id="payment" variant="secondary">
+        <Section id={ANCHORS.prices.payment} variant="secondary">
             <div className="container">
                 <Title as="h6" className="mb-16 text-center text-3xl desktop:text-5xl">
                     {t('title')}

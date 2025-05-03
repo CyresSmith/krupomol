@@ -1,8 +1,0 @@
-{
-    "main": ["about", "production", "certification", "advantages", "consultation"],
-    "product": ["products", "offer", "info"],
-    "prices": ["prices", "cooperation", "payment"],
-    "export": ["products", "certification", "advantages"],
-    "contacts": ["consultation", "map"],
-    "certification": ["certificates", "guarantees"]
-}

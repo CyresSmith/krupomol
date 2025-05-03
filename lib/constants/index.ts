@@ -93,12 +93,34 @@ export const SCHEMAS_MESSAGES = {
 };
 
 export const ANCHORS = {
-    consultation: 'consultation',
+    certification: {
+        certificates: 'certificates',
+        guarantees: 'guarantees',
+    },
+    contacts: {
+        consultation: 'consultation',
+        map: 'map',
+    },
+    export: {
+        advantages: 'advantages',
+        certification: 'certification',
+        products: 'products',
+    },
     main: {
         about: 'about',
         advantages: 'advantages',
         certification: 'certification',
-        consultation: '',
-        products: '',
+        consultation: 'consultation',
+        products: 'products',
+    },
+    prices: {
+        cooperation: 'cooperation',
+        payment: 'payment',
+        prices: 'prices',
+    },
+    product: {
+        info: 'info',
+        offer: 'offer',
+        products: 'products',
     },
 };

@@ -63,7 +63,7 @@ export const Header = async () => {
                                 'w-60 mobile:hidden',
                                 buttonVariants({ variant: 'outline' })
                             )}
-                            href={{ hash: ANCHORS.consultation, pathname: CONTACTS_ROUTE }}
+                            href={{ hash: ANCHORS.contacts.consultation, pathname: CONTACTS_ROUTE }}
                         >
                             {t('consultation')}
                         </Link>
