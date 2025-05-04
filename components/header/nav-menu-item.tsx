@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 import { useLocale, useTranslations } from 'next-intl';
@@ -80,12 +81,16 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                             onOpenChange={setCatOpen}
                                             open={catOpen}
                                         >
-                                            <PopoverTrigger className="w-full px-2 text-left outline-none">
+                                            <PopoverTrigger className="flex w-full items-center justify-between px-2 text-left outline-none">
                                                 <Link
-                                                    className="text-md block w-full rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                    className={cn(
+                                                        'text-md flex w-full items-center justify-between gap-3 rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background',
+                                                        catOpen && 'bg-primary text-background'
+                                                    )}
                                                     href={anchor[0]}
                                                 >
                                                     {anchor[1]}
+                                                    <ChevronRight />
                                                 </Link>
                                             </PopoverTrigger>
                                             <PopoverContent
@@ -110,10 +115,15 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                                             <Popover open={prodOpen === c.image}>
                                                                 <PopoverTrigger className="w-[150px] px-2 text-left outline-none">
                                                                     <Link
-                                                                        className="text-md block w-full rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                                        className={cn(
+                                                                            'text-md flex w-full items-center justify-between gap-3 rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background',
+                                                                            prodOpen === c.image &&
+                                                                                'bg-primary text-background'
+                                                                        )}
                                                                         href={c.href}
                                                                     >
                                                                         {c.title}
+                                                                        <ChevronRight />
                                                                     </Link>
                                                                 </PopoverTrigger>
                                                                 <PopoverContent
