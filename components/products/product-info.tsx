@@ -147,7 +147,10 @@ export const ProductInfo = async (product: Omit<ProductListType, 'href'>) => {
 
                             <Link
                                 className={cn('w-full', buttonVariants({ variant: 'default' }))}
-                                href={{ hash: ANCHORS.consultation, pathname: CONTACTS_ROUTE }}
+                                href={{
+                                    hash: ANCHORS.contacts.consultation,
+                                    pathname: CONTACTS_ROUTE,
+                                }}
                             >
                                 {t(`data.buy`)}
                             </Link>
