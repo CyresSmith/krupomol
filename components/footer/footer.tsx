@@ -84,7 +84,7 @@ export const Footer = async () => {
                                 'mt-auto',
                                 buttonVariants({ variant: 'outline-primary' })
                             )}
-                            href={{ hash: ANCHORS.consultation, pathname: CONTACTS_ROUTE }}
+                            href={{ hash: ANCHORS.contacts.consultation, pathname: CONTACTS_ROUTE }}
                         >
                             {t('consultation')}
                         </Link>
