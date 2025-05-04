@@ -1,42 +1,74 @@
 'use client';
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
-import { NavMenuItem } from './nav-menu-item';
+import { ProductsService } from 'lib/services';
+
+import NavItem from './nav-item';
 
 import { NavigationMenu, NavigationMenuList } from '@ui/navigation-menu';
 
-import { NavigationTitle } from '@types';
+import { NavigationTitle, NavItemType } from '@types';
 
 import { PRICES_ROUTE } from '@routes';
 
 import { navigation } from '@constants';
 
-interface Props {
-    onItemClick?: () => void;
-}
-
-export const Navigation = ({ onItemClick }: Props) => {
+export const Navigation = () => {
     const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
+    const t = useTranslations('header.navigation');
 
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
             <NavigationMenuList className="relative flex h-[88px] gap-6">
                 {(locale === 'uk'
                     ? navigation
-                    : navigation.filter(({ href }) => !href?.includes(PRICES_ROUTE))
-                ).map(({ href, title }) => {
-                    const isActive = pathname === href;
+                    : navigation.filter(({ href }) => !href.pathname?.includes(PRICES_ROUTE))
+                ).map(({ href, links, title }) => {
+                    const isActive = pathname === href.pathname;
+                    const itemLinks =
+                        links && links.length > 0
+                            ? links?.map(link => {
+                                  const links: NavItemType[] = [];
+
+                                  if (title === 'product' && link.title === 'products') {
+                                      const categories = ProductsService.getCategories(locale);
+
+                                      categories.forEach(({ href, image, title }) => {
+                                          const products = ProductsService.getProductsList({
+                                              categorySlug: image,
+                                              locale,
+                                          });
+
+                                          links.push({
+                                              href: { pathname: href },
+                                              links: products.map(({ href, title }) => ({
+                                                  href: { pathname: href },
+                                                  title,
+                                              })),
+                                              title,
+                                          });
+                                      });
+                                  }
+
+                                  return {
+                                      ...link,
+                                      links,
+                                      title: t(link.title as NavigationTitle),
+                                  };
+                              })
+                            : [];
+
                     return (
-                        <NavMenuItem
+                        <NavItem
                             href={href}
                             isActive={isActive}
                             key={title}
-                            onItemClick={onItemClick}
-                            title={title as NavigationTitle}
+                            links={itemLinks}
+                            title={t(title as NavigationTitle)}
                         />
                     );
                 })}
@@ -44,18 +76,3 @@ export const Navigation = ({ onItemClick }: Props) => {
         </NavigationMenu>
     );
 };
-
-{
-    /* <Link
-    {...(isActive ? { 'data-active': true } : {})}
-    className={cn(
-        navigationMenuTriggerStyle(),
-        isActive &&
-            'after:absolute after:bottom-0 after:left-0 after:block after:w-full after:border-b-2 after:border-accent after:content-[""]'
-    )}
-    href={href ?? '/'}
-    onClick={onItemClick}
->
-    {t(title as NavigationTitle)}
-</Link> */
-}

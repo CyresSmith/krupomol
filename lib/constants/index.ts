@@ -1,4 +1,4 @@
-import { ContactType, NavItemType } from '@types';
+import { ContactType, IconName, NavItemType } from '@types';
 
 import {
     CERTIFICATION_ROUTE,
@@ -9,34 +9,91 @@ import {
     PRODUCTS_ROUTE,
 } from '@routes';
 
+export const ANCHORS = {
+    certification: {
+        certificates: 'certificates',
+        guarantees: 'guarantees',
+    },
+    contacts: {
+        consultation: 'consultation',
+        map: 'map',
+    },
+    export: {
+        advantages: 'advantages',
+        certification: 'certification',
+        products: 'products',
+    },
+    main: {
+        about: 'about',
+        advantages: 'advantages',
+        certification: 'certification',
+        consultation: 'consultation',
+        products: 'products',
+    },
+    prices: {
+        cooperation: 'cooperation',
+        payment: 'payment',
+        prices: 'prices',
+    },
+    product: {
+        info: 'info',
+        offer: 'offer',
+        products: 'products',
+    },
+};
+
 export const navigation: NavItemType[] = [
     {
-        href: HOME_ROUTE,
+        href: { pathname: HOME_ROUTE },
+        links: Object.values(ANCHORS.main).map(hash => ({
+            href: { hash, pathname: HOME_ROUTE },
+            title: hash,
+        })),
         title: 'main',
     },
     {
-        href: PRODUCTS_ROUTE,
+        href: { pathname: PRODUCTS_ROUTE },
+        links: Object.values(ANCHORS.product).map(hash => ({
+            href: { hash, pathname: PRODUCTS_ROUTE },
+            title: hash,
+        })),
         title: 'product',
     },
     {
-        href: CERTIFICATION_ROUTE,
+        href: { pathname: CERTIFICATION_ROUTE },
+        links: Object.values(ANCHORS.certification).map(hash => ({
+            href: { hash, pathname: CERTIFICATION_ROUTE },
+            title: hash,
+        })),
         title: 'certification',
     },
     {
-        href: EXPORT_ROUTE,
+        href: { pathname: EXPORT_ROUTE },
+        links: Object.values(ANCHORS.export).map(hash => ({
+            href: { hash, pathname: EXPORT_ROUTE },
+            title: hash,
+        })),
         title: 'export',
     },
     {
-        href: CONTACTS_ROUTE,
+        href: { pathname: CONTACTS_ROUTE },
+        links: Object.values(ANCHORS.contacts).map(hash => ({
+            href: { hash, pathname: CONTACTS_ROUTE },
+            title: hash,
+        })),
         title: 'contacts',
     },
     {
-        href: PRICES_ROUTE,
+        href: { pathname: PRICES_ROUTE },
+        links: Object.values(ANCHORS.prices).map(hash => ({
+            href: { hash, pathname: PRICES_ROUTE },
+            title: hash,
+        })),
         title: 'prices',
     },
 ];
 
-export const socials: Omit<NavItemType, 'title'>[] = [
+export const socials: { href: string; icon: IconName }[] = [
     {
         href: 'https://www.x.com/',
         icon: 'x',
@@ -90,37 +147,4 @@ export const SCHEMAS_MESSAGES = {
     phone: 'Невірний формат телефону',
     required: 'Обов’язкове поле',
     sameAs: 'Повинно бути однаковим з',
-};
-
-export const ANCHORS = {
-    certification: {
-        certificates: 'certificates',
-        guarantees: 'guarantees',
-    },
-    contacts: {
-        consultation: 'consultation',
-        map: 'map',
-    },
-    export: {
-        advantages: 'advantages',
-        certification: 'certification',
-        products: 'products',
-    },
-    main: {
-        about: 'about',
-        advantages: 'advantages',
-        certification: 'certification',
-        consultation: 'consultation',
-        products: 'products',
-    },
-    prices: {
-        cooperation: 'cooperation',
-        payment: 'payment',
-        prices: 'prices',
-    },
-    product: {
-        info: 'info',
-        offer: 'offer',
-        products: 'products',
-    },
 };

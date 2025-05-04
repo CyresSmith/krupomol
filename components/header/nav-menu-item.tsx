@@ -68,8 +68,8 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                         sideOffset={-2}
                     >
                         <ul className="w-full py-2">
-                            {anchorEntries.map((anchor, i) =>
-                                anchor[0] === 'products' && href === '/products' ? (
+                            {anchorEntries.map(([slug, title], i) =>
+                                slug === 'products' && href === '/products' ? (
                                     <li
                                         className="w-full"
                                         key={i}
@@ -77,7 +77,7 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                         onMouseLeave={() => setCatOpen(false)}
                                     >
                                         <Popover
-                                            key={anchor[0]}
+                                            key={title}
                                             onOpenChange={setCatOpen}
                                             open={catOpen}
                                         >
@@ -87,12 +87,13 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                                         'text-md flex w-full items-center justify-between gap-3 rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background',
                                                         catOpen && 'bg-primary text-background'
                                                     )}
-                                                    href={anchor[0]}
+                                                    href={slug}
                                                 >
-                                                    {anchor[1]}
+                                                    {title}
                                                     <ChevronRight />
                                                 </Link>
                                             </PopoverTrigger>
+
                                             <PopoverContent
                                                 align="start"
                                                 alignOffset={-8}
@@ -165,9 +166,9 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                     <li className="px-2" key={i}>
                                         <Link
                                             className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
-                                            href={`${href}#${anchor[0]}`}
+                                            href={`${href}#${slug}`}
                                         >
-                                            {anchor[1]}
+                                            {title}
                                         </Link>
                                     </li>
                                 )

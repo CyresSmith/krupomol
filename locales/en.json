@@ -8,39 +8,18 @@
             "prices": "Purchase prices",
             "certification": "Certification",
             "product": "Product",
-            "export": "Export"
-        },
-        "anchors": {
-            "main": {
-                "about": "About Us",
-                "products": "Our products",
-                "certification": "Certification",
-                "advantages": "Our advantages",
-                "consultation": "Request a consultation"
-            },
-            "product": {
-                "products": "Our products",
-                "offer": "What we offer",
-                "info": "More information"
-            },
-            "prices": {
-                "prices": "Current prices",
-                "cooperation": "Terms of cooperation",
-                "payment": "Payment and Delivery"
-            },
-            "export": {
-                "products": "Our products",
-                "certification": "Certification",
-                "advantages": "Our advantages"
-            },
-            "contacts": {
-                "consultation": "Request a consultation",
-                "map": "We are on the map"
-            },
-            "certification": {
-                "certificates": "Our certificates",
-                "guarantees": "Guarantees"
-            }
+            "export": "Export",
+            "about": "About Us",
+            "products": "Our products",
+            "advantages": "Our advantages",
+            "consultation": "Request a consultation",
+            "offer": "What we offer",
+            "info": "More information",
+            "cooperation": "Terms of cooperation",
+            "payment": "Payment and Delivery",
+            "map": "We are on the map",
+            "certificates": "Our certificates",
+            "guarantees": "Guarantees"
         }
     },
     "shared": {

@@ -60,7 +60,7 @@ export const About = async () => {
                 </Card>
             </AnimatedSection>
 
-            <Section className="relative z-0">
+            <Section className="relative z-0" id={ANCHORS.main.products}>
                 <div className="container">
                     <Title
                         as="h3"

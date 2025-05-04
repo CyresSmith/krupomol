@@ -3,8 +3,9 @@ import { IconName } from './icon-names';
 import messages from '../../locales/uk.json';
 
 export interface NavItemType {
-    href?: string;
+    href: { hash?: string; pathname: string };
     icon?: IconName;
+    links?: NavItemType[];
     title: string;
 }
 
