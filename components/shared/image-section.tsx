@@ -9,11 +9,12 @@ import { cn } from '@utils';
 
 interface Props {
     children: React.ReactNode;
+    id?: string;
     image: string;
     noPadding?: boolean;
 }
 
-export const ImageSection = ({ children, image, noPadding = false }: Props) => {
+export const ImageSection = ({ children, id, image, noPadding = false }: Props) => {
     const container = useRef<HTMLElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -34,6 +35,7 @@ export const ImageSection = ({ children, image, noPadding = false }: Props) => {
                 'relative overflow-hidden',
                 !noPadding && 'py-16 tablet:py-20 desktop:py-24'
             )}
+            id={id}
             ref={container}
             style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
         >

@@ -6,12 +6,13 @@ import { AdvantageType } from '@types';
 
 interface Props {
     advantages: AdvantageType[];
+    id?: string;
     title: string;
 }
 
-export const Advantages = ({ advantages, title }: Props) => {
+export const Advantages = ({ advantages, id, title }: Props) => {
     return (
-        <Section variant="secondary">
+        <Section id={id} variant="secondary">
             <div className="container">
                 <Title className="mb-9 text-center mobile:text-4xl">{title}</Title>
 

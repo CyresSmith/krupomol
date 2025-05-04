@@ -15,6 +15,8 @@ import { titleFont } from '@fonts';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
+import { ANCHORS } from '@constants';
+
 import { cn } from '@utils';
 
 export const About = async () => {
@@ -25,8 +27,8 @@ export const About = async () => {
 
     return (
         <>
-            <AnimatedSection className="!pb-0">
-                <Card className="container relative min-h-[343px] p-16 shadow-lg mobile:px-4 mobile:pb-16 mobile:pt-64">
+            <AnimatedSection className="!pb-0" id={ANCHORS.main.about}>
+                <Card className="relative min-h-[343px] p-16 shadow-lg mobile:px-4 mobile:pb-16 mobile:pt-64">
                     <div className="absolute right-0 top-1/2 h-[377px] w-[662px] -translate-y-1/2 overflow-hidden mobile:inset-x-0 mobile:top-10 mobile:h-[194px] mobile:w-full mobile:translate-y-0 tablet:w-[280px]">
                         <Image
                             alt=""

@@ -10,9 +10,15 @@ import { cn } from '@utils';
 interface Props {
     className?: string;
     gradientBg?: boolean;
+    id?: string;
 }
 
-export const AnimatedSection = ({ children, className, gradientBg }: Props & PropsWithChildren) => {
+export const AnimatedSection = ({
+    children,
+    className,
+    gradientBg,
+    id,
+}: Props & PropsWithChildren) => {
     const container = useRef<HTMLElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -25,8 +31,10 @@ export const AnimatedSection = ({ children, className, gradientBg }: Props & Pro
     const scale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], ['0.9', '1', '1', '0.9']);
 
     return (
-        <Section className={cn('relative', className)} ref={container}>
-            <motion.div style={{ scale: scale, translateY: translateY }}>{children}</motion.div>
+        <Section className={cn('relative', className)} id={id} ref={container}>
+            <motion.div className="container" style={{ scale: scale, translateY: translateY }}>
+                {children}
+            </motion.div>
             {gradientBg && (
                 <span className="absolute inset-x-0 bottom-0 -z-10 h-[60%] bg-gray-color" />
             )}

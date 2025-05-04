@@ -9,3 +9,5 @@ export interface NavItemType {
 }
 
 export type NavigationTitle = keyof typeof messages.header.navigation;
+
+export type NavigationAnchorsType = Record<NavigationTitle, string[]>;

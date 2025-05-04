@@ -10,7 +10,7 @@ export const FormSection = async () => {
     const t = await getTranslations('contacts.form');
 
     return (
-        <Section id={ANCHORS.consultation} variant="secondary">
+        <Section id={ANCHORS.contacts.consultation} variant="secondary">
             <div className="container">
                 <Card className="py-14 mobile:py-9">
                     <CardHeader className="mb-10 py-0 text-center">

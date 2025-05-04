@@ -12,7 +12,7 @@ export const Offer = () => {
     const t = useTranslations('products');
 
     return (
-        <AnimatedSection gradientBg={true}>
+        <AnimatedSection gradientBg={true} id="offer">
             <div className="container rounded-3xl bg-accent px-6 py-10 shadow-lg desktop:px-16 desktop:py-20">
                 <AnimatedTextBox className="mb-5" from="bottom" triggerOnce={true}>
                     <Title

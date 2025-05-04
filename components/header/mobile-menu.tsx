@@ -46,7 +46,7 @@ export const MobileMenu = () => {
                 <Icon height={16} name="menu_icon" width={35} />
             </DrawerTrigger>
 
-            <DrawerContent className="inset-0 m-0 gap-16 rounded-3xl border-none bg-accent after:opacity-0 tablet:left-auto tablet:right-0 tablet:top-0 tablet:max-w-[322px] desktop:hidden">
+            <DrawerContent className="inset-0 m-0 gap-16 rounded-none border-none bg-accent after:opacity-0 tablet:left-auto tablet:right-0 tablet:top-0 tablet:max-w-[322px] desktop:hidden">
                 <DrawerHeader className="flex items-center justify-start">
                     <DrawerClose className="flex size-10 items-center justify-center fill-primary">
                         <Icon name="x-mark" />

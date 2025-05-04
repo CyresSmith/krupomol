@@ -1,16 +1,11 @@
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
-import { Link } from '@i18n';
+import { NavMenuItem } from './nav-menu-item';
 
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuList,
-    navigationMenuTriggerStyle,
-} from '@ui/navigation-menu';
+import { NavigationMenu, NavigationMenuList } from '@ui/navigation-menu';
 
 import { NavigationTitle } from '@types';
 
@@ -18,44 +13,49 @@ import { PRICES_ROUTE } from '@routes';
 
 import { navigation } from '@constants';
 
-import { cn } from '@utils';
-
 interface Props {
     onItemClick?: () => void;
 }
 
 export const Navigation = ({ onItemClick }: Props) => {
-    const t = useTranslations('header.navigation');
     const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
 
     return (
-        <NavigationMenu className="hidden desktop:block" orientation="horizontal">
-            <NavigationMenuList className="flex gap-6">
+        <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
+            <NavigationMenuList className="relative flex h-[88px] gap-6">
                 {(locale === 'uk'
                     ? navigation
                     : navigation.filter(({ href }) => !href?.includes(PRICES_ROUTE))
                 ).map(({ href, title }) => {
                     const isActive = pathname === href;
                     return (
-                        <NavigationMenuItem className="relative" key={title}>
-                            <Link
-                                {...(isActive ? { 'data-active': true } : {})}
-                                className={cn(
-                                    navigationMenuTriggerStyle(),
-                                    isActive &&
-                                        'after:absolute after:bottom-0 after:left-0 after:block after:w-full after:border-b-2 after:border-accent after:content-[""]'
-                                )}
-                                href={href ?? '/'}
-                                onClick={onItemClick}
-                            >
-                                {t(title as NavigationTitle)}
-                            </Link>
-                        </NavigationMenuItem>
+                        <NavMenuItem
+                            href={href}
+                            isActive={isActive}
+                            key={title}
+                            onItemClick={onItemClick}
+                            title={title as NavigationTitle}
+                        />
                     );
                 })}
             </NavigationMenuList>
         </NavigationMenu>
     );
 };
+
+{
+    /* <Link
+    {...(isActive ? { 'data-active': true } : {})}
+    className={cn(
+        navigationMenuTriggerStyle(),
+        isActive &&
+            'after:absolute after:bottom-0 after:left-0 after:block after:w-full after:border-b-2 after:border-accent after:content-[""]'
+    )}
+    href={href ?? '/'}
+    onClick={onItemClick}
+>
+    {t(title as NavigationTitle)}
+</Link> */
+}

@@ -9,6 +9,38 @@
             "certification": "Sertifikasyon",
             "product": "Ürünler",
             "export": "İhracat"
+        },
+        "anchors": {
+            "main": {
+                "about": "Hakkımızda",
+                "products": "Ürünlerimiz",
+                "certification": "Sertifikasyon",
+                "advantages": "Avantajlarımız",
+                "consultation": "Danışma talep edin"
+            },
+            "product": {
+                "products": "Ürünlerimiz",
+                "offer": "Biz sunuyoruz",
+                "info": "Daha fazla bilgi"
+            },
+            "prices": {
+                "prices": "Güncel fiyatlar",
+                "cooperation": "İşbirliği şartları",
+                "payment": "Ödeme ve Teslimat"
+            },
+            "export": {
+                "products": "Ürünlerimiz",
+                "certification": "Sertifikasyon",
+                "advantages": "Avantajlarımız"
+            },
+            "contacts": {
+                "consultation": "Danışma talep edin",
+                "map": "Biz haritadayız"
+            },
+            "certification": {
+                "certificates": "Sertifikalarımız",
+                "guarantees": "Garantiler"
+            }
         }
     },
     "shared": {
