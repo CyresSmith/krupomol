@@ -8,38 +8,38 @@
             "prices": "Einkaufspreise",
             "certification": "Zertifizierung",
             "product": "Produkte",
-            "export": "Exporte",
-            "anchors": {
-                "main": {
-                    "about": "Про нас",
-                    "products": "Наша продукція",
-                    "certification": "Сертифікація",
-                    "advantages": "Наші переваги",
-                    "consultation": "Замовити консультацію"
-                },
-                "product": {
-                    "products": "Наша продукція",
-                    "offer": "Ми пропонуємо",
-                    "info": "Більше інформації"
-                },
-                "prices": {
-                    "prices": "Актуальні ціни",
-                    "cooperation": "Умови співпраці",
-                    "payment": "Оплата і доставка"
-                },
-                "export": {
-                    "products": "Наша продукція",
-                    "certification": "Сертифікація",
-                    "advantages": "Наші переваги"
-                },
-                "contacts": {
-                    "consultation": "Замовити консультацію",
-                    "map": "Ми на мапі"
-                },
-                "certification": {
-                    "certificates": "Наші сертифікати",
-                    "guarantees": "Гарантії"
-                }
+            "export": "Exporte"
+        },
+        "anchors": {
+            "main": {
+                "about": "Über uns",
+                "products": "Unsere Produkte",
+                "certification": "Zertifizierung",
+                "advantages": "Unsere Vorteile",
+                "consultation": "Beratung anfordern"
+            },
+            "product": {
+                "products": "Unsere Produkte",
+                "offer": "Wir bieten",
+                "info": "Weitere Informationen"
+            },
+            "prices": {
+                "prices": "Aktuelle Preise",
+                "cooperation": "Bedingungen der Zusammenarbeit",
+                "payment": "Zahlung und Lieferung"
+            },
+            "export": {
+                "products": "Unsere Produkte",
+                "certification": "Zertifizierung",
+                "advantages": "Unsere Vorteile"
+            },
+            "contacts": {
+                "consultation": "Beratung anfordern",
+                "map": "Wir sind auf der Karte"
+            },
+            "certification": {
+                "certificates": "Unsere Zertifikate",
+                "guarantees": "Garantien"
             }
         }
     },

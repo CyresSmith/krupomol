@@ -8,38 +8,38 @@
             "prices": "Satın alma fiyatları",
             "certification": "Sertifikasyon",
             "product": "Ürünler",
-            "export": "İhracat",
-            "anchors": {
-                "main": {
-                    "about": "Про нас",
-                    "products": "Наша продукція",
-                    "certification": "Сертифікація",
-                    "advantages": "Наші переваги",
-                    "consultation": "Замовити консультацію"
-                },
-                "product": {
-                    "products": "Наша продукція",
-                    "offer": "Ми пропонуємо",
-                    "info": "Більше інформації"
-                },
-                "prices": {
-                    "prices": "Актуальні ціни",
-                    "cooperation": "Умови співпраці",
-                    "payment": "Оплата і доставка"
-                },
-                "export": {
-                    "products": "Наша продукція",
-                    "certification": "Сертифікація",
-                    "advantages": "Наші переваги"
-                },
-                "contacts": {
-                    "consultation": "Замовити консультацію",
-                    "map": "Ми на мапі"
-                },
-                "certification": {
-                    "certificates": "Наші сертифікати",
-                    "guarantees": "Гарантії"
-                }
+            "export": "İhracat"
+        },
+        "anchors": {
+            "main": {
+                "about": "Hakkımızda",
+                "products": "Ürünlerimiz",
+                "certification": "Sertifikasyon",
+                "advantages": "Avantajlarımız",
+                "consultation": "Danışma talep edin"
+            },
+            "product": {
+                "products": "Ürünlerimiz",
+                "offer": "Biz sunuyoruz",
+                "info": "Daha fazla bilgi"
+            },
+            "prices": {
+                "prices": "Güncel fiyatlar",
+                "cooperation": "İşbirliği şartları",
+                "payment": "Ödeme ve Teslimat"
+            },
+            "export": {
+                "products": "Ürünlerimiz",
+                "certification": "Sertifikasyon",
+                "advantages": "Avantajlarımız"
+            },
+            "contacts": {
+                "consultation": "Danışma talep edin",
+                "map": "Biz haritadayız"
+            },
+            "certification": {
+                "certificates": "Sertifikalarımız",
+                "guarantees": "Garantiler"
             }
         }
     },

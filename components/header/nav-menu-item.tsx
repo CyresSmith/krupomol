@@ -26,7 +26,7 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
     const locale = useLocale();
     const [open, setOpen] = useState(false);
     const [catOpen, setCatOpen] = useState(false);
-    const [prodOpen, setProdOpen] = useState(false);
+    const [prodOpen, setProdOpen] = useState<'groats' | 'sugar' | null>(null);
     const t = useTranslations('header.navigation');
     const anchors = useTranslations(`header.anchors`);
 
@@ -43,10 +43,10 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
             onMouseLeave={() => setOpen(false)}
         >
             <Popover onOpenChange={setOpen} open={open}>
-                <PopoverTrigger>
+                <PopoverTrigger className="outline-none">
                     <Link
                         className={cn(
-                            'relative',
+                            'relative w-full',
                             navigationMenuTriggerStyle(),
                             isActive &&
                                 'after:absolute after:bottom-0 after:left-0 after:block after:w-full after:border-b-2 after:border-accent after:content-[""]',
@@ -62,14 +62,15 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                 {anchorEntries.length > 0 && (
                     <PopoverContent
                         align="center"
-                        className="flex w-fit flex-col gap-1 p-2"
+                        className="flex w-fit flex-col p-0"
                         side="bottom"
                         sideOffset={-2}
                     >
-                        <ul>
+                        <ul className="w-full py-2">
                             {anchorEntries.map((anchor, i) =>
                                 anchor[0] === 'products' && href === '/products' ? (
                                     <li
+                                        className="w-full"
                                         key={i}
                                         onMouseEnter={() => setCatOpen(true)}
                                         onMouseLeave={() => setCatOpen(false)}
@@ -79,24 +80,71 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                             onOpenChange={setCatOpen}
                                             open={catOpen}
                                         >
-                                            <PopoverTrigger>
+                                            <PopoverTrigger className="w-full px-2 text-left outline-none">
                                                 <Link
-                                                    className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                    className="text-md block w-full rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
                                                     href={anchor[0]}
                                                 >
                                                     {anchor[1]}
                                                 </Link>
                                             </PopoverTrigger>
-                                            <PopoverContent side="right">
-                                                <ul>
+                                            <PopoverContent
+                                                align="start"
+                                                alignOffset={-8}
+                                                className="w-fit p-0"
+                                                side="right"
+                                                sideOffset={0}
+                                            >
+                                                <ul className="py-2">
                                                     {productsCategories.map(c => (
-                                                        <li key={c.title}>
-                                                            <Link
-                                                                className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
-                                                                href={c.href}
-                                                            >
-                                                                {c.title}
-                                                            </Link>
+                                                        <li
+                                                            className="w-full"
+                                                            key={c.title}
+                                                            onMouseEnter={() =>
+                                                                setProdOpen(
+                                                                    c.image as 'groats' | 'sugar'
+                                                                )
+                                                            }
+                                                            onMouseLeave={() => setProdOpen(null)}
+                                                        >
+                                                            <Popover open={prodOpen === c.image}>
+                                                                <PopoverTrigger className="w-[150px] px-2 text-left outline-none">
+                                                                    <Link
+                                                                        className="text-md block w-full rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                                        href={c.href}
+                                                                    >
+                                                                        {c.title}
+                                                                    </Link>
+                                                                </PopoverTrigger>
+                                                                <PopoverContent
+                                                                    align="start"
+                                                                    alignOffset={-8}
+                                                                    className="w-fit p-2"
+                                                                    side="right"
+                                                                    sideOffset={0}
+                                                                >
+                                                                    <ul>
+                                                                        {ProductsService.getProductsList(
+                                                                            {
+                                                                                categorySlug:
+                                                                                    c.image,
+                                                                                locale,
+                                                                            }
+                                                                        ).map(product => (
+                                                                            <li key={product.href}>
+                                                                                <Link
+                                                                                    className="text-md block w-full rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
+                                                                                    href={
+                                                                                        product.href
+                                                                                    }
+                                                                                >
+                                                                                    {product.title}
+                                                                                </Link>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                </PopoverContent>
+                                                            </Popover>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -104,7 +152,7 @@ export const NavMenuItem = ({ href, isActive, onItemClick, title }: Props) => {
                                         </Popover>
                                     </li>
                                 ) : (
-                                    <li key={i}>
+                                    <li className="px-2" key={i}>
                                         <Link
                                             className="text-md block rounded-full px-5 py-3 font-title transition hover:bg-primary hover:text-background"
                                             href={`${href}#${anchor[0]}`}
