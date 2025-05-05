@@ -23,7 +23,7 @@ export const Navigation = () => {
 
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
-            <NavigationMenuList className="relative flex h-[88px] gap-6">
+            <NavigationMenuList className="relative flex gap-6">
                 {(locale === 'uk'
                     ? navigation
                     : navigation.filter(({ href }) => !href.pathname?.includes(PRICES_ROUTE))

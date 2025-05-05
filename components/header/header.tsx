@@ -46,7 +46,7 @@ export const Header = async () => {
             </div>
 
             <div className="container">
-                <div className="flex items-center justify-start gap-6 rounded-full bg-background/15 px-4 shadow-nav-inner-shadow backdrop-blur-[25px]">
+                <div className="flex items-center justify-start gap-6 rounded-full bg-background/15 p-4 shadow-nav-inner-shadow backdrop-blur-[25px]">
                     <Link className="ml-5" href={'/'}>
                         <Icon
                             className="h-14 w-[123px] mobile:h-11 mobile:w-[97px]"
