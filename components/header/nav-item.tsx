@@ -81,14 +81,14 @@ const NavItem = ({
 
     return (
         <li
-            className="flex"
+            className={cn('flex', isChildren && 'px-2')}
             key={href.pathname + href.hash}
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
         >
             {links && links.length > 0 ? (
                 <Popover key={title} onOpenChange={setOpen} open={open}>
-                    <PopoverTrigger className="flex w-full items-center justify-between">
+                    <PopoverTrigger className="flex w-full items-center justify-between outline-none">
                         <NavItemLink
                             href={href}
                             isActive={isActive}
@@ -105,9 +105,9 @@ const NavItem = ({
                         alignOffset={-8}
                         className="w-fit p-0"
                         side={isChildren ? 'right' : 'bottom'}
-                        sideOffset={0}
+                        sideOffset={!isChildren ? -2 : 8}
                     >
-                        <ul className="p-2">
+                        <ul className="py-2">
                             {links.map(item => (
                                 <NavItem {...item} isChildren key={item.title} />
                             ))}

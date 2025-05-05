@@ -21,6 +21,8 @@ export const Navigation = () => {
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
     const t = useTranslations('header.navigation');
 
+    console.log(navigation);
+
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
             <NavigationMenuList className="relative flex gap-6">
