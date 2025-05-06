@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { GuaranteeType } from 'lib/types/guarantee.types';
 
@@ -9,8 +9,11 @@ import { Section, Title } from '@components/shared';
 
 import { ANCHORS } from '@constants';
 
+import { cn } from '@utils';
+
 export const Guarantees = async () => {
     const t = await getTranslations('certification.guarantees');
+    const locale = await getLocale();
     const list = t.raw('list') as GuaranteeType[];
 
     return (
@@ -23,7 +26,9 @@ export const Guarantees = async () => {
                 <div className="rounded-20 bg-primary px-3 py-12 mobile:pt-[200px] tablet:pt-[100px] desktop:rounded-40 desktop:px-10 desktop:py-10">
                     <Title
                         as="h3"
-                        className="mb-10 text-center text-4xl text-white desktop:text-5xl"
+                        className={cn('mb-10 text-center text-4xl text-white desktop:text-5xl', {
+                            'desktop:text-[40px]': locale !== 'uk',
+                        })}
                         title={t('title')}
                     />
 
