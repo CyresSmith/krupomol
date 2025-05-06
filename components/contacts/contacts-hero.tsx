@@ -12,9 +12,8 @@ export const ContactsHero = async () => {
             <Title
                 as="h1"
                 className="mb-[20px] text-left text-[44px] font-bold leading-normal text-background desktop:text-6xl desktop:leading-normal"
-            >
-                {t('title')}
-            </Title>
+                title={t('title')}
+            />
         </HeroSection>
     );
 };

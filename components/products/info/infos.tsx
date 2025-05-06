@@ -17,9 +17,8 @@ export const Infos = async () => {
                     <Title
                         as="h3"
                         className="mb-7 text-[30px] font-bold leading-[140%] text-white desktop:text-[44px]"
-                    >
-                        {t('info.title')}
-                    </Title>
+                        title={t('info.title')}
+                    />
                     <ul className="flex flex-col gap-5 font-title text-base font-bold text-white">
                         {infoList.map((item, i) => (
                             <Info item={item} key={i} />

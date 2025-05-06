@@ -19,9 +19,8 @@ export const Cooperation = async () => {
                     <Title
                         as="h6"
                         className="mb-11 text-center text-3xl text-primary desktop:text-left desktop:text-5xl"
-                    >
-                        {t('title')}
-                    </Title>
+                        title={t('title')}
+                    />
                     <ul className="mb-7 grid grid-cols-1 gap-3 desktop:mb-9 desktop:grid-cols-3">
                         {list.map(item => (
                             <CoopItem item={item} key={item.title} />

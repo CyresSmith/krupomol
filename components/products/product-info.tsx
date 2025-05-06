@@ -86,9 +86,8 @@ export const ProductInfo = async (product: Omit<ProductListType, 'href'>) => {
                         as="h2"
                         className="max-w-full text-left text-2xl font-bold uppercase mobile:text-center tablet:text-3xl desktop:text-4xl"
                         id="product"
-                    >
-                        {title}
-                    </Title>
+                        title={title}
+                    />
 
                     <div className="mt-5 flex flex-col gap-5 desktop:grid desktop:grid-cols-2">
                         <div className="flex flex-col gap-5">

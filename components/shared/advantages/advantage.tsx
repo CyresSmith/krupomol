@@ -21,9 +21,8 @@ const Advantage = ({ icon, text, title }: AdvantageType) => {
                 <Title
                     as="h6"
                     className="text-md mb-1 w-full truncate tablet:text-lg desktop:mb-4 desktop:text-xl"
-                >
-                    {title}
-                </Title>
+                    title={title}
+                />
 
                 <p className="w-full truncate text-xs tablet:text-sm desktop:text-base">{text}</p>
             </div>

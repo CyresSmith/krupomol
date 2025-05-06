@@ -17,9 +17,8 @@ export const FormSection = async () => {
                         <Title
                             as="h2"
                             className="mb-3 text-3xl font-bold tablet:text-4xl desktop:text-5xl"
-                        >
-                            {t('title')}
-                        </Title>
+                            title={t('title')}
+                        />
 
                         <p className="text-text-color">{t('text')}</p>
                     </CardHeader>

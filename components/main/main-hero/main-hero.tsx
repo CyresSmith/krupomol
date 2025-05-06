@@ -22,9 +22,8 @@ export const MainHero = () => {
             <Title
                 as="h1"
                 className="mb-11 text-left text-[40px] font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
-            >
-                {t('title')}
-            </Title>
+                title={t('title')}
+            />
 
             <Link
                 className={cn('mobile:w-full', buttonVariants({ size: 'lg' }))}

@@ -40,9 +40,11 @@ export const Certificates = () => {
             variant="secondary"
         >
             <div className="container" ref={container}>
-                <Title as="h5" className="mb-10 text-center text-4xl text-primary desktop:text-5xl">
-                    {t('title')}
-                </Title>
+                <Title
+                    as="h5"
+                    className="mb-10 text-center text-4xl text-primary desktop:text-5xl"
+                    title={t('title')}
+                />
 
                 <ul className="flex w-full flex-col gap-6">
                     {list.map((item, i) => (

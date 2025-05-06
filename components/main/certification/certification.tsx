@@ -21,9 +21,11 @@ export const Certification = () => {
         <ImageSection id={ANCHORS.main.certification} image="main-certification">
             <BorderCard>
                 <div className="w-full desktop:w-[635px]">
-                    <Title as="h3" className="mb-3 text-[44px] text-background mobile:text-[34px]">
-                        {t('title')}
-                    </Title>
+                    <Title
+                        as="h3"
+                        className="mb-3 text-[44px] text-background mobile:text-[34px]"
+                        title={t('title')}
+                    />
 
                     <p className="mb-10 text-background mobile:text-sm">{t('text')}</p>
                 </div>

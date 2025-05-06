@@ -20,9 +20,8 @@ export const CertificatesHero = async () => {
                         'mobile:text-[40px]': locale === 'tr',
                     }
                 )}
-            >
-                {t('title')}
-            </Title>
+                title={t('title')}
+            />
             <p className="text-sm text-white desktop:w-1/2 desktop:text-base">{t('desc')}</p>
         </HeroSection>
     );

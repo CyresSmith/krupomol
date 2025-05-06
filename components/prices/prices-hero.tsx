@@ -12,9 +12,8 @@ export const PricesHero = async () => {
             <Title
                 as="h1"
                 className="text-left text-5xl font-bold leading-normal text-background desktop:text-6xl desktop:leading-normal"
-            >
-                {t('title')}
-            </Title>
+                title={t('title')}
+            />
         </HeroSection>
     );
 };

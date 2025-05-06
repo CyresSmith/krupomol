@@ -49,9 +49,8 @@ export const About = async () => {
                                 'w-[410px] text-[36px] font-bold mobile:w-full mobile:text-center desktop:text-[44px]',
                                 titleFont.className
                             )}
-                        >
-                            {t('title')}
-                        </Title>
+                            title={t('title')}
+                        />
                     </AnimatedTextBox>
 
                     <AnimatedTextBox className="p-0" from="top" triggerOnce={true} viewAmount={0.5}>
@@ -68,9 +67,8 @@ export const About = async () => {
                             'mb-6 text-center text-4xl desktop:mb-14 desktop:text-5xl',
                             titleFont.className
                         )}
-                    >
-                        {t('our-products')}
-                    </Title>
+                        title={t('our-products')}
+                    />
 
                     <div className="mb-7">
                         <SectionCarousel

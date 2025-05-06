@@ -20,9 +20,8 @@ export const Offer = () => {
                         className={cn(
                             'font-primary text-center text-[32px] font-bold leading-[140%] desktop:text-5xl'
                         )}
-                    >
-                        {t('offer.title')}
-                    </Title>
+                        title={t('offer.title')}
+                    />
                 </AnimatedTextBox>
                 <AnimatedTextBox from="top" triggerOnce={true}>
                     <p className="text-base leading-5 text-black">{t('offer.text')}</p>

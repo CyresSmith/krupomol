@@ -13,9 +13,8 @@ export const MapSection = async () => {
                 <Title
                     as="h2"
                     className="mb-3 text-center text-3xl font-bold tablet:text-4xl desktop:text-5xl"
-                >
-                    {t('title')}
-                </Title>
+                    title={t('title')}
+                />
             </div>
 
             <iframe

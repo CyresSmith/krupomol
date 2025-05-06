@@ -24,9 +24,8 @@ export const Guarantees = async () => {
                     <Title
                         as="h3"
                         className="mb-10 text-center text-4xl text-white desktop:text-5xl"
-                    >
-                        {t('title')}
-                    </Title>
+                        title={t('title')}
+                    />
 
                     <ul className="grid grid-cols-1 gap-5 bg-primary desktop:grid-cols-2 desktop:gap-8">
                         {list.map((item, i) => (

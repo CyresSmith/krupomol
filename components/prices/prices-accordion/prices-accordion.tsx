@@ -53,7 +53,7 @@ export const PricesAccordion = () => {
     return loading ? <Loader className='fixed top-0 right-0 left-0 bottom-0' /> : productsToRender.length > 0 && (<Section className='!pb-0' id={ANCHORS.prices.prices} variant='secondary'>
             <div className="container">
                 <div className="rounded-20 bg-primary px-4 py-4 text-background shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
-                    <Title className='mobile:text-3xl tablet:text-3xl font-title font-bold border-b-2 border-background pb-4'>Закупівельні ціни</Title>
+                    <Title className='mobile:text-3xl tablet:text-3xl font-title font-bold border-b-2 border-background pb-4' title="Закупівельні ціни"/>
                     {productsToRender.map(product => (
                         <Accordion
                             className="mobile:pr-0"

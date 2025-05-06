@@ -23,9 +23,11 @@ export const Payment = async () => {
     return (
         <Section id={ANCHORS.prices.payment} variant="secondary">
             <div className="container">
-                <Title as="h6" className="mb-16 text-center text-3xl desktop:text-5xl">
-                    {t('title')}
-                </Title>
+                <Title
+                    as="h6"
+                    className="mb-16 text-center text-3xl desktop:text-5xl"
+                    title={t('title')}
+                />
                 <ul className="mb-16 flex flex-col gap-5 desktop:flex-row">
                     {conditions.map((item, i) => (
                         <PaymentItem item={item} key={i} />

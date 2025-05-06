@@ -12,9 +12,10 @@ export const Consultation = () => {
     return (
         <Section id={ANCHORS.main.consultation}>
             <div className="container">
-                <Title className="mb-12 text-center text-text-color mobile:text-3xl">
-                    {t('title')}
-                </Title>
+                <Title
+                    className="mb-12 text-center text-text-color mobile:text-3xl"
+                    title={t('title')}
+                />
 
                 <ConsultationForm />
             </div>
