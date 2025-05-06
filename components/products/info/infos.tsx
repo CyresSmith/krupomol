@@ -16,7 +16,7 @@ export const Infos = async () => {
                 <BorderCard className="tablet:w-1/2 desktop:w-1/2">
                     <Title
                         as="h3"
-                        className="mb-7 text-4xl font-bold leading-[140%] text-white desktop:text-5xl"
+                        className="mb-7 text-[30px] font-bold leading-[140%] text-white desktop:text-[44px]"
                     >
                         {t('info.title')}
                     </Title>

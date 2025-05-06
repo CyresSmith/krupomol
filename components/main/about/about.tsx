@@ -46,7 +46,7 @@ export const About = async () => {
                         <Title
                             as="h2"
                             className={cn(
-                                'w-[410px] text-5xl font-bold mobile:w-full mobile:text-center',
+                                'w-[410px] text-[36px] font-bold mobile:w-full mobile:text-center desktop:text-[44px]',
                                 titleFont.className
                             )}
                         >

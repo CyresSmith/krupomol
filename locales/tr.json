@@ -19,7 +19,8 @@
             "payment": "Ödeme ve Teslimat",
             "map": "Biz haritadayız",
             "certificates": "Sertifikalarımız",
-            "guarantees": "Garantiler"
+            "guarantees": "Garantiler",
+            "our-contacts": "İletişim bilgilerimiz"
         }
     },
     "shared": {
@@ -49,7 +50,7 @@
         "certification": {
             "title": "Sertifikasyon",
             "text": "Ürünlerimiz, ISO 22000 ve ISO 9001 sertifikaları ile onaylanan uluslararası gıda kalitesi ve güvenliği standartlarına uygundur. Üretimin tüm aşamalarındaki kontrol, tutarlı kaliteyi ve küresel pazar gerekliliklerine uygunluğu garanti eder.",
-            "link": "Sertifikasyon hakkında daha fazla bilgi edinin"
+            "link": "Daha fazlasını öğrenin"
         },
         "advantages": {
             "title": "Bizimle çalışmanın avantajları",
@@ -112,7 +113,7 @@
                 "arpa kabuğu"
             ]
         },
-        "hero": { "title": "Bağlantılarımız" },
+        "hero": { "title": "İletişim" },
         "form": {
             "title": "Ek sorularınız var mı?",
             "text": "Sorularınızı aşağıdaki forma bırakın, tüm cevaplarla birlikte sizi geri arayalım."

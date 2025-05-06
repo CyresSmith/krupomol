@@ -21,8 +21,6 @@ export const Navigation = () => {
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
     const t = useTranslations('header.navigation');
 
-    console.log(navigation);
-
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
             <NavigationMenuList className="relative flex gap-6">
@@ -35,7 +33,6 @@ export const Navigation = () => {
                         links && links.length > 0
                             ? links?.map(link => {
                                   const links: NavItemType[] = [];
-
                                   if (title === 'product' && link.title === 'products') {
                                       const categories = ProductsService.getCategories(locale);
 

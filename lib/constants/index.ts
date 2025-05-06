@@ -1,3 +1,4 @@
+/* eslint-disable perfectionist/sort-objects */
 import { ContactType, IconName, NavItemType } from '@types';
 
 import {
@@ -15,30 +16,31 @@ export const ANCHORS = {
         guarantees: 'guarantees',
     },
     contacts: {
+        ourContacts: 'our-contacts',
         consultation: 'consultation',
         map: 'map',
     },
     export: {
-        advantages: 'advantages',
-        certification: 'certification',
         products: 'products',
+        certification: 'certification',
+        advantages: 'advantages',
     },
     main: {
         about: 'about',
-        advantages: 'advantages',
-        certification: 'certification',
-        consultation: 'consultation',
         products: 'products',
+        certification: 'certification',
+        advantages: 'advantages',
+        consultation: 'consultation',
     },
     prices: {
+        prices: 'prices',
         cooperation: 'cooperation',
         payment: 'payment',
-        prices: 'prices',
     },
     product: {
-        info: 'info',
-        offer: 'offer',
         products: 'products',
+        offer: 'offer',
+        info: 'info',
     },
 };
 

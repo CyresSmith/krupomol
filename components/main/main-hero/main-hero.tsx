@@ -21,7 +21,7 @@ export const MainHero = () => {
         <HeroSection image={image}>
             <Title
                 as="h1"
-                className="mb-11 text-left text-5xl font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
+                className="mb-11 text-left text-[40px] font-bold leading-normal text-background desktop:w-[753px] desktop:text-6xl desktop:leading-normal"
             >
                 {t('title')}
             </Title>

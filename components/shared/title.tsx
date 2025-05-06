@@ -1,5 +1,7 @@
 import { PropsWithChildren } from 'react';
 
+import { useLocale } from 'next-intl';
+
 import { titleFont } from '@fonts';
 
 import { cn } from '@utils';
@@ -11,9 +13,16 @@ interface Props extends PropsWithChildren {
 }
 
 export const Title = ({ as: As = 'h3', children, className, id }: Props) => {
+    const locale = useLocale();
+
     return (
         <As
-            className={cn('text-5xl font-bold drop-shadow-lg', titleFont.className, className)}
+            className={cn(
+                'text-5xl font-bold drop-shadow-lg',
+                { 'hyphens-auto': locale === 'de' },
+                titleFont.className,
+                className
+            )}
             id={id}
         >
             {children}

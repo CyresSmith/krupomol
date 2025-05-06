@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getLocale, getTranslations } from 'next-intl/server';
 
-import { ContactsHero, FormSection, MapSection } from '@components/contacts';
+import { ContactsHero, ContactsSection, FormSection, MapSection } from '@components/contacts';
 
 import { CONTACTS_ROUTE } from '@routes';
 
@@ -24,6 +24,7 @@ export default function Contacts() {
     return (
         <>
             <ContactsHero />
+            <ContactsSection />
             <FormSection />
             <MapSection />
         </>

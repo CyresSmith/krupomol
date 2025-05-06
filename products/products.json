@@ -354,10 +354,10 @@
             "items": {
                 "granulated": {
                     "title": {
-                        "en": "Granulated",
-                        "uk": "Пісок",
-                        "tr": "Toz",
-                        "de": "Granulierter"
+                        "en": "Sugar",
+                        "uk": "Цукор",
+                        "tr": "Şeker",
+                        "de": "Zucker"
                     },
                     "items": {
                         "sugar": {

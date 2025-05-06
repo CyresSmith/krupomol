@@ -19,7 +19,8 @@
             "payment": "Payment and Delivery",
             "map": "We are on the map",
             "certificates": "Our certificates",
-            "guarantees": "Guarantees"
+            "guarantees": "Guarantees",
+            "our-contacts": "Our contacts"
         }
     },
     "shared": {
@@ -49,7 +50,7 @@
         "certification": {
             "title": "Certification",
             "text": "Our products comply with international food quality and safety standards, which is confirmed by ISO 22000 and ISO 9001 certificates. Control at all stages of production guarantees stable quality and compliance with the requirements of the world market.",
-            "link": "More about certification"
+            "link": "Find out more"
         },
         "advantages": {
             "title": "Benefits of working with us",
@@ -351,7 +352,7 @@
     "export": {
         "metadata": {
             "title": "Export | Krupomol",
-            "desc": "\"Ukrainian Agroindustrial Transport Group\" LLC offers reliable export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from raw material selection to packaging and logistics. We provide an individual approach to each partner, quick preparation of documents and timely delivery. By cooperating with us, you receive certified products that meet international quality and safety standards.",
+            "desc": "\"Ukrainian Agricultural Transport Group\" LLC offers reliable export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from raw material selection to packaging and logistics. We provide an individual approach to each partner, quick preparation of documents and timely delivery. By cooperating with us, you receive certified products that meet international quality and safety standards.",
             "keywords": [
                 "ISO",
                 "Quality",
@@ -375,7 +376,7 @@
         },
         "hero": {
             "title": "Export of agricultural products",
-            "desc": "LLC \"Ukrainian Agroindustrial Transport Group\" offers the export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from the selection of raw materials to packaging and logistics. We provide an individual approach to each partner, rapid preparation of documents and timely delivery."
+            "desc": "LLC \"Ukrainian Agricultural Transport Group\" offers the export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from the selection of raw materials to packaging and logistics. We provide an individual approach to each partner, rapid preparation of documents and timely delivery."
         },
         "title": "Benefits of working with us",
         "advantages": [

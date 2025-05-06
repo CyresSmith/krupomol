@@ -4,6 +4,8 @@ import { HeroSection, Title } from '@components/shared';
 
 import image from '@assets/images/export-hero.jpg';
 
+import { cn } from '@utils';
+
 export const ExportHero = async () => {
     const t = await getTranslations('export');
 
@@ -11,7 +13,9 @@ export const ExportHero = async () => {
         <HeroSection image={image}>
             <Title
                 as="h1"
-                className="mb-[20px] text-left text-[44px] font-bold leading-normal text-background desktop:text-6xl desktop:leading-normal"
+                className={cn(
+                    'mb-[20px] text-left text-[44px] font-bold leading-normal text-background desktop:text-6xl desktop:leading-normal'
+                )}
             >
                 {t('hero.title')}
             </Title>

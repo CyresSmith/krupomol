@@ -21,7 +21,7 @@ export const Certification = () => {
         <ImageSection id={ANCHORS.main.certification} image="main-certification">
             <BorderCard>
                 <div className="w-full desktop:w-[635px]">
-                    <Title as="h3" className="mb-3 text-5xl text-background mobile:text-3xl">
+                    <Title as="h3" className="mb-3 text-[44px] text-background mobile:text-[34px]">
                         {t('title')}
                     </Title>
 
@@ -29,7 +29,10 @@ export const Certification = () => {
                 </div>
 
                 <Link
-                    className={cn(buttonVariants({ variant: 'outline' }), 'max-w-full')}
+                    className={cn(
+                        buttonVariants({ variant: 'outline' }),
+                        'max-w-full mobile:w-full'
+                    )}
                     href={CERTIFICATION_ROUTE}
                 >
                     <span className="truncate">{t('link')}</span>

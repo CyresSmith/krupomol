@@ -18,7 +18,7 @@ export const Offer = () => {
                     <Title
                         as="h3"
                         className={cn(
-                            'font-primary text-center text-[36px] font-bold leading-[140%] desktop:text-5xl'
+                            'font-primary text-center text-[32px] font-bold leading-[140%] desktop:text-5xl'
                         )}
                     >
                         {t('offer.title')}

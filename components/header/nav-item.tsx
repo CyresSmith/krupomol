@@ -79,9 +79,9 @@ const NavItem = ({
 }: IsChildren & NavItemType) => {
     const [open, setOpen] = useState(false);
 
-    return (
+    return href.hash === 'consultation' ? null : (
         <li
-            className={cn('flex', isChildren && 'px-2')}
+            className={cn('flex', isChildren && 'min-w-[200px] px-2')}
             key={href.pathname + href.hash}
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}

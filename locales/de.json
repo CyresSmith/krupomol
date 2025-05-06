@@ -19,7 +19,8 @@
             "payment": "Zahlung und Lieferung",
             "map": "Wir sind auf der Karte",
             "certificates": "Unsere Zertifikate",
-            "guarantees": "Garantien"
+            "guarantees": "Garantien",
+            "our-contacts": "Unsere Kontakte"
         }
     },
     "shared": {
@@ -49,7 +50,7 @@
         "certification": {
             "title": "Zertifizierung",
             "text": "Unsere Produkte entsprechen den internationalen Qualitäts- und Sicherheitsstandards für Lebensmittel, was durch die Zertifikate ISO 22000 und ISO 9001 bestätigt wird. Die Kontrolle in allen Phasen der Produktion garantiert eine gleichbleibende Qualität und die Einhaltung der Anforderungen des Weltmarkts.",
-            "link": "Lesen Sie mehr über die Zertifizierung"
+            "link": "Weitere Informationen"
         },
         "advantages": {
             "title": "Vorteile einer Zusammenarbeit mit uns",
@@ -330,7 +331,7 @@
             ]
         },
         "guarantees": {
-            "title": "ЩWas die Zertifizierung garantiert?",
+            "title": "Was die Zertifizierung garantiert?",
             "image": "certificates",
             "list": [
                 {
