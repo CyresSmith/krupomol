@@ -37,7 +37,10 @@ export const LenisProvider = ({ children }: PropsWithChildren) => {
 
             const id = window.location.hash.slice(1);
             const el = document.getElementById(id);
-            if (el) lenis.scrollTo(el);
+            if (el) {
+                setTimeout(() => lenis.scrollTo(el, { offset: 0 }), 100);
+                // lenis.scrollTo(el);
+            }
         };
 
         scrollToHash();

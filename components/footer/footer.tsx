@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Link } from '@i18n';
 
@@ -14,13 +14,14 @@ import { Icon } from '@components/shared';
 
 import { NavigationTitle } from '@types';
 
-import { CONTACTS_ROUTE } from '@routes';
+import { CONTACTS_ROUTE, PRICES_ROUTE } from '@routes';
 
 import { ANCHORS, contacts, navigation, socials } from '@constants';
 
 import { cn } from '@utils';
 
 export const Footer = async () => {
+    const locale = await getLocale();
     const t = await getTranslations('header');
     const f = await getTranslations('footer');
     const navigationT = await getTranslations('header.navigation');
@@ -35,7 +36,12 @@ export const Footer = async () => {
 
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-col items-start gap-4 mobile:items-center">
-                            {navigation.map(({ href, title }) => (
+                            {(locale === 'uk'
+                                ? navigation
+                                : navigation.filter(
+                                      ({ href }) => !href.pathname?.includes(PRICES_ROUTE)
+                                  )
+                            ).map(({ href, title }) => (
                                 <NavigationMenuItem key={title}>
                                     <Link
                                         className={cn(

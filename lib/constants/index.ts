@@ -30,7 +30,7 @@ export const ANCHORS = {
         products: 'products',
         certification: 'certification',
         advantages: 'advantages',
-        consultation: 'consultation',
+        // consultation: 'consultation',
     },
     prices: {
         prices: 'prices',
