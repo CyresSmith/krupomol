@@ -1,21 +1,21 @@
 'use client';
 
 import { ChevronRight } from 'lucide-react';
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren, useContext, useState, MouseEvent } from 'react';
 
-// import { useLocale } from 'next-intl';
-// import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 
 import { Link } from '@i18n';
 
 import { navigationMenuTriggerStyle } from '@ui/navigation-menu';
 import { Popover, PopoverContent, PopoverTrigger } from '@ui/popover';
 
-// import { LenisContext } from '@components/shared';
+import { LenisContext } from '@components/shared';
 
 import { NavItemType } from '@types';
 
-// import { HOME_ROUTE } from '@routes';
+import { HOME_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
@@ -32,20 +32,20 @@ const NavItemLink = ({
     isChildren,
     open = false,
 }: IsChildren) => {
-    // const pathname = usePathname();
-    // const locale = useLocale();
-    // const lenis = useContext(LenisContext);
+    const pathname = usePathname();
+    const locale = useLocale();
+    const lenis = useContext(LenisContext);
 
-    // const isThisPage =
-    //     href.pathname === HOME_ROUTE ? pathname === `/${locale}` : pathname.includes(href.pathname);
+    const isThisPage =
+        href.pathname === HOME_ROUTE ? pathname === `/${locale}` : pathname.includes(href.pathname);
 
-    // const handleScroll = (e: MouseEvent<HTMLAnchorElement>) => {
-    //     e.preventDefault();
+    const handleScroll = (e: MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
 
-    //     const el = document.getElementById(href.hash ?? '');
+        const el = document.getElementById(href.hash ?? '');
 
-    //     if (el) lenis?.scrollTo(el);
-    // };
+        if (el) lenis?.scrollTo(el);
+    };
 
     return (
         <Link
@@ -62,7 +62,7 @@ const NavItemLink = ({
                 }
             )}
             href={href}
-            // onClick={isThisPage ? handleScroll : undefined}
+            onClick={isThisPage ? handleScroll : undefined}
             // scroll={!isThisPage}
             scroll={false}
         >
