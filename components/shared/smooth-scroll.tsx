@@ -37,16 +37,36 @@ export const LenisProvider = ({ children }: PropsWithChildren) => {
 
             const id = window.location.hash.slice(1);
             const el = document.getElementById(id);
+
             if (el) {
-                setTimeout(() => lenis.scrollTo(el, { offset: 0 }), 100);
-                // lenis.scrollTo(el);
+                setTimeout(() => lenis.scrollTo(el, { offset: -50 }), 330);
             }
+
+            // if (el) {
+            //     const checkStyles = () => {
+            //         const computedStyles = window.getComputedStyle(el);
+            //         if (
+            //             computedStyles.opacity !== '0' &&
+            //             computedStyles.display !== 'none' &&
+            //             computedStyles.visibility !== 'hidden'
+            //         ) {
+            //             lenis.scrollTo(el, { offset: 0 });
+            //         } else {
+            //             requestAnimationFrame(checkStyles);
+            //         }
+            //     };
+
+            //     requestAnimationFrame(checkStyles);
+            // }
         };
 
         scrollToHash();
 
-        window.addEventListener('hashchange', scrollToHash);
-        return () => window.removeEventListener('hashchange', scrollToHash);
+        // window.addEventListener('hashchange', scrollToHash);
+        // return () => window.removeEventListener('hashchange', scrollToHash);
+
+        // window.addEventListener('load', scrollToHash);
+        // return () => window.removeEventListener('load', scrollToHash);
     }, [lenis, params]);
 
     return <LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>;
