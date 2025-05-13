@@ -20,7 +20,7 @@ const Slot = ({
     href,
 }: PropsWithChildren<{ className?: string; href?: string }>) => {
     return href ? (
-        <Link className={className} href={href}>
+        <Link className={className} href={href} scroll={false}>
             {children}
         </Link>
     ) : (
