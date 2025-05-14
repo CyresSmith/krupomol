@@ -87,29 +87,3 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: true, message: error.message }, { status: 500 });
     }
 }
-
-// `
-// <body style="font-family: 'Inter', sans-serif">
-//     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-//         <tr>
-//             <td align="center" style="padding: 20px;">
-//                 <table class="content" width="600" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #cccccc;">
-//                     <!-- Header -->
-//                     <tr>
-//                         <td class="header" style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
-//                         ${}
-//                         </td>
-//                     </tr>
-//                     <tr>
-//                         <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-//                         ${}
-//                         <br><br>
-//                         ${}
-//                         </td>
-//                     </tr>
-//                 </table>
-//             </td>
-//         </tr>
-//     </table>
-// </body>
-// `;
