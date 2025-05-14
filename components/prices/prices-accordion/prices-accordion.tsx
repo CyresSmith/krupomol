@@ -5,19 +5,14 @@ import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from '@u
 import { Loader, Section, Title } from '@components/shared';
 
 import prices from "data/purchase-prices.json" assert {type: "json"};
-import { PricesValidityType, PurchasePricesDatesType, PurchasePriceType } from 'lib/types/purchase-prices.types';
+import { DataFromSheetsType, PurchasePricesDatesType, PurchasePriceType } from 'lib/types/purchase-prices.types';
 import { PriceItem } from './price-item';
 import { useEffect, useState } from 'react';
 import { ANCHORS } from '@constants';
 
-interface DataType {
-    dates: Pick<PricesValidityType, 'from' | 'to'>
-    prices: Pick<PurchasePriceType, 'price' | 'productName'>[];
-}
-
 export const PricesAccordion = () => {
     const [loading, setLoading] = useState(false);
-    const [data, setData] = useState<DataType | null>(null);
+    const [data, setData] = useState<DataFromSheetsType | null>(null);
     const { dates, purchasePrices } = prices as PurchasePricesDatesType;
 
     useEffect(() => {
@@ -27,7 +22,7 @@ export const PricesAccordion = () => {
                 throw new Error('Failed to fetch Google Sheets data');
             }
 
-            const data = await response.json() as DataType;
+            const data = await response.json() as DataFromSheetsType;
             return data;
         }
 
@@ -42,7 +37,7 @@ export const PricesAccordion = () => {
     const productsToRender: PurchasePriceType[] = purchasePrices.map((product) => {
         const matched = data?.prices.find((p) => p.productName.toLowerCase().trim() === product.productName.toLowerCase().trim());
 
-        if (typeof matched?.price !== 'number') return null;
+        if (typeof matched?.price !== 'number' || matched.price === 0) return null;
 
         return {
             ...product,
@@ -50,7 +45,8 @@ export const PricesAccordion = () => {
             };
     }).filter((p): p is PurchasePriceType => p !== null);
 
-    return loading ? <Loader className='fixed top-0 right-0 left-0 bottom-0' /> : productsToRender.length > 0 && (<Section className='!pb-0' id={ANCHORS.prices.prices} variant='secondary'>
+    return loading ? <Loader className='fixed top-0 right-0 left-0 bottom-0' /> : productsToRender.length > 0 &&
+    (<Section className='!pb-0' id={ANCHORS.prices.prices} variant='secondary'>
             <div className="container">
                 <div className="rounded-20 bg-primary px-4 py-4 text-background shadow-lg desktop:rounded-40 desktop:px-24 desktop:py-8">
                     <Title className='mobile:text-3xl tablet:text-3xl font-title font-bold border-b-2 border-background pb-4' title="Закупівельні ціни"/>

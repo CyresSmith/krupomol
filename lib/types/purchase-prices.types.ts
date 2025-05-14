@@ -22,3 +22,12 @@ export interface PurchasePricesDatesType {
     dates: PricesValidityType;
     purchasePrices: PurchasePriceType[];
 }
+
+export type DatesType = Omit<PricesValidityType, 'title'>;
+
+export type PricesType = Pick<PurchasePriceType, 'price' | 'productName'>;
+
+export interface DataFromSheetsType {
+    dates: DatesType;
+    prices: PricesType[];
+}

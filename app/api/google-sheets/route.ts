@@ -1,14 +1,5 @@
 import { google } from 'googleapis';
-
-interface Product {
-    price: number | undefined;
-    productName: string;
-}
-
-interface Dates {
-    from: string;
-    to: string;
-}
+import { DatesType, PricesType } from 'lib/types/purchase-prices.types';
 
 export async function GET() {
     const sheetId = process.env['PRICE_SHEETS_ID'];
@@ -17,7 +8,7 @@ export async function GET() {
 
     if (!sheetId || !client_email || !private_key) {
         return new Response(
-            JSON.stringify({ error: true, message: 'Check googlesheets api credentials!' }),
+            JSON.stringify({ error: true, message: 'Check google-sheets api credentials!' }),
             {
                 status: 400,
             }
@@ -32,34 +23,27 @@ export async function GET() {
         await client.authorize();
         const googleSheetsApi = google.sheets({ auth: client, version: 'v4' });
 
-        const pricesRes = await googleSheetsApi.spreadsheets.values.get({
-            range: 'Ціни',
+        const res = await googleSheetsApi.spreadsheets.values.get({
+            range: 'PurchasePrices!A1:D100',
             spreadsheetId: sheetId,
         });
 
-        const rawPrices = pricesRes.data.values ?? [];
-        const prices: Product[] = rawPrices.map(row => ({
-            price: Number(row[1]) || undefined,
+        const values = res.data.values ?? [];
+
+        const headerRow = values[2] ?? [];
+        const from = (headerRow[2] as string) ?? null;
+        const to = (headerRow[3] as string) ?? null;
+
+        const dates: DatesType = {
+            from,
+            to,
+        };
+
+        const dataRows = values.slice(2);
+        const prices: PricesType[] = dataRows.map(row => ({
+            price: row[1] !== undefined ? Number(row[1]) : 0,
             productName: String(row[0] ?? ''),
         }));
-
-        const datesRes = await googleSheetsApi.spreadsheets.values.get({
-            range: 'Дати',
-            spreadsheetId: sheetId,
-        });
-
-        const rawDates = datesRes.data.values ?? [];
-
-        const dates: Dates = rawDates.reduce((acc, row) => {
-            const key = String(row[0]);
-            const value = String(row[1]);
-
-            if (key === 'from' || key === 'to') {
-                acc[key] = value;
-            }
-
-            return acc;
-        }, {} as Dates);
 
         return new Response(JSON.stringify({ dates, prices }), {
             headers: {
