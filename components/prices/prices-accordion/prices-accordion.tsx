@@ -69,7 +69,7 @@ export const PricesAccordion = () => {
                 {data?.dates && (
                     <div>
                         <p className='font-bold mt-6 mb-4'>{dates.title}:</p>
-                        <p className='mb-4'>з <span>{data.dates.from} 00:00 </span>по <span>{data.dates.to} 00:00</span>.</p>
+                        <p className='mb-4'>з <span>{data.dates.from ?? '01.01.1901'} 00:00 </span>по <span>{data.dates.to ?? '31.12.2100'} 00:00</span>.</p>
                         <p className='mb-4'>*Вимоги щодо якості культур див. у контекстному меню при натисненні на назву культури.</p>
                         <p className='font-bold'>Всі ціни вказано з ПДВ на умовах DAP.</p>
                     </div>
