@@ -1,6 +1,6 @@
 import { GuaranteeType } from 'lib/types/guarantee.types';
 
-import { Title } from '@components/shared';
+import { AnimatedCard, AnimatedTextBox, Title } from '@components/shared';
 
 interface Props {
     item: GuaranteeType;
@@ -10,9 +10,16 @@ export const Guarantee = ({ item }: Props) => {
     const { desc, title } = item;
 
     return (
-        <li className="flex w-full flex-col gap-4 rounded-20 bg-white px-4 py-6 text-primary desktop:rounded-40 desktop:px-12 desktop:py-8">
-            <Title as="h6" className="text-xl leading-[140%]" title={title} />
-            <p className="text-left text-sm desktop:text-base">{desc}</p>
+        <li className="h-full">
+            <AnimatedCard className="flex h-full w-full flex-col gap-4 rounded-20 bg-white px-4 py-6 text-primary desktop:rounded-40 desktop:px-12 desktop:py-8">
+                <AnimatedTextBox from="top">
+                    <Title as="h6" className="text-xl leading-[140%]" title={title} />
+                </AnimatedTextBox>
+
+                <AnimatedTextBox from="bottom">
+                    <p className="text-left text-sm desktop:text-base">{desc}</p>
+                </AnimatedTextBox>
+            </AnimatedCard>
         </li>
     );
 };

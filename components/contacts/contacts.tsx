@@ -2,10 +2,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@i18n';
 
-import { Card } from '@ui/card';
-
-import { Icon } from '@components/shared';
-import { AnimatedSection } from '@components/shared/animated-section';
+import { AnimatedCard, AnimatedSection, Icon } from '@components/shared';
 
 import { ANCHORS, contacts } from '@constants';
 
@@ -14,7 +11,7 @@ export const ContactsSection = async () => {
 
     return (
         <AnimatedSection className="bg-secondary" id={ANCHORS.contacts.ourContacts}>
-            <Card className="bg-primary p-14 mobile:p-9">
+            <AnimatedCard className="bg-primary p-14 mobile:p-9">
                 <ul className="flex flex-col gap-4 tablet:text-lg desktop:gap-6 desktop:text-2xl">
                     {Object.values(contacts).map(({ href, icon, text }) => {
                         const isAddress = href === contacts.address.href;
@@ -40,7 +37,7 @@ export const ContactsSection = async () => {
                         );
                     })}
                 </ul>
-            </Card>
+            </AnimatedCard>
         </AnimatedSection>
     );
 };

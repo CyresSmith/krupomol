@@ -6,12 +6,14 @@ import { BorderCard, ImageSection, Title } from '@components/shared';
 
 import { ProductsItemInfoType } from '@types';
 
+import { ANCHORS } from '@constants';
+
 export const Infos = async () => {
     const t = await getTranslations('products');
     const infoList = t.raw('info.infoList') as ProductsItemInfoType[];
 
     return (
-        <ImageSection id="info" image="products-more-info">
+        <ImageSection id={ANCHORS.product.info} image="products-more-info">
             <div className="z-1 container relative">
                 <BorderCard className="tablet:w-1/2 desktop:w-1/2">
                     <Title

@@ -30,9 +30,24 @@ export const AnimatedSection = ({
     const translateY = useTransform(scrollYProgress, [0, 0.5, 0.5, 1], ['40%', '0%', '0%', '-40%']);
     const scale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], ['0.9', '1', '1', '0.9']);
 
+    const containerVariants = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.1,
+            },
+        },
+    };
+
     return (
         <Section className={cn('relative', className)} id={id} ref={container}>
-            <motion.div className="container" style={{ scale: scale, translateY: translateY }}>
+            <motion.div
+                animate="show"
+                className="container"
+                initial="hidden"
+                style={{ scale: scale, translateY: translateY }}
+                variants={containerVariants}
+            >
                 {children}
             </motion.div>
             {gradientBg && (

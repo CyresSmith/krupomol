@@ -8,7 +8,7 @@ import { Link } from '@i18n';
 
 import { buttonVariants } from '@ui/button';
 
-import { Icon } from '@components/shared';
+import { Icon, LinkWithHash } from '@components/shared';
 
 import { CONTACTS_ROUTE } from '@routes';
 
@@ -57,7 +57,7 @@ export const Header = async () => {
                     <Navigation />
 
                     <div className="flex flex-1 justify-end gap-6">
-                        <Link
+                        <LinkWithHash
                             className={cn(
                                 'w-60 mobile:hidden',
                                 buttonVariants({ variant: 'outline' })
@@ -65,7 +65,7 @@ export const Header = async () => {
                             href={{ hash: ANCHORS.contacts.consultation, pathname: CONTACTS_ROUTE }}
                         >
                             {t('consultation')}
-                        </Link>
+                        </LinkWithHash>
 
                         <MobileMenu />
                     </div>

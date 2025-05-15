@@ -28,10 +28,32 @@ export const Certificates = () => {
         target: container,
     });
 
-    const x1 = useTransform(scrollYProgress, [0, 0.5, 1], ['-8%', '0%', '30%']);
-    const x2 = useTransform(scrollYProgress, [0, 0.5, 1], ['20%', '0%', '-20%']);
-    const x3 = useTransform(scrollYProgress, [0, 0.5, 1], ['40%', '0%', '-40%']);
-    const opacity = useTransform(scrollYProgress, [0, 0.1, 0.2, 0.8, 0.9, 1], [1, 1, 1, 1, 0, 0]);
+    const x1 = useTransform(scrollYProgress, [0, 0.5, 1], ['0%', '0%', '30%']);
+    const x2 = useTransform(scrollYProgress, [0, 0.5, 1], ['0%', '0%', '-20%']);
+    const x3 = useTransform(scrollYProgress, [0, 0.5, 1], ['0%', '0%', '-40%']);
+    const opacity = useTransform(scrollYProgress, [0, 0.8, 0.9, 1], [1, 1, 0, 0]);
+
+    const containerVariants = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.1,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, scale: 0, y: '100%' },
+        show: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 0.3,
+                scale: { bounce: 0.2, type: 'spring' },
+            },
+            y: 0,
+        },
+    };
 
     return (
         <Section
@@ -46,18 +68,23 @@ export const Certificates = () => {
                     title={t('title')}
                 />
 
-                <ul className="flex w-full flex-col gap-6">
+                <motion.ul
+                    animate="show"
+                    className="flex w-full flex-col gap-6"
+                    initial="hidden"
+                    variants={containerVariants}
+                >
                     {list.map((item, i) => (
                         <motion.li
                             className="block w-full"
-                            custom={i}
                             key={i}
                             style={{ opacity, x: i === 0 ? x1 : i === 1 ? x2 : x3 }}
+                            variants={itemVariants}
                         >
                             <CertificateOpen
                                 {...item}
                                 className={cn(
-                                    'rounded-20 bg-accent px-4 py-6 desktop:w-[70%] desktop:rounded-40 desktop:px-8 desktop:py-3',
+                                    'rounded-20 bg-accent px-4 py-6 shadow-lg desktop:w-[70%] desktop:rounded-40 desktop:px-8 desktop:py-3',
                                     i === 0 && 'desktop:ml-[250px]',
                                     i === 1 && 'desktop:ml-[125px]'
                                 )}
@@ -67,7 +94,7 @@ export const Certificates = () => {
                             </CertificateOpen>
                         </motion.li>
                     ))}
-                </ul>
+                </motion.ul>
             </div>
         </Section>
     );

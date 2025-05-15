@@ -5,11 +5,14 @@ import { ProductsService } from 'lib/services';
 
 import ProductCard from './product-card';
 
-import { Card } from '@ui/card';
-
-import { Section, SectionCarousel, Title } from '@components/shared';
-import { AnimatedSection } from '@components/shared/animated-section';
-import { AnimatedTextBox } from '@components/shared/animated-text-box';
+import {
+    AnimatedCard,
+    AnimatedSection,
+    AnimatedTextBox,
+    Section,
+    SectionCarousel,
+    Title,
+} from '@components/shared';
 
 import { titleFont } from '@fonts';
 
@@ -27,8 +30,8 @@ export const About = async () => {
 
     return (
         <>
-            <AnimatedSection className="!pb-0" id={ANCHORS.main.about}>
-                <Card className="relative min-h-[343px] p-16 shadow-lg mobile:px-4 mobile:pb-16 mobile:pt-64">
+            <AnimatedSection id={ANCHORS.main.about}>
+                <AnimatedCard className="mobile:pt-64">
                     <div className="absolute right-0 top-1/2 h-[377px] w-[662px] -translate-y-1/2 overflow-hidden mobile:inset-x-0 mobile:top-10 mobile:h-[194px] mobile:w-full mobile:translate-y-0 tablet:w-[280px]">
                         <Image
                             alt=""
@@ -38,25 +41,21 @@ export const About = async () => {
                             src="/images/main-about-as.png"
                         />
                     </div>
-                    <AnimatedTextBox
-                        className="mb-4 p-0 mobile:mb-6"
-                        from="bottom"
-                        triggerOnce={true}
-                    >
+
+                    <AnimatedTextBox from="top">
                         <Title
                             as="h2"
                             className={cn(
-                                'w-[410px] text-[36px] font-bold mobile:w-full mobile:text-center desktop:text-[44px]',
+                                'mobile:mb-6" mb-4 w-[410px] text-[36px] font-bold mobile:w-full mobile:text-center desktop:text-[44px]',
                                 titleFont.className
                             )}
                             title={t('title')}
                         />
                     </AnimatedTextBox>
-
-                    <AnimatedTextBox className="p-0" from="top" triggerOnce={true} viewAmount={0.5}>
+                    <AnimatedTextBox from="bottom">
                         <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
                     </AnimatedTextBox>
-                </Card>
+                </AnimatedCard>
             </AnimatedSection>
 
             <Section className="relative z-0" id={ANCHORS.main.products}>

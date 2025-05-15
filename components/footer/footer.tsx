@@ -10,7 +10,7 @@ import {
     navigationMenuTriggerStyle,
 } from '@ui/navigation-menu';
 
-import { Icon } from '@components/shared';
+import { Icon, LinkWithHash } from '@components/shared';
 
 import { NavigationTitle } from '@types';
 
@@ -85,7 +85,7 @@ export const Footer = async () => {
                             </ul>
                         </address>
 
-                        <Link
+                        <LinkWithHash
                             className={cn(
                                 'mt-auto',
                                 buttonVariants({ variant: 'outline-primary' })
@@ -93,7 +93,7 @@ export const Footer = async () => {
                             href={{ hash: ANCHORS.contacts.consultation, pathname: CONTACTS_ROUTE }}
                         >
                             {t('consultation')}
-                        </Link>
+                        </LinkWithHash>
                     </div>
 
                     <div className="flex flex-col items-center justify-center gap-5">

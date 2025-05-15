@@ -1,20 +1,18 @@
-'use client';
+import { getTranslations } from 'next-intl/server';
 
-import { useTranslations } from 'next-intl';
+import { AnimatedCard, AnimatedSection, AnimatedTextBox, Title } from '@components/shared';
 
-import { Title } from '@components/shared';
-import { AnimatedSection } from '@components/shared/animated-section';
-import { AnimatedTextBox } from '@components/shared/animated-text-box';
+import { ANCHORS } from '@constants';
 
 import { cn } from '@utils';
 
-export const Offer = () => {
-    const t = useTranslations('products');
+export const Offer = async () => {
+    const t = await getTranslations('products');
 
     return (
-        <AnimatedSection gradientBg={true} id="offer">
-            <div className="container rounded-3xl bg-accent px-6 py-10 shadow-lg desktop:px-16 desktop:py-20">
-                <AnimatedTextBox className="mb-5" from="bottom" triggerOnce={true}>
+        <AnimatedSection gradientBg={true} id={ANCHORS.product.offer}>
+            <AnimatedCard>
+                <AnimatedTextBox className="mb-5" from="top">
                     <Title
                         as="h3"
                         className={cn(
@@ -23,10 +21,10 @@ export const Offer = () => {
                         title={t('offer.title')}
                     />
                 </AnimatedTextBox>
-                <AnimatedTextBox from="top" triggerOnce={true}>
+                <AnimatedTextBox from="bottom">
                     <p className="text-base leading-5 text-black">{t('offer.text')}</p>
                 </AnimatedTextBox>
-            </div>
+            </AnimatedCard>
         </AnimatedSection>
     );
 };

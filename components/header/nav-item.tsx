@@ -1,21 +1,14 @@
 'use client';
 
 import { ChevronRight } from 'lucide-react';
-import { PropsWithChildren, useContext, useState, MouseEvent } from 'react';
-
-import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
-
-import { Link } from '@i18n';
+import { PropsWithChildren, useState } from 'react';
 
 import { navigationMenuTriggerStyle } from '@ui/navigation-menu';
 import { Popover, PopoverContent, PopoverTrigger } from '@ui/popover';
 
-import { LenisContext } from '@components/shared';
+import { LinkWithHash } from '@components/shared';
 
 import { NavItemType } from '@types';
-
-import { HOME_ROUTE } from '@routes';
 
 import { cn } from '@utils';
 
@@ -32,23 +25,8 @@ const NavItemLink = ({
     isChildren,
     open = false,
 }: IsChildren) => {
-    const pathname = usePathname();
-    const locale = useLocale();
-    const lenis = useContext(LenisContext);
-
-    const isThisPage =
-        href.pathname === HOME_ROUTE ? pathname === `/${locale}` : pathname.includes(href.pathname);
-
-    const handleScroll = (e: MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-
-        const el = document.getElementById(href.hash ?? '');
-
-        if (el) lenis?.scrollTo(el);
-    };
-
     return (
-        <Link
+        <LinkWithHash
             className={cn(
                 'relative w-full',
                 isActive &&
@@ -62,12 +40,9 @@ const NavItemLink = ({
                 }
             )}
             href={href}
-            onClick={isThisPage ? handleScroll : undefined}
-            // scroll={!isThisPage}
-            scroll={false}
         >
             {children}
-        </Link>
+        </LinkWithHash>
     );
 };
 
@@ -79,13 +54,28 @@ const NavItem = ({
     title,
 }: IsChildren & NavItemType) => {
     const [open, setOpen] = useState(false);
+    const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | undefined>(undefined);
+
+    const handleHover = (type: 'enter' | 'leave') => {
+        if (hoverTimeout) clearTimeout(hoverTimeout);
+
+        if (type === 'enter') {
+            const timeout = setTimeout(() => setOpen(true), isChildren ? 0 : 450);
+            setHoverTimeout(timeout);
+        } else {
+            setOpen(false);
+            setHoverTimeout(undefined);
+        }
+    };
 
     return href.hash === 'consultation' ? null : (
         <li
             className={cn('flex', isChildren && 'min-w-[200px] px-2')}
             key={href.pathname + href.hash}
-            onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() => setOpen(false)}
+            // onMouseEnter={() => setOpen(true)}
+            // onMouseLeave={() => setOpen(false)}
+            onMouseEnter={() => handleHover('enter')}
+            onMouseLeave={() => handleHover('leave')}
         >
             {links && links.length > 0 ? (
                 <Popover key={title} onOpenChange={setOpen} open={open}>

@@ -10,7 +10,6 @@ import { Link } from '@i18n';
 import {
     Breadcrumb,
     BreadcrumbItem,
-    BreadcrumbLink,
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
@@ -37,7 +36,7 @@ export const ProductBreadcrumb = async ({ category, product, type }: Props) => {
                 <BreadcrumbList>
                     <BreadcrumbItem>
                         <BreadcrumbPage>
-                            <Link href={'/'} locale={locale}>
+                            <Link href={'/'}>
                                 <Home />
                             </Link>
                         </BreadcrumbPage>
@@ -48,11 +47,12 @@ export const ProductBreadcrumb = async ({ category, product, type }: Props) => {
                             <Fragment key={title + href}>
                                 <BreadcrumbItem>
                                     {href ? (
-                                        <BreadcrumbLink asChild>
-                                            <Link href={href} locale={locale}>
-                                                {title}
-                                            </Link>
-                                        </BreadcrumbLink>
+                                        <Link
+                                            className="transition hover:fill-primary hover:text-primary"
+                                            href={href}
+                                        >
+                                            {title}
+                                        </Link>
                                     ) : (
                                         <BreadcrumbPage>{title}</BreadcrumbPage>
                                     )}
