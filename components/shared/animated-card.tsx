@@ -19,10 +19,11 @@ const cardVariants = {
     },
 };
 
-export const AnimatedCard = ({
-    children,
-    className,
-}: { className?: string } & PropsWithChildren) => {
+interface Props extends PropsWithChildren {
+    className?: string;
+}
+
+export const AnimatedCard = ({ children, className }: Props) => {
     return (
         <motion.div
             className={cn(

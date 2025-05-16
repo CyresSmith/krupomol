@@ -14,7 +14,6 @@ export const AnimatedTextBox = ({
     from = 'bottom',
 }: Props & PropsWithChildren) => {
     const isVerticalFrom = from === 'top' || from === 'bottom';
-
     const itemVariants = {
         hidden: {
             opacity: 0,
@@ -27,7 +26,7 @@ export const AnimatedTextBox = ({
             scale: 1,
             transition: {
                 duration: 0.3,
-                scale: { bounce: 0.2, type: 'spring' },
+                scale: { bounce: 0.3, type: 'spring' },
             },
             x: 0,
             y: 0,
@@ -39,7 +38,7 @@ export const AnimatedTextBox = ({
             className={className}
             initial="hidden"
             variants={itemVariants}
-            viewport={{ amount: 0.3, once: true }}
+            viewport={{ once: true }}
             whileInView="show"
         >
             {children}

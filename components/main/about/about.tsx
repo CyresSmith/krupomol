@@ -1,4 +1,4 @@
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 import Image from 'next/image';
 
 import { ProductsService } from 'lib/services';
@@ -52,9 +52,8 @@ export const About = async () => {
                             title={t('title')}
                         />
                     </AnimatedTextBox>
-                    <AnimatedTextBox from="bottom">
-                        <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
-                    </AnimatedTextBox>
+
+                    <p className="w-[410px] text-text-color mobile:w-full">{t('text')}</p>
                 </AnimatedCard>
             </AnimatedSection>
 
