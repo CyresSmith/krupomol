@@ -41,14 +41,14 @@ const ProductCard = ({ href, image, title }: Props) => {
                 />
             </Slot>
 
-            <h5
+            <h4
                 className={cn(
                     'absolute inset-x-0 bottom-0 rounded-b-20 py-7 text-center text-xl font-bold text-white backdrop-blur-[15px]',
                     titleFont.className
                 )}
             >
                 {title}
-            </h5>
+            </h4>
         </div>
     );
 };

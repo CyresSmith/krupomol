@@ -30,7 +30,7 @@ export const Footer = async () => {
         <footer className="w-full bg-card">
             <div className="container pb-5 pt-12 desktop:pt-24">
                 <div className="flex flex-col items-center gap-12 desktop:flex-row desktop:items-start desktop:gap-36">
-                    <Link className="ml-5" href={'/'}>
+                    <Link aria-label="link to home" className="ml-5" href={'/'}>
                         <Icon className="h-[88px] w-[189px]" name="krupomol_logo" />
                     </Link>
 
@@ -101,6 +101,7 @@ export const Footer = async () => {
                             {socials.map(({ href, icon }) => (
                                 <li key={href}>
                                     <Link
+                                        aria-label={icon}
                                         className="flex size-8 items-center justify-center overflow-hidden rounded-[8px] bg-primary fill-primary-foreground transition hover:opacity-80"
                                         href={href ?? '/'}
                                         rel="noopener noreferrer nofollow"

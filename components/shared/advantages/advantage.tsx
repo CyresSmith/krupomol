@@ -22,7 +22,7 @@ const Advantage = ({ icon, text, title }: AdvantageType) => {
 
                 <div className="max-w-full overflow-hidden text-center">
                     <Title
-                        as="h6"
+                        as="h4"
                         className="text-md mb-1 w-full truncate tablet:text-lg desktop:mb-4 desktop:text-xl"
                         title={title}
                     />

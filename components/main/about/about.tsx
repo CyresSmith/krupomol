@@ -1,4 +1,4 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
 import { ProductsService } from 'lib/services';
@@ -37,7 +37,7 @@ export const About = async () => {
                             alt=""
                             className="object-cover tablet:object-contain"
                             fill
-                            sizes="100%"
+                            sizes="(max-width: 1279px) 200px, (min-width: 1280px) 380px,"
                             src="/images/main-about-as.png"
                         />
                     </div>

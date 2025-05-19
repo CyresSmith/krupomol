@@ -88,7 +88,11 @@ export const MobileMenu = () => {
                 </NavigationMenu>
 
                 <DrawerFooter className="mt-[unset]">
-                    <Button className="w-full" variant={'outline-primary'}>
+                    <Button
+                        className="w-full"
+                        name={headerT('consultation')}
+                        variant={'outline-primary'}
+                    >
                         {headerT('consultation')}
                     </Button>
                     {/* <ThemeSwitch />

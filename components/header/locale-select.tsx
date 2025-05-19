@@ -18,7 +18,7 @@ const LocaleSelect = () => {
                 .filter(l => l !== locale)
                 .map(l => (
                     <li key={l}>
-                        <Link href={pathname} locale={l}>
+                        <Link aria-label={l} href={pathname} locale={l}>
                             <Icon name={l} />
                         </Link>
                     </li>

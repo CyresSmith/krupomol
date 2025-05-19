@@ -11,6 +11,7 @@ export const MenuBtn = ({ setOpen }: Props) => {
         <>
             <button
                 className="flex items-center justify-center fill-background tablet:hidden desktop:hidden"
+                name="menu"
                 onClick={() => setOpen(true)}
                 type="button"
             >

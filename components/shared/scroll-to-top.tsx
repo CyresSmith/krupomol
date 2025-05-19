@@ -35,6 +35,7 @@ export const ScrollToTop = () => {
                 'fixed -bottom-full right-8 p-6 [&_svg]:size-6',
                 isVisible && 'bottom-8'
             )}
+            name="Scroll to top"
             onClick={scrollToTop}
             title="Scroll to top"
         >
