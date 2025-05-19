@@ -27,7 +27,7 @@ const ProductImage = ({ image, title }: Props) => {
                 alt={title}
                 fill
                 priority
-                sizes="100%"
+                sizes="(min-width: 1280px) 400px, (max-width: 1279px) 288px, (max-width: 767px) 288px,"
                 src={image}
                 style={{ objectFit: 'contain' }}
             />

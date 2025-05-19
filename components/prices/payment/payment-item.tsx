@@ -16,7 +16,7 @@ export const PaymentItem = ({ item }: Props) => {
                     alt={icon}
                     className="object-contain transition"
                     fill
-                    sizes="100%"
+                    sizes="64px"
                     src={`/images/${icon}.png`}
                 />
             </div>

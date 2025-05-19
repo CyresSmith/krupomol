@@ -15,7 +15,7 @@ const Advantage = ({ icon, text, title }: AdvantageType) => {
                         alt={title}
                         className="object-contain transition"
                         fill
-                        sizes="100%"
+                        sizes="(min-width: 1280px) 70px, (max-width: 1279px) 44px"
                         src={`/images/${icon}.png`}
                     />
                 </div>

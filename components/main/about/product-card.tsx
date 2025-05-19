@@ -36,7 +36,7 @@ const ProductCard = ({ href, image, title }: Props) => {
                     alt={title}
                     className="object-cover transition group-hover:scale-110"
                     fill
-                    sizes="100%"
+                    sizes="(max-width: 1279px) 235px, (min-width: 1280px) 300px, (max-width: 767px) 280px,"
                     src={`/images/${image}.jpg`}
                 />
             </Slot>
