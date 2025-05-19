@@ -15,7 +15,9 @@ const ProductImage = ({ image, title }: Props) => {
     const lenis = useContext(LenisContext);
 
     useEffect(() => {
-        lenis?.scrollTo('#product', { offset: -64 });
+        const scrollTimeout = setTimeout(() => lenis?.scrollTo('#product', { offset: -64 }), 350);
+
+        return () => clearTimeout(scrollTimeout);
     }, [lenis]);
 
     return (
