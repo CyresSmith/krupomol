@@ -43,6 +43,7 @@ export const HeroSection = ({ children, image }: Props) => {
                     alt="image"
                     className="object-cover"
                     fill
+                    loading="eager"
                     placeholder="blur"
                     sizes="100vw"
                     src={image}

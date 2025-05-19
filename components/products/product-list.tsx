@@ -32,7 +32,7 @@ export const ProductList = ({ items = [] }: Props) => {
                                     alt={title}
                                     fill
                                     priority
-                                    sizes="100%"
+                                    sizes="250px"
                                     src={image}
                                     style={{ objectFit: 'contain' }}
                                 />

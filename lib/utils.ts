@@ -45,7 +45,7 @@ export function getMetadata({
     path,
     title,
 }: MetadataOptions): Metadata {
-    const fullUrl = `${APP_HOST}/${locale}${path}`;
+    const canonical = `${APP_HOST}/${locale}${path}`;
 
     const products = ProductsService.getProductsList({ locale }).map(({ title }) => title);
 
@@ -59,7 +59,7 @@ export function getMetadata({
 
     return {
         alternates: {
-            canonical: fullUrl,
+            canonical,
             languages,
         },
         applicationName: APP_NAME,
@@ -83,7 +83,7 @@ export function getMetadata({
             siteName: APP_NAME,
             title,
             type: 'website',
-            url: fullUrl,
+            url: canonical,
         },
         publisher: 'Ivan Reshetnikov',
         referrer: 'origin-when-cross-origin',
