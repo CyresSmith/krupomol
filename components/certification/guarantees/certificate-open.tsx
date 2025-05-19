@@ -60,7 +60,7 @@ export const CertificateOpen = ({ children, className, desc, image, title }: Pro
                         alt="Certificate"
                         className="object-contain transition"
                         fill
-                        sizes="100%"
+                        sizes="(max-width: 1279px) 80vw, (min-width: 1280px) 50vw"
                         src={`/images/${image}.jpg`}
                     />
                 </div>

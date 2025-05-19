@@ -36,7 +36,7 @@ export const ProductBreadcrumb = async ({ category, product, type }: Props) => {
                 <BreadcrumbList>
                     <BreadcrumbItem>
                         <BreadcrumbPage>
-                            <Link href={'/'}>
+                            <Link aria-label="link to homepage" href={'/'}>
                                 <Home />
                             </Link>
                         </BreadcrumbPage>
@@ -48,6 +48,7 @@ export const ProductBreadcrumb = async ({ category, product, type }: Props) => {
                                 <BreadcrumbItem>
                                     {href ? (
                                         <Link
+                                            aria-label={title}
                                             className="transition hover:fill-primary hover:text-primary"
                                             href={href}
                                         >

@@ -63,7 +63,7 @@ export const Certificates = () => {
         >
             <div className="container" ref={container}>
                 <Title
-                    as="h5"
+                    as="h2"
                     className="mb-10 text-center text-4xl text-primary desktop:text-5xl"
                     title={t('title')}
                 />

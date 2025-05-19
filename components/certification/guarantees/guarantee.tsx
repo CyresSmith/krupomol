@@ -13,7 +13,7 @@ export const Guarantee = ({ item }: Props) => {
         <li className="h-full">
             <AnimatedCard className="flex h-full w-full flex-col gap-4 rounded-20 bg-white px-4 py-6 text-primary desktop:rounded-40 desktop:px-12 desktop:py-8">
                 <AnimatedTextBox from="top">
-                    <Title as="h6" className="text-xl leading-[140%]" title={title} />
+                    <Title as="h4" className="text-xl leading-[140%]" title={title} />
                 </AnimatedTextBox>
 
                 <AnimatedTextBox from="bottom">

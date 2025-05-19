@@ -26,7 +26,7 @@ export const ProductList = ({ items = [] }: Props) => {
                         )}
                         key={href}
                     >
-                        <Link href={href}>
+                        <Link aria-label={title} href={href}>
                             <div className={'relative aspect-square w-full'}>
                                 <Image
                                     alt={title}

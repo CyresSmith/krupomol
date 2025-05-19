@@ -24,6 +24,7 @@ export const ProductCategoryList = ({ items = [] }: Props) => {
                         key={href}
                     >
                         <Link
+                            aria-label={title}
                             className={cn(
                                 buttonVariants({
                                     variant: pathname.includes(href)
