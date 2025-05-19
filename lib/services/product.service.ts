@@ -6,7 +6,7 @@ import { ProductListType, ProductsData } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
-import { getProductImage } from '@utils';
+import { getProductImage, sortPremiumFirst } from '@utils';
 
 const productsData = productsDataJson as unknown as ProductsData;
 
@@ -160,14 +160,17 @@ export const ProductsService = {
 
         if (categorySlug && typeSlug) {
             const type = productsData.items[categorySlug]?.items[typeSlug];
+
             if (!type) return [];
 
-            return Object.entries(type.items).map(([slug, product]) => ({
-                ...product,
-                href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
-                image: getProductImage(product.image),
-                title: product.title[locale],
-            }));
+            return sortPremiumFirst(
+                Object.entries(type.items).map(([slug, product]) => ({
+                    ...product,
+                    href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
+                    image: getProductImage(product.image),
+                    title: product.title[locale],
+                }))
+            );
         }
 
         if (categorySlug) {
@@ -184,7 +187,8 @@ export const ProductsService = {
                     });
                 });
             });
-            return products;
+
+            return sortPremiumFirst(products);
         }
 
         Object.entries(productsData.items).forEach(([categorySlug, category]) => {
@@ -199,7 +203,8 @@ export const ProductsService = {
                 });
             });
         });
-        return products;
+
+        return sortPremiumFirst(products);
     },
 
     getTypesByCategory(categorySlug: string, locale: Locale) {

@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { routing } from '@i18n';
 
-import { LocaleType } from '@types';
+import { LocaleType, ProductListType } from '@types';
 
 import { APP_NAME } from '@constants';
 
@@ -116,3 +116,11 @@ export function getMetadata({
 }
 
 export const getProductImage = (image: string) => `/images/products/${image}.png`;
+
+export const sortPremiumFirst = (items: ProductListType[]) => {
+    return [...items].sort((a, b) => {
+        const aIsPremium = a.href.includes('premium') ? -1 : 0;
+        const bIsPremium = b.href.includes('premium') ? -1 : 0;
+        return aIsPremium - bIsPremium;
+    });
+};
