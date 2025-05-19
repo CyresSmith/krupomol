@@ -3,6 +3,8 @@ import { type Metadata } from 'next';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
+import { ProductsService } from './services';
+
 import { routing } from '@i18n';
 
 import { LocaleType, ProductListType } from '@types';
@@ -43,7 +45,9 @@ export function getMetadata({
     path,
     title,
 }: MetadataOptions): Metadata {
-    const fullUrl = `${APP_HOST}${path}`;
+    const fullUrl = `${APP_HOST}/${locale}${path}`;
+
+    const products = ProductsService.getProductsList({ locale }).map(({ title }) => title);
 
     const languages = routing.locales.reduce(
         (acc, locale) => {
@@ -62,15 +66,7 @@ export function getMetadata({
         authors: [{ name: 'Ivan Reshetnikov' }, { name: 'Andrii Kulyk' }],
         category: 'food',
         description,
-        keywords: [
-            'krupomol',
-            'крупомол',
-            'оптовий та роздрібний продаж круп',
-            'магазин круп',
-            'пшоно',
-            'ячмінь',
-            ...keywords,
-        ],
+        keywords: ['krupomol', 'крупомол', 'оптовий продаж круп', ...products, ...keywords],
         metadataBase: new URL(APP_HOST),
         openGraph: {
             countryName: 'Ukraine',
