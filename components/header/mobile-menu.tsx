@@ -42,7 +42,10 @@ export const MobileMenu = () => {
 
     return (
         <Drawer direction="right" onOpenChange={setOpen} open={open}>
-            <DrawerTrigger className="fill-background transition desktop:hidden">
+            <DrawerTrigger
+                aria-label="open menu"
+                className="fill-background transition desktop:hidden"
+            >
                 <Icon height={16} name="menu_icon" width={35} />
             </DrawerTrigger>
 

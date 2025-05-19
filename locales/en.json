@@ -41,7 +41,26 @@
     "main": {
         "metadata": {
             "title": "Krupomol",
-            "desc": "Ukrainian Agricultural Transport Group LLC has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Own production, control at all stages and compliance with international standards allow us to ensure stable product quality that meets the requirements of the modern market."
+            "desc": "Ukrainian Agricultural Transport Group LLC has been specializing in the production of high-quality groats for the Ukrainian and international markets for over 10 years. Own production, control at all stages and compliance with international standards allow us to ensure stable product quality that meets the requirements of the modern market.",
+            "keywords": [
+                "wholesale of groats",
+                "supply of groats",
+                "certified groats wholesale",
+                "wholesale groats",
+                "wholesale deliveries of groats",
+                "export of groats",
+                "wholesale sales of groats",
+                "wholesale food products",
+                "manufacturer of groats",
+                "packaging of groats",
+                "purchase of groats",
+                "wholesale sales of groats",
+                "export of food products",
+                "groats from the manufacturer",
+                "supply of groats to Europe",
+                "groats for supermarkets",
+                "wholesale food products"
+            ]
         },
         "hero": {
             "title": "Reliability and quality in every grain",
@@ -82,7 +101,7 @@
         },
         "about": {
             "title": "Who are we?",
-            "text": "Ukrainian Agricultural Transport Group LLC has been specializing in the production of high-quality cereals for the Ukrainian and international markets for over 10 years. Own production, control at all stages and compliance with international standards allow us to ensure stable product quality that meets the requirements of the modern market.",
+            "text": "Ukrainian Agricultural Transport Group LLC has been specializing in the production of high-quality groats for the Ukrainian and international markets for over 10 years. Own production, control at all stages and compliance with international standards allow us to ensure stable product quality that meets the requirements of the modern market.",
             "link": "View all",
             "our-products": "Our products",
             "products": [
@@ -98,19 +117,16 @@
             "title": "Contacts | Krupomol",
             "desc": "Contacts of LLC \"Ukrainian Agricultural Transport Group\" for communication and establishing productive, mutually beneficial relations",
             "keywords": [
-                "Phone",
-                "Mail",
-                "favorable conditions of cooperation",
-                "cooperation",
-                "wholesale",
-                "Pea groats",
-                "Buckwheat groats",
-                "contacts",
-                "pearl barley groats",
-                "Barley products",
-                "Wheat groats",
-                "contact",
-                "barley groats"
+                "Krupomol contacts",
+                "contact us",
+                "wholesale groats suppliers",
+                "groats export contact",
+                "order groats wholesale",
+                "Krupomol phone",
+                "company address",
+                "send a request",
+                "sales manager",
+                "groats supply Ukraine"
             ]
         },
         "hero": { "title": "Our contacts" },
@@ -132,7 +148,10 @@
                 "Groats",
                 "Sugar",
                 "Groats of the highest quality",
-                "Sugar of the highest quality"
+                "Sugar of the highest quality",
+                "cereal manufacturer",
+                "cereal supply",
+                "quality groats Ukraine"
             ]
         },
         "productMetadata": {
@@ -141,7 +160,7 @@
             "keywords": [
                 "{name} groats",
                 "{name} groats in bulk",
-                "Wholesale supplies of cereals",
+                "Wholesale supplies of groats",
                 "Groats in bulk",
                 "Groats",
                 "Groats of the highest quality"
@@ -169,23 +188,26 @@
         },
         "metadata": {
             "title": "Products | Krupomol",
-            "desc": "Wholesale supplies of natural cereals of the highest quality from a certified manufacturer",
+            "desc": "Wholesale supplies of natural groats of the highest quality from a certified manufacturer",
             "keywords": [
-                "Barley groats",
-                "Pearl barley",
-                "Barley products",
-                "Wheat groats",
-                "Pea groats",
-                "Buckwheat groats"
+                "Groats of the highest quality",
+                "Groats",
+                "Groats",
+                "Sugar",
+                "Groats of the highest quality",
+                "Sugar of the highest quality",
+                "cereal manufacturer",
+                "cereal supply",
+                "quality groats Ukraine"
             ]
         },
         "hero": {
-            "title": "Natural cereals of the highest quality",
+            "title": "Natural groats of the highest quality",
             "link": "To the catalogue"
         },
         "offer": {
             "title": "What do we offer our customers?",
-            "text": "Ukrainian Agricultural Transport Group LLC is a manufacturing company specializing in the production of high-quality cereals. We offer products that meet international standards, providing stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment both in cash and non-cash, make our products available to various categories of customers."
+            "text": "Ukrainian Agricultural Transport Group LLC is a manufacturing company specializing in the production of high-quality groats. We offer products that meet international standards, providing stable supplies for wholesale buyers and exports. Flexible terms of cooperation, as well as the possibility of payment both in cash and non-cash, make our products available to various categories of customers."
         },
         "info": {
             "title": "More information",
@@ -214,7 +236,7 @@
     "prices": {
         "metadata": {
             "title": "Purchase prices | Krupomol",
-            "desc": "LLC \"Ukrainian Agricultural Transport Group\" offers favorable terms of cooperation for suppliers of grains and cereals. To clarify the current purchase prices and terms of cooperation, please contact us.",
+            "desc": "LLC \"Ukrainian Agricultural Transport Group\" offers favorable terms of cooperation for suppliers of grains and groats. To clarify the current purchase prices and terms of cooperation, please contact us.",
             "keywords": [
                 "Cash payment",
                 "Bank transfer",
@@ -235,7 +257,7 @@
             "title": "Purchase prices"
         },
         "cooperation": {
-            "title": "We offer favorable terms of cooperation for suppliers of grains and cereals.",
+            "title": "We offer favorable terms of cooperation for suppliers of grains and groats.",
             "list": [
                 {
                     "title": "Minimum volume:",
@@ -286,19 +308,16 @@
             "title": "Certification | Krupomol",
             "desc": "Ukrainian Agricultural Transport Group LLC adheres to the highest standards of product quality and safety. All our products are carefully controlled at every stage of production - from raw material selection to packaging and storage.",
             "keywords": [
-                "ISO",
-                "Quality",
-                "Safety",
-                "Food",
-                "Certification",
-                "Export",
-                "HACCP",
-                "contacts",
-                "pearl barley groats",
-                "Barley products",
-                "Wheat groats",
-                "contact",
-                "barley groats"
+                "product certification",
+                "grain quality",
+                "international certificates",
+                "certificate of conformity",
+                "food safety",
+                "ISO certification",
+                "export documentation",
+                "quality assurance",
+                "Krupomol certificates",
+                "production quality control"
             ]
         },
         "hero": {
@@ -354,24 +373,15 @@
             "title": "Export | Krupomol",
             "desc": "\"Ukrainian Agricultural Transport Group\" LLC offers reliable export of high-quality agricultural products to international markets. Our products undergo strict quality control at all stages - from raw material selection to packaging and logistics. We provide an individual approach to each partner, quick preparation of documents and timely delivery. By cooperating with us, you receive certified products that meet international quality and safety standards.",
             "keywords": [
-                "ISO",
-                "Quality",
-                "Safety",
-                "Food products",
-                "Certification",
-                "Export",
-                "HACCP",
-                "contacts",
-                "Buckwheat groats",
-                "Corn groats",
-                "Pea groats",
-                "Millet",
-                "Pearl groats",
-                "Barley products",
-                "Wheat groats",
-                "Barley groats",
-                "contact",
-                "Barley groats"
+                "export of groats",
+                "groats for export",
+                "delivery of groats abroad",
+                "export of food products",
+                "export from Ukraine",
+                "Ukrainian agroexport",
+                "wholesale trade in groats",
+                "wholesale food products",
+                "groats for export"
             ]
         },
         "hero": {

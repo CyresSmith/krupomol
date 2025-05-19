@@ -18,7 +18,16 @@ import { getMetadata } from '@utils';
 export async function generateMetadata(): Promise<Metadata> {
     const locale = await getLocale();
     const t = await getTranslations('main.metadata');
-    return getMetadata({ description: t('desc'), locale, path: '', title: t('title') });
+
+    const keywords = t.raw('keywords') as string[];
+
+    return getMetadata({
+        description: t('desc'),
+        keywords,
+        locale,
+        path: '',
+        title: t('title'),
+    });
 }
 
 export function generateStaticParams() {

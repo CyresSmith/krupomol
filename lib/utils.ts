@@ -66,7 +66,7 @@ export function getMetadata({
         authors: [{ name: 'Ivan Reshetnikov' }, { name: 'Andrii Kulyk' }],
         category: 'food',
         description,
-        keywords: ['krupomol', 'крупомол', 'оптовий продаж круп', ...products, ...keywords],
+        keywords: ['krupomol', 'крупомол', ...products, ...keywords],
         metadataBase: new URL(APP_HOST),
         openGraph: {
             countryName: 'Ukraine',

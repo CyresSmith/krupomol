@@ -5,20 +5,20 @@
         "navigation": {
             "main": "Ana Sayfa",
             "contacts": "İletişim",
-            "prices": "Satın alma fiyatları",
+            "prices": "Satin alma fiyatlari",
             "certification": "Sertifikasyon",
             "product": "Ürünler",
             "export": "İhracat",
-            "about": "Hakkımızda",
+            "about": "Hakkimizda",
             "products": "Ürünlerimiz",
-            "advantages": "Avantajlarımız",
-            "consultation": "Danışma talep edin",
+            "advantages": "Avantajlarimiz",
+            "consultation": "Danişma talep edin",
             "offer": "Biz sunuyoruz",
             "info": "Daha fazla bilgi",
-            "cooperation": "İşbirliği şartları",
+            "cooperation": "İşbirliği şartlari",
             "payment": "Ödeme ve Teslimat",
-            "map": "Biz haritadayız",
-            "certificates": "Sertifikalarımız",
+            "map": "Biz haritadayiz",
+            "certificates": "Sertifikalarimiz",
             "guarantees": "Garantiler",
             "our-contacts": "İletişim bilgilerimiz"
         }
@@ -26,22 +26,41 @@
     "shared": {
         "consultation-form": {
             "form": {
-                "name": { "placeholder": "Sizin adınız", "label": "İsim" },
+                "name": { "placeholder": "Sizin adiniz", "label": "İsim" },
                 "phone": { "placeholder": "+380 00 000 00 00", "label": "Telefon" },
                 "email": { "placeholder": "yourmail@mail.com", "label": "Email" },
-                "message": { "placeholder": "Mesajınız", "label": "Mesajınız" },
+                "message": { "placeholder": "Mesajiniz", "label": "Mesajiniz" },
                 "theme": { "placeholder": "Konusu", "label": "Konusu" }
             },
-            "submit": "Bir istek bırakın",
+            "submit": "Bir istek birakin",
             "required": "Gerekli alanlar",
-            "modal-text": "Talebiniz için teşekkür ederiz. Yöneticimiz kısa süre içinde sizinle iletişime geçecektir.",
+            "modal-text": "Talebiniz için teşekkür ederiz. Yöneticimiz kisa süre içinde sizinle iletişime geçecektir.",
             "close-modal": "Kapat"
         }
     },
     "main": {
         "metadata": {
             "title": "Krupomol",
-            "desc": "Ukrainian Agricultural Transport Group LLC, 10 yılı aşkın süredir Ukrayna ve uluslararası pazarlar için yüksek kaliteli tahıl üretiminde uzmanlaşmıştır. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararası standartlara uygunluk, modern pazarın gereksinimlerini karşılayan istikrarlı ürün kalitesi sağlamamıza olanak tanır."
+            "desc": "Ukrainian Agricultural Transport Group LLC, 10 yili aşkin süredir Ukrayna ve uluslararasi pazarlar için yüksek kaliteli tahil üretiminde uzmanlaşmiştir. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararasi standartlara uygunluk, modern pazarin gereksinimlerini karşilayan istikrarli ürün kalitesi sağlamamiza olanak tanir.",
+            "keywords": [
+                "tahillarin toptan satişi",
+                "tahillarin temini",
+                "sertifikali tahillarin toptan satişi",
+                "toptan tahillar",
+                "tahillarin toptan teslimatlari",
+                "tahillarin ihracati",
+                "tahillarin toptan satişi",
+                "toptan gida ürünleri",
+                "tahil üreticisi",
+                "tahillarin paketlenmesi",
+                "tahillarin satin alinmasi",
+                "tahillarin toptan satişi",
+                "gida ürünlerinin ihracati",
+                "üreticiden tahillar",
+                "Avrupa'ya tahillarin temini",
+                "süpermarketler için tahillar",
+                "toptan gida ürünleri"
+            ]
         },
         "hero": {
             "title": "Her tanede güvenilirlik ve kalite",
@@ -49,11 +68,11 @@
         },
         "certification": {
             "title": "Sertifikasyon",
-            "text": "Ürünlerimiz, ISO 22000 ve ISO 9001 sertifikaları ile onaylanan uluslararası gıda kalitesi ve güvenliği standartlarına uygundur. Üretimin tüm aşamalarındaki kontrol, tutarlı kaliteyi ve küresel pazar gerekliliklerine uygunluğu garanti eder.",
-            "link": "Daha fazlasını öğrenin"
+            "text": "Ürünlerimiz, ISO 22000 ve ISO 9001 sertifikalari ile onaylanan uluslararasi gida kalitesi ve güvenliği standartlarina uygundur. Üretimin tüm aşamalarindaki kontrol, tutarli kaliteyi ve küresel pazar gerekliliklerine uygunluğu garanti eder.",
+            "link": "Daha fazlasini öğrenin"
         },
         "advantages": {
-            "title": "Bizimle çalışmanın avantajları",
+            "title": "Bizimle çalişmanin avantajlari",
             "advantages": [
                 {
                     "title": "Hammadde kalitesi",
@@ -66,12 +85,12 @@
                     "icon": "production"
                 },
                 {
-                    "title": "Sertifikalı ürünler",
-                    "text": "uluslararası standartlara uygunluk",
+                    "title": "Sertifikali ürünler",
+                    "text": "uluslararasi standartlara uygunluk",
                     "icon": "certification"
                 },
                 {
-                    "title": "Esnek işbirliği koşulları",
+                    "title": "Esnek işbirliği koşullari",
                     "text": "her aşamada elverişli koşullar",
                     "icon": "cooperation"
                 }
@@ -82,7 +101,7 @@
         },
         "about": {
             "title": "Biz Kimiz?",
-            "text": "Ukrainian Agricultural Transport Group LLC, 10 yılı aşkın süredir Ukrayna ve uluslararası pazarlar için yüksek kaliteli tahıl üretiminde uzmanlaşmıştır. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararası standartlara uygunluk, modern pazarın gereksinimlerini karşılayan istikrarlı ürün kalitesi sağlamamıza olanak tanır.",
+            "text": "Ukrainian Agricultural Transport Group LLC, 10 yili aşkin süredir Ukrayna ve uluslararasi pazarlar için yüksek kaliteli tahil üretiminde uzmanlaşmiştir. Kendi üretimimiz, tüm aşamalardaki kontrol ve uluslararasi standartlara uygunluk, modern pazarin gereksinimlerini karşilayan istikrarli ürün kalitesi sağlamamiza olanak tanir.",
             "link": "Tümünü görüntüle",
             "our-products": "Ürünlerimiz",
             "products": [
@@ -96,60 +115,60 @@
     "contacts": {
         "metadata": {
             "title": "İletişim | Krupomol",
-            "desc": "İletişim kurmak ve verimli, karşılıklı yarar sağlayan ilişkiler kurmak için Ukrainian Agricultural Transport Group LLC ile iletişime geçin",
+            "desc": "İletişim kurmak ve verimli, karşilikli yarar sağlayan ilişkiler kurmak için Ukrainian Agricultural Transport Group LLC ile iletişime geçin",
             "keywords": [
-                "Telefon",
-                "Email",
-                "elverişli işbirliği koşulları",
-                "İŞBİRLİĞİ",
-                "Toptan satış",
-                "Bezelye kabuğu",
-                "Karabuğday kabuğu",
-                "İletişim",
-                "inci arpa",
-                "Arpa ürünleri",
-                "Buğday kabuğu",
-                "İletişim",
-                "arpa kabuğu"
+                "Krupomol iletişim bilgileri",
+                "bize ulaşin",
+                "toptan irmik tedarikçileri",
+                "irmik ihracat iletişim bilgileri",
+                "irmik toptan siparişi",
+                "Krupomol telefon numarasi",
+                "şirket adresi",
+                "talep gönder",
+                "satiş müdürü",
+                "irmik Ukrayna tedariki"
             ]
         },
         "hero": { "title": "İletişim" },
         "form": {
-            "title": "Ek sorularınız var mı?",
-            "text": "Sorularınızı aşağıdaki forma bırakın, tüm cevaplarla birlikte sizi geri arayalım."
+            "title": "Ek sorulariniz var mi?",
+            "text": "Sorularinizi aşağidaki forma birakin, tüm cevaplarla birlikte sizi geri arayalim."
         },
         "map": {
-            "title": "Haritadayız"
+            "title": "Haritadayiz"
         }
     },
     "products": {
         "categoryMetadata": {
             "title": "{category} | Krupomol",
-            "desc": "{category} sertifikalı bir üreticiden dökme olarak en yüksek kalitede",
+            "desc": "{category} sertifikali bir üreticiden dökme olarak en yüksek kalitede",
             "keywords": [
                 "Toptan teslimatlar",
-                "En yüksek kalitede tahıllar",
-                "Tahıllar",
-                "Tahıl",
+                "En yüksek kalitede tahillar",
+                "Tahillar",
+                "Tahil",
                 "Şeker",
-                "En yüksek kalitede toptan tahıllar",
-                "En yüksek kalitede toptan tahıllar"
+                "En yüksek kalitede toptan tahillar",
+                "En yüksek kalitede toptan tahillar",
+                "tahil üreticisi",
+                "tahil tedariki",
+                "kaliteli tahillar Ukrayna"
             ]
         },
         "productMetadata": {
-            "title": "{name} Tahıl | Krupomol",
-            "desc": "{name} sertifikalı bir üreticiden dökme olarak en yüksek kalitede tahıllar",
+            "title": "{name} Tahil | Krupomol",
+            "desc": "{name} sertifikali bir üreticiden dökme olarak en yüksek kalitede tahillar",
             "keywords": [
-                "{name} tahıl",
-                "{name} tahıl toplu olarak",
+                "{name} tahil",
+                "{name} tahil toplu olarak",
                 "Toptan hububat tedariği",
-                "Tahıl toplu olarak",
-                "Tahıllar",
-                "Tahıllar en yüksek kalitede"
+                "Tahil toplu olarak",
+                "Tahillar",
+                "Tahillar en yüksek kalitede"
             ]
         },
         "data": {
-            "nutritional": "Ürünün 100 g'ının besin (gıda) değeri:",
+            "nutritional": "Ürünün 100 g'inin besin (gida) değeri:",
             "fats": "Yağlar, g",
             "acids": "Doymuş yağ asitleri, g",
             "carbohydrates": "Karbonhidratlar, g",
@@ -157,36 +176,40 @@
             "protein": "Protein, g",
             "salt": "Tuz, g",
             "energy": "100 g ürünün enerji değeri:",
-            "mass": "Net ağırlık, g",
+            "mass": "Net ağirlik, g",
             "package": "Paketleme",
-            "gpCount": "Grup ambalajındaki miktar, adet.",
-            "gpWeight": "Grup ambalaj ağırlığı, kg",
+            "gpCount": "Grup ambalajindaki miktar, adet.",
+            "gpWeight": "Grup ambalaj ağirliği, kg",
             "expiration": "Raf ömrü, ay",
             "polypropylene": "Poli̇propi̇len",
-            "paper": "Kağıt",
+            "paper": "Kağit",
             "kcal": "kcal",
             "kj": "kJ",
-            "buy": "Satın Al"
+            "buy": "Satin Al"
         },
         "metadata": {
             "title": "Ürünler | Krupomol",
-            "desc": "Sertifikalı bir üreticiden en yüksek kalitede doğal tahılların toptan tedariği",
+            "desc": "Sertifikali bir üreticiden en yüksek kalitede doğal tahillarin toptan tedariği",
             "keywords": [
-                "arpa kabuğu",
-                "inci arpa",
-                "Arpa ürünleri",
-                "Buğday kabuğu",
-                "Bezelye kabuğu",
-                "Karabuğday kabuğu"
+                "Toptan teslimatlar",
+                "En yüksek kalitede tahillar",
+                "Tahillar",
+                "Tahil",
+                "Şeker",
+                "En yüksek kalitede toptan tahillar",
+                "En yüksek kalitede toptan tahillar",
+                "tahil üreticisi",
+                "tahil tedariki",
+                "kaliteli tahillar Ukrayna"
             ]
         },
         "hero": {
-            "title": "En yüksek kalitede doğal tahıllar",
+            "title": "En yüksek kalitede doğal tahillar",
             "link": "Kataloğa"
         },
         "offer": {
             "title": "Müşterilerimize ne sunuyoruz?",
-            "text": "Ukrainian Agricultural Transport Group LLC, yüksek kaliteli tahıl üretiminde uzmanlaşmış bir imalat şirketidir. Uluslararası standartlara uygun ürünler sunarak toptan alıcılar ve ihracatçılar için istikrarlı tedarik sağlıyoruz. Esnek işbirliği koşullarının yanı sıra hem nakit hem de nakit olmayan ödeme imkanı, ürünlerimizi çeşitli müşteri kategorileri için kullanılabilir hale getirmektedir."
+            "text": "Ukrainian Agricultural Transport Group LLC, yüksek kaliteli tahil üretiminde uzmanlaşmiş bir imalat şirketidir. Uluslararasi standartlara uygun ürünler sunarak toptan alicilar ve ihracatçilar için istikrarli tedarik sağliyoruz. Esnek işbirliği koşullarinin yani sira hem nakit hem de nakit olmayan ödeme imkani, ürünlerimizi çeşitli müşteri kategorileri için kullanilabilir hale getirmektedir."
         },
         "info": {
             "title": "Daha fazla bilgi",
@@ -214,7 +237,7 @@
     },
     "prices": {
         "metadata": {
-            "title": "Satın alma fiyatları | Krupomol",
+            "title": "Satin alma fiyatlari | Krupomol",
             "desc": "ТОВ \"Українська агропромислова транспортна група\" пропонує вигідні умови співпраці для постачальників зернових та круп. Для уточнення актуальних закупівельних цін та умов співпраці зв’яжіться з нами.",
             "keywords": [
                 "Готівковий розрахунок",
@@ -233,7 +256,7 @@
             ]
         },
         "hero": {
-            "title": "Satın alma fiyatları"
+            "title": "Satin alma fiyatlari"
         },
         "cooperation": {
             "title": "Ми пропонуємо вигідні умови співпраці для постачальників зернових та круп.",
@@ -283,40 +306,37 @@
         }
     },
     "footer": {
-        "rights": "Krupomol | Tüm hakları saklıdır",
-        "policy": "Gizlilik Politikası"
+        "rights": "Krupomol | Tüm haklari saklidir",
+        "policy": "Gizlilik Politikasi"
     },
     "certification": {
         "metadata": {
             "title": "Sertifikasyon | Krupomol",
-            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarına bağlıdır. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasında dikkatle kontrol edilmektedir..",
+            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarina bağlidir. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasinda dikkatle kontrol edilmektedir..",
             "keywords": [
-                "ISO",
-                "Kalite",
-                "Güvenlik",
-                "Gıda ürünleri",
-                "Sertifikasyon",
-                "İhracat",
-                "НАССР",
-                "kişiler",
-                "inci arpa",
-                "Arpa ürünleri",
-                "Buğday kabuğu",
-                "İletişim",
-                "arpa kabuğu"
+                "ürün sertifikasi",
+                "tahil kalitesi",
+                "uluslararasi sertifikalar",
+                "uygunluk sertifikasi",
+                "gida güvenliği",
+                "ISO sertifikasi",
+                "ihracat belgeleri",
+                "kalite güvencesi",
+                "Krupomol sertifikalari",
+                "üretim kalite kontrolü"
             ]
         },
         "hero": {
             "title": "Ürün sertifikasyonu",
-            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarına bağlıdır. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasında dikkatle kontrol edilmektedir.."
+            "desc": "Ukrainian Agricultural Transport Group LLC, en yüksek ürün kalitesi ve güvenliği standartlarina bağlidir. Tüm ürünlerimiz, hammadde seçiminden paketleme ve depolamaya kadar üretimin her aşamasinda dikkatle kontrol edilmektedir.."
         },
         "certificates": {
-            "title": "Sertifikalarımız:",
+            "title": "Sertifikalarimiz:",
             "list": [
                 {
                     "id": "iso22000",
-                    "title": "ISO 22000 – gıda güvenliği yönetim sistemi",
-                    "desc": "Sertifika, standarda uygunluğu belgelendirir ISO 22000 – gıda güvenliği yönetim sistemi"
+                    "title": "ISO 22000 – gida güvenliği yönetim sistemi",
+                    "desc": "Sertifika, standarda uygunluğu belgelendirir ISO 22000 – gida güvenliği yönetim sistemi"
                 },
                 {
                     "id": "iso9001",
@@ -336,66 +356,49 @@
             "list": [
                 {
                     "title": "Yüksek düzeyde ürün kalitesi",
-                    "desc": "Bu sertifika, ürünlerimizin hammadde, teknolojik süreç ve nihai ürüne ilişkin katı gerekliliklere uygun olarak üretildiğini teyit etmektedir. Laboratuvar testleri ve belirlenen tüm standartlara uygunluğun doğrulanması dahil olmak üzere çok seviyeli kalite kontrolü gerçekleştiriyoruz."
+                    "desc": "Bu sertifika, ürünlerimizin hammadde, teknolojik süreç ve nihai ürüne ilişkin kati gerekliliklere uygun olarak üretildiğini teyit etmektedir. Laboratuvar testleri ve belirlenen tüm standartlara uygunluğun doğrulanmasi dahil olmak üzere çok seviyeli kalite kontrolü gerçekleştiriyoruz."
                 },
                 {
-                    "title": "Uluslararası standartlara uygunluk",
-                    "desc": "ISO ve HACCP sertifikalarımız, ürünlerimizin ve üretim süreçlerimizin uluslararası gıda güvenliği gerekliliklerini karşıladığını teyit etmektedir. Bu sayede Avrupa, Asya ve diğer bölgelerdeki pazarlara yüksek kalite standartlarında ürün tedarik edebiliyoruz."
+                    "title": "Uluslararasi standartlara uygunluk",
+                    "desc": "ISO ve HACCP sertifikalarimiz, ürünlerimizin ve üretim süreçlerimizin uluslararasi gida güvenliği gerekliliklerini karşiladiğini teyit etmektedir. Bu sayede Avrupa, Asya ve diğer bölgelerdeki pazarlara yüksek kalite standartlarinda ürün tedarik edebiliyoruz."
                 },
                 {
                     "title": "Tüketiciler için güvenlik",
-                    "desc": "Ürünlerimizin zararlı yabancı maddeler içermediğini, çevre standartlarına uygun olduğunu ve tüm faydalı özelliklerini koruduğunu garanti ediyoruz. HACCP sisteminin uygulanması sayesinde, üretimin her aşamasında riskleri tespit ediyor ve en aza indiriyoruz."
+                    "desc": "Ürünlerimizin zararli yabanci maddeler içermediğini, çevre standartlarina uygun olduğunu ve tüm faydali özelliklerini koruduğunu garanti ediyoruz. HACCP sisteminin uygulanmasi sayesinde, üretimin her aşamasinda riskleri tespit ediyor ve en aza indiriyoruz."
                 },
                 {
-                    "title": "AB ülkelerine ve diğer bölgelere ihracat imkanı",
-                    "desc": "Sertifikalı ürünler uluslararası pazarların yasal gerekliliklerine uygundur ve bu da ihracat için geniş fırsatlar yaratır. Bu sayede Avrupalı, Asyalı ve diğer yabancı ortaklarımızla çalışabiliyor ve onlara yüksek kaliteli ürünler sunabiliyoruz."
+                    "title": "AB ülkelerine ve diğer bölgelere ihracat imkani",
+                    "desc": "Sertifikali ürünler uluslararasi pazarlarin yasal gerekliliklerine uygundur ve bu da ihracat için geniş firsatlar yaratir. Bu sayede Avrupali, Asyali ve diğer yabanci ortaklarimizla çalişabiliyor ve onlara yüksek kaliteli ürünler sunabiliyoruz."
                 }
             ]
         },
-        "info": "Bu garantiler sayesinde müşterilerimiz aldıkları ürünlerin kalitesinden, güvenliğinden ve güvenilirliğinden emin olabilirler."
+        "info": "Bu garantiler sayesinde müşterilerimiz aldiklari ürünlerin kalitesinden, güvenliğinden ve güvenilirliğinden emin olabilirler."
     },
     "export": {
         "metadata": {
             "title": "İhracat | Krupomol",
-            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararası pazarlara yüksek kaliteli tarım ürünleri ihracatı sunmaktadır. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda sıkı kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşım, belgelerin hızlı hazırlanması ve zamanında teslimat sağlıyoruz.",
+            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararasi pazarlara yüksek kaliteli tarim ürünleri ihracati sunmaktadir. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda siki kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşim, belgelerin hizli hazirlanmasi ve zamaninda teslimat sağliyoruz.",
             "keywords": [
-                "ISO",
-                "Kalite",
-                "Güvenlik",
-                "Gıda ürünleri",
-                "Sertifikasyon",
-                "İhracat",
-                "НАССР",
-                "kişiler",
-                "inci arpa",
-                "Arpa ürünleri",
-                "Buğday kabuğu",
-                "İletişim",
-                "arpa kabuğu",
-                "Telefon",
-                "Email",
-                "elverişli işbirliği koşulları",
-                "İŞBİRLİĞİ",
-                "Toptan satış",
-                "Bezelye kabuğu",
-                "Karabuğday kabuğu",
-                "İletişim",
-                "inci arpa",
-                "Arpa ürünleri",
-                "Buğday kabuğu",
-                "İletişim",
-                "arpa kabuğu"
+                "tahil ihracati",
+                "ihracat için tahillar",
+                "yurtdişina tahil teslimati",
+                "gida ürünleri ihracati",
+                "Ukrayna'dan ihracat",
+                "Ukrayna tarimsal ihracati",
+                "tahillarda toptan ticaret",
+                "toptan gida ürünleri",
+                "ihracat için tahillar"
             ]
         },
         "hero": {
-            "title": "Tarım ürünleri ihracatı",
-            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararası pazarlara yüksek kaliteli tarım ürünleri ihracatı sunmaktadır. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda sıkı kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşım, belgelerin hızlı hazırlanması ve zamanında teslimat sağlıyoruz."
+            "title": "Tarim ürünleri ihracati",
+            "desc": "Ukrainian Agricultural Transport Group LLC, uluslararasi pazarlara yüksek kaliteli tarim ürünleri ihracati sunmaktadir. Ürünlerimiz, hammadde seçiminden paketleme ve lojistiğe kadar tüm aşamalarda siki kalite kontrolünden geçmektedir. Her ortağa bireysel bir yaklaşim, belgelerin hizli hazirlanmasi ve zamaninda teslimat sağliyoruz."
         },
-        "title": "Bizimle çalışmanın avantajları",
+        "title": "Bizimle çalişmanin avantajlari",
         "advantages": [
             {
-                "title": "Taşıma ve depolama",
-                "text": "Toptan Satış - Konteyner - Tedarik",
+                "title": "Taşima ve depolama",
+                "text": "Toptan Satiş - Konteyner - Tedarik",
                 "icon": "cooperation"
             },
             {
@@ -404,8 +407,8 @@
                 "icon": "production"
             },
             {
-                "title": "Ürün hazırlama",
-                "text": "Kurutma - Temizleme - Karıştırma - Ayırma",
+                "title": "Ürün hazirlama",
+                "text": "Kurutma - Temizleme - Kariştirma - Ayirma",
                 "icon": "quality"
             },
             {

@@ -5,7 +5,13 @@ import { ProductsService } from 'lib/services';
 
 import { routing } from '@i18n';
 
-import { CERTIFICATION_ROUTE, CONTACTS_ROUTE, PRICES_ROUTE, PRODUCTS_ROUTE } from '@routes';
+import {
+    CERTIFICATION_ROUTE,
+    CONTACTS_ROUTE,
+    EXPORT_ROUTE,
+    PRICES_ROUTE,
+    PRODUCTS_ROUTE,
+} from '@routes';
 
 const APP_HOST = process.env['NEXT_PUBLIC_APP_HOST'] ?? 'http://localhost:3000';
 
@@ -134,6 +140,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             priority: 0.7,
             url: APP_HOST + CERTIFICATION_ROUTE,
+        },
+        {
+            alternates: {
+                languages: routing.locales.reduce(
+                    (acc, locale) => {
+                        acc[locale] = `${APP_HOST}/${locale}${EXPORT_ROUTE}`;
+                        return acc;
+                    },
+                    {} as Record<Locale, string>
+                ),
+            },
+            changeFrequency: 'yearly',
+            lastModified: new Date(),
+            priority: 0.7,
+            url: APP_HOST + EXPORT_ROUTE,
         },
     ];
 }
