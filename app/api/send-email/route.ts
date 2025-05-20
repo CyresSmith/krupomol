@@ -30,9 +30,11 @@ export async function POST(req: NextRequest) {
     const secret = process.env['RECAPTCHA_SECRET_KEY'];
 
     const res = await fetch(
-        `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
+        `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token as string}`,
         { method: 'POST' }
     );
+
+    console.log('🚀 ~ POST ~ google res:', res);
 
     const result = (await res.json()) as { score: number; success: boolean };
 
