@@ -14,19 +14,22 @@ export const ProductList = ({ items = [] }: Props) => {
     const pathname = usePathname();
 
     return (
-        <ul className="grid grid-cols-2 gap-5 tablet:grid-cols-3 desktop:grid-cols-6">
+        <ul className="grid grid-cols-2 gap-3 tablet:grid-cols-3 desktop:grid-cols-6">
             {items.map(({ href, image, title }) => {
                 const isActive = href === pathname;
 
                 return (
-                    <li
-                        className={cn(
-                            'w-full text-text-color transition hover:scale-[1.05]',
-                            isActive && 'hover:scale-1.2 scale-[1.2] font-bold text-primary'
-                        )}
-                        key={href}
-                    >
-                        <Link aria-label={title} href={href}>
+                    <li key={href}>
+                        <Link
+                            aria-label={title}
+                            className={cn(
+                                'block h-full w-full rounded-3xl bg-transparent p-3 text-text-color transition tablet:p-4 desktop:p-6',
+                                isActive && 'bg-primary text-primary-foreground shadow-sm',
+                                !isActive && 'hover:bg-gray-color focus:bg-gray-color'
+                            )}
+                            href={href}
+                            scroll={false}
+                        >
                             <div className={'relative aspect-square w-full'}>
                                 <Image
                                     alt={title}
@@ -38,7 +41,7 @@ export const ProductList = ({ items = [] }: Props) => {
                                 />
                             </div>
 
-                            <p className="mt-3 flex h-12 items-start justify-center text-center">
+                            <p className="mt-6 flex items-start justify-center hyphens-auto text-center">
                                 {title}
                             </p>
                         </Link>

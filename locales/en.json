@@ -176,7 +176,7 @@
             "salt": "Salt, g",
             "energy": "Energy value per 100 g of product:",
             "mass": "Net weight, g",
-            "packageType": "Package",
+            "package": "Package",
             "gpCount": "Quantity in a group package, pcs",
             "gpWeight": "Weight of the group package, kg",
             "expiration": "Expiration date, months",
