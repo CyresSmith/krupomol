@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useRecaptcha } from 'lib/hooks/useRecaptcha';
 import { z } from 'zod';
 
 import { Icon } from './icon';
@@ -59,14 +60,23 @@ export const ConsultationForm = () => {
         resolver: zodResolver(ConsultationFormSchema),
     });
 
+    const { execute } = useRecaptcha();
+
     const { errors, isValid } = form.formState;
 
     const onSubmit = async (values: z.infer<typeof ConsultationFormSchema>) => {
         setIsLoading(true);
 
         try {
+            const token = await execute('contact_form');
+
+            if (!token) {
+                console.error('reCAPTCHA failed');
+                return;
+            }
+
             const res = await fetch('/api/send-email', {
-                body: JSON.stringify(values),
+                body: JSON.stringify({ ...values, token }),
                 headers: {
                     'Content-Type': 'application/json',
                 },

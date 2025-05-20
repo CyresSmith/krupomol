@@ -51,6 +51,11 @@ export default async function RootLayout({
                 <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
                 <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
                 <meta content="Krupomol" name="apple-mobile-web-app-title" />
+                <script
+                    async
+                    defer
+                    src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+                />
             </head>
 
             <NextIntlClientProvider>

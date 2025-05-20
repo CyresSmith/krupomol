@@ -16,7 +16,31 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: true, message: 'Check env!' }, { status: 400 });
     }
 
-    const parsedBody = ConsultationFormSchema.safeParse(await req.json());
+    const body = (await req.json()) as unknown;
+
+    if (typeof body !== 'object' || body === null) {
+        return NextResponse.json(
+            { error: true, message: 'Invalid request body!' },
+            { status: 400 }
+        );
+    }
+
+    const { token, ...data } = body as Record<string, unknown>;
+
+    const secret = process.env['RECAPTCHA_SECRET_KEY'];
+
+    const res = await fetch(
+        `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
+        { method: 'POST' }
+    );
+
+    const result = (await res.json()) as { score: number; success: boolean };
+
+    if (!result.success || result.score < 0.5) {
+        return NextResponse.json({ error: 'reCAPTCHA failed' }, { status: 400 });
+    }
+
+    const parsedBody = ConsultationFormSchema.safeParse(data);
 
     if (!parsedBody.success) {
         return NextResponse.json(
