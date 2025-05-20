@@ -6,6 +6,7 @@
         "<THIRD_PARTY_MODULES>",
         "^./(.*)$",
         "^../(.*)$",
+        "@hooks",
         "@shared-metadata",
         "@i18n",
         "@locales/*",
@@ -18,8 +19,7 @@
         "@keys",
         "@constants",
         "@schemas",
-        "@utils",
-        "@hooks"
+        "@utils"
     ],
     "importOrderSeparation": true,
     "importOrderSortSpecifiers": false,

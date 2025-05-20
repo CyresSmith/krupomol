@@ -11,6 +11,8 @@ import { z } from 'zod';
 import { Icon } from './icon';
 import { LenisContext } from './smooth-scroll';
 
+import { useRecaptcha } from '@hooks';
+
 import { Button } from '@ui/button';
 import {
     Dialog,
@@ -29,8 +31,6 @@ import { ConsultationTitle, InputProps } from '@types';
 import { ConsultationFormSchema } from '@schemas';
 
 import { cn } from '@utils';
-
-import { useRecaptcha } from '@hooks';
 
 /* eslint-disable @typescript-eslint/no-misused-promises */
 
@@ -61,7 +61,7 @@ export const ConsultationForm = () => {
         resolver: zodResolver(ConsultationFormSchema),
     });
 
-    const { execute } = useRecaptcha();
+    const { execute, ready } = useRecaptcha();
 
     const { errors, isValid } = form.formState;
 
@@ -199,7 +199,7 @@ export const ConsultationForm = () => {
 
                     <div className="flex justify-center">
                         <Button
-                            disabled={!isValid || isLoading}
+                            disabled={!ready || !isValid || isLoading}
                             name={t('submit')}
                             size={'lg'}
                             type="submit"
