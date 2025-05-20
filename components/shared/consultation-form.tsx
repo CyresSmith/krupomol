@@ -6,7 +6,6 @@ import { useForm } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useRecaptcha } from 'lib/hooks/useRecaptcha';
 import { z } from 'zod';
 
 import { Icon } from './icon';
@@ -30,6 +29,8 @@ import { ConsultationTitle, InputProps } from '@types';
 import { ConsultationFormSchema } from '@schemas';
 
 import { cn } from '@utils';
+
+import { useRecaptcha } from '@hooks';
 
 /* eslint-disable @typescript-eslint/no-misused-promises */
 

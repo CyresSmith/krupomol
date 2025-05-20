@@ -18,7 +18,8 @@
         "@keys",
         "@constants",
         "@schemas",
-        "@utils"
+        "@utils",
+        "@hooks"
     ],
     "importOrderSeparation": true,
     "importOrderSortSpecifiers": false,

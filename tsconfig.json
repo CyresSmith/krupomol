@@ -72,6 +72,9 @@
             "@utils": [
                 "./lib/utils"
             ],
+            "@hooks": [
+                "./lib/hooks"
+            ],
             "@keys": [
                 "./lib/keys"
             ],

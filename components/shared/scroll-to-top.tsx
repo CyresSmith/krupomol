@@ -32,8 +32,8 @@ export const ScrollToTop = () => {
             aria-label="Scroll to top"
             className={cn(
                 buttonVariants({ size: 'icon', variant: 'primary' }),
-                'fixed -bottom-full right-8 p-6 [&_svg]:size-6',
-                isVisible && 'bottom-8'
+                'fixed -bottom-full right-8 p-6 mobile:right-6 [&_svg]:size-6',
+                isVisible && 'bottom-24'
             )}
             name="Scroll to top"
             onClick={scrollToTop}

@@ -34,8 +34,6 @@ export async function POST(req: NextRequest) {
         { method: 'POST' }
     );
 
-    console.log('🚀 ~ POST ~ google res:', res);
-
     const result = (await res.json()) as { score: number; success: boolean };
 
     if (!result.success || result.score < 0.5) {

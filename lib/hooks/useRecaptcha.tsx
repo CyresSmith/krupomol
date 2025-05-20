@@ -6,26 +6,24 @@ declare global {
     interface Window {
         grecaptcha?: {
             execute: (siteKey: string, options: { action: string }) => Promise<string>;
-            ready: () => Promise<void>;
+            ready: (cb: () => void) => void;
         };
     }
 }
 
 export const useRecaptcha = () => {
     const execute = useCallback(async (action: string): Promise<null | string> => {
-        if (typeof window === 'undefined' || !window.grecaptcha) return null;
-
-        await window.grecaptcha.ready();
-
         const siteKey = process.env['NEXT_PUBLIC_RECAPTCHA_SITE_KEY'];
 
-        if (!siteKey) {
-            console.error('NEXT_PUBLIC_RECAPTCHA_SITE_KEY is not defined');
-            return null;
-        }
+        if (typeof window === 'undefined' || !window.grecaptcha || !siteKey) return null;
 
-        return await window.grecaptcha.execute(siteKey, {
-            action,
+        return new Promise(resolve => {
+            window?.grecaptcha?.ready(() => {
+                window?.grecaptcha
+                    ?.execute(siteKey, { action })
+                    .then(resolve)
+                    .catch(() => resolve(null));
+            });
         });
     }, []);
 
