@@ -2,11 +2,11 @@ import { Locale } from 'next-intl';
 
 import productsDataJson from '@products';
 
-import { ProductListType, ProductsData } from '@types';
+import { ProductListItemType, ProductsData, ProductType } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
-import { getProductImage, sortPremiumFirst } from '@utils';
+import { getProductImage } from '@utils';
 
 const productsData = productsDataJson as unknown as ProductsData;
 
@@ -150,27 +150,27 @@ export const ProductsService = {
     getProductsList({
         categorySlug,
         locale = 'uk',
+        type,
         typeSlug,
     }: {
         categorySlug?: string;
         locale: Locale;
+        type?: ProductType;
         typeSlug?: string;
     }) {
-        const products: ProductListType[] = [];
+        const products: ProductListItemType[] = [];
 
         if (categorySlug && typeSlug) {
             const type = productsData.items[categorySlug]?.items[typeSlug];
 
             if (!type) return [];
 
-            return sortPremiumFirst(
-                Object.entries(type.items).map(([slug, product]) => ({
-                    ...product,
-                    href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
-                    image: getProductImage(product.image),
-                    title: product.title[locale],
-                }))
-            );
+            return Object.entries(type.items).map(([slug, product]) => ({
+                ...product,
+                href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
+                image: getProductImage(product.image),
+                title: product.title[locale],
+            }));
         }
 
         if (categorySlug) {
@@ -188,7 +188,7 @@ export const ProductsService = {
                 });
             });
 
-            return sortPremiumFirst(products);
+            return products;
         }
 
         Object.entries(productsData.items).forEach(([categorySlug, category]) => {
@@ -204,7 +204,7 @@ export const ProductsService = {
             });
         });
 
-        return sortPremiumFirst(products);
+        return products;
     },
 
     getTypesByCategory(categorySlug: string, locale: Locale) {

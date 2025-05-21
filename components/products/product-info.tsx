@@ -8,7 +8,7 @@ import { buttonVariants } from '@ui/button';
 
 import { Icon, Title } from '@components/shared';
 
-import { CertificateType, IconName, ProductListType } from '@types';
+import { CertificateType, IconName, ProductListItemType } from '@types';
 
 import { CONTACTS_ROUTE } from '@routes';
 
@@ -46,7 +46,7 @@ const ProductDataCard = ({
     </div>
 );
 
-export const ProductInfo = async (product: Omit<ProductListType, 'href'>) => {
+export const ProductInfo = async (product: Omit<ProductListItemType, 'href'>) => {
     const t = await getTranslations('products');
 
     const c = await getTranslations('certification.certificates');

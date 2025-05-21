@@ -10,6 +10,8 @@ export interface ProductItemType {
 
 export type ProductTitleType = Record<Locale, string>;
 
+export type ProductType = 'premium' | 'regular' | 'weight';
+
 export interface Product {
     acids: string;
     carbohydrates: string;
@@ -26,17 +28,18 @@ export interface Product {
     salt: string;
     sugar: string;
     title: ProductTitleType;
+    type: ProductType;
 }
 
-export type ProductListType = LinkItem & Omit<Product, 'title'>;
+export type ProductListItemType = LinkItem & Omit<Product, 'title'>;
 
-export interface ProductType {
+export interface ProductItemsType {
     items: Record<string, Product>;
     title: ProductTitleType;
 }
 
 export interface ProductCategory {
-    items: Record<string, ProductType>;
+    items: Record<string, ProductItemsType>;
     title: ProductTitleType;
 }
 
