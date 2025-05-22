@@ -129,8 +129,8 @@ export const addresses: ContactType[] = [
 
 export const mails: ContactType[] = [
     {
-        href: 'mailto:info@krupomol.com',
-        text: 'info@krupomol.com',
+        href: 'mailto:uaaitransgroup2023@gmail.com',
+        text: 'uaaitransgroup2023@gmail.com',
     },
 ];
 
