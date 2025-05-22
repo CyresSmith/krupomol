@@ -19,7 +19,7 @@ export const Navigation = () => {
     const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
-    const t = useTranslations('header.navigation');
+    const t = useTranslations('header');
 
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
@@ -56,7 +56,7 @@ export const Navigation = () => {
                                   return {
                                       ...link,
                                       links,
-                                      title: t(link.title as NavigationTitle),
+                                      title: t(`navigation.${link.title as NavigationTitle}`),
                                   };
                               })
                             : [];
@@ -67,7 +67,7 @@ export const Navigation = () => {
                             isActive={isActive}
                             key={title}
                             links={itemLinks}
-                            title={t(title as NavigationTitle)}
+                            title={t(`navigation.${title as NavigationTitle}`)}
                         />
                     );
                 })}
