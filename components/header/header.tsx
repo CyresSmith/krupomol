@@ -12,33 +12,40 @@ import { Icon, LinkWithHash } from '@components/shared';
 
 import { CONTACTS_ROUTE } from '@routes';
 
-import { ANCHORS, contacts } from '@constants';
+import { addresses, ANCHORS, phones } from '@constants';
 
 import { cn } from '@utils';
 
 export const Header = async () => {
     const t = await getTranslations('header');
+    const addressesText = t.raw('address') as string[];
 
     return (
         <header className="absolute left-0 top-0 z-10 w-full" id="top">
-            <div className="mb-6 bg-primary py-2 text-xs text-primary-foreground">
-                <div className="container flex items-center justify-between gap-6 mobile:justify-center">
+            <div className="mb-6 bg-primary py-4 text-xs text-primary-foreground desktop:py-2">
+                <div className="container flex items-start justify-between gap-6 mobile:justify-center">
                     <Link
                         className="transition hover:text-accent mobile:hidden"
-                        href={contacts.address?.href ?? '/'}
+                        href={addresses[0]?.href ?? '/'}
                         rel="noopener noreferrer nofollow"
                         target="_blank"
                     >
-                        {t('address')}
+                        {addressesText[0]}
                     </Link>
 
-                    <div className="flex items-center gap-4">
-                        <Link
-                            className="transition hover:text-accent"
-                            href={contacts.tel?.href ?? '/'}
-                        >
-                            {contacts.tel?.text}
-                        </Link>
+                    <div className="flex flex-col items-center gap-4 desktop:flex-row">
+                        <ul className="flex flex-col items-center gap-4 desktop:flex-row">
+                            {phones.map(({ href, text }) => (
+                                <li key={href}>
+                                    <Link
+                                        className="transition hover:text-accent"
+                                        href={href ?? '/'}
+                                    >
+                                        {text}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
 
                         <LocaleSelect />
                     </div>

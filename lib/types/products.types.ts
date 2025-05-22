@@ -2,9 +2,9 @@ import { Locale } from 'next-intl';
 
 import { LinkItem } from './shared.types';
 
-export interface ProductItemType {
+export interface ProductLinkItem {
+    href: string;
     image: string;
-    text: string;
     title: string;
 }
 

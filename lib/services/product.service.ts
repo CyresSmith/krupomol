@@ -6,7 +6,7 @@ import { ProductListItemType, ProductsData, ProductType } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
-import { getProductImage } from '@utils';
+import { filterByProductType, getProductImage } from '@utils';
 
 const productsData = productsDataJson as unknown as ProductsData;
 
@@ -158,51 +158,54 @@ export const ProductsService = {
         type?: ProductType;
         typeSlug?: string;
     }) {
-        const products: ProductListItemType[] = [];
-
-        if (categorySlug && typeSlug) {
-            const type = productsData.items[categorySlug]?.items[typeSlug];
-
-            if (!type) return [];
-
-            return Object.entries(type.items).map(([slug, product]) => ({
-                ...product,
-                href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
-                image: getProductImage(product.image),
-                title: product.title[locale],
-            }));
-        }
+        let products: ProductListItemType[] = [];
 
         if (categorySlug) {
-            const category = productsData.items[categorySlug];
-            if (!category) return [];
+            if (typeSlug) {
+                const typeItems = productsData.items[categorySlug]?.items[typeSlug];
 
-            Object.entries(category.items).forEach(([typeSlug, type]) => {
-                Object.entries(type.items).forEach(([slug, product]) => {
-                    products.push({
+                if (typeItems) {
+                    products = Object.entries(typeItems.items).map(([slug, product]) => ({
                         ...product,
                         href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
                         image: getProductImage(product.image),
                         title: product.title[locale],
+                    }));
+                }
+            } else {
+                const category = productsData.items[categorySlug];
+
+                if (category) {
+                    Object.entries(category.items).forEach(([typeSlug, type]) => {
+                        Object.entries(type.items).forEach(([slug, product]) => {
+                            products.push({
+                                ...product,
+                                href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
+                                image: getProductImage(product.image),
+                                title: product.title[locale],
+                            });
+                        });
+                    });
+                }
+            }
+        } else {
+            Object.entries(productsData.items).forEach(([categorySlug, category]) => {
+                Object.entries(category.items).forEach(([typeSlug, type]) => {
+                    Object.entries(type.items).forEach(([slug, product]) => {
+                        products.push({
+                            ...product,
+                            href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
+                            image: getProductImage(product.image),
+                            title: product.title[locale],
+                        });
                     });
                 });
             });
-
-            return products;
         }
 
-        Object.entries(productsData.items).forEach(([categorySlug, category]) => {
-            Object.entries(category.items).forEach(([typeSlug, type]) => {
-                Object.entries(type.items).forEach(([slug, product]) => {
-                    products.push({
-                        ...product,
-                        href: `${PRODUCTS_ROUTE}/${categorySlug}/${typeSlug}/${slug}`,
-                        image: getProductImage(product.image),
-                        title: product.title[locale],
-                    });
-                });
-            });
-        });
+        if (type) {
+            products = filterByProductType(products, type);
+        }
 
         return products;
     },

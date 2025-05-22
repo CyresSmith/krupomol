@@ -4,10 +4,12 @@ import Image from 'next/image';
 
 import { Link, usePathname } from '@i18n';
 
+import { ProductLinkItem } from '@types';
+
 import { cn } from '@utils';
 
 interface Props {
-    items: { href: string; image: string; title: string }[];
+    items: ProductLinkItem[];
 }
 
 export const ProductList = ({ items = [] }: Props) => {

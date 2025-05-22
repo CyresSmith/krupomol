@@ -15,7 +15,19 @@ export const Title = ({ as: As = 'h3', className, id, title }: Props) => {
 
     return (
         <As
-            className={cn('text-5xl font-bold drop-shadow-lg', titleFont.className, className)}
+            className={cn(
+                'relative text-base font-bold',
+                titleFont.className,
+                {
+                    ['text-2xl']: As === 'h4',
+                    ['text-3xl']: As === 'h3',
+                    ['text-4xl']: As === 'h2',
+                    ['text-5xl']: As === 'h1',
+                    ['text-lg']: As === 'h5',
+                    ['text-xl']: As === 'h3',
+                },
+                className
+            )}
             id={id}
         >
             {splittedTitle.length ? (

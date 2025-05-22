@@ -1,7 +1,7 @@
 {
     "header": {
         "consultation": "Order a consultation",
-        "address": "Kyiv region, Brovary district, Rusaniv village, 39 a Zhovtneva str.",
+        "address": ["Kyiv region, Brovary district, Rusaniv village, 39 a Zhovtneva str."],
         "navigation": {
             "main": "Home",
             "contacts": "Contacts",
@@ -139,6 +139,11 @@
         }
     },
     "products": {
+        "type": {
+            "premium": "Premium products",
+            "regular": "Packaged products",
+            "weight": "Weight products"
+        },
         "categoryMetadata": {
             "title": "{category} | Krupomol",
             "desc": "{category} of the highest quality in bulk from a certified manufacturer",

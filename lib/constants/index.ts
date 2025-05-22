@@ -120,22 +120,34 @@ export const socials: { href: string; icon: IconName }[] = [
 
 export const APP_NAME = 'Krupomol';
 
-export const contacts: Record<'address' | 'mail' | 'tel', ContactType> = {
-    address: {
+export const addresses: ContactType[] = [
+    {
         href: 'https://maps.app.goo.gl/kqyXBMD7FPCsi5YE7',
-        icon: 'map-pinned',
+        text: '0',
     },
-    mail: {
+];
+
+export const mails: ContactType[] = [
+    {
         href: 'mailto:info@krupomol.com',
-        icon: 'mailbox',
         text: 'info@krupomol.com',
     },
-    tel: {
+];
+
+export const phones: ContactType[] = [
+    {
         href: 'tel:+380974757779',
-        icon: 'phone-call',
         text: '+380 (97) 475 77 79',
     },
-};
+    {
+        href: 'tel:+380972159166',
+        text: '+380 (97) 215 91 66',
+    },
+    {
+        href: 'tel:+380970764224',
+        text: '+380 (97) 076 42 24',
+    },
+];
 
 export const SCHEMAS_MESSAGES = {
     cyrillic: 'Має бути кирилицею',

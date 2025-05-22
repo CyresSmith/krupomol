@@ -1,19 +1,36 @@
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { ProductsService } from 'lib/services';
 
-import { ProductList } from '@components/products';
+import { ProductTypeSection } from '@components/products/product-type-section';
 
-import { WithParams } from '@types';
+import { ProductType, WithParams } from '@types';
+
+import { sortProductsByType } from '@utils';
 
 const CategoryProductsList = async ({ params }: WithParams<{ category: string }>) => {
     const { category } = await params;
 
     const locale = await getLocale();
 
-    const items = ProductsService.getProductsList({ categorySlug: category, locale });
+    const t = await getTranslations('products.type');
 
-    return <ProductList items={items} />;
+    const items = Object.entries(
+        sortProductsByType(ProductsService.getProductsList({ categorySlug: category, locale }))
+    );
+
+    return (
+        <div className="flex flex-col gap-14">
+            {items.map(([title, items]) => (
+                <ProductTypeSection
+                    id={title}
+                    items={items}
+                    key={title}
+                    title={t(title as ProductType)}
+                />
+            ))}
+        </div>
+    );
 };
 
 export default CategoryProductsList;

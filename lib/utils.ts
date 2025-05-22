@@ -121,6 +121,17 @@ export const sortPremiumFirst = (items: ProductListItemType[]) => {
     });
 };
 
-export const filterByType = (items: ProductListItemType[], type: ProductType) => {
+export const filterByProductType = (items: ProductListItemType[], type: ProductType) => {
     return [...items].filter(item => item.type === type);
+};
+
+export const sortProductsByType = (items: ProductListItemType[]) => {
+    return items.reduce(
+        (acc: Record<ProductType, ProductListItemType[]>, item) => {
+            acc[item.type].push(item);
+
+            return acc;
+        },
+        { premium: [], regular: [], weight: [] }
+    );
 };

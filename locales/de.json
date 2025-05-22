@@ -1,7 +1,7 @@
 {
     "header": {
         "consultation": "Bestellung einer beratung",
-        "address": "Dorf Rusaniv, 39a Zhovtneva str., Bezirk Brovary, Region Kyiv",
+        "address": ["Dorf Rusaniv, 39a Zhovtneva str., Bezirk Brovary, Region Kyiv"],
         "navigation": {
             "main": "Home",
             "contacts": "Kontakte",
@@ -139,6 +139,11 @@
         }
     },
     "products": {
+        "type": {
+            "premium": "Premium-Produkte",
+            "regular": "Verpackte Produkte",
+            "weight": "Produktgewicht"
+        },
         "categoryMetadata": {
             "title": "{category} | Krupomol",
             "desc": "{category} von höchster Qualität in loser Schüttung von einem zertifizierten Hersteller",

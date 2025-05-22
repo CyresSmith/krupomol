@@ -12,24 +12,58 @@ import {
 
 import { Icon, LinkWithHash } from '@components/shared';
 
-import { NavigationTitle } from '@types';
+import { ContactType, IconName, NavigationTitle } from '@types';
 
 import { CONTACTS_ROUTE, PRICES_ROUTE } from '@routes';
 
-import { ANCHORS, contacts, navigation, socials } from '@constants';
+import { addresses, ANCHORS, mails, navigation, phones } from '@constants';
 
 import { cn } from '@utils';
+
+const AddressBlock = ({
+    icon,
+    isAddress = false,
+    items,
+}: {
+    icon: IconName;
+    isAddress?: boolean;
+    items: ContactType[];
+}) => {
+    return (
+        <div className="grid grid-cols-[24px,1fr] items-start gap-5 fill-primary text-primary mobile:gap-4">
+            <Icon className="size-6" name={icon} />
+
+            <ul className="flex flex-col gap-2">
+                {items.map(({ href, text }) => {
+                    return (
+                        <li key={href}>
+                            <Link
+                                className="cursor-pointer px-0 transition hover:opacity-80"
+                                href={href}
+                                rel={isAddress ? 'noopener noreferrer nofollow' : undefined}
+                                target={isAddress ? '_blank' : undefined}
+                            >
+                                {text}
+                            </Link>
+                        </li>
+                    );
+                })}
+            </ul>
+        </div>
+    );
+};
 
 export const Footer = async () => {
     const locale = await getLocale();
     const t = await getTranslations('header');
     const f = await getTranslations('footer');
-    const navigationT = await getTranslations('header.navigation');
+
+    const addressesText = t.raw('address') as string[];
 
     return (
         <footer className="w-full bg-card">
             <div className="container pb-5 pt-12 desktop:pt-24">
-                <div className="flex flex-col items-center gap-12 desktop:flex-row desktop:items-start desktop:gap-36">
+                <div className="flex min-h-[230px] flex-col items-center gap-12 desktop:flex-row desktop:items-start desktop:justify-between desktop:gap-36">
                     <Link aria-label="link to home" className="ml-5" href={'/'}>
                         <Icon className="h-[88px] w-[189px]" name="krupomol_logo" />
                     </Link>
@@ -50,39 +84,33 @@ export const Footer = async () => {
                                         )}
                                         href={href ?? '/'}
                                     >
-                                        {navigationT(title as NavigationTitle)}
+                                        {t(`navigation.${title as NavigationTitle}`)}
                                     </Link>
                                 </NavigationMenuItem>
                             ))}
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <div className="flex min-h-[189px] flex-col justify-between desktop:w-[324px]">
-                        <address className="mb-4 not-italic text-primary">
-                            <ul className="flex flex-col gap-4 fill-foreground text-sm">
-                                {Object.values(contacts).map(({ href, icon, text }) => {
-                                    const isAddress = href === contacts.address.href;
+                    <div className="flex min-h-[230px] flex-col justify-between">
+                        <address className="mb-4 flex flex-col gap-4 not-italic text-primary desktop:flex-row desktop:gap-10">
+                            <div className="flex flex-1 flex-col gap-4">
+                                <AddressBlock
+                                    icon="map-pinned"
+                                    isAddress
+                                    items={addressesText.map((address, i) => {
+                                        const href = addresses[i]?.href ?? '';
 
-                                    return (
-                                        <li key={href}>
-                                            <Link
-                                                className="grid grid-cols-[theme(space.5),1fr] gap-3 self-start px-0"
-                                                href={href ?? ''}
-                                                rel={
-                                                    isAddress
-                                                        ? 'noopener noreferrer nofollow'
-                                                        : undefined
-                                                }
-                                                target={isAddress ? '_blank' : undefined}
-                                            >
-                                                {icon && <Icon className="size-5" name={icon} />}
+                                        return {
+                                            href,
+                                            text: address,
+                                        };
+                                    })}
+                                />
 
-                                                {text ?? t('address')}
-                                            </Link>
-                                        </li>
-                                    );
-                                })}
-                            </ul>
+                                <AddressBlock icon="mailbox" items={mails} />
+                            </div>
+
+                            <AddressBlock icon="phone-call" items={phones} />
                         </address>
 
                         <LinkWithHash
@@ -94,28 +122,6 @@ export const Footer = async () => {
                         >
                             {t('consultation')}
                         </LinkWithHash>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center gap-5">
-                        <ul className="flex gap-2">
-                            {socials.map(({ href, icon }) => (
-                                <li key={href}>
-                                    <Link
-                                        aria-label={icon}
-                                        className="flex size-8 items-center justify-center overflow-hidden rounded-[8px] bg-primary fill-primary-foreground transition hover:opacity-80"
-                                        href={href ?? '/'}
-                                        rel="noopener noreferrer nofollow"
-                                        target="_blank"
-                                    >
-                                        {icon && <Icon className="size-6" name={icon} />}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-
-                        <Link className="text-xs text-primary" href={'/'}>
-                            {f('policy')}
-                        </Link>
                     </div>
                 </div>
 

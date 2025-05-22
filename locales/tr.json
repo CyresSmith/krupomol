@@ -1,7 +1,7 @@
 {
     "header": {
         "consultation": "Konsültasyon siparişi verin",
-        "address": "Rusaniv köyü, 39a Zhovtneva caddesi, Brovary bölgesi, Kiev bölgesi",
+        "address": ["Rusaniv köyü, 39a Zhovtneva caddesi, Brovary bölgesi, Kiev bölgesi"],
         "navigation": {
             "main": "Ana Sayfa",
             "contacts": "İletişim",
@@ -139,6 +139,11 @@
         }
     },
     "products": {
+        "type": {
+            "premium": "Premium ürünler",
+            "regular": "Paketlenmiş ürünler",
+            "weight": "Ürün ağirliği"
+        },
         "categoryMetadata": {
             "title": "{category} | Krupomol",
             "desc": "{category} sertifikali bir üreticiden dökme olarak en yüksek kalitede",
