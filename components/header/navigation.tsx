@@ -9,17 +9,20 @@ import NavItem from './nav-item';
 
 import { NavigationMenu, NavigationMenuList } from '@ui/navigation-menu';
 
-import { NavigationTitle, NavItemType } from '@types';
+import { NavigationTitle, NavItemType, ProductType } from '@types';
 
 import { PRICES_ROUTE } from '@routes';
 
 import { navigation } from '@constants';
+
+import { sortProductsByType } from '@utils';
 
 export const Navigation = () => {
     const locale = useLocale();
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
     const t = useTranslations('header');
+    const pt = useTranslations('products.type');
 
     return (
         <NavigationMenu className="hidden h-full desktop:block" orientation="horizontal">
@@ -37,17 +40,25 @@ export const Navigation = () => {
                                       const categories = ProductsService.getCategories(locale);
 
                                       categories.forEach(({ href, image, title }) => {
-                                          const products = ProductsService.getProductsList({
-                                              categorySlug: image,
-                                              locale,
-                                          });
+                                          const products = sortProductsByType(
+                                              ProductsService.getProductsList({
+                                                  categorySlug: image,
+                                                  locale,
+                                              })
+                                          );
 
                                           links.push({
                                               href: { pathname: href },
-                                              links: products.map(({ href, title }) => ({
-                                                  href: { pathname: href },
-                                                  title,
-                                              })),
+                                              links: Object.entries(products).map(
+                                                  ([hash, items]) => ({
+                                                      href: { hash, pathname: href },
+                                                      links: items.map(({ href, title }) => ({
+                                                          href: { pathname: href },
+                                                          title,
+                                                      })),
+                                                      title: pt(hash as ProductType),
+                                                  })
+                                              ),
                                               title,
                                           });
                                       });
