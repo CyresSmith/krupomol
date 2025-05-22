@@ -37,8 +37,7 @@ import { cn } from '@utils';
 export const MobileMenu = () => {
     const [open, setOpen] = useState(false);
 
-    const t = useTranslations('header.navigation');
-    const headerT = useTranslations('header');
+    const t = useTranslations('header');
 
     return (
         <Drawer direction="right" onOpenChange={setOpen} open={open}>
@@ -93,10 +92,10 @@ export const MobileMenu = () => {
                 <DrawerFooter className="mt-[unset]">
                     <Button
                         className="w-full"
-                        name={headerT('consultation')}
+                        name={t('navigation.consultation')}
                         variant={'outline-primary'}
                     >
-                        {headerT('consultation')}
+                        {t('navigation.consultation')}
                     </Button>
                     {/* <ThemeSwitch />
                     <LocaleSwitcher /> */}
