@@ -42,7 +42,7 @@
                                 "tr": "Karabuğday kabuğu",
                                 "de": "Buchweizengrütze"
                             },
-                            "image": "buckwheat",
+                            "image": "buckwheat-weight",
                             "fats": "3,2",
                             "acids": "0,68",
                             "carbohydrates": "71,0",
@@ -116,7 +116,7 @@
                                 "de": "Maisgrieß",
                                 "tr": "Mısır ezmesi"
                             },
-                            "image": "corn",
+                            "image": "corn-weight",
                             "fats": "0,7",
                             "acids": "0,11",
                             "carbohydrates": "80,3",
@@ -167,7 +167,7 @@
                                 "de": "Erbsengrütze",
                                 "tr": "Bezelye kabuğu"
                             },
-                            "image": "pea",
+                            "image": "pea-weight",
                             "fats": "0,59",
                             "acids": "0,07",
                             "carbohydrates": "17",
@@ -241,7 +241,7 @@
                                 "tr": "Darı kabuğu çıkarılmış tane",
                                 "de": "Hirsegrütze"
                             },
-                            "image": "millet",
+                            "image": "millet-weight",
                             "fats": "1,5",
                             "acids": "0,17",
                             "carbohydrates": "73,9",
@@ -292,7 +292,7 @@
                                 "tr": "Buğday kabuğu",
                                 "de": "Weizengrütze"
                             },
-                            "image": "wheat",
+                            "image": "wheat-weight",
                             "fats": "1,3",
                             "acids": "0,37",
                             "carbohydrates": "71,9",
@@ -389,7 +389,7 @@
                                 "tr": "Arpa kabuğu",
                                 "de": "Gerstengrütze"
                             },
-                            "image": "barley",
+                            "image": "barley-weight",
                             "fats": "1,9",
                             "acids": "0,46",
                             "carbohydrates": "69,8",
@@ -481,7 +481,7 @@
                                 "de": "Perlgraupen",
                                 "tr": "İnci arpa"
                             },
-                            "image": "pearl-barley",
+                            "image": "pearl-barley-weight",
                             "fats": "1,7",
                             "acids": "0,37",
                             "carbohydrates": "70,9",
@@ -565,7 +565,7 @@
                                 "de": "Granulierter Zucker",
                                 "tr": "Toz şeker"
                             },
-                            "image": "sugar",
+                            "image": "sugar-weight",
                             "fats": "0",
                             "acids": "0",
                             "carbohydrates": "100",
