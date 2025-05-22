@@ -47,3 +47,24 @@ export interface ProductsData {
     items: Record<string, ProductCategory>;
     title: ProductTitleType;
 }
+
+export type InfoKeysType =
+    | 'acids'
+    | 'bag'
+    | 'buy'
+    | 'carbohydrates'
+    | 'energy'
+    | 'expiration'
+    | 'fats'
+    | 'gpCount'
+    | 'gpWeight'
+    | 'kcal'
+    | 'kj'
+    | 'mass'
+    | 'nutritional'
+    | 'package'
+    | 'paper'
+    | 'polypropylene'
+    | 'protein'
+    | 'salt'
+    | 'sugar';

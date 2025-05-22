@@ -82,7 +82,7 @@ export const MobileMenu = () => {
                                     href={href ?? ''}
                                     onClick={() => setOpen(false)}
                                 >
-                                    {t(title as NavigationTitle)}
+                                    {t(`navigation.${title as NavigationTitle}`)}
                                 </Link>
                             </NavigationMenuItem>
                         ))}

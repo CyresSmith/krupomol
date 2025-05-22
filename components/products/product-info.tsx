@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import ProductImage from './product-image';
 
@@ -8,7 +8,7 @@ import { buttonVariants } from '@ui/button';
 
 import { Icon, Title } from '@components/shared';
 
-import { CertificateType, IconName, ProductListItemType } from '@types';
+import { CertificateType, IconName, InfoKeysType, ProductListItemType } from '@types';
 
 import { CONTACTS_ROUTE } from '@routes';
 
@@ -18,17 +18,14 @@ import { cn } from '@utils';
 
 const nutritionalKeys = ['fats', 'acids', 'carbohydrates', 'protein', 'salt', 'sugar'] as const;
 const energyKeys = ['kcal', 'kj'] as const;
-const infoKeys = ['mass', 'package', 'gpCount', 'gpWeight', 'expiration'] as const;
 
-const ProductDataCard = ({
-    icon = 'restaurant',
-    items,
-    title,
-}: {
+interface DataProps {
     icon: IconName;
     items: { text: string; title: string }[];
     title: string;
-}) => (
+}
+
+const ProductDataCard = ({ icon = 'restaurant', items, title }: DataProps) => (
     <div className="overflow-hidden rounded-3xl bg-background p-5 text-text-color shadow-lg">
         <div className="mb-3 grid grid-cols-[max-content,1fr] gap-3 border-b border-primary pb-3">
             <Icon className="h-[56px] w-[56px] fill-primary" name={icon} />
@@ -46,9 +43,14 @@ const ProductDataCard = ({
     </div>
 );
 
-export const ProductInfo = async (product: Omit<ProductListItemType, 'href'>) => {
-    const t = await getTranslations('products');
+interface InfoProps {
+    infoKeys: string[];
+    product: Omit<ProductListItemType, 'href'>;
+}
 
+export const ProductInfo = async ({ infoKeys, product }: InfoProps) => {
+    const locale = await getLocale();
+    const t = await getTranslations('products');
     const c = await getTranslations('certification.certificates');
     const certificates = c.raw('list') as CertificateType[];
 
@@ -122,12 +124,26 @@ export const ProductInfo = async (product: Omit<ProductListItemType, 'href'>) =>
                                         />
 
                                         <p className="flex flex-1 items-end justify-between">
-                                            <span className="mr-2">{t(`data.${key}`)}:</span>
+                                            <span className="mr-2">
+                                                {key === 'mass'
+                                                    ? t('data.mass', {
+                                                          units:
+                                                              product.type === 'weight'
+                                                                  ? locale === 'uk'
+                                                                      ? 'кг'
+                                                                      : 'kg'
+                                                                  : locale === 'uk'
+                                                                    ? 'г'
+                                                                    : 'g',
+                                                      })
+                                                    : t(`data.${key as InfoKeysType}`)}
+                                                :
+                                            </span>
                                             {key === 'package'
                                                 ? t(
                                                       `data.${product[key] as 'paper' | 'polypropylene'}`
                                                   )
-                                                : product[key]}
+                                                : product[key as keyof typeof product]}
                                         </p>
                                     </div>
                                 ))}

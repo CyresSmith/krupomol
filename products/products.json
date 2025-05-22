@@ -2,7 +2,7 @@
     "title": { "en": "Products", "uk": "Продукція", "de": "Produkte", "tr": "Ürünler" },
     "items": {
         "groats": {
-            "title": { "en": "Groats", "uk": "Крупа", "tr": "Tahıl", "de": "Müsli" },
+            "title": { "en": "Groats", "uk": "Крупа", "tr": "Tahil", "de": "Müsli" },
             "items": {
                 "buckwheat": {
                     "title": {
@@ -51,10 +51,10 @@
                             "salt": "0,10",
                             "kj": "1528",
                             "kcal": "365",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "20",
                             "type": "weight"
                         },
@@ -63,7 +63,7 @@
                                 "en": "Buckwheat groats premium",
                                 "uk": "Крупа гречана premium",
                                 "de": "Hochwertige Buchweizengrütze",
-                                "tr": "Premium karabuğday kabuğu çıkarılmış tane"
+                                "tr": "Premium karabuğday kabuğu çikarilmiş tane"
                             },
                             "image": "buckwheat-premium",
                             "fats": "3,2",
@@ -84,14 +84,14 @@
                     }
                 },
                 "corn": {
-                    "title": { "en": "Corn", "uk": "Кукурудзяна", "tr": "Mısır", "de": "Mais" },
+                    "title": { "en": "Corn", "uk": "Кукурудзяна", "tr": "Misir", "de": "Mais" },
                     "items": {
                         "corn-groats": {
                             "title": {
                                 "en": "Corn groats",
                                 "uk": "Крупа кукурудзяна",
                                 "de": "Maisgrieß",
-                                "tr": "Mısır ezmesi"
+                                "tr": "Misir ezmesi"
                             },
                             "image": "corn",
                             "fats": "0,7",
@@ -114,7 +114,7 @@
                                 "en": "Corn groats",
                                 "uk": "Крупа кукурудзяна вагова",
                                 "de": "Maisgrieß",
-                                "tr": "Mısır ezmesi"
+                                "tr": "Misir ezmesi"
                             },
                             "image": "corn-weight",
                             "fats": "0,7",
@@ -125,10 +125,10 @@
                             "salt": "0,003",
                             "kj": "1480",
                             "kcal": "354",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "18",
                             "type": "weight"
                         }
@@ -176,10 +176,10 @@
                             "salt": "0,8",
                             "kj": "407",
                             "kcal": "97.2",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "9",
                             "type": "weight"
                         },
@@ -187,7 +187,7 @@
                             "title": {
                                 "en": "Pea groats premium",
                                 "uk": "Крупа горохова premium",
-                                "tr": "Bezelye kabuğu çıkarılmış tane",
+                                "tr": "Bezelye kabuğu çikarilmiş tane",
                                 "de": "Erbsengrütze Premium"
                             },
                             "image": "pea-premium",
@@ -215,7 +215,7 @@
                             "title": {
                                 "en": "Millet groats",
                                 "uk": "Пшоняна крупа",
-                                "tr": "Darı kabuğu çıkarılmış tane",
+                                "tr": "Dari kabuğu çikarilmiş tane",
                                 "de": "Hirsegrütze"
                             },
                             "image": "millet",
@@ -238,7 +238,7 @@
                             "title": {
                                 "en": "Millet groats",
                                 "uk": "Пшоняна крупа вагова",
-                                "tr": "Darı kabuğu çıkarılmış tane",
+                                "tr": "Dari kabuğu çikarilmiş tane",
                                 "de": "Hirsegrütze"
                             },
                             "image": "millet-weight",
@@ -250,10 +250,10 @@
                             "salt": "0,01",
                             "kj": "1464",
                             "kcal": "350",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "9",
                             "type": "weight"
                         }
@@ -301,10 +301,10 @@
                             "salt": "0,04",
                             "kj": "1366",
                             "kcal": "326",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "9",
                             "type": "weight"
                         },
@@ -335,7 +335,7 @@
                             "title": {
                                 "en": "Wheat groats premium",
                                 "uk": "Крупа пшенична premium",
-                                "tr": "Premium buğday kabuğu çıkarılmış tane",
+                                "tr": "Premium buğday kabuğu çikarilmiş tane",
                                 "de": "Hochwertige Weizengrütze"
                             },
                             "image": "wheat-premium",
@@ -398,10 +398,10 @@
                             "salt": "0,01",
                             "kj": "1446",
                             "kcal": "345",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "12",
                             "type": "weight"
                         },
@@ -410,7 +410,7 @@
                                 "en": "Barley grain premium",
                                 "uk": "Крупа ячмінна premium",
                                 "de": "Hochwertige Gerstengrütze",
-                                "tr": "Premium arpa kabuğu çıkarılmış tane"
+                                "tr": "Premium arpa kabuğu çikarilmiş tane"
                             },
                             "image": "barley-grain-premium",
                             "fats": "1,9",
@@ -432,7 +432,7 @@
                             "title": {
                                 "en": "Barley groats premium",
                                 "uk": "Крупа ячна premium",
-                                "tr": "Premium arpa kabuğu çıkarılmış tane",
+                                "tr": "Premium arpa kabuğu çikarilmiş tane",
                                 "de": "Hochwertige Gerstengrütze"
                             },
                             "image": "barley-premium",
@@ -490,10 +490,10 @@
                             "salt": "0,04",
                             "kj": "1468",
                             "kcal": "351",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "18",
                             "type": "weight"
                         },
@@ -574,10 +574,10 @@
                             "salt": "0",
                             "kj": "1680",
                             "kcal": "401",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
                             "expiration": "20",
                             "type": "weight"
                         },

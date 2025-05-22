@@ -9,6 +9,8 @@ import { WithParams } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
+import { packedProductInfoKeys, weightProductInfoKeys } from '@keys';
+
 import { getMetadata } from '@utils';
 
 export async function generateMetadata({
@@ -49,7 +51,12 @@ const TypePageProductData = async ({ params }: WithParams<{ category: string; ty
 
     return products?.[0] ? (
         <div className="bg-gray-color py-16 tablet:py-20 desktop:py-24">
-            <ProductInfo {...products[0]} />
+            <ProductInfo
+                infoKeys={
+                    products[0].type === 'weight' ? weightProductInfoKeys : packedProductInfoKeys
+                }
+                product={products[0]}
+            />
         </div>
     ) : null;
 };
