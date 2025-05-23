@@ -6,7 +6,7 @@ import { ProductListItemType, ProductsData, ProductType } from '@types';
 
 import { PRODUCTS_ROUTE } from '@routes';
 
-import { filterByProductType, getProductImage } from '@utils';
+import { filterByProductType, getProductImage, sortPremiumFirst } from '@utils';
 
 const productsData = productsDataJson as unknown as ProductsData;
 
@@ -207,7 +207,7 @@ export const ProductsService = {
             products = filterByProductType(products, type);
         }
 
-        return products;
+        return sortPremiumFirst(products);
     },
 
     getTypesByCategory(categorySlug: string, locale: Locale) {

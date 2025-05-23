@@ -113,11 +113,13 @@ export function getMetadata({
 
 export const getProductImage = (image: string) => `/images/products/${image}.png`;
 
+const getPriority = (type: ProductType) => {
+    return type === 'premium' ? 0 : type === 'regular' ? 1 : type === 'weight' ? 2 : 3;
+};
+
 export const sortPremiumFirst = (items: ProductListItemType[]) => {
     return [...items].sort((a, b) => {
-        const aIsPremium = a.href.includes('premium') ? -1 : 0;
-        const bIsPremium = b.href.includes('premium') ? -1 : 0;
-        return aIsPremium - bIsPremium;
+        return getPriority(a.type) - getPriority(b.type);
     });
 };
 

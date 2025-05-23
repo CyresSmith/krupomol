@@ -6,10 +6,10 @@
             "items": {
                 "buckwheat": {
                     "title": {
-                        "en": "Buckwheat",
-                        "uk": "Гречана",
-                        "de": "Buchweizen",
-                        "tr": "Karabuğday"
+                        "en": "Buckwheat groats",
+                        "uk": "Крупа гречана",
+                        "tr": "Karabuğday kabuğu",
+                        "de": "Buchweizengrütze"
                     },
                     "items": {
                         "buckwheat-groats": {
@@ -84,7 +84,12 @@
                     }
                 },
                 "corn": {
-                    "title": { "en": "Corn", "uk": "Кукурудзяна", "tr": "Misir", "de": "Mais" },
+                    "title": {
+                        "en": "Corn groats",
+                        "uk": "Крупа кукурудзяна",
+                        "tr": "Misir ezmesi",
+                        "de": "Maisgrieß"
+                    },
                     "items": {
                         "corn-groats": {
                             "title": {
@@ -135,7 +140,12 @@
                     }
                 },
                 "pea": {
-                    "title": { "en": "Pea", "uk": "Горохова", "tr": "Bezelye", "de": "Erbsen" },
+                    "title": {
+                        "en": "Pea groats",
+                        "uk": "Крупа горохова",
+                        "de": "Erbsengrütze",
+                        "tr": "Bezelye kabuğu"
+                    },
                     "items": {
                         "pea-groats": {
                             "title": {
@@ -209,7 +219,12 @@
                     }
                 },
                 "millet": {
-                    "title": { "en": "Millet", "uk": "Пшоно", "de": "Hirse", "tr": "Millet" },
+                    "title": {
+                        "en": "Millet groats",
+                        "uk": "Крупа пшоняна",
+                        "tr": "Dari kabuğu çikarilmiş tane",
+                        "de": "Hirsegrütze"
+                    },
                     "items": {
                         "millet-groats": {
                             "title": {
@@ -260,7 +275,12 @@
                     }
                 },
                 "wheat": {
-                    "title": { "en": "Wheat", "uk": "Пшенична", "de": "Weizen", "tr": "Buğday" },
+                    "title": {
+                        "en": "Wheat groats",
+                        "uk": "Крупа пшенична",
+                        "tr": "Buğday kabuğu",
+                        "de": "Weizengrütze"
+                    },
                     "items": {
                         "wheat-groats": {
                             "title": {
@@ -353,11 +373,62 @@
                             "gpWeight": "6",
                             "expiration": "9",
                             "type": "premium"
+                        },
+                        "soft-wheat-groats-2": {
+                            "title": {
+                                "en": "Soft wheat groats No. 2",
+                                "uk": "Крупа з м'якої пшениці №2",
+                                "tr": "Yumuşak buğday irmiği No. 2",
+                                "de": "Weichweizengrütze Nr. 2"
+                            },
+                            "image": "wheat-weight",
+                            "fats": "0,7",
+                            "acids": "0",
+                            "carbohydrates": "71,5",
+                            "sugar": "1,8",
+                            "protein": "12,5",
+                            "salt": "0",
+                            "kj": "1437",
+                            "kcal": "341,5",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "9",
+                            "type": "weight"
+                        },
+                        "soft-wheat-groats-3": {
+                            "title": {
+                                "en": "Soft wheat groats No. 3",
+                                "uk": "Крупа з м'якої пшениці №3",
+                                "tr": "Yumuşak buğday irmiği No. 3",
+                                "de": "Weichweizengrütze Nr. 3"
+                            },
+                            "image": "wheat-weight",
+                            "fats": "0,7",
+                            "acids": "0",
+                            "carbohydrates": "71,5",
+                            "sugar": "1,8",
+                            "protein": "12,5",
+                            "salt": "0",
+                            "kj": "1437",
+                            "kcal": "343,5",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "9",
+                            "type": "weight"
                         }
                     }
                 },
                 "barley": {
-                    "title": { "en": "Barley", "uk": "Ячна", "de": "Gerste", "tr": "Arpa" },
+                    "title": {
+                        "en": "Barley groats",
+                        "uk": "Крупа ячна",
+                        "tr": "Arpa kabuğu",
+                        "de": "Gerstengrütze"
+                    },
                     "items": {
                         "barley-groats": {
                             "title": {
@@ -405,14 +476,14 @@
                             "expiration": "12",
                             "type": "weight"
                         },
-                        "barley-grain-premium": {
+                        "barley-goats-premium": {
                             "title": {
-                                "en": "Barley grain premium",
-                                "uk": "Крупа ячмінна premium",
-                                "de": "Hochwertige Gerstengrütze",
-                                "tr": "Premium arpa kabuğu çikarilmiş tane"
+                                "en": "Barley groats premium",
+                                "uk": "Крупа ячна premium",
+                                "tr": "Premium arpa kabuğu çikarilmiş tane",
+                                "de": "Hochwertige Gerstengrütze"
                             },
-                            "image": "barley-grain-premium",
+                            "image": "barley-premium",
                             "fats": "1,9",
                             "acids": "0,46",
                             "carbohydrates": "69,8",
@@ -428,14 +499,14 @@
                             "expiration": "12",
                             "type": "premium"
                         },
-                        "barley-goats-premium": {
+                        "barley-grain-premium": {
                             "title": {
-                                "en": "Barley groats premium",
-                                "uk": "Крупа ячна premium",
-                                "tr": "Premium arpa kabuğu çikarilmiş tane",
-                                "de": "Hochwertige Gerstengrütze"
+                                "en": "Barley grain premium",
+                                "uk": "Крупа ячмінна premium",
+                                "de": "Hochwertige Gerstengrütze",
+                                "tr": "Premium arpa kabuğu çikarilmiş tane"
                             },
-                            "image": "barley-premium",
+                            "image": "barley-grain-premium",
                             "fats": "1,9",
                             "acids": "0,46",
                             "carbohydrates": "69,8",
@@ -463,7 +534,7 @@
                             "acids": "0,37",
                             "carbohydrates": "70,9",
                             "sugar": "1,6",
-                            "protein": "10,0 ",
+                            "protein": "10,0",
                             "salt": "0,04",
                             "kj": "1468",
                             "kcal": "351",
@@ -473,29 +544,6 @@
                             "gpWeight": "6",
                             "expiration": "18",
                             "type": "regular"
-                        },
-                        "pearl-barley-weight": {
-                            "title": {
-                                "en": "Pearl barley",
-                                "uk": "Крупа перлова вагова",
-                                "de": "Perlgraupen",
-                                "tr": "İnci arpa"
-                            },
-                            "image": "pearl-barley-weight",
-                            "fats": "1,7",
-                            "acids": "0,37",
-                            "carbohydrates": "70,9",
-                            "sugar": "1,6",
-                            "protein": "10,0 ",
-                            "salt": "0,04",
-                            "kj": "1468",
-                            "kcal": "351",
-                            "mass": "25",
-                            "package": "bag",
-                            "gpCount": "0",
-                            "gpWeight": "0",
-                            "expiration": "18",
-                            "type": "weight"
                         },
                         "pearl-barley-premium": {
                             "title": {
@@ -509,7 +557,7 @@
                             "acids": "0,37",
                             "carbohydrates": "70,9",
                             "sugar": "1,6",
-                            "protein": "10,0 ",
+                            "protein": "10,0",
                             "salt": "0,04",
                             "kj": "1468",
                             "kcal": "351",
@@ -519,6 +567,98 @@
                             "gpWeight": "6",
                             "expiration": "18",
                             "type": "premium"
+                        },
+                        "barley-groats-2": {
+                            "title": {
+                                "en": "Barley groats No. 2",
+                                "uk": "Крупа ячмінно-ячна №2",
+                                "de": "Gerstengrütze Nr. 2",
+                                "tr": "Arpa irmiği No. 2"
+                            },
+                            "image": "barley-weight",
+                            "fats": "1,3",
+                            "acids": "0,3",
+                            "carbohydrates": "71,7",
+                            "sugar": "1,6",
+                            "protein": "10,4",
+                            "salt": "0",
+                            "kj": "1423",
+                            "kcal": "340",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "12",
+                            "type": "weight"
+                        },
+                        "barley-groats-3": {
+                            "title": {
+                                "en": "Barley groats No. 3",
+                                "uk": "Крупа ячмінно-ячна №3",
+                                "de": "Gerstengrütze Nr. 3",
+                                "tr": "Arpa irmiği No. 3"
+                            },
+                            "image": "barley-weight",
+                            "fats": "1,3",
+                            "acids": "0,3",
+                            "carbohydrates": "71,7",
+                            "sugar": "1,6",
+                            "protein": "10,4",
+                            "salt": "0",
+                            "kj": "1423",
+                            "kcal": "340",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "12",
+                            "type": "weight"
+                        },
+                        "pearl-barley-groats": {
+                            "title": {
+                                "en": "Pearl barley-barley groats",
+                                "uk": "Крупа ячмінно-перлова",
+                                "de": "Perlgraupengrütze",
+                                "tr": "İnci arpa irmiği"
+                            },
+                            "image": "pearl-barley-weight",
+                            "fats": "1,1",
+                            "acids": "0,3",
+                            "carbohydrates": "73,7",
+                            "sugar": "1,6",
+                            "protein": "9,1",
+                            "salt": "0",
+                            "kj": "1430",
+                            "kcal": "341,3",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "18",
+                            "type": "weight"
+                        },
+                        "pearl-barley-weight": {
+                            "title": {
+                                "en": "Pearl barley",
+                                "uk": "Крупа перлова вагова",
+                                "de": "Perlgraupen",
+                                "tr": "İnci arpa"
+                            },
+                            "image": "pearl-barley-weight",
+                            "fats": "1,7",
+                            "acids": "0,37",
+                            "carbohydrates": "70,9",
+                            "sugar": "1,6",
+                            "protein": "10,0",
+                            "salt": "0,04",
+                            "kj": "1468",
+                            "kcal": "351",
+                            "mass": "25",
+                            "package": "bag",
+                            "gpCount": "0",
+                            "gpWeight": "0",
+                            "expiration": "18",
+                            "type": "weight"
                         }
                     }
                 }
@@ -529,10 +669,10 @@
             "items": {
                 "granulated": {
                     "title": {
-                        "en": "Sugar",
-                        "uk": "Цукор",
-                        "tr": "Şeker",
-                        "de": "Zucker"
+                        "en": "Granulated sugar",
+                        "uk": "Цукор пісок",
+                        "tr": "Toz şeker",
+                        "de": "Kristallzucker"
                     },
                     "items": {
                         "sugar": {

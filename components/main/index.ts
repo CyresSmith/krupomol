@@ -3,3 +3,4 @@ export * from './certification';
 export * from './consultation';
 export * from './main-advantages';
 export * from './main-hero';
+export * from './our-products';
