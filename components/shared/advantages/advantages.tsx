@@ -15,7 +15,11 @@ export const Advantages = ({ advantages, id, title }: Props) => {
         <Section id={id} variant="secondary">
             <div className="container">
                 <AnimatedTextBox from="top">
-                    <Title as="h3" className="mb-9 text-center mobile:text-[34px]" title={title} />
+                    <Title
+                        as="h3"
+                        className="mb-9 text-center text-5xl mobile:text-[34px]"
+                        title={title}
+                    />
                 </AnimatedTextBox>
 
                 <ul className="grid grid-cols-2 justify-center gap-4 mobile:grid-cols-1">
