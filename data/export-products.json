@@ -1,0 +1,693 @@
+{
+    "oilseeds": [
+        {
+            "title": {
+                "uk": "Чорне насіння сьоняшнику",
+                "en": "Black sunflower seeds",
+                "tr": "Seneschal'ın siyah tohumları",
+                "de": "Schwarze Samen des Seneschalls"
+            },
+            "id": "black-sunflower",
+            "addInfo": {
+                "uk": [
+                    "Розмір: 34+, 36+, 38+, 40+",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "Sizes: 34+, 36+, 38+, 40+",
+                    "Packaging: polypropylene bags or big bags",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "Größe: 34+, 36+, 38+, 40+",
+                    "Verpackung: Polypropylenbeutel oder große Säcke",
+                    "Herkunftsland: Ukraine"
+                ],
+                "tr": [
+                    "Beden: 34+, 36+, 38+, 40+",
+                    "Ambalaj: polipropilen torbalar veya büyük torbalar",
+                    "Kaynak ülke: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Смугасте насіння соняшнику",
+                "tr": "Çizgili ayçiçeği tohumları",
+                "en": "Striped sunflower seeds",
+                "de": "Gestreifte Sonnenblumenkerne"
+            },
+            "id": "striped-sunflower",
+            "addInfo": {
+                "uk": [
+                    "Типи: Jaguar II, Jaguar XL, Dakota or Reyna-K",
+                    "Розмір: 7+",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "Types: Jaguar II, Jaguar XL, Dakota or Reyna-K",
+                    "Size: 7+",
+                    "Packaging: bags or big bags",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "Typen: Jaguar II, Jaguar XL, Dakota oder Reyna-K",
+                    "Größe: 7+",
+                    "Verpackung: Polypropylenbeutel oder große Säcke",
+                    "Herkunftsland: Ukraine"
+                ],
+                "tr": [
+                    "Tipler: Jaguar II, Jaguar XL, Dakota veya Reyna-K",
+                    "Boyut: 7+",
+                    "Ambalaj: polipropilen torbalar veya büyük torbalar",
+                    "Kaynak ülke: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Біле насіння соняшнику",
+                "en": "White sunflower seeds",
+                "tr": "Beyaz ayçekirdeği",
+                "de": "Weiße Sonnenblumenkerne"
+            },
+            "id": "white-sunflower",
+            "addInfo": {
+                "uk": [
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "Країна походження: Україна"
+                ],
+                "en": ["Packaging: polypropylene bags or big bags", "Origin: Ukraine"],
+                "tr": [
+                    "Ambalaj: polipropilen torbalar veya büyük torbalar",
+                    "Kaynak ülke: Ukrayna"
+                ],
+                "de": ["Verpackung: Polypropylenbeutel oder große Säcke", "Herkunftsland: Ukraine"]
+            }
+        },
+        {
+            "title": {
+                "uk": "Ядра соняшника",
+                "en": "Sunflower kernels",
+                "de": "Sonnenblumenkerne",
+                "tr": "Ayçiçeği çekirdekleri"
+            },
+            "id": "sunflower-kernels",
+            "addInfo": {
+                "uk": [
+                    "Випічка: макс. 800 шт/унція, биті до 12%",
+                    "Кондитерські вироби: 500-550 шт/унція, биті до 10%",
+                    "Чіпси: Якість Sortex",
+                    "Пакування: паперові мішки по 25 кг",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "Baking: max. 800 pcs/oz, broken up to 12%",
+                    "Confectionery: 500–550 pcs/oz, broken up to 10%",
+                    "Chips: Sortex quality",
+                    "Packaging: 25 kg paper bags",
+                    "Origin: Ukraine"
+                ],
+                "tr": [
+                    "Pişirme: maks. 800 adet/oz, %12'ye kadar kırılmış",
+                    "Şekerleme: 500-550 adet/oz, %10'a kadar kırılmış",
+                    "Çipler: Sortex kalitesi",
+                    "Ambalaj: 25 kg'lık kağıt torbalar",
+                    "Kaynak ülke: Ukrayna"
+                ],
+                "de": [
+                    "Backen: max. 800 pcs/oz, gebrochen bis zu 12%",
+                    "Süßwaren: 500-550 Stück/oz, gebrochen bis zu 10%",
+                    "Chips: Sortex-Qualität",
+                    "Verpackung: 25 kg Papiersäcke",
+                    "Herkunft: Ukraine"
+                ]
+            }
+        }
+    ],
+    "grains": [
+        {
+            "title": {
+                "uk": "Нут",
+                "en": "Chickpeas",
+                "de": "Kichererbse",
+                "tr": "Nohut"
+            },
+            "id": "chickpeas",
+            "addInfo": {
+                "uk": [
+                    "Чистота 97-98%",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": ["Purity: 97–98%", "Packaging: bags or big bags", "MOQ: 22 tons"],
+                "tr": ["Saflık: %97-98", "Ambalaj: torbalar veya büyük torbalar", "Adedi: 22 ton"],
+                "de": ["Reinheit: 97-98%", "Verpackung: Säcke oder Big Bags", "MOQ: 22 Tonnen"]
+            }
+        },
+        {
+            "title": {
+                "uk": "Зерна гірчиці",
+                "en": "Mustard seeds",
+                "de": "Senfsaat",
+                "tr": "Hardal Tohumu"
+            },
+            "id": "mustard-seeds",
+            "addInfo": {
+                "uk": [
+                    "Жовті / Білі / Чорні",
+                    "Чистота: від 97% до 99.5%",
+                    "Пакування: великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Yellow / White / Black",
+                    "Purity 97% to 99.5%",
+                    "Packaging: big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Gelb / Weiß / Schwarz",
+                    "Reinheit: 97% bis 99,5%",
+                    "Verpackung: Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Sarı / Beyaz / Siyah",
+                    "Saflık: %97 ila %99,5",
+                    "Ambalaj: büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": { "uk": "Сочевиця", "en": "Lentils", "de": "Linsen", "tr": "Mercimek" },
+            "id": "lentils",
+            "addInfo": {
+                "uk": [
+                    "Зелений / Червоний / Футбол / Брейкінг",
+                    "Чистота: 99%",
+                    "Вологість: 15%",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Green / Red / Football / Breaking",
+                    "Purity: 99%",
+                    "Moisture: 15%",
+                    "Packaging: bags or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Grün / Rot / Fußball / Breaking",
+                    "Reinheit: 99%",
+                    "Feuchte: 15%",
+                    "Verpackung: Säcke oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Yeşil / Kırmızı / Futbol / Kırılma",
+                    "Saflık: %99",
+                    "Nem oranı: 15%",
+                    "Ambalaj: torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": { "uk": "Льон", "en": "Flax", "de": "Flachs", "tr": "Keten" },
+            "id": "flax",
+            "addInfo": {
+                "uk": [
+                    "Коричневий / Золотий",
+                    "Чистота: 97-98% або 99,9% на вимогу",
+                    "Пакування: великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Brown / Golden",
+                    "Purity: 97–98% or 99.9% on request",
+                    "Packaging: big bags",
+                    "MOQ: 22 tons"
+                ],
+                "tr": [
+                    "Kahverengi / Altın",
+                    "Saflık: %97-98 veya talep üzerine %99,9",
+                    "Ambalaj: büyük torbalar",
+                    "Adedi: 22 ton"
+                ],
+                "de": [
+                    "Braun / Golden",
+                    "Reinheit: 97-98% oder 99,9% auf Anfrage",
+                    "Verpackung: Big Bags",
+                    "MOQ: 22 Tonnen"
+                ]
+            }
+        },
+        {
+            "title": { "uk": "Просо", "en": "Millet", "de": "Hirse", "tr": "Millet" },
+            "id": "millet",
+            "addInfo": {
+                "uk": [
+                    "Червоний / Жовтий",
+                    "Чистота: 98%",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Red / Yellow",
+                    "Purity: 98%",
+                    "Packaging: bags or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Rot/Gelb",
+                    "Reinheit: 98%",
+                    "Verpackung: Säcke oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Kırmızı / Sarı",
+                    "Saflık: %98",
+                    "Ambalaj: torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": { "uk": "Сорго", "en": "Sorghum", "de": "Sorghum", "tr": "Sorgum" },
+            "id": "sorghum",
+            "addInfo": {
+                "uk": [
+                    "Білий / Червоний",
+                    "Чистота: 98%",
+                    "Пакування: поліпропіленові мішки, або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": ["White / Red", "Purity: 98%", "Packaging: bags or big bags", "MOQ: 22 tons"],
+                "de": [
+                    "Weiß / Rot",
+                    "Reinheit: 98%",
+                    "Verpackung: Säcke oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Beyaz / Kırmızı",
+                    "Saflık: %98",
+                    "Ambalaj: torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Смажена гречка",
+                "en": "Roasted Buckwheat",
+                "de": "Gebratener Buchweizen",
+                "tr": "Kavrulmuş Karabuğday"
+            },
+            "id": "roasted-buckwheat",
+            "addInfo": {
+                "uk": ["Чистота: 99,6%", "Пакування: великі мішки", "MOQ: 22 тонни"],
+                "en": ["Purity: 99.6%", "Packaging: bags or big bags", "MOQ: 22 tons"],
+                "de": ["Reinheit: 99,6%", "Verpackung: Säcke oder Big Bags", "MOQ: 22 Tonnen"],
+                "tr": ["Saflık: %99,6", "Ambalaj: torbalar veya büyük torbalar", "Adedi: 22 ton"]
+            }
+        },
+        {
+            "title": {
+                "uk": "Жовтий горошок",
+                "en": "Yellow Split Peas",
+                "de": "Gelbe Spalterbsen",
+                "tr": "Sarı Bezelye"
+            },
+            "id": "yellow-split-peas",
+            "addInfo": {
+                "uk": [
+                    "Вологість: 15",
+                    "Домішки: 1%",
+                    "Пакування: Мішки по 50 кг на піддонах або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Moisture: 15%",
+                    "Admixtures: 1%",
+                    "Packaging: 50kg bags on pallets or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Feuchte: 15%",
+                    "Zusatzstoffe: 1%",
+                    "Verpackung: 50kg Säcke auf Paletten oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Nem oranı: %15",
+                    "Katkılar: %1",
+                    "Paketleme: Paletler üzerinde 50 kg'lık torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Пшоно лущене",
+                "en": "Hulled Millet",
+                "de": "Hirse mit Schale",
+                "tr": "Kabuklu Darı"
+            },
+            "id": "hulled-millet",
+            "addInfo": {
+                "uk": [
+                    "Урожай 2022 року",
+                    "Чистота: 99,6%",
+                    "Пакування: пакети або великі мішки",
+                    "MOQ: 22 тонни",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "2022 crop",
+                    "Purity: 99.6%",
+                    "Packaging: bags or big bags",
+                    "MOQ: 22 tons",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "2022 Ernte",
+                    "Reinheit: 99,6%",
+                    "Verpackung: Säcke oder Big Bags",
+                    "MOQ: 22 Tonnen",
+                    "Herkunft: Ukraine"
+                ],
+                "tr": [
+                    "2022 mahsulü",
+                    "Saflık: %99,6",
+                    "Ambalaj: torbalar veya büyük torbalar",
+                    "Adedi: 22 ton",
+                    "Köken: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Жовтий і зелений горошок",
+                "en": "Yellow and Green Peas",
+                "de": "Gelbe und grüne Erbsen",
+                "tr": "Sarı ve Yeşil Bezelye"
+            },
+            "id": "yellow-green-peas",
+            "addInfo": {
+                "uk": [
+                    "Країна походження: Україна",
+                    "Чистота: 98-99%",
+                    "Фасування: Пакування: великі мішки",
+                    "Урожай: 2023 рік"
+                ],
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
+                "de": [
+                    "Herkunft: Ukraine",
+                    "                Reinheit: 98-99%",
+                    "Verpackung: Big Bag",
+                    "Erntezeit: 2023"
+                ],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+            }
+        }
+    ],
+    "feed-additives": [
+        {
+            "title": {
+                "uk": "Соєве лушпиння",
+                "en": "Soybean Husk",
+                "de": "Sojabohnenschalen",
+                "tr": "Soya Fasulyesi Kabuğu"
+            },
+            "id": "soybean-husk",
+            "addInfo": {
+                "uk": [
+                    "Високоволокнистий побічний продукт переробки сої",
+                    "Придатний для годівлі жуйних тварин",
+                    "Упаковка: насипом або у великих мішках",
+                    "Вологість: не більше 12,0%",
+                    "Клітковина (як основа): не більше 45,0%",
+                    "Протеїн (як основа): не менше 7,0 %",
+                    "Жир: не більше 3,0%",
+                    "Зола (сира основа): не більше 6,0%",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "High-fiber by-product from soybean processing",
+                    "Suitable for ruminant feed",
+                    "Packaging: in bulk or big bags",
+                    "Moisture: max 12.0%",
+                    "Fiber (as is basis): max 45.0%",
+                    "Protein (as is basis): min 7.0%",
+                    "Fat: max 3.0%",
+                    "Ash (crude basis): max 6.0%",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "Ballaststoffreiches Nebenprodukt aus der Sojabohnenverarbeitung",
+                    "Geeignet für Wiederkäuerfutter",
+                    "Verpackung: lose oder in Big Bags",
+                    "Feuchtigkeit: max. 12,0%",
+                    "Ballaststoffe (als Basis): max. 45,0%",
+                    "Eiweiß (als Basis): min 7,0%",
+                    "Fett: max 3.0%",
+                    "Asche (Rohmasse): max. 6,0%",
+                    "Herkunft: Ukraine"
+                ],
+                "tr": [
+                    "Soya fasulyesinin işlenmesinden elde edilen yüksek lifli yan ürün",
+                    "Ruminant yemleri için uygundur",
+                    "Ambalaj: dökme veya büyük torbalarda",
+                    "Nem: maksimum %12.0",
+                    "Lif (baz olarak): maks %45,0",
+                    "Protein (olduğu gibi): min %7,0",
+                    "Yağ: maks %3,0",
+                    "Kül (ham bazda): maks %6,0",
+                    "Köken: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Соєвий шрот",
+                "en": "Soybean Meal",
+                "de": "Sojabohnenmehl",
+                "tr": "Soya Küspesi"
+            },
+            "id": "soybean-meal",
+            "addInfo": {
+                "uk": [
+                    "Високопротеїновий компонент для птиці, свиней та великої рогатої худоби",
+                    "Пакування: насипом або у великих мішках",
+                    "Статус ГМО: відповідає нормам ЄС",
+                    "Протеїн (як є): мінімум 46,0%",
+                    "Вологість: макс. 12,0%",
+                    "Клітковина (як є): не більше 5,0%",
+                    "Активність уреази: макс. 0,20",
+                    "Жир/олія: не більше 2,0%"
+                ],
+                "en": [
+                    "High-protein component for poultry, swine, and cattle",
+                    "Available in bulk or big bags",
+                    "GMO status: compliant with EU regulations",
+                    "Protein (as is): min 46.0%",
+                    "Moisture: max 12.0%",
+                    "Fiber (as is): max 5.0%",
+                    "Urease activity: max 0.20",
+                    "Fat/Oil: max 2.0%"
+                ],
+                "de": [
+                    "Eiweißreiche Komponente für Geflügel, Schweine und Rinder",
+                    "Erhältlich als Schüttgut oder in Big Bags",
+                    "GMO-Status: konform mit den EU-Vorschriften",
+                    "Eiweiß (wie es ist): mindestens 46,0%",
+                    "Feuchtigkeit: max 12,0%",
+                    "Ballaststoffe (wie sie sind): max. 5,0%",
+                    "Urease-Aktivität: max. 0,20",
+                    "Fett/Öl: max. 2,0%"
+                ],
+                "tr": [
+                    "Kümes hayvanları, domuz ve sığırlar için yüksek proteinli bileşen",
+                    "Dökme veya büyük torbalarda mevcuttur",
+                    "GDO durumu: AB yönetmelikleri ile uyumlu",
+                    "Protein (olduğu gibi): min %46,0",
+                    "Nem: maks %12,0",
+                    "Lif (olduğu gibi): maks %5,0",
+                    "Üreaz aktivitesi: maks %0,20",
+                    "Yağ/Yağ: maks %2,0"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Гранули з лушпиння соєвих бобів",
+                "en": "Soybean Hull Pellets",
+                "de": "Sojabohnenschalen-Pellets",
+                "tr": "Soya Fasulyesi Kabuğu Peletleri"
+            },
+            "id": "soybean-hull-pellets",
+            "addInfo": {
+                "uk": [
+                    "Гранульована форма соєвого лушпиння",
+                    "Легко обробляти та згодовувати",
+                    "Підходить для великої рогатої худоби та овець",
+                    "Вологість: макс. 12%",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "Pelleted form of soybean husk",
+                    "Easy to handle and feed",
+                    "Suitable for cattle and sheep",
+                    "Moisture: max 12%",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "Pelletierte Form von Sojabohnenschalen",
+                    "Leicht zu handhaben und zu füttern",
+                    "Geeignet für Rinder und Schafe",
+                    "Feuchtigkeit: max. 12%",
+                    "Herkunft: Ukraine"
+                ],
+                "tr": [
+                    "Soya fasulyesi kabuğunun peletlenmiş formu",
+                    "Kullanımı ve beslemesi kolay",
+                    "Sığır ve koyunlar için uygundur",
+                    "Nem: maksimum %12",
+                    "Köken: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Дистилятори Сухе зерно з розчинними речовинами (DDGS)",
+                "en": "Distillers Dried Grains with Solubles (DDGS)",
+                "de": "Getrocknete Destillierkörner mit Schrot (DDGS)",
+                "tr": "Distillers Solubles ile Kurutulmuş Tahıllar (DDGS)"
+            },
+            "id": "distillers-dried-grains",
+            "addInfo": {
+                "uk": [
+                    "Побічний продукт виробництва етанолу",
+                    "Висока енергетична та протеїнова цінність",
+                    "Використовується в раціонах свиней, птиці та великої рогатої худоби",
+                    "Зовнішній вигляд: сипучий порошок",
+                    "Колір: від світло-жовтого до темно-коричневого",
+                    "Запах: хлібо-дріжджовий, типовий зерновий і дріжджовий",
+                    "Вологість: не більше 10,0%",
+                    "Сирий протеїн: 35,0%",
+                    "Сира клітковина: 11,7%",
+                    "Сира зола: 2,1%",
+                    "Сирий жир: 5,87%.",
+                    "Феромагнітні частинки ≤2 мм: макс. 2,8 мл/кг сухого залишку",
+                    "Країна походження: Україна"
+                ],
+                "en": [
+                    "By-product of ethanol production",
+                    "High energy and protein value",
+                    "Used in diets of pigs, poultry, and cattle",
+                    "Appearance: loose powder",
+                    "Color: light yellow to dark brown",
+                    "Smell: bread-yeast, typical grain and yeast",
+                    "Moisture: max 10.0%",
+                    "Crude protein: 35.0%",
+                    "Crude fiber: 11.7%",
+                    "Crude ash: 2.1%",
+                    "Crude fat: 5.87%",
+                    "Ferromagnetic particles ≤2mm: max 2.8 ml/kg of stillage",
+                    "Origin: Ukraine"
+                ],
+                "de": [
+                    "Nebenprodukt der Ethanolproduktion",
+                    "Hoher Energie- und Proteinwert",
+                    "Verwendung in der Ernährung von Schweinen, Geflügel und Rindern",
+                    "Erscheinungsbild: loses Pulver",
+                    "Farbe: hellgelb bis dunkelbraun",
+                    "Geruch: Brothefe, typisches Getreide und Hefe",
+                    "Feuchte: max. 10,0%",
+                    "Rohprotein: 35,0%",
+                    "Rohfaser: 11,7%",
+                    "Rohasche: 2,1%",
+                    "Rohfett: 5.87%",
+                    "Ferromagnetische Partikel ≤2mm: max. 2,8 ml/kg Schlempe",
+                    "Herkunft: Ukraine"
+                ],
+                "tr": [
+                    "Etanol üretiminin yan ürünü",
+                    "Yüksek enerji ve protein değeri",
+                    "Domuz, kümes hayvanları ve sığırların diyetlerinde kullanılır",
+                    "Görünüm: gevşek pudra",
+                    "Renk: açık sarıdan koyu kahverengiye",
+                    "Koku: ekmek mayası, tipik tahıl ve maya",
+                    "Nem: maksimum %10.0",
+                    "Ham protein: %35.0",
+                    "Ham lif: %11,7",
+                    "Ham kül: %2,1",
+                    "Ham yağ: %5,87",
+                    "Ferromanyetik partiküller ≤2mm: maksimum 2,8 ml/kg durgun su",
+                    "Köken: Ukrayna"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Пшеничні висівки",
+                "en": "Wheat Bran",
+                "de": "Weizenkleie",
+                "tr": "Buğday Kepeği"
+            },
+            "id": "wheat-bran",
+            "addInfo": {
+                "uk": [
+                    "Високоволокнистий кормовий компонент",
+                    "Виробляється з подрібненого зерна пшениці",
+                    "Використовується для свиней, великої рогатої худоби, коней",
+                    "Пакування: насипом або в мішках по 25/50 кг",
+                    "Протеїн: мін. 14%",
+                    "Вологість: не більше 15%",
+                    "Зола: не більше 6%",
+                    "Клітковина: не більше 10%",
+                    "Питома вага: 270 г/л"
+                ],
+                "en": [
+                    "High-fiber feed component",
+                    "Produced from milling wheat grain",
+                    "Used for pigs, cattle, horses",
+                    "Available in bulk or 25/50kg bags",
+                    "Protein: min 14%",
+                    "Moisture: max 15%",
+                    "Ash: max 6%",
+                    "Fiber: max 10%",
+                    "Specific gravity: 270 g/l"
+                ],
+                "de": [
+                    "Ballaststoffreiche Futterkomponente",
+                    "Hergestellt aus gemahlenem Weizenkorn",
+                    "Verwendet für Schweine, Rinder und Pferde",
+                    "Erhältlich als Schüttgut oder in 25/50-kg-Säcken",
+                    "Eiweiß: mindestens 14%",
+                    "Feuchte: max 15%",
+                    "Asche: max 6%",
+                    "Ballaststoffe: max. 10%",
+                    "Spezifisches Gewicht: 270 g/l"
+                ],
+                "tr": [
+                    "Yüksek lifli yem bileşeni",
+                    "Buğday tanesinin öğütülmesinden elde edilir",
+                    "Domuzlar, sığırlar, atlar için kullanılır",
+                    "Dökme veya 25/50 kg'lık torbalarda mevcuttur",
+                    "Protein: min %14",
+                    "Nem: maksimum %15",
+                    "Kül: maksimum %6",
+                    "Elyaf: maksimum %10",
+                    "Özgül ağırlık: 270 g/l"
+                ]
+            }
+        }
+    ],
+    "pmvs": []
+}

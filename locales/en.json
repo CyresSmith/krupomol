@@ -416,6 +416,12 @@
                 "text": "Calibration - Granulation - Certification",
                 "icon": "certification"
             }
-        ]
+        ],
+        "categories": {
+            "oilseeds": "Oilseeds",
+            "grains": "Grains",
+            "feed-additives": "Feed additives",
+            "pmvs": "Protein-mineral-vitamin supplements"
+        }
     }
 }
