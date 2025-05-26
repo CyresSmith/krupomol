@@ -14,7 +14,7 @@ export const ExportProductCard = async ({ product }: Props) => {
     const { addInfo, id, title } = product;
 
     return (
-        <li className="w-full rounded-20 p-4">
+        <li className="w-full rounded-20">
             <div className="relative h-[360px] w-full overflow-hidden rounded-20 mobile:h-[240px]">
                 <Image
                     alt={product.title[locale]}
