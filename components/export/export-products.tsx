@@ -1,17 +1,17 @@
 import { getTranslations } from 'next-intl/server';
 
-import { ExportCategories, ExportProductType } from 'lib/types/export-products.types';
-
 import { ExportProductCard } from './export-product-card';
 
-import data from '../../data/export-products.json';
+import { exportProducts } from '@data';
 
 import { Section, Title } from '@components/shared';
+
+import { ExportCategories, ExportProductType } from '@types';
 
 import { ANCHORS } from '@constants';
 
 export const ExportProducts = async () => {
-    const categories = Object.keys(data) as ExportCategories[];
+    const categories = Object.keys(exportProducts) as ExportCategories[];
 
     const t = await getTranslations('export');
 
@@ -19,7 +19,7 @@ export const ExportProducts = async () => {
         <Section id={ANCHORS.export.products}>
             {categories.map(categoryKey => {
                 const localizedCategory = t(`categories.${categoryKey}` as const);
-                const products = data[categoryKey] as ExportProductType[];
+                const products = exportProducts[categoryKey] as ExportProductType[];
 
                 return (
                     <div
@@ -33,7 +33,7 @@ export const ExportProducts = async () => {
                         />
                         <div className="w-full border-b-2 border-primary"></div>
                         {products.length > 0 && (
-                            <ul className="my-5 flex flex-wrap justify-center gap-5 desktop:my-9">
+                            <ul className="my-5 grid grid-cols-1 gap-5 tablet:grid-cols-2 desktop:my-9 desktop:grid-cols-3">
                                 {products.map(product => (
                                     <ExportProductCard key={product.id} product={product} />
                                 ))}

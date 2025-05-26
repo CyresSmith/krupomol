@@ -6,6 +6,7 @@
         "<THIRD_PARTY_MODULES>",
         "^./(.*)$",
         "^../(.*)$",
+        "@data",
         "@hooks",
         "@shared-metadata",
         "@i18n",

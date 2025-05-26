@@ -1,6 +1,6 @@
 import { Locale } from 'next-intl';
 
-import productsDataJson from '@products';
+import { products } from '@data';
 
 import { ProductListItemType, ProductsData, ProductType } from '@types';
 
@@ -8,7 +8,7 @@ import { PRODUCTS_ROUTE } from '@routes';
 
 import { filterByProductType, getProductImage, sortPremiumFirst } from '@utils';
 
-const productsData = productsDataJson as unknown as ProductsData;
+const productsData = products as unknown as ProductsData;
 
 export const ProductsService = {
     generateParams(type: 'category' | 'product' | 'type') {

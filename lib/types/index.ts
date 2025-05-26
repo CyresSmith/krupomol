@@ -2,6 +2,7 @@ export * from './advantages.types';
 export * from './certificate.types';
 export * from './consultation.types';
 export * from './contacts.types';
+export * from './export-products.types';
 export * from './icon-names';
 export * from './infos.types';
 export * from './messages.types';

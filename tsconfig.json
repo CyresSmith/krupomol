@@ -84,6 +84,9 @@
             "@products": [
                 "./products"
             ],
+            "@data": [
+                "./data"
+            ],
         }
     },
     "include": [
