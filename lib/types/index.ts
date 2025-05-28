@@ -8,4 +8,5 @@ export * from './infos.types';
 export * from './messages.types';
 export * from './navigation.types';
 export * from './products.types';
+export * from './purchase-prices.types';
 export * from './shared.types';
