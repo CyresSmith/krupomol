@@ -318,12 +318,117 @@
         },
         {
             "title": {
-                "uk": "Жовтий горошок",
+                "uk": "Горох жовтий колотий",
                 "en": "Yellow Split Peas",
-                "de": "Gelbe Spalterbsen",
-                "tr": "Sarı Bezelye"
+                "de": "Gespaltene gelbe Erbsen",
+                "tr": "Bölünmüş sari bezelye"
             },
             "id": "yellow-split-peas",
+            "addInfo": {
+                "uk": [
+                    "Вологість: 15",
+                    "Домішки: 1%",
+                    "Пакування: Мішки по 50 кг на піддонах або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Moisture: 15%",
+                    "Admixtures: 1%",
+                    "Packaging: 50kg bags on pallets or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Feuchte: 15%",
+                    "Zusatzstoffe: 1%",
+                    "Verpackung: 50kg Säcke auf Paletten oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Nem oranı: %15",
+                    "Katkılar: %1",
+                    "Paketleme: Paletler üzerinde 50 kg'lık torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Горох зелений колотий",
+                "en": "Green Split Peas",
+                "de": "Gehackte grüne Erbsen",
+                "tr": "Doğranmiş yeşil bezelye"
+            },
+            "id": "green-split-peas",
+            "addInfo": {
+                "uk": [
+                    "Вологість: 15",
+                    "Домішки: 1%",
+                    "Пакування: Мішки по 50 кг на піддонах або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Moisture: 15%",
+                    "Admixtures: 1%",
+                    "Packaging: 50kg bags on pallets or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Feuchte: 15%",
+                    "Zusatzstoffe: 1%",
+                    "Verpackung: 50kg Säcke auf Paletten oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Nem oranı: %15",
+                    "Katkılar: %1",
+                    "Paketleme: Paletler üzerinde 50 kg'lık torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Горох зелений круглий",
+                "en": "Green round peas",
+                "de": "Grüne runde Erbsen",
+                "tr": "Yeşil yuvarlak bezelye"
+            },
+            "id": "green-round-peas",
+            "addInfo": {
+                "uk": [
+                    "Вологість: 15",
+                    "Домішки: 1%",
+                    "Пакування: Мішки по 50 кг на піддонах або великі мішки",
+                    "MOQ: 22 тонни"
+                ],
+                "en": [
+                    "Moisture: 15%",
+                    "Admixtures: 1%",
+                    "Packaging: 50kg bags on pallets or big bags",
+                    "MOQ: 22 tons"
+                ],
+                "de": [
+                    "Feuchte: 15%",
+                    "Zusatzstoffe: 1%",
+                    "Verpackung: 50kg Säcke auf Paletten oder Big Bags",
+                    "MOQ: 22 Tonnen"
+                ],
+                "tr": [
+                    "Nem oranı: %15",
+                    "Katkılar: %1",
+                    "Paketleme: Paletler üzerinde 50 kg'lık torbalar veya büyük torbalar",
+                    "Adedi: 22 ton"
+                ]
+            }
+        },
+        {
+            "title": {
+                "uk": "Горох жовтий круглий",
+                "en": "Yellow round peas",
+                "de": "Gelbe runde Erbsen",
+                "tr": "Sarı yuvarlak bezelye"
+            },
+            "id": "yellow-round-peas",
             "addInfo": {
                 "uk": [
                     "Вологість: 15",
