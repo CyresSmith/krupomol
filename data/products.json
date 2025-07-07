@@ -525,7 +525,7 @@
                         "barley-groats-2": {
                             "title": {
                                 "en": "Barley groats",
-                                "uk": "Крупа ячмінно-ячна",
+                                "uk": "Крупа ячмінно-ячна вагова",
                                 "de": "Gerstengrütze",
                                 "tr": "Arpa irmiği"
                             },
@@ -548,7 +548,7 @@
                         "pearl-barley-groats": {
                             "title": {
                                 "en": "Pearl barley-barley groats",
-                                "uk": "Крупа ячмінно-перлова",
+                                "uk": "Крупа ячмінно-перлова вагова",
                                 "de": "Perlgraupengrütze",
                                 "tr": "İnci arpa irmiği"
                             },
