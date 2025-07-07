@@ -44,7 +44,7 @@ export const ContactsSection = async () => {
                             return (
                                 <li key={href}>
                                     <Link
-                                        className="px-0 transition hover:opacity-80"
+                                        className="break-all px-0 transition hover:opacity-80"
                                         href={href ?? ''}
                                     >
                                         {text}

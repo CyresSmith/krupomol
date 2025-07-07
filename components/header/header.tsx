@@ -23,7 +23,7 @@ export const Header = async () => {
     return (
         <header className="absolute left-0 top-0 z-10 w-full" id="top">
             <div className="mb-6 bg-primary py-4 text-xs text-primary-foreground desktop:py-2">
-                <div className="container flex items-start justify-between gap-6 mobile:justify-center">
+                <div className="container flex items-start justify-between gap-6 mobile:justify-center desktop:items-center">
                     <Link
                         className="transition hover:text-accent mobile:hidden"
                         href={addresses[0]?.href ?? '/'}
@@ -35,16 +35,18 @@ export const Header = async () => {
 
                     <div className="flex flex-col items-center gap-4 desktop:flex-row">
                         <ul className="flex flex-col items-center gap-4 desktop:flex-row">
-                            {phones.map(({ href, text }) => (
-                                <li key={href}>
-                                    <Link
-                                        className="transition hover:text-accent"
-                                        href={href ?? '/'}
-                                    >
-                                        {text}
-                                    </Link>
-                                </li>
-                            ))}
+                            {(phones.length > 2 ? phones.slice(0, 2) : phones).map(
+                                ({ href, text }) => (
+                                    <li key={href}>
+                                        <Link
+                                            className="transition hover:text-accent"
+                                            href={href ?? '/'}
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                )
+                            )}
                         </ul>
 
                         <LocaleSelect />
