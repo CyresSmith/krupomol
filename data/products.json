@@ -141,18 +141,18 @@
                 },
                 "pea": {
                     "title": {
-                        "en": "Pea groats",
-                        "uk": "Крупа горохова",
+                        "en": "Split pea groats",
+                        "uk": "Крупа горохова колота",
                         "de": "Erbsengrütze",
                         "tr": "Bezelye kabuğu"
                     },
                     "items": {
                         "pea-groats": {
                             "title": {
-                                "en": "Pea groats",
-                                "uk": "Крупа горохова",
+                                "en": "Split pea groats",
+                                "uk": "Крупа горохова колота",
                                 "de": "Erbsengrütze",
-                                "tr": "Bezelye kabuğu"
+                                "tr": "Bezelye ezmesi"
                             },
                             "image": "pea",
                             "fats": "0,59",
@@ -172,8 +172,8 @@
                         },
                         "pea-groats-weight": {
                             "title": {
-                                "en": "Pea groats",
-                                "uk": "Крупа горохова вагова",
+                                "en": "Split pea groats weight",
+                                "uk": "Крупа горохова колота вагова",
                                 "de": "Erbsengrütze",
                                 "tr": "Bezelye kabuğu"
                             },
@@ -195,9 +195,9 @@
                         },
                         "pea-groats-premium": {
                             "title": {
-                                "en": "Pea groats premium",
-                                "uk": "Крупа горохова premium",
-                                "tr": "Bezelye kabuğu çikarilmiş tane",
+                                "en": "Split pea groats premium",
+                                "uk": "Крупа горохова колота premium",
+                                "tr": "Bezelye ezmesi premium",
                                 "de": "Erbsengrütze Premium"
                             },
                             "image": "pea-premium",
@@ -400,7 +400,7 @@
                         "soft-wheat-groats": {
                             "title": {
                                 "en": "Soft wheat groats",
-                                "uk": "Крупа з м'якої пшениці",
+                                "uk": "Крупа з м'якої пшениці вагова",
                                 "tr": "Yumuşak buğday irmiği",
                                 "de": "Weichweizengrütze"
                             },
@@ -425,8 +425,8 @@
                 "barley": {
                     "title": {
                         "en": "Barley groats",
-                        "uk": "Крупа ячна",
-                        "tr": "Arpa kabuğu",
+                        "uk": "Крупа ячмінно-ячна",
+                        "tr": "Arpa irmiği",
                         "de": "Gerstengrütze"
                     },
                     "items": {
@@ -453,33 +453,10 @@
                             "expiration": "12",
                             "type": "regular"
                         },
-                        "barley-groats-weight": {
-                            "title": {
-                                "en": "Barley groats",
-                                "uk": "Крупа ячна вагова",
-                                "tr": "Arpa kabuğu",
-                                "de": "Gerstengrütze"
-                            },
-                            "image": "barley-weight",
-                            "fats": "1,9",
-                            "acids": "0,46",
-                            "carbohydrates": "69,8",
-                            "sugar": "1,5",
-                            "protein": "8,9",
-                            "salt": "0,01",
-                            "kj": "1446",
-                            "kcal": "345",
-                            "mass": "25",
-                            "package": "bag",
-                            "gpCount": "0",
-                            "gpWeight": "0",
-                            "expiration": "12",
-                            "type": "weight"
-                        },
                         "barley-goats-premium": {
                             "title": {
                                 "en": "Barley groats premium",
-                                "uk": "Крупа ячна premium",
+                                "uk": "Крупа ячмінно-ячна premium",
                                 "tr": "Premium arpa kabuğu çikarilmiş tane",
                                 "de": "Hochwertige Gerstengrütze"
                             },
