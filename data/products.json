@@ -433,9 +433,9 @@
                         "barley-groats": {
                             "title": {
                                 "en": "Barley groats",
-                                "uk": "Крупа ячна",
-                                "tr": "Arpa kabuğu",
-                                "de": "Gerstengrütze"
+                                "uk": "Крупа ячмінно-ячна",
+                                "de": "Gerstengrütze",
+                                "tr": "Arpa irmiği"
                             },
                             "image": "barley",
                             "fats": "1,9",
@@ -501,10 +501,10 @@
                         },
                         "pearl-barley": {
                             "title": {
-                                "en": "Pearl barley",
-                                "uk": "Крупа перлова",
-                                "de": "Perlgraupen",
-                                "tr": "İnci arpa"
+                                "en": "Pearl barley groats",
+                                "uk": "Крупа ячмінно-перлова",
+                                "de": "Perlgraupengrütze",
+                                "tr": "İnci arpa irmiği"
                             },
                             "image": "pearl-barley",
                             "fats": "1,7",
@@ -524,10 +524,10 @@
                         },
                         "pearl-barley-premium": {
                             "title": {
-                                "en": "Pearl barley premium",
-                                "uk": "Крупа перлова premium",
-                                "tr": "İnci arpa primi",
-                                "de": "Perlgraupenprämie"
+                                "en": "Pearl barley groats premium",
+                                "uk": "Крупа ячмінно-перлова premium",
+                                "de": "Premium Perlgraupengrütze",
+                                "tr": "Birinci sinif inci arpa irmiği"
                             },
                             "image": "pearl-barley-premium",
                             "fats": "1,7",
@@ -590,90 +590,6 @@
                             "gpWeight": "0",
                             "expiration": "18",
                             "type": "weight"
-                        }
-                    }
-                }
-            }
-        },
-        "sugar": {
-            "title": { "en": "Sugar", "uk": "Цукор", "de": "Zucker", "tr": "Şeker" },
-            "items": {
-                "granulated": {
-                    "title": {
-                        "en": "Granulated sugar",
-                        "uk": "Цукор пісок",
-                        "tr": "Toz şeker",
-                        "de": "Kristallzucker"
-                    },
-                    "items": {
-                        "sugar": {
-                            "title": {
-                                "en": "Granulated Sugar",
-                                "uk": "Цукор пісок",
-                                "de": "Granulierter Zucker",
-                                "tr": "Toz şeker"
-                            },
-                            "image": "sugar",
-                            "fats": "0",
-                            "acids": "0",
-                            "carbohydrates": "100",
-                            "sugar": "99.5",
-                            "protein": "0",
-                            "salt": "0",
-                            "kj": "1680",
-                            "kcal": "401",
-                            "mass": "1000",
-                            "package": "polypropylene",
-                            "gpCount": "6",
-                            "gpWeight": "6",
-                            "expiration": "20",
-                            "type": "regular"
-                        },
-                        "sugar-weight": {
-                            "title": {
-                                "en": "Granulated Sugar",
-                                "uk": "Цукор пісок ваговий",
-                                "de": "Granulierter Zucker",
-                                "tr": "Toz şeker"
-                            },
-                            "image": "sugar-weight",
-                            "fats": "0",
-                            "acids": "0",
-                            "carbohydrates": "100",
-                            "sugar": "99.5",
-                            "protein": "0",
-                            "salt": "0",
-                            "kj": "1680",
-                            "kcal": "401",
-                            "mass": "25",
-                            "package": "bag",
-                            "gpCount": "0",
-                            "gpWeight": "0",
-                            "expiration": "20",
-                            "type": "weight"
-                        },
-                        "sugar-premium": {
-                            "title": {
-                                "en": "Granulated Sugar premium",
-                                "uk": "Цукор пісок premium",
-                                "de": "Granulierter Zucker der Spitzenklasse",
-                                "tr": "Premium toz şeker"
-                            },
-                            "image": "sugar-premium",
-                            "fats": "0",
-                            "acids": "0",
-                            "carbohydrates": "100",
-                            "sugar": "99.5",
-                            "protein": "0",
-                            "salt": "0",
-                            "kj": "1680",
-                            "kcal": "401",
-                            "mass": "1000",
-                            "package": "paper",
-                            "gpCount": "6",
-                            "gpWeight": "6",
-                            "expiration": "20",
-                            "type": "premium"
                         }
                     }
                 }
