@@ -16,7 +16,7 @@ import { ContactType, IconName, NavigationTitle } from '@types';
 
 import { CONTACTS_ROUTE, PRICES_ROUTE } from '@routes';
 
-import { addresses, ANCHORS, mails, navigation, phones } from '@constants';
+import { addresses, ANCHORS, mails, messengers, navigation, phones } from '@constants';
 
 import { cn } from '@utils';
 
@@ -24,17 +24,24 @@ const AddressBlock = ({
     icon,
     isAddress = false,
     items,
+    row = false,
 }: {
-    icon: IconName;
+    icon?: IconName;
     isAddress?: boolean;
     items: ContactType[];
+    row?: boolean;
 }) => {
     return (
-        <div className="grid grid-cols-[24px,1fr] items-start gap-5 fill-primary text-primary mobile:gap-4">
-            <Icon className="size-6" name={icon} />
+        <div
+            className={cn(
+                'grid items-start gap-5 fill-primary text-primary mobile:gap-4',
+                icon ? 'grid-cols-[24px,1fr]' : 'grid-cols-1'
+            )}
+        >
+            {icon && <Icon className="size-6" name={icon} />}
 
-            <ul className="flex flex-col gap-2">
-                {items.map(({ href, text }) => {
+            <ul className={cn('flex', row ? 'flex-row gap-4' : 'flex-col gap-2')}>
+                {items.map(({ href, icon, text }) => {
                     return (
                         <li key={href}>
                             <Link
@@ -43,6 +50,9 @@ const AddressBlock = ({
                                 rel={isAddress ? 'noopener noreferrer nofollow' : undefined}
                                 target={isAddress ? '_blank' : undefined}
                             >
+                                {icon && (
+                                    <Icon className={cn(text ? 'size-6' : 'size-8')} name={icon} />
+                                )}{' '}
                                 {text}
                             </Link>
                         </li>
@@ -108,6 +118,8 @@ export const Footer = async () => {
                                 />
 
                                 <AddressBlock icon="mailbox" items={mails} />
+
+                                <AddressBlock isAddress items={messengers} row />
                             </div>
 
                             <AddressBlock icon="phone-call" items={phones} />

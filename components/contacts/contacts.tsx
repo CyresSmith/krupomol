@@ -4,7 +4,7 @@ import { Link } from '@i18n';
 
 import { AnimatedCard, AnimatedSection, Icon } from '@components/shared';
 
-import { addresses, ANCHORS, mails, phones } from '@constants';
+import { addresses, ANCHORS, mails, messengers, phones } from '@constants';
 
 export const ContactsSection = async () => {
     const c = await getTranslations('header');
@@ -67,6 +67,25 @@ export const ContactsSection = async () => {
                                         href={href ?? ''}
                                     >
                                         {text}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+
+                <div className="fill-background text-background">
+                    <ul className="flex gap-6 mobile:justify-center">
+                        {messengers.map(({ href, icon }) => {
+                            return (
+                                <li key={href}>
+                                    <Link
+                                        className="px-0 transition hover:opacity-80"
+                                        href={href ?? ''}
+                                        rel="noopener noreferrer nofollow"
+                                        target="_blank"
+                                    >
+                                        {icon && <Icon className="size-10" name={icon} />}
                                     </Link>
                                 </li>
                             );

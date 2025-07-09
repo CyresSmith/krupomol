@@ -35,7 +35,7 @@ export const Header = async () => {
 
                     <div className="flex flex-col items-center gap-4 desktop:flex-row">
                         <ul className="flex flex-col items-center gap-4 desktop:flex-row">
-                            {(phones.length > 2 ? phones.slice(0, 2) : phones).map(
+                            {(phones.length > 3 ? phones.slice(0, 3) : phones).map(
                                 ({ href, text }) => (
                                     <li key={href}>
                                         <Link
