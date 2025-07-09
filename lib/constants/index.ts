@@ -136,6 +136,14 @@ export const mails: ContactType[] = [
 
 export const phones: ContactType[] = [
     {
+        href: 'tel:+380661412628',
+        text: '+380 (66) 141 26 28',
+    },
+    {
+        href: 'tel:+380983562856',
+        text: '+380 (98) 356 28 56',
+    },
+    {
         href: 'tel:+380974757779',
         text: '+380 (97) 475 77 79',
     },
@@ -146,14 +154,6 @@ export const phones: ContactType[] = [
     {
         href: 'tel:+380970764224',
         text: '+380 (97) 076 42 24',
-    },
-    {
-        href: 'tel:+380661412628',
-        text: '+380 (66) 141 26 28',
-    },
-    {
-        href: 'tel:+380983562856',
-        text: '+380 (98) 356 28 56',
     },
 ];
 
