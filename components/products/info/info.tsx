@@ -4,16 +4,14 @@ import { Link } from '@i18n';
 
 import { ProductsItemInfoType } from '@types';
 
+import { infoLinks } from '@constants';
+
 interface Props {
     item: ProductsItemInfoType;
 }
 
 export const Info = ({ item }: Props) => {
-    const { download = false, icon, title, url } = item;
-
-    const generateDownLoadLink = (fileId: string) => {
-        return `https://drive.google.com/uc?export=download&id=${fileId}`;
-    };
+    const { icon, title } = item;
 
     return (
         <li className="flex items-center gap-5 fill-accent desktop:gap-7">
@@ -26,7 +24,12 @@ export const Info = ({ item }: Props) => {
                     src={`/images/${icon}.png`}
                 />
             </div>
-            <Link href={download ? generateDownLoadLink(url) : url} target="blank">
+
+            <Link
+                href={infoLinks[icon as keyof typeof infoLinks]}
+                rel="noopener noreferrer nofollow"
+                target="blank"
+            >
                 {title}
             </Link>
         </li>

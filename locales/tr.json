@@ -222,21 +222,15 @@
             "infoList": [
                 {
                     "title": "Kataloğu indirin",
-                    "icon": "catalog",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "catalog"
                 },
                 {
                     "title": "Fiyat listesini indirin",
-                    "icon": "price-list",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "price-list"
                 },
                 {
                     "title": "Ürünlerin video incelemesi",
-                    "icon": "video-review",
-                    "url": "http://youtube.com/",
-                    "download": false
+                    "icon": "video-review"
                 }
             ]
         }

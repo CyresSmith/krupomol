@@ -220,21 +220,15 @@
             "infoList": [
                 {
                     "title": "Download the catalogue",
-                    "icon": "catalog",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "catalog"
                 },
                 {
                     "title": "Download price list",
-                    "icon": "price-list",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "price-list"
                 },
                 {
                     "title": "Products video review",
-                    "icon": "video-review",
-                    "url": "http://youtube.com/",
-                    "download": false
+                    "icon": "video-review"
                 }
             ]
         }

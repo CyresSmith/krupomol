@@ -172,6 +172,13 @@ export const phones: ContactType[] = [
     },
 ];
 
+export const infoLinks = {
+    catalog: 'https://drive.google.com/uc?export=download&id=10jcnS9rFn9I0o7rCEhjdkyXOWzpNAo_m',
+    'price-list':
+        'https://docs.google.com/spreadsheets/d/1JMOOVK_EGwa0TPaWxFgrL7NWwDXM455Fw-fh1Tmz5X4/edit?usp=sharing',
+    'video-review': 'https://www.youtube.com',
+};
+
 export const SCHEMAS_MESSAGES = {
     cyrillic: 'Має бути кирилицею',
     email: 'Невірний формат email',

@@ -222,21 +222,15 @@
             "infoList": [
                 {
                     "title": "Завантажити каталог",
-                    "icon": "catalog",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "catalog"
                 },
                 {
                     "title": "Завантажити прайс",
-                    "icon": "price-list",
-                    "url": "1rrEj0CdiWgiXPO9wUY_4xriEMwfoNicN",
-                    "download": true
+                    "icon": "price-list"
                 },
                 {
                     "title": "Відеоогляд продукції",
-                    "icon": "video-review",
-                    "url": "http://youtube.com/",
-                    "download": false
+                    "icon": "video-review"
                 }
             ]
         }
