@@ -7,7 +7,9 @@ const PagesLayout = ({ children }: PropsWithChildren) => {
     return (
         <>
             <Header />
+
             <main className="flex flex-1 flex-col">{children}</main>
+
             <Footer />
         </>
     );
