@@ -30,7 +30,7 @@ import { ConsultationTitle, InputProps } from '@types';
 
 import { ConsultationFormSchema } from '@schemas';
 
-import { cn } from '@utils';
+import { cn, sendEvent } from '@utils';
 
 /* eslint-disable @typescript-eslint/no-misused-promises */
 
@@ -87,6 +87,7 @@ export const ConsultationForm = () => {
             if (res.ok) {
                 form.reset();
                 setIsModalOpen(true);
+                sendEvent('form_submitted', { form_name: 'contact_form' });
             }
         } catch (error) {
             console.error('Request failed', error);

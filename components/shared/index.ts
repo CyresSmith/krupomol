@@ -9,6 +9,7 @@ export * from './icon';
 export * from './image-section';
 export * from './link-with-hash';
 export * from './loader';
+export * from './page-listener';
 export * from './scroll-to-top';
 export * from './section';
 export * from './section-carousel';

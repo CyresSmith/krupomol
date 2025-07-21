@@ -10,7 +10,7 @@ import '../globals.css';
 
 import { routing } from '@i18n';
 
-import { LenisProvider, ScrollToTop } from '@components/shared';
+import { LenisProvider, PageViewTracker, ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
@@ -65,13 +65,14 @@ export default async function RootLayout({
                     <LenisProvider>
                         {children}
 
+                        <PageViewTracker />
                         <ScrollToTop />
                     </LenisProvider>
                 </body>
                 {NODE_ENV === ENV_NODES.production && (
                     <>
-                        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
                         {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
+                        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
                     </>
                 )}
             </NextIntlClientProvider>

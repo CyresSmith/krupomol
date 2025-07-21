@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { type Metadata } from 'next';
 
 import { type ClassValue, clsx } from 'clsx';
@@ -136,4 +138,13 @@ export const sortProductsByType = (items: ProductListItemType[]) => {
         },
         { premium: [], regular: [], weight: [] }
     );
+};
+
+export const sendEvent = (event: string, data?: Record<string, any>) => {
+    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+        (window as any).dataLayer.push({
+            event,
+            ...data,
+        });
+    }
 };

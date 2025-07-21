@@ -71,6 +71,8 @@ export const Header = async () => {
                                 'w-60 mobile:hidden',
                                 buttonVariants({ variant: 'outline' })
                             )}
+                            eventLocation="header"
+                            eventName="consultation_click"
                             href={{ hash: ANCHORS.contacts.consultation, pathname: CONTACTS_ROUTE }}
                         >
                             {t('consultation')}

@@ -6,6 +6,8 @@ import Image from 'next/image';
 
 import { LenisContext } from '@components/shared';
 
+import { sendEvent } from '@utils';
+
 interface Props {
     image: string;
     title: string;
@@ -19,6 +21,12 @@ const ProductImage = ({ image, title }: Props) => {
 
         return () => clearTimeout(scrollTimeout);
     }, [lenis]);
+
+    useEffect(() => {
+        sendEvent('view_product', {
+            name: title,
+        });
+    }, [title]);
 
     return (
         <div
