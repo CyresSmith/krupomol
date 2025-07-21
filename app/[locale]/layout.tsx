@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
 
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getLocale, getTranslations, setRequestLocale } from 'next-intl/server';
@@ -13,7 +14,13 @@ import { LenisProvider, ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
+import { ENV_NODES } from '@constants';
+
 import { getMetadata } from '@utils';
+
+const GA_ID = process.env['NEXT_PUBLIC_GA_ID'];
+const GTM_ID = process.env['NEXT_PUBLIC_GTM_ID'];
+const NODE_ENV = process.env.NODE_ENV || ENV_NODES.development;
 
 export async function generateMetadata(): Promise<Metadata> {
     const locale = await getLocale();
@@ -61,6 +68,12 @@ export default async function RootLayout({
                         <ScrollToTop />
                     </LenisProvider>
                 </body>
+                {NODE_ENV === ENV_NODES.production && (
+                    <>
+                        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
+                        {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
+                    </>
+                )}
             </NextIntlClientProvider>
         </html>
     );

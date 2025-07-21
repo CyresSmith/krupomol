@@ -192,3 +192,8 @@ export const SCHEMAS_MESSAGES = {
     required: 'Обов’язкове поле',
     sameAs: 'Повинно бути однаковим з',
 };
+
+export const ENV_NODES = {
+    production: 'production',
+    development: 'development',
+};
