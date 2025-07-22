@@ -142,7 +142,7 @@ export const sortProductsByType = (items: ProductListItemType[]) => {
 
 export const sendEvent = (event: string, data?: Record<string, any>) => {
     if (typeof window !== 'undefined' && (window as any).dataLayer) {
-        (window as any).dataLayer.events.push({
+        (window as any).dataLayer.push({
             event,
             ...data,
         });
