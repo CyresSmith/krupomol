@@ -87,7 +87,7 @@ export const ConsultationForm = () => {
             if (res.ok) {
                 form.reset();
                 setIsModalOpen(true);
-                sendEvent('form_submitted', { form_name: 'contact_form' });
+                sendEvent('form_submitted', { formType: 'contact_form' });
             }
         } catch (error) {
             console.error('Request failed', error);

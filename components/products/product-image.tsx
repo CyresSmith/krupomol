@@ -24,7 +24,7 @@ const ProductImage = ({ image, title }: Props) => {
 
     useEffect(() => {
         sendEvent('view_product', {
-            name: title,
+            productName: title,
         });
     }, [title]);
 
