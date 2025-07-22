@@ -201,6 +201,7 @@ export const ConsultationForm = () => {
                     <div className="flex justify-center">
                         <Button
                             disabled={!ready || !isValid || isLoading}
+                            id="consultation-form-submit"
                             name={t('submit')}
                             size={'lg'}
                             type="submit"
