@@ -10,7 +10,7 @@ import '../globals.css';
 
 import { routing } from '@i18n';
 
-import { LenisProvider, PageViewTracker, ScrollToTop } from '@components/shared';
+import { LenisProvider, ScrollToTop } from '@components/shared';
 
 import { WithLocale, WithParams } from '@types';
 
@@ -65,7 +65,7 @@ export default async function RootLayout({
                     <LenisProvider>
                         {children}
 
-                        <PageViewTracker />
+                        {/* <PageViewTracker /> */}
                         <ScrollToTop />
                     </LenisProvider>
                 </body>
