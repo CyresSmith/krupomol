@@ -513,7 +513,57 @@
                 "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
                 "de": [
                     "Herkunft: Ukraine",
-                    "                Reinheit: 98-99%",
+                    "Reinheit: 98-99%",
+                    "Verpackung: Big Bag",
+                    "Erntezeit: 2023"
+                ],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+            }
+        },
+        {
+            "title": {
+                "uk": "Пшениця м'яких сортів",
+                "en": "Soft wheat",
+                "de": "Weichweizen",
+                "tr": "Yumuşak buğday"
+            },
+            "id": "wheat",
+            "addInfo": {
+                "uk": [
+                    "Країна походження: Україна",
+                    "Чистота: 98-99%",
+                    "Фасування: Пакування: великі мішки",
+                    "Урожай: 2023 рік"
+                ],
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
+                "de": [
+                    "Herkunft: Ukraine",
+                    "Reinheit: 98-99%",
+                    "Verpackung: Big Bag",
+                    "Erntezeit: 2023"
+                ],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+            }
+        },
+        {
+            "title": {
+                "uk": "Пшениця твердих сортів",
+                "en": "Durum wheat",
+                "de": "Hartweizen",
+                "tr": "Durum buğdayı"
+            },
+            "id": "durum",
+            "addInfo": {
+                "uk": [
+                    "Країна походження: Україна",
+                    "Чистота: 98-99%",
+                    "Фасування: Пакування: великі мішки",
+                    "Урожай: 2023 рік"
+                ],
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
+                "de": [
+                    "Herkunft: Ukraine",
+                    "Reinheit: 98-99%",
                     "Verpackung: Big Bag",
                     "Erntezeit: 2023"
                 ],
