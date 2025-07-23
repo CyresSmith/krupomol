@@ -466,28 +466,24 @@
             "id": "hulled-millet",
             "addInfo": {
                 "uk": [
-                    "Урожай 2022 року",
                     "Чистота: 99,6%",
                     "Пакування: пакети або великі мішки",
                     "MOQ: 22 тонни",
                     "Країна походження: Україна"
                 ],
                 "en": [
-                    "2022 crop",
                     "Purity: 99.6%",
                     "Packaging: bags or big bags",
                     "MOQ: 22 tons",
                     "Origin: Ukraine"
                 ],
                 "de": [
-                    "2022 Ernte",
                     "Reinheit: 99,6%",
                     "Verpackung: Säcke oder Big Bags",
                     "MOQ: 22 Tonnen",
                     "Herkunft: Ukraine"
                 ],
                 "tr": [
-                    "2022 mahsulü",
                     "Saflık: %99,6",
                     "Ambalaj: torbalar veya büyük torbalar",
                     "Adedi: 22 ton",
@@ -507,17 +503,11 @@
                 "uk": [
                     "Країна походження: Україна",
                     "Чистота: 98-99%",
-                    "Фасування: Пакування: великі мішки",
-                    "Урожай: 2023 рік"
+                    "Фасування: Пакування: великі мішки"
                 ],
-                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
-                "de": [
-                    "Herkunft: Ukraine",
-                    "Reinheit: 98-99%",
-                    "Verpackung: Big Bag",
-                    "Erntezeit: 2023"
-                ],
-                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags"],
+                "de": ["Herkunft: Ukraine", "Reinheit: 98-99%", "Verpackung: Big Bag"],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar"]
             }
         },
         {
@@ -532,17 +522,11 @@
                 "uk": [
                     "Країна походження: Україна",
                     "Чистота: 98-99%",
-                    "Фасування: Пакування: великі мішки",
-                    "Урожай: 2023 рік"
+                    "Фасування: Пакування: великі мішки"
                 ],
-                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
-                "de": [
-                    "Herkunft: Ukraine",
-                    "Reinheit: 98-99%",
-                    "Verpackung: Big Bag",
-                    "Erntezeit: 2023"
-                ],
-                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags"],
+                "de": ["Herkunft: Ukraine", "Reinheit: 98-99%", "Verpackung: Big Bag"],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar"]
             }
         },
         {
@@ -557,17 +541,11 @@
                 "uk": [
                     "Країна походження: Україна",
                     "Чистота: 98-99%",
-                    "Фасування: Пакування: великі мішки",
-                    "Урожай: 2023 рік"
+                    "Фасування: Пакування: великі мішки"
                 ],
-                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags", "Harvest: 2023"],
-                "de": [
-                    "Herkunft: Ukraine",
-                    "Reinheit: 98-99%",
-                    "Verpackung: Big Bag",
-                    "Erntezeit: 2023"
-                ],
-                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar", "Hasat: 2023"]
+                "en": ["Origin: Ukraine", "Purity: 98–99%", "Packaging: big bags"],
+                "de": ["Herkunft: Ukraine", "Reinheit: 98-99%", "Verpackung: Big Bag"],
+                "tr": ["Köken: Ukrayna", "Saflık: %98-99", "Ambalaj: büyük torbalar"]
             }
         }
     ],
