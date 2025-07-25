@@ -64,8 +64,6 @@ export default async function RootLayout({
                 <body className={`relative flex min-h-screen flex-col font-sans antialiased`}>
                     <LenisProvider>
                         {children}
-
-                        {/* <PageViewTracker /> */}
                         <ScrollToTop />
                     </LenisProvider>
                 </body>
